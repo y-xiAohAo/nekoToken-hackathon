@@ -6,6 +6,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import chdir
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -39,6 +40,12 @@ class RepositoryChecks(unittest.TestCase):
         page = self.write("README.md", "[missing](docs/absent.md)")
         errors = check_links(self.root, [page, self.root / "missing.md"])
         self.assertEqual(len(errors), 2)
+
+    def test_document_and_root_paths_are_normalized_together(self) -> None:
+        self.write("docs/example.md")
+        self.write("README.md", "[doc](docs/example.md)")
+        with chdir(self.root):
+            self.assertEqual(check_links(Path("."), [Path("README.md")]), [])
 
     def test_link_cannot_escape_repository(self) -> None:
         page = self.write("README.md", "[escape](../outside.md)")

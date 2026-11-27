@@ -37,6 +37,7 @@ def check_links(root: Path, documents: list[Path]) -> list[str]:
     failures: list[str] = []
     root = root.resolve()
     for document in documents:
+        document = document.resolve()
         label = document.relative_to(root).as_posix()
         if not document.is_file():
             failures.append(f"Missing document: {label}")
