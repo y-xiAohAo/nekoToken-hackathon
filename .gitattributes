@@ -1,2 +1,15 @@
 # Preserve the byte content of migrated sources and their checksum manifest.
 * -text
+
+# New development files use consistent line endings. Do not renormalize archives.
+/.github/** text=auto eol=lf
+/docs/** text=auto eol=lf
+/scripts/** text=auto eol=lf
+/tests/** text=auto eol=lf
+/game/** text=auto eol=lf
+/README.md text eol=lf
+/CONTRIBUTING.md text eol=lf
+/CHANGELOG.md text eol=lf
+/.editorconfig text eol=lf
+/.gitignore text eol=lf
+/.gitattributes text eol=lf

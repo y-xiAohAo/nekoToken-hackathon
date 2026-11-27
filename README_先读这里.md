@@ -16,11 +16,11 @@
 
 - 游戏：Godot 已定为技术栈；团队小版本未锁定。本机已发现 Steam 版 4.2.2 及导出模板，基础运行和导出验证见[赛前环境检查](handoff/赛前环境检查_2026-11-26.md)。先验证一轮行动周期，再接入两个 Agent 和两类 RESET。
 - 技能：项目携带 49 个开发者技能的可迁移副本；当前用户级技能与这些副本的 `SKILL.md` 一致。项目直接相关的是 `hackathon-spec`、`game-jam`、`prototype-fast`、`level-design` 和 7 个 `godot-*`；`platformer` 属早期横版方向，现行方案不使用。其余是文档、图像、通用工具或原科研项目遗留，详情见[技能清单](handoff/技能与环境.md)。技能文件本身不代表插件或云端服务已连接。
-- 工具：`tools/` 是迁移包携带的 Windows 运行时，已被 Git 忽略；`tmp/` 是生成器与临时产物，不能当作设计源。
+- 工具：`tools/` 是本机工具目录，已被 Git 忽略；旧 `tmp/` 文件已移入 `archive/production/`，新的 `tmp/` 只用于本地临时产物。
 - 版本：Git 在迁移后初始化，原项目的提交历史未迁入；当前仓库从此次工作区快照开始保存。更早的设计演变见[架构页](ARCHITECTURE.md)和[讨论记录](handoff/历次讨论记录.md)。
 
 ## 校验
 
-在本目录运行 `powershell -ExecutionPolicy Bypass -File .\scripts\Check-Workspace.ps1`。现行 `MANIFEST.sha256.json` 只校验稳定项目材料；原迁移全量快照保存在 `handoff/migration/MANIFEST.sha256.json`。Python 缓存、附带运行时和 `tmp/` 会随使用变化，不按历史哈希核对；检查脚本单独检查附带工具能否运行。
+在本目录运行 `powershell -ExecutionPolicy Bypass -File .\scripts\Check-Workspace.ps1`，或按 [协作说明](CONTRIBUTING.md) 使用 Git 和 Python 3.12 执行检查。当前校验不依赖本机附带运行时；旧材料清单与脚本已移入 `archive/production/workspace-tools/`，不再要求每次开发都重建清单。原迁移全量快照仍在 `handoff/migration/`。
 
 模型密钥与账号配置留在本机环境，不能写入项目文件。旧机器的安装和接入过程见[环境记录](handoff/参赛机环境配置记录.md)，其中路径和版本是当日快照。

@@ -10,6 +10,7 @@
 
 ## 技术与设计
 
+- 正式游戏工程在 `game/` 创建，当前尚无 `project.godot`。工程文档见 `docs/`，协作约定见 `CONTRIBUTING.md`；不把目录占位说明当作已实现代码。
 - 技术栈已定为 Godot。具体4.x小版本在参赛机验证后记录，不以技能标题中的4.7推断已安装版本。
 - 使用 `.agents/skills/hackathon-spec`、相关 Godot 技能和关卡技能；中文修订用 `humanizer-zh`，PDF任务用 `pdf`。
 - 10分钟是整场四轮、对话、推理、回退与结算的目标，尚未实测。
@@ -20,6 +21,10 @@
 ## 保留的工程纪律
 
 Python 编码遵守 `.kimi/skills/tms-coding-discipline/SKILL.md`：测试先于实现，公开函数有参数与返回类型，具体异常，logging输出，模块文档，依赖记录。新增游戏逻辑应有相应验收场景；文档改动无需为了形式增加无效测试。
+
+本仓库维护脚本只用 Python 标准库，测试入口为 `python -m unittest discover -s tests -v`；仓库校验为 `python scripts/check_repository.py` 和 `python scripts/check_project_links.py --all`。从新克隆也必须能运行，不依赖 `tools/` 或真实模型密钥。旧迁移哈希清单是历史证据，不是每日开发门禁。
+
+开发使用短期任务分支和 PR；不要强制推送 `main` 或重写共享历史。新增临时文件放 `tmp/`，本机工具放 `tools/`，二者均不入库；历史生成器已归档到 `archive/production/`。整理历史材料时保留原文和路径映射，不全量格式化技能副本或旧报告。
 
 原父目录规则完整留存在 `source_materials/engineering/AGENTS.parent.original.md`。与科研数据库、科研任务索引有关的入口属于原工程背景，本独立游戏目录没有对应科研代码，不要据此导入或修改其他项目。
 
