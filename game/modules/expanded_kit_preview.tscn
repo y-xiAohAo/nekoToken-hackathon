@@ -1,0 +1,91 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://modules/piece.tscn" id="piece"]
+
+[sub_resource type="Environment" id="environment"]
+background_mode = 1
+background_color = Color(0.105, 0.14, 0.19, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.94, 0.96, 1, 1)
+ambient_light_energy = 0.7
+
+[sub_resource type="BoxMesh" id="stage_mesh"]
+size = Vector3(39, 0.2, 22)
+
+[sub_resource type="StandardMaterial3D" id="stage_material"]
+albedo_color = Color(0.18, 0.23, 0.28, 1)
+roughness = 1.0
+
+[node name="蚁穴新增单元陈列" type="Node3D"]
+
+[node name="展示底台" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.3, 0)
+mesh = SubResource("stage_mesh")
+material_override = SubResource("stage_material")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("environment")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-52, -33, 0)
+light_energy = 0.75
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(0, 24, 33)
+rotation_degrees = Vector3(-36, 0, 0)
+projection = 1
+size = 27
+current = true
+
+[node name="桌子" parent="." instance=ExtResource("piece")]
+position = Vector3(-14, 0, 7)
+piece = 9
+
+[node name="椅子" parent="." instance=ExtResource("piece")]
+position = Vector3(-10, 0, 7)
+piece = 10
+
+[node name="柜子" parent="." instance=ExtResource("piece")]
+position = Vector3(-6, 0, 7)
+piece = 11
+
+[node name="柜台" parent="." instance=ExtResource("piece")]
+position = Vector3(-2, 0, 7)
+piece = 12
+
+[node name="长椅" parent="." instance=ExtResource("piece")]
+position = Vector3(2, 0, 7)
+piece = 13
+
+[node name="立柱" parent="." instance=ExtResource("piece")]
+position = Vector3(6, 0, 7)
+piece = 14
+
+[node name="护栏" parent="." instance=ExtResource("piece")]
+position = Vector3(10, 0, 7)
+piece = 15
+
+[node name="窗墙" parent="." instance=ExtResource("piece")]
+position = Vector3(14, 0, 7)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+
+[node name="封闭门墙" parent="." instance=ExtResource("piece")]
+position = Vector3(18, 0, 7)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 17
+
+[node name="整栋平屋顶" parent="." instance=ExtResource("piece")]
+position = Vector3(-13, 0, -5)
+piece = 18
+roof_tiles = Vector2i(3, 3)
+
+[node name="整栋坡屋顶" parent="." instance=ExtResource("piece")]
+position = Vector3(-3, 0, -5)
+piece = 19
+roof_tiles = Vector2i(3, 3)
+
+[node name="通往二层的楼梯" parent="." instance=ExtResource("piece")]
+position = Vector3(11, 0, -4)
+piece = 20

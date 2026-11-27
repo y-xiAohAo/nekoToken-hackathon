@@ -1,0 +1,75 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://modules/piece.tscn" id="piece"]
+
+[sub_resource type="Environment" id="environment"]
+background_mode = 1
+background_color = Color(0.105, 0.14, 0.19, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.94, 0.96, 1, 1)
+ambient_light_energy = 0.7
+
+[sub_resource type="BoxMesh" id="stage_mesh"]
+size = Vector3(31, 0.2, 9)
+
+[sub_resource type="StandardMaterial3D" id="stage_material"]
+albedo_color = Color(0.18, 0.23, 0.28, 1)
+roughness = 1.0
+
+[node name="住家与超市单元陈列" type="Node3D"]
+
+[node name="展示底台" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.3, 0)
+mesh = SubResource("stage_mesh")
+material_override = SubResource("stage_material")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("environment")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-52, -33, 0)
+light_energy = 0.75
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(0, 15, 22)
+rotation_degrees = Vector3(-34.3, 0, 0)
+projection = 1
+size = 19
+current = true
+
+[node name="床" parent="." instance=ExtResource("piece")]
+position = Vector3(-13, 0, 0)
+piece = 21
+
+[node name="沙发" parent="." instance=ExtResource("piece")]
+position = Vector3(-10, 0, 0)
+piece = 22
+
+[node name="灶台" parent="." instance=ExtResource("piece")]
+position = Vector3(-7, 0, 0)
+piece = 23
+
+[node name="商品货架" parent="." instance=ExtResource("piece")]
+position = Vector3(-4, 0, 0)
+piece = 24
+
+[node name="冷柜" parent="." instance=ExtResource("piece")]
+position = Vector3(-1, 0, 0)
+piece = 25
+
+[node name="物资箱" parent="." instance=ExtResource("piece")]
+position = Vector3(2, 0, 0)
+piece = 26
+
+[node name="床头小桌" parent="." instance=ExtResource("piece")]
+position = Vector3(5, 0, 0)
+piece = 27
+
+[node name="路灯" parent="." instance=ExtResource("piece")]
+position = Vector3(8, 0, 0)
+piece = 28
+
+[node name="地毯" parent="." instance=ExtResource("piece")]
+position = Vector3(12, 0, 0)
+piece = 29

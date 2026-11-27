@@ -1,0 +1,118 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://modules/piece.tscn" id="piece"]
+
+[sub_resource type="Environment" id="environment"]
+background_mode = 1
+background_color = Color(0.105, 0.14, 0.19, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.94, 0.96, 1, 1)
+ambient_light_energy = 0.75
+
+[sub_resource type="BoxMesh" id="stage_mesh"]
+size = Vector3(31.0, 0.24, 12.8)
+
+[sub_resource type="StandardMaterial3D" id="stage_material"]
+albedo_color = Color(0.18, 0.235, 0.29, 1)
+roughness = 1.0
+
+[node name="模块对照" type="Node3D"]
+
+[node name="陈列底台" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.36, 0)
+mesh = SubResource("stage_mesh")
+material_override = SubResource("stage_material")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("environment")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-48, -28, 0)
+light_energy = 0.62
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(0, 19.0, 23.0)
+rotation_degrees = Vector3(-39.6, 0, 0)
+projection = 1
+size = 17.1
+current = true
+
+[node name="蚁穴地面" parent="." instance=ExtResource("piece")]
+position = Vector3(-10.5, 0, -4.2)
+
+[node name="蚁穴矮墙" parent="." instance=ExtResource("piece")]
+position = Vector3(-7.5, 0, -4.2)
+piece = 1
+
+[node name="蚁穴高墙" parent="." instance=ExtResource("piece")]
+position = Vector3(-4.5, 0, -4.2)
+piece = 2
+
+[node name="蚁穴转角" parent="." instance=ExtResource("piece")]
+position = Vector3(-1.5, 0, -4.2)
+piece = 3
+
+[node name="蚁穴门洞" parent="." instance=ExtResource("piece")]
+position = Vector3(1.5, 0, -4.2)
+piece = 4
+
+[node name="蚁穴花坛" parent="." instance=ExtResource("piece")]
+position = Vector3(4.5, 0, -4.2)
+piece = 5
+
+[node name="蚁穴坡道" parent="." instance=ExtResource("piece")]
+position = Vector3(7.5, 0, -4.2)
+piece = 6
+
+[node name="蚁穴屋顶" parent="." instance=ExtResource("piece")]
+position = Vector3(10.5, 0, -4.2)
+piece = 7
+
+[node name="蚁穴楼梯" parent="." instance=ExtResource("piece")]
+position = Vector3(13.5, 0, -4.2)
+piece = 8
+
+[node name="M镇地面" parent="." instance=ExtResource("piece")]
+position = Vector3(-10.5, 0, 4.2)
+district = 1
+
+[node name="M镇矮墙" parent="." instance=ExtResource("piece")]
+position = Vector3(-7.5, 0, 4.2)
+piece = 1
+district = 1
+
+[node name="M镇高墙" parent="." instance=ExtResource("piece")]
+position = Vector3(-4.5, 0, 4.2)
+piece = 2
+district = 1
+
+[node name="M镇转角" parent="." instance=ExtResource("piece")]
+position = Vector3(-1.5, 0, 4.2)
+piece = 3
+district = 1
+
+[node name="M镇门洞" parent="." instance=ExtResource("piece")]
+position = Vector3(1.5, 0, 4.2)
+piece = 4
+district = 1
+
+[node name="M镇花坛" parent="." instance=ExtResource("piece")]
+position = Vector3(4.5, 0, 4.2)
+piece = 5
+district = 1
+
+[node name="M镇坡道" parent="." instance=ExtResource("piece")]
+position = Vector3(7.5, 0, 4.2)
+piece = 6
+district = 1
+
+[node name="M镇屋顶" parent="." instance=ExtResource("piece")]
+position = Vector3(10.5, 0, 4.2)
+piece = 7
+district = 1
+
+[node name="M镇楼梯" parent="." instance=ExtResource("piece")]
+position = Vector3(13.5, 0, 4.2)
+piece = 8
+district = 1
