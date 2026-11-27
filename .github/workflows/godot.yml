@@ -1,4 +1,4 @@
-name: Godot module 1
+name: Godot framework contracts
 
 on:
   pull_request:
@@ -42,7 +42,7 @@ jobs:
           if grep -E '(SCRIPT ERROR|Parse Error|ERROR:)' "$RUNNER_TEMP/godot-import.log"; then
             exit 1
           fi
-      - name: Run module 1 contracts
+      - name: Run session and world contracts
         shell: bash
         run: |
           set -euo pipefail

@@ -1,6 +1,6 @@
 # 产物索引
 
-当前可编辑文稿是[2042 世界观整合版 v1.0](pdf/AI_PLAY_72H_预赛方案_2042世界观整合_v1.0.md)，目前没有对应 PDF。旧《请本人到场》世界观的[v0.8 原稿](archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md)与[8 页 PDF](archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.pdf)、过渡[v0.9 文稿](archive/submissions/AI_PLAY_72H_预赛方案_2042故事线版_v0.9.md)均已归档。[玩法速读 v0.4](预赛玩法框架_v0.4.md)仅作机制入口；规则以[设计 Spec](../PRELIMINARY_DESIGN_SPEC.md)为准。
+此前可编辑文稿是[2042 世界观整合版 v1.0](pdf/AI_PLAY_72H_预赛方案_2042世界观整合_v1.0.md)，目前没有对应 PDF；它尚未同步现行踏板及移除门/灯决定。旧《请本人到场》世界观的[v0.8 原稿](archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md)与[8 页 PDF](archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.pdf)、过渡[v0.9 文稿](archive/submissions/AI_PLAY_72H_预赛方案_2042故事线版_v0.9.md)均已归档。[玩法速读 v0.4](预赛玩法框架_v0.4.md)是旧版快照；规则以[设计 Spec v0.42](../PRELIMINARY_DESIGN_SPEC.md)和[机制 v0.23](../侦测定位_机制草案.md)为准。
 
 - `pdf/figures/v08/`：v0.8 流程图源文件与导出图，v1.0 文稿暂借用其中的机制图。
 - `imagegen/请本人到场_检查区_名称标注_v6.png`、`请本人到场_检查区_路线示意_v6.png`：仅作布局候选与路线推演，不代表 2042 世界观已定美术。文件名沿用旧项目名是历史产物命名。

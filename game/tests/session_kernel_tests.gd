@@ -7,12 +7,12 @@ var failed: int = 0
 
 
 func run() -> Dictionary:
-	_test_time_and_boundaries()
-	_test_contact_and_snapshot()
-	_test_guess_priority()
-	_test_round_success()
-	_test_dispatch_and_context()
-	_test_agent_views()
+	_check(_test_time_and_boundaries(), "_test_time_and_boundaries completed")
+	_check(_test_contact_and_snapshot(), "_test_contact_and_snapshot completed")
+	_check(_test_guess_priority(), "_test_guess_priority completed")
+	_check(_test_round_success(), "_test_round_success completed")
+	_check(_test_dispatch_and_context(), "_test_dispatch_and_context completed")
+	_check(_test_agent_views(), "_test_agent_views completed")
 	return {"passed": passed, "failed": failed}
 
 
@@ -32,7 +32,7 @@ func _advance(session: GameSession, tick: int, goal: bool = false, exit_reached:
 	return session.advance_physics_step(_frame(tick, goal, exit_reached))
 
 
-func _test_time_and_boundaries() -> void:
+func _test_time_and_boundaries() -> bool:
 	var session := GameSession.new(SessionRules.new(2, 2))
 	_check(session.period_for_event_tick(0) == 0, "first event belongs to first period")
 	_check(session.period_for_event_tick(1) == 0, "end-minus-one remains in first period")
@@ -51,43 +51,43 @@ func _test_time_and_boundaries() -> void:
 	var completed := session.process_report_boundary(
 		func(boundary: ReportBoundary) -> void:
 			sequence.append("seal:%d" % boundary.report_period_id)
-			reentrant_result.append(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass)),
-		func(_boundary: ReportBoundary) -> void:
-			sequence.append("config"),
+			reentrant_result.append(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass)),
 		func(_boundary: ReportBoundary) -> void:
 			sequence.append("view")
 	)
 	_check(completed, "whole report batch processed")
-	_check(sequence == ["seal:1", "config", "view"], "report sequence is serial")
+	_check(sequence == ["seal:1", "view"], "report sequence is serial")
 	_check(reentrant_result == [false], "report boundary cannot be processed twice by reentrant callback")
 	_check(session.get_cycle_snapshot()["sealed_reports_in_guess_cycle"] == 1, "one whole batch counted")
-	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass) == false, "duplicate boundary rejected")
+	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass) == false, "duplicate boundary rejected")
 	_check(_advance(session, 3).accepted, "action resumes after ordinary boundary")
 	var guess_boundary := _advance(session, 4)
 	_check(guess_boundary.report_boundary != null and guess_boundary.report_boundary.is_guess_boundary, "second report is guess boundary")
-	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "guess batch processed")
+	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "guess batch processed")
 	_check(session.get_state_snapshot()["phase"] == SessionPhase.Phase.GUESS_PAUSED, "guess starts only after full batch")
 	_check(_advance(session, 5).accepted == false, "guess pause freezes physics")
+	return true
 
 
-func _test_contact_and_snapshot() -> void:
+func _test_contact_and_snapshot() -> bool:
 	var session := GameSession.new(SessionRules.new(3, 2))
 	_check(session.begin_contact(), "contact opens during action")
 	_check(_advance(session, 1).accepted == false, "contact freezes clock")
 	_check(session.get_cycle_snapshot()["simulation_tick"] == 0, "contact leaves clock at zero")
-	_check(session.end_contact(), "contact closes")
+	_check(session.end_contact(_keep_current), "contact closes")
 	_check(_advance(session, 1).accepted, "physics resumes after contact")
 	var snapshot: Dictionary = session.get_state_snapshot()
 	snapshot["phase"] = SessionPhase.Phase.ROUND_END
 	_check(session.get_state_snapshot()["phase"] == SessionPhase.Phase.ACTION, "external snapshot cannot mutate phase")
+	return true
 
 
-func _test_guess_priority() -> void:
+func _test_guess_priority() -> bool:
 	var session := GameSession.new(SessionRules.new(2, 1))
 	_check(_advance(session, 1).accepted, "pre-guess step accepted")
 	var result := _advance(session, 2, true, true)
 	_check(result.report_boundary != null, "exit at guess tick still creates report")
-	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "guess boundary completes")
+	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "guess boundary completes")
 	_check(session.get_state_snapshot()["phase"] == SessionPhase.Phase.GUESS_PAUSED, "guess outranks exit")
 	var context: Dictionary = session.get_state_snapshot()["active_request_context"]
 	_check(session.accept_guess_result(context, false), "valid miss accepted")
@@ -98,13 +98,14 @@ func _test_guess_priority() -> void:
 	var hit_session := GameSession.new(SessionRules.new(1, 1))
 	var hit_boundary := _advance(hit_session, 1, true, true)
 	_check(hit_boundary.report_boundary != null, "hit scenario boundary exists")
-	_check(hit_session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "hit scenario report completes")
+	_check(hit_session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "hit scenario report completes")
 	var hit_context: Dictionary = hit_session.get_state_snapshot()["active_request_context"]
 	_check(hit_session.accept_guess_result(hit_context, true), "valid hit accepted")
 	_check(hit_session.get_state_snapshot()["phase"] == SessionPhase.Phase.RESET_CHOICE, "hit outranks exit success")
+	return true
 
 
-func _test_round_success() -> void:
+func _test_round_success() -> bool:
 	var direct_session := GameSession.new(SessionRules.new(3, 2))
 	_check(_advance(direct_session, 1, true, true).accepted, "non-boundary exit accepted")
 	_check(direct_session.get_state_snapshot()["phase"] == SessionPhase.Phase.ROUND_END, "non-boundary exit succeeds immediately")
@@ -114,14 +115,15 @@ func _test_round_success() -> void:
 	var boundary := _advance(boundary_session, 2, true, true)
 	_check(boundary.report_boundary != null and not boundary.report_boundary.is_guess_boundary, "ordinary report happens before exit success")
 	_check(boundary_session.get_state_snapshot()["phase"] == SessionPhase.Phase.REPORT_BOUNDARY, "boundary waits for whole report")
-	_check(boundary_session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "ordinary exit batch completes")
+	_check(boundary_session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "ordinary exit batch completes")
 	_check(boundary_session.get_state_snapshot()["phase"] == SessionPhase.Phase.ROUND_END, "ordinary boundary then succeeds")
+	return true
 
 
-func _test_dispatch_and_context() -> void:
+func _test_dispatch_and_context() -> bool:
 	var session := GameSession.new(SessionRules.new(1, 1))
 	_check(_advance(session, 1).report_boundary != null, "dispatch scenario boundary exists")
-	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "dispatch scenario report completes")
+	_check(session.process_report_boundary(func(_b: ReportBoundary) -> void: pass, func(_b: ReportBoundary) -> void: pass), "dispatch scenario report completes")
 	var expected: Dictionary = session.get_state_snapshot()["active_request_context"]
 	var stale: Dictionary = expected.duplicate(true)
 	stale["branch_id"] += 1
@@ -129,16 +131,17 @@ func _test_dispatch_and_context() -> void:
 	_check(session.get_state_snapshot()["phase"] == SessionPhase.Phase.GUESS_PAUSED, "stale guess cannot change phase")
 	_check(session.accept_guess_result(expected, false), "current miss accepted")
 	_check(session.get_state_snapshot()["phase"] == SessionPhase.Phase.DISPATCH_PAUSED, "miss without exit enters dispatch")
-	_check(session.complete_dispatch(), "dispatch completes to next cycle preparation")
+	_check(session.complete_dispatch(_keep_current), "dispatch completes to next cycle preparation")
 	_check(session.get_state_snapshot()["phase"] == SessionPhase.Phase.CYCLE_START_PENDING, "snapshot gate remains paused")
 	_check(_advance(session, 2).accepted == false, "snapshot gate freezes clock")
 	_check(session.resume_cycle(false) == false, "cycle cannot resume without snapshot")
 	_check(session.resume_cycle(true), "cycle resumes after snapshot confirmation")
 	_check(session.get_state_snapshot()["guess_cycle_id"] == 2, "guess cycle increments once")
 	_check(session.get_cycle_snapshot()["sealed_reports_in_guess_cycle"] == 0, "new cycle clears batch count")
+	return true
 
 
-func _test_agent_views() -> void:
+func _test_agent_views() -> bool:
 	var system_context := AgentProtocol.make_request_context(AgentProtocol.SYSTEM_AGENT, 7, 1, 3, 2)
 	var player_context := AgentProtocol.make_request_context(AgentProtocol.PLAYER_ASSISTANT, 8, 1, 3, 2)
 	var system_request := AgentProtocol.make_system_request(system_context, {"cells": []}, [], [])
@@ -174,3 +177,11 @@ func _test_agent_views() -> void:
 	var invalid_context: Dictionary = system_context.duplicate(true)
 	invalid_context["branch_id"] = 0
 	_check(AgentProtocol.serialize_request({"context": invalid_context, "view": system_request["view"]}).is_empty(), "request with invalid identity is rejected")
+	return true
+
+
+func _keep_current(expected: Dictionary) -> WorldCommandResult:
+	var result := WorldCommandResult.new()
+	result.status = "UNCHANGED"
+	result.context = AgentProtocol.serialize_context(expected)
+	return result

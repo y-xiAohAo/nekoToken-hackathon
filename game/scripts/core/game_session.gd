@@ -10,6 +10,7 @@ var _pending_world_frame: WorldFrame
 var _processing_report_boundary: bool = false
 var _pending_round_success: bool = false
 var _next_request_id: int = 1
+var _processing_deployment: bool = false
 
 
 func _init(p_rules: SessionRules) -> void:
@@ -54,17 +55,15 @@ func advance_physics_step(frame: WorldFrame) -> PhysicsStepResult:
 
 func process_report_boundary(
 	seal_batch: Callable,
-	apply_config: Callable,
 	update_view: Callable
 ) -> bool:
 	if _state.phase != SessionPhase.Phase.REPORT_BOUNDARY or _pending_report_boundary == null or _processing_report_boundary:
 		return false
-	if not seal_batch.is_valid() or not apply_config.is_valid() or not update_view.is_valid():
+	if not seal_batch.is_valid() or not update_view.is_valid():
 		return false
 
 	_processing_report_boundary = true
 	seal_batch.call(_pending_report_boundary.snapshot_copy())
-	apply_config.call(_pending_report_boundary.snapshot_copy())
 	update_view.call(_pending_report_boundary.snapshot_copy())
 	_complete_report_boundary()
 	_processing_report_boundary = false
@@ -108,12 +107,16 @@ func begin_contact() -> bool:
 	if _state.phase != SessionPhase.Phase.ACTION:
 		return false
 	_state.phase = SessionPhase.Phase.CONTACT_PAUSED
+	renew_world_request()
 	return true
 
 
-func end_contact() -> bool:
+func end_contact(deploy: Callable = Callable()) -> bool:
 	if _state.phase != SessionPhase.Phase.CONTACT_PAUSED:
 		return false
+	if not _deploy_world(deploy):
+		return false
+	_state.active_request_context = {}
 	_state.phase = SessionPhase.Phase.ACTION
 	return true
 
@@ -133,17 +136,41 @@ func accept_guess_result(context: Dictionary, hit: bool) -> bool:
 		_finish_round(SessionPhase.RoundResult.SUCCESS)
 	else:
 		_state.phase = SessionPhase.Phase.DISPATCH_PAUSED
+		renew_world_request()
 	return true
 
 
-func complete_dispatch() -> bool:
+func complete_dispatch(deploy: Callable = Callable()) -> bool:
 	if _state.phase != SessionPhase.Phase.DISPATCH_PAUSED:
 		return false
+	if not _deploy_world(deploy):
+		return false
+	_state.active_request_context = {}
 	_state.guess_cycle_id += 1
 	_cycle.sealed_reports_in_guess_cycle = 0
 	_state.frozen_guess_frame = null
 	_state.phase = SessionPhase.Phase.CYCLE_START_PENDING
 	return true
+
+
+func renew_world_request() -> Dictionary:
+	if _processing_deployment or _state.phase not in [SessionPhase.Phase.CONTACT_PAUSED, SessionPhase.Phase.DISPATCH_PAUSED]:
+		return {}
+	var role: String = AgentProtocol.PLAYER_ASSISTANT if _state.phase == SessionPhase.Phase.CONTACT_PAUSED else AgentProtocol.SYSTEM_AGENT
+	_state.active_request_context = AgentProtocol.make_request_context(role, _next_request_id, _state.round_id, _state.branch_id, _state.guess_cycle_id)
+	_next_request_id += 1
+	return _state.active_request_context.duplicate(true)
+
+
+func _deploy_world(deploy: Callable) -> bool:
+	if _processing_deployment or not deploy.is_valid():
+		return false
+	var expected: Dictionary = _state.active_request_context.duplicate(true)
+	expected["phase"] = _state.phase
+	_processing_deployment = true
+	var result: Variant = deploy.call(expected.duplicate(true))
+	_processing_deployment = false
+	return result is WorldCommandResult and result.completes(expected)
 
 
 func resume_cycle(snapshot_saved: bool) -> bool:
