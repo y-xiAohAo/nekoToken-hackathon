@@ -1,12 +1,36 @@
+# Machine credentials and local settings
 .env
 .env.*
 !.env.example
+*.pfx
+*.p12
+*.keystore
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Godot caches; source assets, .uid and export_presets.cfg stay versioned
 .godot/
+*.translation
+
+# Local tools, scratch output and builds
+/tools/
+/tmp/
+/build/
+/exports/
+/game/build/
+/game/exports/
+/handoff/target_check.json
+/MANIFEST.sha256.json
+
+# Language dependency caches
 .venv/
 __pycache__/
-*.pyc
-tools/
-tmp/imagegen/cli-deps/
-handoff/target_check.json
-build/
-exports/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+coverage/
+*.log

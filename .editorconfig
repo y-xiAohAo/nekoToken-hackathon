@@ -1,0 +1,23 @@
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+
+[{scripts,tests}/**.py]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+
+[{.github,docs}/**]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+
+[game/**.{gd,tscn,tres,godot}]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+
+[*.md]
+trim_trailing_whitespace = false

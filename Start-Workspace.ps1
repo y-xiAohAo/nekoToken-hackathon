@@ -2,12 +2,14 @@ param([switch]$SkipGit)
 $ErrorActionPreference = 'Stop'
 $migrationWorkspace = $PSScriptRoot
 Set-Location -LiteralPath $migrationWorkspace
-$migrationTools = @("$migrationWorkspace/tools/python", "$migrationWorkspace/tools/node", "$migrationWorkspace/tools/poppler")
-$env:PATH = ($migrationTools -join [IO.Path]::PathSeparator) + [IO.Path]::PathSeparator + $env:PATH
+$migrationTools = @("$migrationWorkspace/tools/python", "$migrationWorkspace/tools/node", "$migrationWorkspace/tools/poppler") | Where-Object { Test-Path -LiteralPath $_ }
+if ($migrationTools.Count -gt 0) {
+    $env:PATH = ($migrationTools -join [IO.Path]::PathSeparator) + [IO.Path]::PathSeparator + $env:PATH
+}
 if (-not $SkipGit) {
     if (-not (Test-Path -LiteralPath (Join-Path $migrationWorkspace '.git'))) {
         if (Get-Command git -ErrorAction SilentlyContinue) {
-            & git init --initial-branch=codex/competition $migrationWorkspace
+            & git init --initial-branch=main $migrationWorkspace
             if ($LASTEXITCODE -ne 0) { throw 'Git initialization failed.' }
         } else {
             Write-Warning 'Git is not installed. Install it before starting development.'
@@ -15,5 +17,5 @@ if (-not $SkipGit) {
     }
 }
 Write-Host "Workspace: $migrationWorkspace"
-Write-Host 'Bundled Python, Node and Poppler are on PATH in this PowerShell session.'
-Write-Host 'Next: read AGENTS.md and handoff/接手说明.md; check Godot and model access.'
+Write-Host "Optional local tool folders found: $($migrationTools.Count)"
+Write-Host 'Next: read README.md and CONTRIBUTING.md; run scripts/Check-Workspace.ps1.'
