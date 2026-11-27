@@ -1,0 +1,20 @@
+extends RefCounted
+class_name SessionPhase
+
+
+enum Phase {
+	ACTION,
+	CONTACT_PAUSED,
+	REPORT_BOUNDARY,
+	GUESS_PAUSED,
+	DISPATCH_PAUSED,
+	CYCLE_START_PENDING,
+	RESET_CHOICE,
+	ROUND_END,
+}
+
+enum RoundResult {
+	NONE,
+	SUCCESS,
+	FAILURE,
+}

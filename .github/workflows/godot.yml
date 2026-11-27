@@ -1,0 +1,52 @@
+name: Godot module 1
+
+on:
+  pull_request:
+  push:
+    branches: [team/branch-1]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: godot-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  headless:
+    name: Godot 4.7.2 / headless contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Download pinned Godot
+        shell: bash
+        env:
+          GODOT_URL: https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          GODOT_SHA256: cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --output godot.zip "$GODOT_URL"
+          printf '%s  %s\n' "$GODOT_SHA256" godot.zip | sha256sum --check --strict
+          unzip -q godot.zip -d godot-bin
+          chmod +x godot-bin/Godot_v4.7.2-stable_linux.x86_64
+          test "$(godot-bin/Godot_v4.7.2-stable_linux.x86_64 --version | head -n 1)" = "4.7.2.stable.official.ed1daf0bf"
+      - name: Import project
+        shell: bash
+        run: |
+          set -euo pipefail
+          godot-bin/Godot_v4.7.2-stable_linux.x86_64 --headless --path game --import --log-file "$RUNNER_TEMP/godot-import.log"
+          if grep -E '(SCRIPT ERROR|Parse Error|ERROR:)' "$RUNNER_TEMP/godot-import.log"; then
+            exit 1
+          fi
+      - name: Run module 1 contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          godot-bin/Godot_v4.7.2-stable_linux.x86_64 --headless --path game --log-file "$RUNNER_TEMP/godot-tests.log" --script res://tests/run_tests.gd
+          if grep -E '(SCRIPT ERROR|Parse Error|ERROR:)' "$RUNNER_TEMP/godot-tests.log"; then
+            exit 1
+          fi
