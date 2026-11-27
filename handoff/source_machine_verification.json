@@ -1,0 +1,26 @@
+{
+  "root": "D:\\djh\\search_agent\\tms_optimizer\\hackathon-migration-20261126\\nekoToken-hackathon",
+  "files_checked": 11941,
+  "full_hashes": true,
+  "skill_count": 49,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "PIL": true,
+    "reportlab": true,
+    "pypdf": true,
+    "docx": true,
+    "openai": true,
+    "httpx2": true,
+    "pdfplumber": true
+  },
+  "bundled_tools": {
+    "node": true,
+    "pdfinfo": true
+  },
+  "git": "D:\\djh\\GIT\\Git\\cmd\\git.EXE",
+  "godot": null,
+  "godot_project_exists": false,
+  "chinese_font_exists": true,
+  "api_key_in_environment": false,
+  "failures": []
+}

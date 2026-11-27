@@ -1,0 +1,7 @@
+Use case: precise-object-edit
+Asset type: final game concept illustration, cleanup of facility counts.
+Edit target: the supplied large four-sector checkpoint image. Preserve the current camera, framing, blue gray pixel cel shaded cyberpunk art style, all walls, openings, tiles, four block islands, terminals, motor, cameras, entrance and exit. Keep the plain human at bottom left. Change only these three small local objects:
+1. Remove the patrol robot in the southwest room around image coordinate (568,540), replacing it with matching tiled floor.
+2. Move the robot in the northeast room around (930,355) into the southeast room around (930,810), on empty floor below and slightly left of the southeast block island. Remove it from the original position. Keep the northwest robot at (635,175) unchanged. The final image has exactly two patrol robots, one northwest, one southeast.
+3. Remove the narrow amber lamp on the right outer wall immediately beside the top-right exit door around (1388,125). Preserve the cyan exit light, all remaining lamps, and the separate camera below it.
+No other changes. No text, ID labels, overlays, lines, arrows, cones, weapons, stairs, platforms or new props. All walkable floor stays at one height.

@@ -1,0 +1,6 @@
+Use case: precise-object-edit.
+Input image 1 is the edit target. Make ONLY these small cleanup changes and preserve the composition, room, floor grid, camera angle, central L-shaped wall, motor unit, both terminals, both cameras, door, simple human player and patrol robot exactly.
+1. Remove ALL translucent cyan or orange vision-cone wedges from walls and floor. Restore the ordinary underlying floor and wall surfaces. There should be no translucent geometry overlays at all.
+2. Remove the entire white dashed patrol-path line. Restore the floor grid underneath.
+3. Remove the upper lamp on the left wall, beside the left contact terminal. Keep the lower left entrance lamp, the central back-wall lamp and the far-right wall lamp. Three functional wall lamps remain in total. Retain their natural warm light pools.
+Keep the same high-overhead, completely flat single-floor layout, sparse blue-gray cyberpunk low-poly pixelated cel-shaded art style. Do not add objects, change colors or alter routes. No stairs, steps, platforms, text, labels, UI, numbers, title or watermark.

@@ -1,0 +1,5102 @@
+{
+  "data": {
+    "block_map": {
+      "AkGjd5JBtoqZlSxcv6uc60Hpnub": {
+        "id": "AkGjd5JBtoqZlSxcv6uc60Hpnub",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "C43fdxN7xoQQ9gxhdZIcvFKanlg": {
+        "id": "C43fdxN7xoQQ9gxhdZIcvFKanlg",
+        "version": 24,
+        "data": {
+          "type": "text",
+          "parent_id": "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "bold",
+                  "true"
+                ],
+                "2": [
+                  "textHighlightBackground",
+                  "rgba(255,246,122,0.8)"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+t*0*1*2+b*0+1"
+              },
+              "text": {
+                "0": "预赛阶段，我们期待你思考的方向（可以包括，但不局限于以下，你大可以开脑洞与抛创意）"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "CKMEdXEQ0ohxguxr8QOcV2acn4Y": {
+        "id": "CKMEdXEQ0ohxguxr8QOcV2acn4Y",
+        "version": 2,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "Pz3CdfusVol7BwxhvzWc2klXnWf",
+            "XXXhdjVHFoFUDaxXT5WcBOhEnAb"
+          ],
+          "background_color": "rgb(225,234,255)",
+          "border_color": "rgb(173,130,247)",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "cake",
+          "emoji_value": "1f370"
+        }
+      },
+      "F4Z6dlrCMoC7O8xipTzcK6FKnFg": {
+        "id": "F4Z6dlrCMoC7O8xipTzcK6FKnFg",
+        "version": 3,
+        "data": {
+          "type": "heading1",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+c"
+              },
+              "text": {
+                "0": " 赛题：重启 RESET"
+              }
+            }
+          },
+          "align": "center",
+          "folded": false
+        }
+      },
+      "Frsrdwv0eogEZNxzt4sc4GjHnz4": {
+        "id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+        "version": 26,
+        "data": {
+          "type": "page",
+          "parent_id": "",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "SFgKdnqhroOiNXx0pcicblidnog",
+            "doxcnBx8PhbtRgfYMHvUtFaJEIc",
+            "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+            "UcYmdRRJFoh3ywxLSHfcE7ghnJb",
+            "doxcnlRzkLoyyBCZPQ1UvhZePzb",
+            "doxcnllGFsFwjljdXAS1mOVYbT3",
+            "doxcnkkInA60VGU5BYuPTlklqlf",
+            "doxcnJgRJ4IPK64p09KhVXnP1gf",
+            "doxcn13IjoATonemqtLW6ujf0fd",
+            "doxcn9hFN5w5xSRLoexHN0W0sYb",
+            "JpN0d7fOwoVf7rxVKLOc1fctnvg",
+            "PG1RdrMm4oHWWexLpXRcYZCqntm",
+            "F4Z6dlrCMoC7O8xipTzcK6FKnFg",
+            "CKMEdXEQ0ohxguxr8QOcV2acn4Y",
+            "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+            "doxcnknG0QjbHdGwIk81vPHNWHh",
+            "doxcn6VBA5mH5ZWFJ9qMLOmdHld",
+            "PaFmd1arzo0yDmxiRk8cNlFxnkd",
+            "doxcnA4bq5fafb0WtL9MzMX6ujh",
+            "doxcnQmIebX6khiSGjGbxg94Z09",
+            "doxcnNXA0V9gltGvLKKWkV6R5o2",
+            "doxcnKExJzrrIy66JQcwngLkJqT",
+            "doxcnK6SBYXCqa7GfXN4sAeWKae",
+            "doxcnUzx890CiW2XnWwYRuS9Chd",
+            "doxcnPV8UZRV9VNsC780enzdqdc",
+            "doxcnh8vcT5oMI3yHZFN8UDNzPW",
+            "doxcnxgeRNJsvn7514JsImDuX6W",
+            "doxcnmJT8z3ODeusKR9bCjRqZnh",
+            "doxcnjqa97wQKZ5OhLY2fxrHJ7c",
+            "doxcnWGOH9djvTj9ksYRfFLwlcg",
+            "doxcnp8YaUL5d8q0WGVc0emdxec",
+            "doxcn7LvSvQ8f2NfseTzeoi8fcc",
+            "doxcn4qN4P6NwMDX93I6TWkZjWD",
+            "doxcn8RcuXmd04U6jTQcwGfUZoc",
+            "doxcnFh2kr63bW9ublOqb2WQSNc",
+            "doxcnVeBGxqd38KzeFZT5OoFb7K",
+            "doxcnn0G9GjRjMnNRJA9dBMglEb",
+            "doxcnAO0CGjdol9JrO6cZuGMB0b",
+            "doxcn5z8iqD4yub60UHf3d8YCYb",
+            "doxcnkgbFYcUhmuFJmKOIXshbRg",
+            "doxcn74LxXT71yAbQHnkLm1NQEb",
+            "doxcnF6kKIyilNhpQbjEdcaPgrd"
+          ],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+13"
+              },
+              "text": {
+                "0": "AI PLAY 72H 游戏 × 互动剧 创作黑客松 · 【填写队名】预赛材料"
+              }
+            }
+          },
+          "align": "",
+          "doc_info": {
+            "editors": [
+              "7690606121220623347",
+              "7650330447292943550"
+            ],
+            "options": [
+              "editors",
+              "edit_time"
+            ],
+            "deleted_editors": [],
+            "option_modified": null
+          }
+        }
+      },
+      "H2KOdbifYoylNnxlnLNcbC1KnMd": {
+        "id": "H2KOdbifYoylNnxlnLNcbC1KnMd",
+        "version": 4,
+        "data": {
+          "type": "text",
+          "parent_id": "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+1k"
+              },
+              "text": {
+                "0": "•叙事之\"重启\"：不同选择、不同分支、不同结局。当观众可以推翻自己的决定、重走另一条故事线，\"选择\"意味着什么？"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "HTMedhRcDoCcPcxQeQJcb95Gneh": {
+        "id": "HTMedhRcDoCcPcxQeQJcb95Gneh",
+        "version": 4,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+2*0*1+m"
+              },
+              "text": {
+                "0": "⚠️互动剧赛道：需要提交2张世界观图及人物角色图"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "JpN0d7fOwoVf7rxVKLOc1fctnvg": {
+        "id": "JpN0d7fOwoVf7rxVKLOc1fctnvg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "OZyAdvBTEoB24WxRgoQceDXxnog": {
+        "id": "OZyAdvBTEoB24WxRgoQceDXxnog",
+        "version": 4,
+        "data": {
+          "type": "text",
+          "parent_id": "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+1v"
+              },
+              "text": {
+                "0": "生成式的内容循环，正是本次黑客松最想看到的实验。评审关注作品是否围绕\"重启\"形成可被反复体验的核心乐趣，以及 AI 在其中扮演的角色。"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "PG1RdrMm4oHWWexLpXRcYZCqntm": {
+        "id": "PG1RdrMm4oHWWexLpXRcYZCqntm",
+        "version": 2,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "PVv7drPgmoxbJ7xE0XncnFaPn1d": {
+        "id": "PVv7drPgmoxbJ7xE0XncnFaPn1d",
+        "version": 4,
+        "data": {
+          "type": "text",
+          "parent_id": "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+1m"
+              },
+              "text": {
+                "0": "•AI 之\"重启\"：AI 让\"重启\"有了新的含义——每一局生成不同的关卡、角色与剧情，让\"重玩\"本身即是\"新内容\"。"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "PaFmd1arzo0yDmxiRk8cNlFxnkd": {
+        "id": "PaFmd1arzo0yDmxiRk8cNlFxnkd",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "PeGWdiIwhovJqbxD723ctDQanHb": {
+        "id": "PeGWdiIwhovJqbxD723ctDQanHb",
+        "version": 4,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnz5tpRTqSZDUihpjfIsSQvd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+4"
+              },
+              "text": {
+                "0": "顶级创意"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "Pz3CdfusVol7BwxhvzWc2klXnWf": {
+        "id": "Pz3CdfusVol7BwxhvzWc2klXnWf",
+        "version": 2,
+        "data": {
+          "type": "text",
+          "parent_id": "CKMEdXEQ0ohxguxr8QOcV2acn4Y",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+2g"
+              },
+              "text": {
+                "0": "在游戏里，\"重启\"是玩家最熟悉的动作——一局失败，回到原点，再来一次。在互动剧里，\"重启\"是叙事的另一种可能——每一个选择都通向不同的结局，每一次回头，都是一个未被经历的人生。"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "RY28dvY1Fo6mrSxPOTDcaDManDf": {
+        "id": "RY28dvY1Fo6mrSxPOTDcaDManDf",
+        "version": 22,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "SFgKdnqhroOiNXx0pcicblidnog": {
+        "id": "SFgKdnqhroOiNXx0pcicblidnog",
+        "version": 2,
+        "data": {
+          "type": "image",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "align": "center",
+          "image": {
+            "token": "ZwuBbtDChoO3lKxbiwLckbvWn1b",
+            "mimeType": "image/jpeg",
+            "size": 688451,
+            "scale": 1,
+            "width": 4000,
+            "height": 2250,
+            "name": "头图1027.jpg",
+            "crop": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "rotation": 0,
+            "caption": {
+              "text": {
+                "apool": {
+                  "nextNum": 0,
+                  "numToAttrib": null
+                },
+                "initialAttributedTexts": {
+                  "attribs": null,
+                  "text": null
+                }
+              }
+            }
+          },
+          "area_comments": {}
+        }
+      },
+      "UcYmdRRJFoh3ywxLSHfcE7ghnJb": {
+        "id": "UcYmdRRJFoh3ywxLSHfcE7ghnJb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "Ux5zdkFycoAKNNxIY5Xcjt5unwh": {
+        "id": "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+        "version": 1,
+        "data": {
+          "type": "quote_container",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "C43fdxN7xoQQ9gxhdZIcvFKanlg",
+            "ZBXgdRmJZo2Y0SxMSTscfxqqnWg",
+            "H2KOdbifYoylNnxlnLNcbC1KnMd",
+            "PVv7drPgmoxbJ7xE0XncnFaPn1d",
+            "OZyAdvBTEoB24WxRgoQceDXxnog",
+            "YVH8dbLcPoaNk8x47bQcbJ6jnWf"
+          ]
+        }
+      },
+      "XXXhdjVHFoFUDaxXT5WcBOhEnAb": {
+        "id": "XXXhdjVHFoFUDaxXT5WcBOhEnAb",
+        "version": 2,
+        "data": {
+          "type": "text",
+          "parent_id": "CKMEdXEQ0ohxguxr8QOcV2acn4Y",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+1r"
+              },
+              "text": {
+                "0": "AI PLAY 72H 首届赛题「重启 RESET」，邀你在 72 小时内，围绕\"重启\"创作一件 3–10 分钟的可体验作品。"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "YVH8dbLcPoaNk8x47bQcbJ6jnWf": {
+        "id": "YVH8dbLcPoaNk8x47bQcbJ6jnWf",
+        "version": 4,
+        "data": {
+          "type": "text",
+          "parent_id": "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+13"
+              },
+              "text": {
+                "0": "同一个作品，玩家愿意点第二次\"开始\"吗？——这是本届赛事留给所有创作者的问题。"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "ZBXgdRmJZo2Y0SxMSTscfxqqnWg": {
+        "id": "ZBXgdRmJZo2Y0SxMSTscfxqqnWg",
+        "version": 4,
+        "data": {
+          "type": "text",
+          "parent_id": "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+1w"
+              },
+              "text": {
+                "0": "•机制之\"重启\"：死亡回放、时间循环、Roguelike、存档与回溯……当\"再来一次\"不再是惩罚，而成为玩法本身，玩家愿意反复体验什么？"
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "doxcn0ht5vrg3V4svP3lZaLgGoP": {
+        "id": "doxcn0ht5vrg3V4svP3lZaLgGoP",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnMCK61L3rP0qTLGFpW6eBEh",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+3"
+              },
+              "text": {
+                "0": "评分项"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn0htx2gq1c6kllf8DWM6Z4g": {
+        "id": "doxcn0htx2gq1c6kllf8DWM6Z4g",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnA4bq5fafb0WtL9MzMX6ujh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+5"
+              },
+              "text": {
+                "0": "建议包含："
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn0pqoloAkCFcFU2KkouN5Xb": {
+        "id": "doxcn0pqoloAkCFcFU2KkouN5Xb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnz5tpRTqSZDUihpjfIsSQvd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+3"
+              },
+              "text": {
+                "0": "举例："
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn11gzfFiD6YIcJ3p4L3OKtb": {
+        "id": "doxcn11gzfFiD6YIcJ3p4L3OKtb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcn7LvSvQ8f2NfseTzeoi8fcc",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+c"
+              },
+              "text": {
+                "0": "几句话凸显你的方案亮点。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn13IjoATonemqtLW6ujf0fd": {
+        "id": "doxcn13IjoATonemqtLW6ujf0fd",
+        "version": 2,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcn3HGSx2Oegzbg9b6zIeK4iN"
+          ],
+          "background_color": "rgb(225,234,255)",
+          "border_color": "rgb(130,167,252)",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "1",
+          "emoji_value": "1f44d"
+        }
+      },
+      "doxcn2xtaEDc9yP7ZabsHA3kCCe": {
+        "id": "doxcn2xtaEDc9yP7ZabsHA3kCCe",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnGNNoftRjGQxro8Nfz6BwYf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": null
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn3HGSx2Oegzbg9b6zIeK4iN": {
+        "id": "doxcn3HGSx2Oegzbg9b6zIeK4iN",
+        "version": 3,
+        "data": {
+          "type": "heading4",
+          "parent_id": "doxcn13IjoATonemqtLW6ujf0fd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+11"
+              },
+              "text": {
+                "0": "方案成果展示可参考我们的参赛方案评分维度：（提交时可删除以下评分维度表格）"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcn4qN4P6NwMDX93I6TWkZjWD": {
+        "id": "doxcn4qN4P6NwMDX93I6TWkZjWD",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "doxcn5Hcxsax4wtyu6KAuO3ehPc": {
+        "id": "doxcn5Hcxsax4wtyu6KAuO3ehPc",
+        "version": 1,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+4*0*1+w"
+              },
+              "text": {
+                "0": "体验什么：面向什么游戏场景/观剧场景？玩家/观众能获得什么样的独特体验？"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn5UYmlz96rZjUEAsVtJEvgg": {
+        "id": "doxcn5UYmlz96rZjUEAsVtJEvgg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcniST7UyaBwvtHVWyQE6TWNf",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+o*0*1|1+1*0*1*2+z*0*1|1+1*0*1*2+j"
+              },
+              "text": {
+                "0": "① 核心玩法/叙事结构是否完整、体验逻辑是否自洽\n② 2–3个核心亮点是否说清楚了\"体验什么、怎么实现、为什么这样设计\"\n③ AI技术路径与创作流程是否具体可行"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn5z8iqD4yub60UHf3d8YCYb": {
+        "id": "doxcn5z8iqD4yub60UHf3d8YCYb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcn6VBA5mH5ZWFJ9qMLOmdHld": {
+        "id": "doxcn6VBA5mH5ZWFJ9qMLOmdHld",
+        "version": 1,
+        "data": {
+          "type": "heading3",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+4"
+              },
+              "text": {
+                "0": "赛题理解"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false,
+          "seq": "auto",
+          "seq_level": "auto"
+        }
+      },
+      "doxcn74LxXT71yAbQHnkLm1NQEb": {
+        "id": "doxcn74LxXT71yAbQHnkLm1NQEb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcn7LvSvQ8f2NfseTzeoi8fcc": {
+        "id": "doxcn7LvSvQ8f2NfseTzeoi8fcc",
+        "version": 1,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcn11gzfFiD6YIcJ3p4L3OKtb",
+            "doxcnz5tpRTqSZDUihpjfIsSQvd"
+          ],
+          "background_color": "rgb(246,241,254)",
+          "border_color": "rgb(173,130,247)",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "bulb",
+          "emoji_value": "1f4a1"
+        }
+      },
+      "doxcn8KrNL1c46h1LqHfo23F47O": {
+        "id": "doxcn8KrNL1c46h1LqHfo23F47O",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnlbqUGWZXloGE4YaEaNUkrb",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+6"
+              },
+              "text": {
+                "0": "团队能力匹配"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcn8OMUlFnoVKPxLkf9MxR5kg": {
+        "id": "doxcn8OMUlFnoVKPxLkf9MxR5kg",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnhNm7PAK5yGDgDL5LQ8MiNg"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcn8RcuXmd04U6jTQcwGfUZoc": {
+        "id": "doxcn8RcuXmd04U6jTQcwGfUZoc",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "doxcn9hFN5w5xSRLoexHN0W0sYb": {
+        "id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+        "version": 1,
+        "data": {
+          "type": "table",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "columns_id": [
+            "col8ac27c0a-2d4a-42a1-af1e-316057c35e95",
+            "col36fbbd2e-ee2f-4fab-9616-1789ba889ddd"
+          ],
+          "rows_id": [
+            "row2c8b2842-3cc8-49e4-9a1f-06bf8aa408c2",
+            "row0b077c93-bad3-47bf-a23b-5b78a16c86d8",
+            "rowd68dd068-e587-4b31-b8ec-f396a4ec6f14",
+            "row17e677f5-a282-4ac7-a174-cd49585d571e",
+            "row9918b8a5-391e-4982-aa4f-e893cf324642",
+            "row1c7f8b42-5a31-4b9c-ae81-858256fd266b"
+          ],
+          "column_set": {
+            "col36fbbd2e-ee2f-4fab-9616-1789ba889ddd": {
+              "column_width": 516
+            },
+            "col8ac27c0a-2d4a-42a1-af1e-316057c35e95": {
+              "column_width": 183
+            }
+          },
+          "cell_set": {
+            "row0b077c93-bad3-47bf-a23b-5b78a16c86d8col36fbbd2e-ee2f-4fab-9616-1789ba889ddd": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnZtBwvARsRIR7iEgy6ExRBd"
+            },
+            "row0b077c93-bad3-47bf-a23b-5b78a16c86d8col8ac27c0a-2d4a-42a1-af1e-316057c35e95": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcncbVJCSXu7GdoSrpNIY1Qlc"
+            },
+            "row17e677f5-a282-4ac7-a174-cd49585d571ecol36fbbd2e-ee2f-4fab-9616-1789ba889ddd": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnKwVTqJITrAAjc7zq8eMKJc"
+            },
+            "row17e677f5-a282-4ac7-a174-cd49585d571ecol8ac27c0a-2d4a-42a1-af1e-316057c35e95": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcna7Ja2rXmVhpJ2GJhNpcMmf"
+            },
+            "row1c7f8b42-5a31-4b9c-ae81-858256fd266bcol36fbbd2e-ee2f-4fab-9616-1789ba889ddd": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnmlr7biBJUAp1pqAadpcAsh"
+            },
+            "row1c7f8b42-5a31-4b9c-ae81-858256fd266bcol8ac27c0a-2d4a-42a1-af1e-316057c35e95": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnlbqUGWZXloGE4YaEaNUkrb"
+            },
+            "row2c8b2842-3cc8-49e4-9a1f-06bf8aa408c2col36fbbd2e-ee2f-4fab-9616-1789ba889ddd": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnaHsPgTiMQGZU4CAMcQV3yf"
+            },
+            "row2c8b2842-3cc8-49e4-9a1f-06bf8aa408c2col8ac27c0a-2d4a-42a1-af1e-316057c35e95": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnMCK61L3rP0qTLGFpW6eBEh"
+            },
+            "row9918b8a5-391e-4982-aa4f-e893cf324642col36fbbd2e-ee2f-4fab-9616-1789ba889ddd": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnXZwV2J8knFEvHIRuq2UDfb"
+            },
+            "row9918b8a5-391e-4982-aa4f-e893cf324642col8ac27c0a-2d4a-42a1-af1e-316057c35e95": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnGNNoftRjGQxro8Nfz6BwYf"
+            },
+            "rowd68dd068-e587-4b31-b8ec-f396a4ec6f14col36fbbd2e-ee2f-4fab-9616-1789ba889ddd": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcniST7UyaBwvtHVWyQE6TWNf"
+            },
+            "rowd68dd068-e587-4b31-b8ec-f396a4ec6f14col8ac27c0a-2d4a-42a1-af1e-316057c35e95": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnPmibpqwqr8vFE3ZxXtgvPg"
+            }
+          },
+          "header_row": true
+        }
+      },
+      "doxcnA4bq5fafb0WtL9MzMX6ujh": {
+        "id": "doxcnA4bq5fafb0WtL9MzMX6ujh",
+        "version": 1,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnFP168XrLpyzALazrUVkUFc",
+            "doxcn0htx2gq1c6kllf8DWM6Z4g",
+            "doxcnfQ1rqsa9RbFc5RlW0hrIOe",
+            "doxcnQTvBw0IP6HWBPOiKVZqk3g",
+            "doxcnP9DLuhoTz6h4WxSasmHnYb"
+          ],
+          "background_color": "rgb(240,244,255)",
+          "border_color": "rgb(130,167,252)",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "bulb",
+          "emoji_value": "1f4a1"
+        }
+      },
+      "doxcnAIwNWs6qpVZsp4BWDkU38p": {
+        "id": "doxcnAIwNWs6qpVZsp4BWDkU38p",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnngKETEVPOJho9IKtICwWie"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnAO0CGjdol9JrO6cZuGMB0b": {
+        "id": "doxcnAO0CGjdol9JrO6cZuGMB0b",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnAW24yNVqhtR0wul363Npsd": {
+        "id": "doxcnAW24yNVqhtR0wul363Npsd",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [
+            "7701169587491966242"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169587491966242",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+k"
+              },
+              "text": {
+                "0": "每个设计点建议尽量说明清楚以下几个问题："
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnBBxt0o0uBFYPMQIN11SZUh": {
+        "id": "doxcnBBxt0o0uBFYPMQIN11SZUh",
+        "version": 3,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+g*0*1+9*0+1"
+              },
+              "text": {
+                "0": "请确保涵盖以下【必须包含】模块，但并非统一格式要求。"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnBx8PhbtRgfYMHvUtFaJEIc": {
+        "id": "doxcnBx8PhbtRgfYMHvUtFaJEIc",
+        "version": 5,
+        "data": {
+          "type": "isv",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "app_block_id": "",
+          "block_type_id": "blk_6358a421bca0001c1ce10709",
+          "manifest": {
+            "app_id": "",
+            "app_name": "",
+            "app_version": "1.0.28",
+            "view_type": "block_h5"
+          },
+          "data": {
+            "color": "#4E83FD",
+            "duration": 1769442.457,
+            "isNotify": true,
+            "settingData": {
+              "d": "0",
+              "date": "2026-11-17",
+              "h": "0",
+              "m": "0",
+              "s": "0",
+              "time": "23:59"
+            },
+            "startTime": 1793161698543,
+            "timingType": 1
+          },
+          "size": {
+            "width": 0,
+            "height": 112
+          },
+          "comment_details": {}
+        }
+      },
+      "doxcnDatl3Yq0qPiZM2Uu3n9Zrc": {
+        "id": "doxcnDatl3Yq0qPiZM2Uu3n9Zrc",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnycZHOBzLl6f6FMunJmEbjg"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnECdzprc1ebVRwEMzvBrevb": {
+        "id": "doxcnECdzprc1ebVRwEMzvBrevb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnF6kKIyilNhpQbjEdcaPgrd": {
+        "id": "doxcnF6kKIyilNhpQbjEdcaPgrd",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnFITOREKRInkW6BoPtpSMfg": {
+        "id": "doxcnFITOREKRInkW6BoPtpSMfg",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnoWKVb5WPYOberurCLhKh2e"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnFP168XrLpyzALazrUVkUFc": {
+        "id": "doxcnFP168XrLpyzALazrUVkUFc",
+        "version": 12,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnA4bq5fafb0WtL9MzMX6ujh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+6*0+5*0*1+l*0+c*0*1+13"
+              },
+              "text": {
+                "0": "请清晰描述你在主赛题下对所选赛道（AI游戏 / 互动剧）的理解，（不必局限于官方释义），深入剖析当前玩家/观众在游戏体验或观剧感受上的核心痛点——这是方案创意的起点。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnFh2kr63bW9ublOqb2WQSNc": {
+        "id": "doxcnFh2kr63bW9ublOqb2WQSNc",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnGNNoftRjGQxro8Nfz6BwYf": {
+        "id": "doxcnGNNoftRjGQxro8Nfz6BwYf",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnv625hMCstSKqDjSzpQ0rwh",
+            "doxcn2xtaEDc9yP7ZabsHA3kCCe"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnGTh9JqvAWnnPhTaHzNG27g": {
+        "id": "doxcnGTh9JqvAWnnPhTaHzNG27g",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnLIqSRKgAuSBgeG6VQZFWte"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnH0uHw8SZHSIoAKCYh8ynag": {
+        "id": "doxcnH0uHw8SZHSIoAKCYh8ynag",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnmlr7biBJUAp1pqAadpcAsh",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+11*0*1|1+1*0*1*2+i*0*1|1+1*0*1*2+j"
+              },
+              "text": {
+                "0": "① 团队成员背景与方案所需能力（游戏设计/编剧/AI开发/美术等）是否匹配\n② 团队技能组合是否能支撑方案的实现\n③ 参考过往作品链接（选填但强烈建议）"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnIrcF1aPXH4I4qteqkUM1Rd": {
+        "id": "doxcnIrcF1aPXH4I4qteqkUM1Rd",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+7*0*1*2+15*0*1+z"
+              },
+              "text": {
+                "0": "建议尽量通过 文字 + 玩法流程图 / 剧情分支图 / 页面示意图 / 原型草图 / 系统架构图 等方式进行说明，让评审可以快速理解你的游戏逻辑、沉浸体验和技术思路。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnJgRJ4IPK64p09KhVXnP1gf": {
+        "id": "doxcnJgRJ4IPK64p09KhVXnP1gf",
+        "version": 1,
+        "data": {
+          "type": "heading2",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+e"
+              },
+              "text": {
+                "0": "二、方案成果展示【必须包含】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnK6SBYXCqa7GfXN4sAeWKae": {
+        "id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+        "version": 4,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnxJgV8tu28tA3GP4ycgiBwh",
+            "doxcnyqkjpqSOgyXgeU8cOI30Th",
+            "doxcnAW24yNVqhtR0wul363Npsd",
+            "doxcn5Hcxsax4wtyu6KAuO3ehPc",
+            "doxcniPeQr7nkkN7rJWsO8Bvudc",
+            "doxcnIrcF1aPXH4I4qteqkUM1Rd",
+            "AkGjd5JBtoqZlSxcv6uc60Hpnub",
+            "HTMedhRcDoCcPcxQeQJcb95Gneh"
+          ],
+          "background_color": "rgb(240,244,255)",
+          "border_color": "rgb(130,167,252)",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "bulb",
+          "emoji_value": "1f4a1"
+        }
+      },
+      "doxcnKExJzrrIy66JQcwngLkJqT": {
+        "id": "doxcnKExJzrrIy66JQcwngLkJqT",
+        "version": 3,
+        "data": {
+          "type": "heading3",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+6"
+              },
+              "text": {
+                "0": "具体方案说明"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false,
+          "seq": "auto",
+          "seq_level": "auto"
+        }
+      },
+      "doxcnKwVTqJITrAAjc7zq8eMKJc": {
+        "id": "doxcnKwVTqJITrAAjc7zq8eMKJc",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnmrNsxwA0C3EkBqhXQoJVAh"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnLIqSRKgAuSBgeG6VQZFWte": {
+        "id": "doxcnLIqSRKgAuSBgeG6VQZFWte",
+        "version": 3,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnGTh9JqvAWnnPhTaHzNG27g",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+13"
+              },
+              "text": {
+                "0": "【填写每位队员的姓名、手机号、邮箱以及在项目中负责的工作简述，2–4人含队长】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnLlUKv5El0KxwsjqTTkMQWb": {
+        "id": "doxcnLlUKv5El0KxwsjqTTkMQWb",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnSmS3Mf7dvOADBtgXdJ5d7e"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnM2S5X4anq526yvPT4sEhVb": {
+        "id": "doxcnM2S5X4anq526yvPT4sEhVb",
+        "version": 1,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnz5tpRTqSZDUihpjfIsSQvd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+y"
+              },
+              "text": {
+                "0": "预计可产生的体验价值估算（如重复可玩性、沉浸感提升、创作效率提升等）"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnMCK61L3rP0qTLGFpW6eBEh": {
+        "id": "doxcnMCK61L3rP0qTLGFpW6eBEh",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcn0ht5vrg3V4svP3lZaLgGoP"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnNK9YfKcssTgu7jiYjDtkfh": {
+        "id": "doxcnNK9YfKcssTgu7jiYjDtkfh",
+        "version": 1,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnz5tpRTqSZDUihpjfIsSQvd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+17"
+              },
+              "text": {
+                "0": "AI能力的创新用法（如AI生成剧情、AI动态NPC、AI实时对话、AI美术资产生成等）"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnNXA0V9gltGvLKKWkV6R5o2": {
+        "id": "doxcnNXA0V9gltGvLKKWkV6R5o2",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnOlfRUqk6QSIYUL3wAHxFCc": {
+        "id": "doxcnOlfRUqk6QSIYUL3wAHxFCc",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnxgeRNJsvn7514JsImDuX6W",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+2b"
+              },
+              "text": {
+                "0": "描述方案落地后对玩家/观众带来的体验价值，以及对游戏/互动剧创作行业带来的效率提升。可以围绕有改善的体验环节，测算沉浸感提升、重复可玩性、创作成本降低、内容丰富度等。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnOmGE06A7jMUAOTum4VkeFh": {
+        "id": "doxcnOmGE06A7jMUAOTum4VkeFh",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnPmibpqwqr8vFE3ZxXtgvPg",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+5"
+              },
+              "text": {
+                "0": "方案清晰度"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnP75TmMhEeZJOtR8nVPPpEh": {
+        "id": "doxcnP75TmMhEeZJOtR8nVPPpEh",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnzXoLSFKDIwXR6IjtWQTTfc",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+d"
+              },
+              "text": {
+                "0": "【方案核心介绍一句话概述】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnP9DLuhoTz6h4WxSasmHnYb": {
+        "id": "doxcnP9DLuhoTz6h4WxSasmHnYb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnA4bq5fafb0WtL9MzMX6ujh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+o"
+              },
+              "text": {
+                "0": "预赛阶段建议精炼表达，重点突出，不需要长篇大论。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnPV8UZRV9VNsC780enzdqdc": {
+        "id": "doxcnPV8UZRV9VNsC780enzdqdc",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnPX6Hraal6UeaEMZ4q5Hhb2": {
+        "id": "doxcnPX6Hraal6UeaEMZ4q5Hhb2",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnn0G9GjRjMnNRJA9dBMglEb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+2a"
+              },
+              "text": {
+                "0": "不限于：游戏Demo截图/原型视频、互动剧片段样片、AI生成的美术资产、技术架构草图、剧情大纲、角色设定、未来迭代规划、参考作品链接等。形式不限，尽情发挥你的亮点！"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnPmibpqwqr8vFE3ZxXtgvPg": {
+        "id": "doxcnPmibpqwqr8vFE3ZxXtgvPg",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnOmGE06A7jMUAOTum4VkeFh"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnPxfQtDRVtbbUNgQpSw81Ve": {
+        "id": "doxcnPxfQtDRVtbbUNgQpSw81Ve",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+m"
+              },
+              "text": {
+                "0": "以下模板供参赛队伍参考，可一键创建副本使用。"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnQTvBw0IP6HWBPOiKVZqk3g": {
+        "id": "doxcnQTvBw0IP6HWBPOiKVZqk3g",
+        "version": 1,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnA4bq5fafb0WtL9MzMX6ujh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+5*0*1+17"
+              },
+              "text": {
+                "0": "目标受众：这个痛点影响谁？他们是硬核玩家、休闲玩家、悬疑剧爱好者还是互动影视尝鲜者？特征是什么？"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnQmIebX6khiSGjGbxg94Z09": {
+        "id": "doxcnQmIebX6khiSGjGbxg94Z09",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnRRBUgjLjOLyczRK1CA8lXb": {
+        "id": "doxcnRRBUgjLjOLyczRK1CA8lXb",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnjfSLGhgNDRKVq2UYeBLM0e"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnSmS3Mf7dvOADBtgXdJ5d7e": {
+        "id": "doxcnSmS3Mf7dvOADBtgXdJ5d7e",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnLlUKv5El0KxwsjqTTkMQWb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+p"
+              },
+              "text": {
+                "0": "【姓名 / 邮箱 / 手机号，作为官方唯一联系人】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnTMJrImkr0W3xo1VPRX5fA2": {
+        "id": "doxcnTMJrImkr0W3xo1VPRX5fA2",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnZtBwvARsRIR7iEgy6ExRBd",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+r*0*1|1+1*0*1*2+u*0*1|1+1*0*1*2+q"
+              },
+              "text": {
+                "0": "① 是否清晰理解游戏/互动剧赛道命题，创作立意是否准确\n② 是否抓住了当前玩家/观众在叙事、玩法或沉浸感上的真实痛点\n③ 目标受众（玩家/观众）画像是否具体，而非泛泛而谈"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnUuq6tFfzkOf34FGRpBgJme": {
+        "id": "doxcnUuq6tFfzkOf34FGRpBgJme",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcncbVJCSXu7GdoSrpNIY1Qlc",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+5"
+              },
+              "text": {
+                "0": "选题明确度"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnUzx890CiW2XnWwYRuS9Chd": {
+        "id": "doxcnUzx890CiW2XnWwYRuS9Chd",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnV9BEblPNquUE3NCrmsODzd": {
+        "id": "doxcnV9BEblPNquUE3NCrmsODzd",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnyd673eX4fb4DRkYNCMmW8d"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnVeBGxqd38KzeFZT5OoFb7K": {
+        "id": "doxcnVeBGxqd38KzeFZT5OoFb7K",
+        "version": 1,
+        "data": {
+          "type": "heading2",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+h"
+              },
+              "text": {
+                "0": "三、自由展示区【可选 · 加分项】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnWGOH9djvTj9ksYRfFLwlcg": {
+        "id": "doxcnWGOH9djvTj9ksYRfFLwlcg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "doxcnWcxISGP3NxzuUnS4Xc4AXb": {
+        "id": "doxcnWcxISGP3NxzuUnS4Xc4AXb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcna8PZeHDHiSUAlmvPzB0HP7",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+4"
+              },
+              "text": {
+                "0": "填写内容"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnXZwV2J8knFEvHIRuq2UDfb": {
+        "id": "doxcnXZwV2J8knFEvHIRuq2UDfb",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnYHfiq2FVYBZNaT8H92Xtve"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnYHfiq2FVYBZNaT8H92Xtve": {
+        "id": "doxcnYHfiq2FVYBZNaT8H92Xtve",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnXZwV2J8knFEvHIRuq2UDfb",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+o*0*1|1+1*0*1*2+k*0*1|1+1*0*1*2+h"
+              },
+              "text": {
+                "0": "① 72小时内能否做出可演示的可玩原型/可看片段\n② 方案是否务实，考虑团队规模和时间限制\n③ 是否在可实现范围内而非空中楼阁"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnZVgJEVxehUZxOhx1j9zHqb": {
+        "id": "doxcnZVgJEVxehUZxOhx1j9zHqb",
+        "version": 1,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnz5tpRTqSZDUihpjfIsSQvd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+n"
+              },
+              "text": {
+                "0": "本方案覆盖的游戏类型 / 互动剧题材与受众场景"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnZtBwvARsRIR7iEgy6ExRBd": {
+        "id": "doxcnZtBwvARsRIR7iEgy6ExRBd",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnTMJrImkr0W3xo1VPRX5fA2"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcna7Ja2rXmVhpJ2GJhNpcMmf": {
+        "id": "doxcna7Ja2rXmVhpJ2GJhNpcMmf",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcniRtiH8DfUB38l6UOrjhvqg"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcna8PZeHDHiSUAlmvPzB0HP7": {
+        "id": "doxcna8PZeHDHiSUAlmvPzB0HP7",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnWcxISGP3NxzuUnS4Xc4AXb"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnaHsPgTiMQGZU4CAMcQV3yf": {
+        "id": "doxcnaHsPgTiMQGZU4CAMcQV3yf",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcny4gSBWg4QNMdjegmKz9Njd"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcncbVJCSXu7GdoSrpNIY1Qlc": {
+        "id": "doxcncbVJCSXu7GdoSrpNIY1Qlc",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnUuq6tFfzkOf34FGRpBgJme"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcneWGaezW6RNO3se7kiZ6npg": {
+        "id": "doxcneWGaezW6RNO3se7kiZ6npg",
+        "version": 2,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnxgeRNJsvn7514JsImDuX6W",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+2*0+2*0*1+1q"
+              },
+              "text": {
+                "0": "同时文字说明72小时开发内能做出什么样的可演示原型——比如一个可试玩的Demo关卡、一段可交互的剧情片段、或一个核心AI功能的演示。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnfQ1rqsa9RbFc5RlW0hrIOe": {
+        "id": "doxcnfQ1rqsa9RbFc5RlW0hrIOe",
+        "version": 7,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnA4bq5fafb0WtL9MzMX6ujh",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+3*0*2+3*0*1*2+4*0*1+1c"
+              },
+              "text": {
+                "0": "对命题及赛道的理解：用1–2句话说明你对\"AI游戏\"或\"互动剧\"赛道命题的理解，以及你认为AI在其中能扮演什么角色。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcng8YGFmRCQCRHEobAalttAe": {
+        "id": "doxcng8YGFmRCQCRHEobAalttAe",
+        "version": 2,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+23"
+              },
+              "text": {
+                "0": "预赛重「轻」不重「全」：聚焦赛题理解与解决方案，篇幅精炼即可，无需 Demo、代码或完整立项与架构文档——让评审快速看懂你要做什么、为什么做、怎么做。"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcngkLzghADzaD1ySIDXq6Aqg": {
+        "id": "doxcngkLzghADzaD1ySIDXq6Aqg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnn0G9GjRjMnNRJA9dBMglEb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+q"
+              },
+              "text": {
+                "0": "预赛阶段此部分为可选，如有精炼的补充内容可简要呈现。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcngnqcJtL1iCM0AsR8ZfQdme": {
+        "id": "doxcngnqcJtL1iCM0AsR8ZfQdme",
+        "version": 7,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 5,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "bold",
+                  "true"
+                ],
+                "2": [
+                  "textHighlight",
+                  "rgb(216,57,49)"
+                ],
+                "3": [
+                  "link",
+                  "https%3A%2F%2Fmy.feishu.cn%2Fshare%2Fbase%2Fform%2FshrcndmXiSY2Aq1CRte7p6OvPA9%3Ffrom%3Dnavigation"
+                ],
+                "4": [
+                  "unlink",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+6*0*1*3*2*4+6*0*1*2+z"
+              },
+              "text": {
+                "0": "完成后请在【预赛提交问卷】中提交本文档链接。若不使用飞书文档，也可将内容制作成pdf上传附件。"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnh8vcT5oMI3yHZFN8UDNzPW": {
+        "id": "doxcnh8vcT5oMI3yHZFN8UDNzPW",
+        "version": 1,
+        "data": {
+          "type": "heading3",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+9"
+              },
+              "text": {
+                "0": "方案价值与预期效果"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false,
+          "seq": "auto",
+          "seq_level": "auto"
+        }
+      },
+      "doxcnhNm7PAK5yGDgDL5LQ8MiNg": {
+        "id": "doxcnhNm7PAK5yGDgDL5LQ8MiNg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcn8OMUlFnoVKPxLkf9MxR5kg",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+2"
+              },
+              "text": {
+                "0": "队名"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcni7KdHLoh9fj23QuIcGpe4z": {
+        "id": "doxcni7KdHLoh9fj23QuIcGpe4z",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjCZCoabsLdxjrRe9VAfVce",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+4"
+              },
+              "text": {
+                "0": "队长信息"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcniPeQr7nkkN7rJWsO8Bvudc": {
+        "id": "doxcniPeQr7nkkN7rJWsO8Bvudc",
+        "version": 3,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+4*0*1+t"
+              },
+              "text": {
+                "0": "怎么实现：这个玩法/叙事设计是如何实现的？AI在其中承担什么角色？"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcniRtiH8DfUB38l6UOrjhvqg": {
+        "id": "doxcniRtiH8DfUB38l6UOrjhvqg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcna7Ja2rXmVhpJ2GJhNpcMmf",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+5"
+              },
+              "text": {
+                "0": "项目创新性"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcniST7UyaBwvtHVWyQE6TWNf": {
+        "id": "doxcniST7UyaBwvtHVWyQE6TWNf",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcn5UYmlz96rZjUEAsVtJEvgg"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnjCZCoabsLdxjrRe9VAfVce": {
+        "id": "doxcnjCZCoabsLdxjrRe9VAfVce",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcni7KdHLoh9fj23QuIcGpe4z"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnjfSLGhgNDRKVq2UYeBLM0e": {
+        "id": "doxcnjfSLGhgNDRKVq2UYeBLM0e",
+        "version": 5,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnRRBUgjLjOLyczRK1CA8lXb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+f"
+              },
+              "text": {
+                "0": "【填写所选赛道：游戏/互动剧】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnjlGWxpYWxTIrfv7Rx5rtfI": {
+        "id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+        "version": 6,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnPxfQtDRVtbbUNgQpSw81Ve",
+            "doxcnyztkbNIESDcYBPf7gmV3sh",
+            "RY28dvY1Fo6mrSxPOTDcaDManDf",
+            "doxcngnqcJtL1iCM0AsR8ZfQdme",
+            "doxcnECdzprc1ebVRwEMzvBrevb",
+            "doxcnBBxt0o0uBFYPMQIN11SZUh",
+            "doxcnxY7l18gpBNrB1gSSnb2Ftb",
+            "doxcng8YGFmRCQCRHEobAalttAe"
+          ],
+          "background_color": "rgb(225,234,255)",
+          "border_color": "",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "bulb",
+          "emoji_value": "1f4a1"
+        }
+      },
+      "doxcnjqa97wQKZ5OhLY2fxrHJ7c": {
+        "id": "doxcnjqa97wQKZ5OhLY2fxrHJ7c",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "doxcnkgbFYcUhmuFJmKOIXshbRg": {
+        "id": "doxcnkgbFYcUhmuFJmKOIXshbRg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnkkInA60VGU5BYuPTlklqlf": {
+        "id": "doxcnkkInA60VGU5BYuPTlklqlf",
+        "version": 1,
+        "data": {
+          "type": "table",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "columns_id": [
+            "col16feaf42-3776-498a-b1ac-78529310c037",
+            "col0c286879-eda2-4c50-ba51-144236b6b485"
+          ],
+          "rows_id": [
+            "row3d34520a-c1ac-4b24-a5c9-1e14f62157f6",
+            "row33377431-97d4-4921-8a3e-40ba5d84b004",
+            "row73653615-ad67-4fe0-acd4-95da20090b9b",
+            "row49ed0edb-4acb-47dd-87e9-64efa1549f9d",
+            "rowd7ce54cb-bd16-4604-9aef-1892c2fa2f66",
+            "roweeafc2fc-fedb-40f0-adf5-5533407856b3"
+          ],
+          "column_set": {
+            "col0c286879-eda2-4c50-ba51-144236b6b485": {
+              "column_width": 531
+            },
+            "col16feaf42-3776-498a-b1ac-78529310c037": {
+              "column_width": 202
+            }
+          },
+          "cell_set": {
+            "row33377431-97d4-4921-8a3e-40ba5d84b004col0c286879-eda2-4c50-ba51-144236b6b485": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnDatl3Yq0qPiZM2Uu3n9Zrc"
+            },
+            "row33377431-97d4-4921-8a3e-40ba5d84b004col16feaf42-3776-498a-b1ac-78529310c037": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcn8OMUlFnoVKPxLkf9MxR5kg"
+            },
+            "row3d34520a-c1ac-4b24-a5c9-1e14f62157f6col0c286879-eda2-4c50-ba51-144236b6b485": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcna8PZeHDHiSUAlmvPzB0HP7"
+            },
+            "row3d34520a-c1ac-4b24-a5c9-1e14f62157f6col16feaf42-3776-498a-b1ac-78529310c037": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnAIwNWs6qpVZsp4BWDkU38p"
+            },
+            "row49ed0edb-4acb-47dd-87e9-64efa1549f9dcol0c286879-eda2-4c50-ba51-144236b6b485": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnzXoLSFKDIwXR6IjtWQTTfc"
+            },
+            "row49ed0edb-4acb-47dd-87e9-64efa1549f9dcol16feaf42-3776-498a-b1ac-78529310c037": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnFITOREKRInkW6BoPtpSMfg"
+            },
+            "row73653615-ad67-4fe0-acd4-95da20090b9bcol0c286879-eda2-4c50-ba51-144236b6b485": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnRRBUgjLjOLyczRK1CA8lXb"
+            },
+            "row73653615-ad67-4fe0-acd4-95da20090b9bcol16feaf42-3776-498a-b1ac-78529310c037": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnqUjyml60pSN2sh9LyAGRib"
+            },
+            "rowd7ce54cb-bd16-4604-9aef-1892c2fa2f66col0c286879-eda2-4c50-ba51-144236b6b485": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnLlUKv5El0KxwsjqTTkMQWb"
+            },
+            "rowd7ce54cb-bd16-4604-9aef-1892c2fa2f66col16feaf42-3776-498a-b1ac-78529310c037": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnjCZCoabsLdxjrRe9VAfVce"
+            },
+            "roweeafc2fc-fedb-40f0-adf5-5533407856b3col0c286879-eda2-4c50-ba51-144236b6b485": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnGTh9JqvAWnnPhTaHzNG27g"
+            },
+            "roweeafc2fc-fedb-40f0-adf5-5533407856b3col16feaf42-3776-498a-b1ac-78529310c037": {
+              "merge_info": {
+                "row_span": 1,
+                "col_span": 1
+              },
+              "block_id": "doxcnV9BEblPNquUE3NCrmsODzd"
+            }
+          },
+          "header_row": true
+        }
+      },
+      "doxcnknG0QjbHdGwIk81vPHNWHh": {
+        "id": "doxcnknG0QjbHdGwIk81vPHNWHh",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnlRzkLoyyBCZPQ1UvhZePzb": {
+        "id": "doxcnlRzkLoyyBCZPQ1UvhZePzb",
+        "version": 1,
+        "data": {
+          "type": "divider",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347"
+        }
+      },
+      "doxcnlbqUGWZXloGE4YaEaNUkrb": {
+        "id": "doxcnlbqUGWZXloGE4YaEaNUkrb",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcn8KrNL1c46h1LqHfo23F47O"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnllGFsFwjljdXAS1mOVYbT3": {
+        "id": "doxcnllGFsFwjljdXAS1mOVYbT3",
+        "version": 1,
+        "data": {
+          "type": "heading2",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+d"
+              },
+              "text": {
+                "0": "一、预赛信息卡【必须包含】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnmJT8z3ODeusKR9bCjRqZnh": {
+        "id": "doxcnmJT8z3ODeusKR9bCjRqZnh",
+        "version": 1,
+        "data": {
+          "type": "heading3",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "doxcnmlr7biBJUAp1pqAadpcAsh": {
+        "id": "doxcnmlr7biBJUAp1pqAadpcAsh",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcn9hFN5w5xSRLoexHN0W0sYb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnH0uHw8SZHSIoAKCYh8ynag"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnmrNsxwA0C3EkBqhXQoJVAh": {
+        "id": "doxcnmrNsxwA0C3EkBqhXQoJVAh",
+        "version": 3,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnKwVTqJITrAAjc7zq8eMKJc",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+g*0*1|1+1*0*1*2+10*0*1|1+1*0*1*2+p"
+              },
+              "text": {
+                "0": "① 是否有差异化的玩法或叙事创新\n② 不是简单套用现有游戏/互动剧模式，而是有令人眼前一亮的设计或独特视角\n③ 可以是玩法创新、叙事结构创新或AI技术应用创新"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnn0G9GjRjMnNRJA9dBMglEb": {
+        "id": "doxcnn0G9GjRjMnNRJA9dBMglEb",
+        "version": 1,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnt0Qk5hAISpC2OHLqQdwSDf",
+            "doxcnPX6Hraal6UeaEMZ4q5Hhb2",
+            "doxcngkLzghADzaD1ySIDXq6Aqg"
+          ],
+          "background_color": "rgb(246,241,254)",
+          "border_color": "rgb(173,130,247)",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "bulb",
+          "emoji_value": "1f4a1"
+        }
+      },
+      "doxcnngKETEVPOJho9IKtICwWie": {
+        "id": "doxcnngKETEVPOJho9IKtICwWie",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnAIwNWs6qpVZsp4BWDkU38p",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+2"
+              },
+              "text": {
+                "0": "项目"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnoWKVb5WPYOberurCLhKh2e": {
+        "id": "doxcnoWKVb5WPYOberurCLhKh2e",
+        "version": 5,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnFITOREKRInkW6BoPtpSMfg",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+6"
+              },
+              "text": {
+                "0": "方案核心摘要"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnp8YaUL5d8q0WGVc0emdxec": {
+        "id": "doxcnp8YaUL5d8q0WGVc0emdxec",
+        "version": 1,
+        "data": {
+          "type": "heading3",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+a"
+              },
+              "text": {
+                "0": "方案优势 / 创新点"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false,
+          "seq": "auto",
+          "seq_level": "auto"
+        }
+      },
+      "doxcnqUjyml60pSN2sh9LyAGRib": {
+        "id": "doxcnqUjyml60pSN2sh9LyAGRib",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcntbHwMvNWjN9BfY60ZmtOeg"
+          ],
+          "vertical_align": "top"
+        }
+      },
+      "doxcnt0Qk5hAISpC2OHLqQdwSDf": {
+        "id": "doxcnt0Qk5hAISpC2OHLqQdwSDf",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnn0G9GjRjMnNRJA9dBMglEb",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+1c"
+              },
+              "text": {
+                "0": "这里是你的自由展示区——任何能让方案更有说服力、更能体现团队实力与创造力的内容，都欢迎补充进来。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcntbHwMvNWjN9BfY60ZmtOeg": {
+        "id": "doxcntbHwMvNWjN9BfY60ZmtOeg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnqUjyml60pSN2sh9LyAGRib",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+4"
+              },
+              "text": {
+                "0": "意向赛道"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnv625hMCstSKqDjSzpQ0rwh": {
+        "id": "doxcnv625hMCstSKqDjSzpQ0rwh",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnGNNoftRjGQxro8Nfz6BwYf",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+5"
+              },
+              "text": {
+                "0": "落地可行性"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnxJgV8tu28tA3GP4ycgiBwh": {
+        "id": "doxcnxJgV8tu28tA3GP4ycgiBwh",
+        "version": 3,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [
+            "7701169587491966242"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 5,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "bold",
+                  "true"
+                ],
+                "3": [
+                  "textHighlight",
+                  "rgb(216,57,49)"
+                ],
+                "4": [
+                  "comment-id-7701169587491966242",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2*3+5*0*1*4+6*1*0*2*4+2*0*2*4+3*1*0*2*4+5*0*1*4+d"
+              },
+              "text": {
+                "0": "非常重要！请展示方案的核心创意、玩法与亮点，涵盖2–3个核心设计点。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnxY7l18gpBNrB1gSSnb2Ftb": {
+        "id": "doxcnxY7l18gpBNrB1gSSnb2Ftb",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 0,
+              "numToAttrib": {}
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": ""
+              },
+              "text": {
+                "0": ""
+              }
+            }
+          },
+          "align": "",
+          "folded": false
+        }
+      },
+      "doxcnxgeRNJsvn7514JsImDuX6W": {
+        "id": "doxcnxgeRNJsvn7514JsImDuX6W",
+        "version": 1,
+        "data": {
+          "type": "callout",
+          "parent_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcnOlfRUqk6QSIYUL3wAHxFCc",
+            "doxcneWGaezW6RNO3se7kiZ6npg"
+          ],
+          "background_color": "rgb(240,244,255)",
+          "border_color": "rgb(130,167,252)",
+          "text_color": "",
+          "align": "left",
+          "emoji_id": "bulb",
+          "emoji_value": "1f4a1"
+        }
+      },
+      "doxcny4gSBWg4QNMdjegmKz9Njd": {
+        "id": "doxcny4gSBWg4QNMdjegmKz9Njd",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnaHsPgTiMQGZU4CAMcQV3yf",
+          "comments": [
+            "7701169715208604913"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 3,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169715208604913",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+3"
+              },
+              "text": {
+                "0": "划重点"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnycZHOBzLl6f6FMunJmEbjg": {
+        "id": "doxcnycZHOBzLl6f6FMunJmEbjg",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnDatl3Yq0qPiZM2Uu3n9Zrc",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+6"
+              },
+              "text": {
+                "0": "【填写队名】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnyd673eX4fb4DRkYNCMmW8d": {
+        "id": "doxcnyd673eX4fb4DRkYNCMmW8d",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnV9BEblPNquUE3NCrmsODzd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+9"
+              },
+              "text": {
+                "0": "成员介绍 & 分工"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnyqkjpqSOgyXgeU8cOI30Th": {
+        "id": "doxcnyqkjpqSOgyXgeU8cOI30Th",
+        "version": 8,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnK6SBYXCqa7GfXN4sAeWKae",
+          "comments": [
+            "7701169587491966242"
+          ],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 4,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ],
+                "2": [
+                  "comment-id-7701169587491966242",
+                  "true"
+                ],
+                "3": [
+                  "bold",
+                  "true"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1*2+m*0*3*2+5*1*0*3*2+2*0*1*3*2+s*0*1*2+8*0*1*3*2+a*0*1*2+b"
+              },
+              "text": {
+                "0": "请围绕你的游戏/互动剧方案，清晰展示作品的 核心创意/核心玩法/叙事结构、关键亮点以及 AI 在其中发挥的具体作用。建议重点展开 2–3 个核心设计点，避免写得过散、过空。"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnyztkbNIESDcYBPf7gmV3sh": {
+        "id": "doxcnyztkbNIESDcYBPf7gmV3sh",
+        "version": 1,
+        "data": {
+          "type": "text",
+          "parent_id": "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 1,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0+y"
+              },
+              "text": {
+                "0": "温馨提示：提交预赛方案文档前，请务必开启【互联网获取链接可阅读权限】"
+              }
+            }
+          },
+          "align": "left",
+          "folded": false
+        }
+      },
+      "doxcnz5tpRTqSZDUihpjfIsSQvd": {
+        "id": "doxcnz5tpRTqSZDUihpjfIsSQvd",
+        "version": 2,
+        "data": {
+          "type": "quote_container",
+          "parent_id": "doxcn7LvSvQ8f2NfseTzeoi8fcc",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [
+            "doxcn0pqoloAkCFcFU2KkouN5Xb",
+            "PeGWdiIwhovJqbxD723ctDQanHb",
+            "doxcnZVgJEVxehUZxOhx1j9zHqb",
+            "doxcnNK9YfKcssTgu7jiYjDtkfh",
+            "doxcnzNNgVy8BOzW1O7B5fBKVhb",
+            "doxcnM2S5X4anq526yvPT4sEhVb"
+          ]
+        }
+      },
+      "doxcnzNNgVy8BOzW1O7B5fBKVhb": {
+        "id": "doxcnzNNgVy8BOzW1O7B5fBKVhb",
+        "version": 1,
+        "data": {
+          "type": "bullet",
+          "parent_id": "doxcnz5tpRTqSZDUihpjfIsSQvd",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "ai_extra": {
+            "is_ai_gen": true,
+            "gen_sources": [
+              2
+            ]
+          },
+          "children": [],
+          "text": {
+            "apool": {
+              "nextNum": 2,
+              "numToAttrib": {
+                "0": [
+                  "author",
+                  "7690606121220623347"
+                ],
+                "1": [
+                  "ai-extra",
+                  "{\"is_ai_gen\":true,\"gen_source\":2}"
+                ]
+              }
+            },
+            "initialAttributedTexts": {
+              "attribs": {
+                "0": "*0*1+p"
+              },
+              "text": {
+                "0": "核心突破点 / 与现有游戏/互动剧产品的差异化体验"
+              }
+            }
+          },
+          "align": "left"
+        }
+      },
+      "doxcnzXoLSFKDIwXR6IjtWQTTfc": {
+        "id": "doxcnzXoLSFKDIwXR6IjtWQTTfc",
+        "version": 1,
+        "data": {
+          "type": "table_cell",
+          "parent_id": "doxcnkkInA60VGU5BYuPTlklqlf",
+          "comments": [],
+          "revisions": [],
+          "locked": false,
+          "hidden": false,
+          "author": "7690606121220623347",
+          "children": [
+            "doxcnP75TmMhEeZJOtR8nVPPpEh"
+          ],
+          "vertical_align": "top"
+        }
+      }
+    },
+    "block_sequence": [
+      "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+      "SFgKdnqhroOiNXx0pcicblidnog",
+      "doxcnBx8PhbtRgfYMHvUtFaJEIc",
+      "doxcnjlGWxpYWxTIrfv7Rx5rtfI",
+      "doxcnPxfQtDRVtbbUNgQpSw81Ve",
+      "doxcnyztkbNIESDcYBPf7gmV3sh",
+      "RY28dvY1Fo6mrSxPOTDcaDManDf",
+      "doxcngnqcJtL1iCM0AsR8ZfQdme",
+      "doxcnECdzprc1ebVRwEMzvBrevb",
+      "doxcnBBxt0o0uBFYPMQIN11SZUh",
+      "doxcnxY7l18gpBNrB1gSSnb2Ftb",
+      "doxcng8YGFmRCQCRHEobAalttAe",
+      "UcYmdRRJFoh3ywxLSHfcE7ghnJb",
+      "doxcnlRzkLoyyBCZPQ1UvhZePzb",
+      "doxcnllGFsFwjljdXAS1mOVYbT3",
+      "doxcnkkInA60VGU5BYuPTlklqlf",
+      "doxcnAIwNWs6qpVZsp4BWDkU38p",
+      "doxcnngKETEVPOJho9IKtICwWie",
+      "doxcna8PZeHDHiSUAlmvPzB0HP7",
+      "doxcnWcxISGP3NxzuUnS4Xc4AXb",
+      "doxcn8OMUlFnoVKPxLkf9MxR5kg",
+      "doxcnhNm7PAK5yGDgDL5LQ8MiNg",
+      "doxcnDatl3Yq0qPiZM2Uu3n9Zrc",
+      "doxcnycZHOBzLl6f6FMunJmEbjg",
+      "doxcnqUjyml60pSN2sh9LyAGRib",
+      "doxcntbHwMvNWjN9BfY60ZmtOeg",
+      "doxcnRRBUgjLjOLyczRK1CA8lXb",
+      "doxcnjfSLGhgNDRKVq2UYeBLM0e",
+      "doxcnFITOREKRInkW6BoPtpSMfg",
+      "doxcnoWKVb5WPYOberurCLhKh2e",
+      "doxcnzXoLSFKDIwXR6IjtWQTTfc",
+      "doxcnP75TmMhEeZJOtR8nVPPpEh",
+      "doxcnjCZCoabsLdxjrRe9VAfVce",
+      "doxcni7KdHLoh9fj23QuIcGpe4z",
+      "doxcnLlUKv5El0KxwsjqTTkMQWb",
+      "doxcnSmS3Mf7dvOADBtgXdJ5d7e",
+      "doxcnV9BEblPNquUE3NCrmsODzd",
+      "doxcnyd673eX4fb4DRkYNCMmW8d",
+      "doxcnGTh9JqvAWnnPhTaHzNG27g",
+      "doxcnLIqSRKgAuSBgeG6VQZFWte",
+      "doxcnJgRJ4IPK64p09KhVXnP1gf",
+      "doxcn13IjoATonemqtLW6ujf0fd",
+      "doxcn3HGSx2Oegzbg9b6zIeK4iN",
+      "doxcn9hFN5w5xSRLoexHN0W0sYb",
+      "doxcnMCK61L3rP0qTLGFpW6eBEh",
+      "doxcn0ht5vrg3V4svP3lZaLgGoP",
+      "doxcnaHsPgTiMQGZU4CAMcQV3yf",
+      "doxcny4gSBWg4QNMdjegmKz9Njd",
+      "doxcncbVJCSXu7GdoSrpNIY1Qlc",
+      "doxcnUuq6tFfzkOf34FGRpBgJme",
+      "doxcnZtBwvARsRIR7iEgy6ExRBd",
+      "doxcnTMJrImkr0W3xo1VPRX5fA2",
+      "doxcnPmibpqwqr8vFE3ZxXtgvPg",
+      "doxcnOmGE06A7jMUAOTum4VkeFh",
+      "doxcniST7UyaBwvtHVWyQE6TWNf",
+      "doxcn5UYmlz96rZjUEAsVtJEvgg",
+      "doxcna7Ja2rXmVhpJ2GJhNpcMmf",
+      "doxcniRtiH8DfUB38l6UOrjhvqg",
+      "doxcnKwVTqJITrAAjc7zq8eMKJc",
+      "doxcnmrNsxwA0C3EkBqhXQoJVAh",
+      "doxcnGNNoftRjGQxro8Nfz6BwYf",
+      "doxcnv625hMCstSKqDjSzpQ0rwh",
+      "doxcn2xtaEDc9yP7ZabsHA3kCCe",
+      "doxcnXZwV2J8knFEvHIRuq2UDfb",
+      "doxcnYHfiq2FVYBZNaT8H92Xtve",
+      "doxcnlbqUGWZXloGE4YaEaNUkrb",
+      "doxcn8KrNL1c46h1LqHfo23F47O",
+      "doxcnmlr7biBJUAp1pqAadpcAsh",
+      "doxcnH0uHw8SZHSIoAKCYh8ynag",
+      "JpN0d7fOwoVf7rxVKLOc1fctnvg",
+      "PG1RdrMm4oHWWexLpXRcYZCqntm",
+      "F4Z6dlrCMoC7O8xipTzcK6FKnFg",
+      "CKMEdXEQ0ohxguxr8QOcV2acn4Y",
+      "Pz3CdfusVol7BwxhvzWc2klXnWf",
+      "XXXhdjVHFoFUDaxXT5WcBOhEnAb",
+      "Ux5zdkFycoAKNNxIY5Xcjt5unwh",
+      "C43fdxN7xoQQ9gxhdZIcvFKanlg",
+      "ZBXgdRmJZo2Y0SxMSTscfxqqnWg",
+      "H2KOdbifYoylNnxlnLNcbC1KnMd",
+      "PVv7drPgmoxbJ7xE0XncnFaPn1d",
+      "OZyAdvBTEoB24WxRgoQceDXxnog",
+      "YVH8dbLcPoaNk8x47bQcbJ6jnWf",
+      "doxcnknG0QjbHdGwIk81vPHNWHh",
+      "doxcn6VBA5mH5ZWFJ9qMLOmdHld",
+      "PaFmd1arzo0yDmxiRk8cNlFxnkd",
+      "doxcnA4bq5fafb0WtL9MzMX6ujh",
+      "doxcnFP168XrLpyzALazrUVkUFc",
+      "doxcn0htx2gq1c6kllf8DWM6Z4g",
+      "doxcnfQ1rqsa9RbFc5RlW0hrIOe",
+      "doxcnQTvBw0IP6HWBPOiKVZqk3g",
+      "doxcnP9DLuhoTz6h4WxSasmHnYb",
+      "doxcnQmIebX6khiSGjGbxg94Z09",
+      "doxcnNXA0V9gltGvLKKWkV6R5o2",
+      "doxcnKExJzrrIy66JQcwngLkJqT",
+      "doxcnK6SBYXCqa7GfXN4sAeWKae",
+      "doxcnxJgV8tu28tA3GP4ycgiBwh",
+      "doxcnyqkjpqSOgyXgeU8cOI30Th",
+      "doxcnAW24yNVqhtR0wul363Npsd",
+      "doxcn5Hcxsax4wtyu6KAuO3ehPc",
+      "doxcniPeQr7nkkN7rJWsO8Bvudc",
+      "doxcnIrcF1aPXH4I4qteqkUM1Rd",
+      "AkGjd5JBtoqZlSxcv6uc60Hpnub",
+      "HTMedhRcDoCcPcxQeQJcb95Gneh",
+      "doxcnUzx890CiW2XnWwYRuS9Chd",
+      "doxcnPV8UZRV9VNsC780enzdqdc",
+      "doxcnh8vcT5oMI3yHZFN8UDNzPW",
+      "doxcnxgeRNJsvn7514JsImDuX6W",
+      "doxcnOlfRUqk6QSIYUL3wAHxFCc",
+      "doxcneWGaezW6RNO3se7kiZ6npg",
+      "doxcnmJT8z3ODeusKR9bCjRqZnh",
+      "doxcnjqa97wQKZ5OhLY2fxrHJ7c",
+      "doxcnWGOH9djvTj9ksYRfFLwlcg",
+      "doxcnp8YaUL5d8q0WGVc0emdxec",
+      "doxcn7LvSvQ8f2NfseTzeoi8fcc",
+      "doxcn11gzfFiD6YIcJ3p4L3OKtb",
+      "doxcnz5tpRTqSZDUihpjfIsSQvd",
+      "doxcn0pqoloAkCFcFU2KkouN5Xb",
+      "PeGWdiIwhovJqbxD723ctDQanHb",
+      "doxcnZVgJEVxehUZxOhx1j9zHqb",
+      "doxcnNK9YfKcssTgu7jiYjDtkfh",
+      "doxcnzNNgVy8BOzW1O7B5fBKVhb",
+      "doxcnM2S5X4anq526yvPT4sEhVb",
+      "doxcn4qN4P6NwMDX93I6TWkZjWD",
+      "doxcn8RcuXmd04U6jTQcwGfUZoc",
+      "doxcnFh2kr63bW9ublOqb2WQSNc",
+      "doxcnVeBGxqd38KzeFZT5OoFb7K",
+      "doxcnn0G9GjRjMnNRJA9dBMglEb",
+      "doxcnt0Qk5hAISpC2OHLqQdwSDf",
+      "doxcnPX6Hraal6UeaEMZ4q5Hhb2",
+      "doxcngkLzghADzaD1ySIDXq6Aqg",
+      "doxcnAO0CGjdol9JrO6cZuGMB0b",
+      "doxcn5z8iqD4yub60UHf3d8YCYb",
+      "doxcnkgbFYcUhmuFJmKOIXshbRg",
+      "doxcn74LxXT71yAbQHnkLm1NQEb",
+      "doxcnF6kKIyilNhpQbjEdcaPgrd"
+    ],
+    "concurrent": true,
+    "cursor": "ZMOoIgjDsEPCu1TDi8KjbcOqw7JKBH8nw49eGEE7H0PDgcK0P8KYwp0oK8O7w4Mhw45lXMKcX3gBw4cSUznCu0d8bxpGwrEhwoNfwqHCkFksw5_Cj8K2alJWRcKmwpbCmMOowrpYwojDhsKlCkMWw7PDrBlRFBZlRsOzw5_DuCY7DhTCrMONDw",
+    "editor_map": {
+      "7650330447292943550": {
+        "uid": "7650330447292943550",
+        "name": "用户6263",
+        "avatar_url": "https://s3-imfile.feishucdn.com/static-resource/v1/09c2f0c1-c364-4575-b826-3588a51b2e9e~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp",
+        "en_name": "user 6263",
+        "resigned": false,
+        "display_name": {
+          "value": "用户6263",
+          "i18n_value": {
+            "en_us": "user 6263",
+            "ja_jp": "ユーザー 6263",
+            "zh_cn": "用户6263"
+          }
+        },
+        "department_name": {
+          "value": "",
+          "i18n_value": {}
+        },
+        "user_type": 1,
+        "i18n_value": {
+          "en_us": "user 6263",
+          "ja_jp": "ユーザー 6263",
+          "zh_cn": "用户6263"
+        }
+      },
+      "7690606121220623347": {
+        "uid": "7690606121220623347",
+        "name": "用户1397",
+        "avatar_url": "https://s1-imfile.feishucdn.com/static-resource/v1/704482df-384d-48fa-8cf7-79433efc79bf~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp",
+        "en_name": "user 1397",
+        "resigned": false,
+        "display_name": {
+          "value": "用户1397",
+          "i18n_value": {
+            "en_us": "user 1397",
+            "ja_jp": "ユーザー 1397",
+            "zh_cn": "用户1397"
+          }
+        },
+        "department_name": {
+          "value": "",
+          "i18n_value": {}
+        },
+        "user_type": 1,
+        "i18n_value": {
+          "en_us": "user 1397",
+          "ja_jp": "ユーザー 1397",
+          "zh_cn": "用户1397"
+        }
+      }
+    },
+    "external_mention_url": null,
+    "has_more": false,
+    "id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+    "mention_page_title": {},
+    "meta_map": {
+      "Frsrdwv0eogEZNxzt4sc4GjHnz4": {
+        "create_time": "2026-10-17T19:52:24.105+08:00",
+        "creator_id": "7690606121220623347",
+        "edit_time": "2026-11-02T16:36:39.777+08:00",
+        "editor_id": "7690606121220623347",
+        "note_id": "0",
+        "owner_id": "7690606121220623347",
+        "page_id": "Frsrdwv0eogEZNxzt4sc4GjHnz4",
+        "product_mark": 0,
+        "source": 8,
+        "status": 0,
+        "sub_type": 0,
+        "tenant_id": "7650330378478832847",
+        "title": "AI PLAY 72H 游戏 × 互动剧 创作黑客松 · 【填写队名】预赛材料",
+        "update_time": "2026-11-02T16:44:41.834+08:00"
+      }
+    },
+    "next_cursors": [],
+    "preloadedImages": null,
+    "skip_blocks": [],
+    "structure_version": 161,
+    "synced_block_url": {},
+    "type": "CLIENT_VARS",
+    "user_map": null
+  },
+  "code": 0,
+  "message": "success",
+  "mode": 7
+}

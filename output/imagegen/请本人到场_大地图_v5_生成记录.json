@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-14",
+  "mode": "imagegen bundled CLI API fallback; existing user-authorized CCSwitch provider",
+  "model": "gpt-image-2.5",
+  "quality": "medium",
+  "size": [
+    1536,
+    1024
+  ],
+  "references": [
+    {
+      "path": "请本人到场_大地图_v5_方格底图.png",
+      "role": "candidate topology and arrangement"
+    },
+    {
+      "path": "请本人到场_方格潜入_v4_clean.png",
+      "role": "style only"
+    }
+  ],
+  "primary_prompt": "请本人到场_大地图_v5_prompt.txt",
+  "cleanup_prompt": "请本人到场_大地图_v5_cleanup_prompt.txt",
+  "raw": "请本人到场_大地图_v5_raw.png",
+  "clean": "请本人到场_大地图_v5_clean.png",
+  "final": "请本人到场_大地图_v5_标注版.png",
+  "grid_diagram": "请本人到场_大地图_v5_方格底图.png",
+  "localization_diagram": "请本人到场_大地图_v5_定位示意.png",
+  "api_seconds": [
+    149.6,
+    40.9
+  ],
+  "annotation": "Exact Chinese labels added locally; no generated vision or patrol overlays. Concept props approximate the grid reference, not exact coordinates.",
+  "verified_visuals": [
+    "Four sectors with four connecting partition openings and local obstacle islands",
+    "One flat walkable floor; no stairs or elevated paths",
+    "One plain player, two patrol robots, three terminals, one motor, four cameras",
+    "High overhead blue gray cyberpunk pixel cel-shaded style"
+  ],
+  "limits": [
+    "Candidate concept, not a Godot screenshot, production asset or validated level",
+    "36x24 is the exact diagram footprint, not an exact tile count claim about the generated illustration",
+    "Guess 5x5 is illustrative and not approved tuning",
+    "No model accuracy, visibility, timing or gameplay balance measurement"
+  ]
+}

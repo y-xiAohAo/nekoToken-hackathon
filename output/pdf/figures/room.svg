@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507.27559055118115" height="164" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 164" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507.27559055118115" height="164"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-164)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="0" y="151" style="font-family: MSYHB; font-size: 8.5px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,302) scale(1,-1)">检查口空间示意</text>
+			<text x="430.54121555118115" y="151" style="font-family: MSYH; font-size: 8px;fill: rgb(36%,42%,45%); stroke:none;" transform="translate(0,302) scale(1,-1)">单屏布局  非最终美术</text>
+			<path d="M 0,34 L 507.275591,34 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="0" y="42" width="37" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="10.5" y="52.5" style="font-family: MSYH; font-size: 8px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,105) scale(1,-1)">入口</text>
+			<rect x="49" y="42" width="54" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,95%); fill-rule: evenodd;"/>
+			<text x="60.140625" y="52.5" style="font-family: MSYH; font-size: 8px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,105) scale(1,-1)">摄像头 C</text>
+			<rect x="116" y="42" width="58" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="129.0" y="52.5" style="font-family: MSYH; font-size: 8px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,105) scale(1,-1)">藏身柜①</text>
+			<rect x="341" y="42" width="58" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<text x="354.0" y="52.5" style="font-family: MSYH; font-size: 8px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,105) scale(1,-1)">藏身柜②</text>
+			<rect x="420" y="34" width="35" height="51" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(92%,96%,95%); fill-rule: evenodd;"/>
+			<text x="428.6202392578125" y="61" style="font-family: MSYHB; font-size: 8.5px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,122) scale(1,-1)">门 D</text>
+			<path d="M 460,56 L 483,56 Z" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="483 56, 479.4897 57.9177, 479.4897 54.0823" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,43%,41%); fill-rule: evenodd;"/>
+			<text x="482.0" y="43" style="font-family: MSYH; font-size: 8px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,86) scale(1,-1)">出口</text>
+			<path d="M 39,55 L 47,55 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="47 55, 43.48967 56.9177, 43.48967 53.0823" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(36%,42%,45%); fill-rule: evenodd;"/>
+			<path d="M 105,55 L 114,55 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="114 55, 110.4897 56.9177, 110.4897 53.0823" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(36%,42%,45%); fill-rule: evenodd;"/>
+			<path d="M 176,55 L 193,55 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="193 55, 189.4897 56.9177, 189.4897 53.0823" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(36%,42%,45%); fill-rule: evenodd;"/>
+			<path d="M 401,55 L 416,55 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="416 55, 412.4897 56.9177, 412.4897 53.0823" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(36%,42%,45%); fill-rule: evenodd;"/>
+			<path d="M 198,110 L 315,110 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 2;"/>
+			<rect x="214" y="118" width="84" height="22" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,95%); fill-rule: evenodd;"/>
+			<text x="235.28955078125" y="126.0" style="font-family: MSYH; font-size: 8.5px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,252) scale(1,-1)">照明开关 S</text>
+			<text x="236.0" y="99" style="font-family: MSYH; font-size: 8px;fill: rgb(36%,42%,45%); stroke:none;" transform="translate(0,198) scale(1,-1)">上层值班台</text>
+			<path d="M 315,110 L 322,110 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 322,110 L 322,98 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 322,98 L 329,98 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 329,98 L 329,86 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 329,86 L 336,86 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 336,86 L 336,74 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 336,74 L 343,74 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 343,74 L 343,62 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<text x="344.0" y="97" style="font-family: MSYH; font-size: 8px;fill: rgb(36%,42%,45%); stroke:none;" transform="translate(0,194) scale(1,-1)">楼梯</text>
+			<circle cx="374" cy="116" r="7" style="stroke: rgb(63%,41%,9%); stroke-linecap: butt; stroke-width: 0.9; fill: rgb(100%,95%,83%); fill-rule: evenodd;"/>
+			<text x="391.3114013671875" y="114" style="font-family: MSYH; font-size: 8.5px;fill: rgb(63%,41%,9%); stroke:none;" transform="translate(0,228) scale(1,-1)">灯 L</text>
+			<path d="M 370.5,104 L 364,94 Z" style="stroke: rgb(63%,41%,9%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 374,104 L 374,94 Z" style="stroke: rgb(63%,41%,9%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 377.5,104 L 384,94 Z" style="stroke: rgb(63%,41%,9%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<circle cx="254" cy="73" r="4.8" style="stroke: rgb(9%,14%,17%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,14%,17%); fill-rule: evenodd;"/>
+			<path d="M 254,68 L 254,52 Z" style="stroke: rgb(9%,14%,17%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 254,62 L 245,57 Z" style="stroke: rgb(9%,14%,17%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 254,62 L 263,58 Z" style="stroke: rgb(9%,14%,17%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 254,52 L 247,43 Z" style="stroke: rgb(9%,14%,17%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 254,52 L 261,43 Z" style="stroke: rgb(9%,14%,17%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 205,22 L 319,22 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="319 22, 315.4897 23.9177, 315.4897 20.0823" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(36%,42%,45%); fill-rule: evenodd;"/>
+			<path d="M 319,22 L 205,22 Z" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="205 22, 208.5103 20.0823, 208.5103 23.9177" style="stroke: rgb(36%,42%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(36%,42%,45%); fill-rule: evenodd;"/>
+			<text x="216.140625" y="7" style="font-family: MSYH; font-size: 8px;fill: rgb(36%,42%,45%); stroke:none;" transform="translate(0,14) scale(1,-1)">地面巡逻  熄灯后上楼按 S</text>
+		</g>
+	</g>
+</svg>

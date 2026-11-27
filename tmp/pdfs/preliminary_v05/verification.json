@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-16",
+  "pages": 4,
+  "manuscript_segments": 88,
+  "missing_segments": [],
+  "local_link_occurrences_checked": 23,
+  "invalid_local_links": [],
+  "changed_original_files": [],
+  "required_sections_present": true,
+  "render_review": "all four pages visually inspected; cover inspected again after replacing small labeled image with original clean artwork",
+  "sha256": {
+    "source": "2ed641c921a790cffd48f6beba4f85ac20eba55e4f5868155ec00b0e6e4fdc02",
+    "pdf": "f35e7c143be9e6b810aafca061b24129ed29adc5d1ec460fa340bf7452dec15d"
+  },
+  "scope": "editorial compression, theme focus and document QA; no gameplay changes or new playtest claims"
+}

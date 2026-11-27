@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507.28" height="140" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 140" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507.28" height="140"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-140)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="3" y="127" style="font-family: YHB; font-size: 10px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,254) scale(1,-1)">玩家：定位命中后，可局部回退</text>
+			<rect x="3" y="72" width="147" height="40" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(98%,95%,89%); fill-rule: evenodd;"/>
+			<text x="41.15" y="95.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,190) scale(1,-1)">命中后选择回退</text>
+			<text x="53.595654296875004" y="81.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,162) scale(1,-1)">整场共享3次</text>
+			<rect x="180" y="72" width="147" height="40" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="223.2" y="95.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,190) scale(1,-1)">恢复周期起点</text>
+			<text x="222.395654296875" y="81.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,162) scale(1,-1)">消耗1次，不补回</text>
+			<rect x="357" y="72" width="147" height="40" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="395.15" y="95.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,190) scale(1,-1)">带着经历再行动</text>
+			<text x="405.9" y="81.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,162) scale(1,-1)">各自记忆保留</text>
+			<polyline points="150 92, 180 92" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="180 92, 176.452 90.15288, 176.452 93.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<polyline points="327 92, 357 92" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="357 92, 353.452 90.15288, 353.452 93.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<text x="3" y="52" style="font-family: YHB; font-size: 10px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,104) scale(1,-1)">城市系统：初始轮 + 3次整轮重启，共4轮</text>
+			<rect x="3" y="6" width="108" height="34" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="43.7856689453125" y="20.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,40) scale(1,-1)">第1轮</text>
+			<polyline points="111 23, 135 23" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="135 23, 131.452 21.15288, 131.452 24.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<rect x="135" y="6" width="108" height="34" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="175.7856689453125" y="20.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,40) scale(1,-1)">第2轮</text>
+			<polyline points="243 23, 267 23" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="267 23, 263.452 21.15288, 263.452 24.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<rect x="267" y="6" width="108" height="34" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="307.7856689453125" y="20.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,40) scale(1,-1)">第3轮</text>
+			<polyline points="375 23, 399 23" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="399 23, 395.452 21.15288, 395.452 24.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<rect x="399" y="6" width="108" height="34" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="439.7856689453125" y="20.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,40) scale(1,-1)">第4轮</text>
+		</g>
+	</g>
+</svg>

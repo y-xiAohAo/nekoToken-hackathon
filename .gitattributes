@@ -1,0 +1,2 @@
+# Preserve the byte content of migrated sources and their checksum manifest.
+* -text

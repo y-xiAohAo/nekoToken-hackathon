@@ -1,0 +1,495 @@
+{
+  "status": "passed",
+  "date": "2026-11-16",
+  "pdf": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.pdf",
+  "pages": 8,
+  "page_character_counts": [
+    768,
+    987,
+    424,
+    673,
+    640,
+    512,
+    765,
+    990
+  ],
+  "manuscript_fragments_checked": 125,
+  "missing_manuscript_fragments": [],
+  "gameplay_coverage": [
+    {
+      "heading": "任务与基本操作",
+      "present": true
+    },
+    {
+      "heading": "玩家需要读懂的设施",
+      "present": true
+    },
+    {
+      "heading": "一轮的进程",
+      "present": true
+    },
+    {
+      "heading": "关卡结构与路线选择",
+      "present": true
+    },
+    {
+      "heading": "与助手联络：先说清现场，再决定改什么",
+      "present": true
+    },
+    {
+      "heading": "城市系统怎样找到玩家",
+      "present": true
+    },
+    {
+      "heading": "一次行动推演：从联络到维修、撤离",
+      "present": true
+    },
+    {
+      "heading": "回退、重启与整场结算",
+      "present": true
+    }
+  ],
+  "local_links_checked": 39,
+  "local_links": [
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "target": "figures/v08/roles.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "target": "../imagegen/请本人到场_检查区_名称标注_v6.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "target": "figures/v08/coop.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "target": "figures/v08/loop.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "target": "../imagegen/请本人到场_检查区_路线示意_v6.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "target": "figures/v08/reset.png",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛玩法框架_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "侦测定位_机制草案.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/方案自检与修订记录_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/imagegen/请本人到场_检查区_名称标注_v6.png",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/imagegen/请本人到场_检查区_路线示意_v6.png",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛要求复核与提交清单_2026-11-13.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛模板符合性复核_2026-11-15.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛材料修订记录_2026-11-16.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "tmp/pdfs/preliminary_v04/verification.json",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.29.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/archive/侦测定位_机制草案_v0.19.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "imagegen/请本人到场_检查区_路线示意_v6.png",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_v0.4.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "预赛模板符合性复核_2026-11-15.md",
+      "exists": true
+    }
+  ],
+  "original_hashes": [
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.md",
+      "unchanged": true,
+      "sha256": "539793936c6ad6c6b9ee4761b68bdd7b9c8ee6a2fa2b4959f84192f8360ac499"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.pdf",
+      "unchanged": true,
+      "sha256": "b9ee0edc781c9b4253f7c5380754b5908c7c2dedb42ff02f922947317ff63f4b"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md",
+      "unchanged": true,
+      "sha256": "2ed641c921a790cffd48f6beba4f85ac20eba55e4f5868155ec00b0e6e4fdc02"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+      "unchanged": true,
+      "sha256": "f35e7c143be9e6b810aafca061b24129ed29adc5d1ec460fa340bf7452dec15d"
+    },
+    {
+      "path": "output/imagegen/请本人到场_检查区_名称标注_v6.png",
+      "unchanged": true,
+      "sha256": "6c232ff4779b2695a0507a89541395838e2dafb8e22ff2a8dd2ab7e06b802f6f"
+    },
+    {
+      "path": "output/imagegen/请本人到场_检查区_路线示意_v6.png",
+      "unchanged": true,
+      "sha256": "3b6850b063daadf1ba8f73aaf9a62b1a2a48b6d19c64106ecdecd290516437f3"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "unchanged": true,
+      "sha256": "1e5694ac553e7dd4e44ed984796c7670845187af793de6804d99cebc6a9cc09e"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.pdf",
+      "unchanged": true,
+      "sha256": "38be7f3eb3a3e7a0e5047147994cacdfa6c44310fbf2044753985f044b6a984d"
+    },
+    {
+      "path": "tmp/pdfs/preliminary_v06/diagram_source.py",
+      "unchanged": true,
+      "sha256": "94bfea90fcf97805562768c7dc736731e205a47275f5f17fe1a32665e9d37250"
+    },
+    {
+      "path": "tmp/pdfs/preliminary_v06/build_proposal.py",
+      "unchanged": true,
+      "sha256": "f74414248885584dd15cdb6246bf08b05955d86e9670ff2198f3a05a7bb493bb"
+    },
+    {
+      "path": "output/pdf/figures/v06/coop.pdf",
+      "unchanged": true,
+      "sha256": "00a922760871443b794a94521777e88de446b2994aa222bd8b2cef511b2a90c4"
+    },
+    {
+      "path": "output/pdf/figures/v06/coop.png",
+      "unchanged": true,
+      "sha256": "167e58a5c7d21ec2bc6021376fd1f409a2a90472c81df7cccbc849128eb05800"
+    },
+    {
+      "path": "output/pdf/figures/v06/coop.svg",
+      "unchanged": true,
+      "sha256": "ccebafb3126d4c5a31d4c50b8fdae881f2b0e9cd870f30467842fd2e603bb3b9"
+    },
+    {
+      "path": "output/pdf/figures/v06/loop.pdf",
+      "unchanged": true,
+      "sha256": "cdf248cc9ce0f788533463767cc1b748f475926eddcacd4fd2fc532ef34840a9"
+    },
+    {
+      "path": "output/pdf/figures/v06/loop.png",
+      "unchanged": true,
+      "sha256": "4ccfc62a053ef9ed08f99626297335540cf98f1e0f963348a164f3c98b0a79ea"
+    },
+    {
+      "path": "output/pdf/figures/v06/loop.svg",
+      "unchanged": true,
+      "sha256": "8cb662cdb87f778431f7faa855067739415b1f95a01bb9899128176769618f0d"
+    },
+    {
+      "path": "output/pdf/figures/v06/reset.pdf",
+      "unchanged": true,
+      "sha256": "b2de9aa52cc8a665d54b7c60cc4983cc1b53ced7e3b9298adc3fc1f0ec53e2a9"
+    },
+    {
+      "path": "output/pdf/figures/v06/reset.png",
+      "unchanged": true,
+      "sha256": "95f5a1a033a64db0ff07dcb061f0e8d5a86aeec9609e57fdafaa0b74b068a1a9"
+    },
+    {
+      "path": "output/pdf/figures/v06/reset.svg",
+      "unchanged": true,
+      "sha256": "975155f25285812c8234efbf26edc91fe5dba3e808a55e37b023fa0237a3233e"
+    },
+    {
+      "path": "output/pdf/figures/v06/roles.pdf",
+      "unchanged": true,
+      "sha256": "1c67e06e415084b9fc87d170c4b5e0d2b2bc94c69940510f6e35645b5761413e"
+    },
+    {
+      "path": "output/pdf/figures/v06/roles.png",
+      "unchanged": true,
+      "sha256": "523eb74bc4cc269a9549cb2cdad75dec48cf72afb01e178ae1237b20599340c1"
+    },
+    {
+      "path": "output/pdf/figures/v06/roles.svg",
+      "unchanged": true,
+      "sha256": "cd400a70169f18c014f57fce67f984c978c97bccce76cdc7a1e11cbe289955c3"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.md",
+      "unchanged": true,
+      "sha256": "f22b9cc47a6f6de4347615fc480a8fe4ea0299b6c008096c31132a7354284a03"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.pdf",
+      "unchanged": true,
+      "sha256": "e48b5d8f5807f611719904f774cd39a1c6af31b7b7ddf63f3c1831ea38e0e4e6"
+    },
+    {
+      "path": "tmp/pdfs/preliminary_v07/diagram_source.py",
+      "unchanged": true,
+      "sha256": "9c760cd6293ccf36fdf7b6a5b092e6cf02793a00d563b6d79f1d42f25fba9cb6"
+    },
+    {
+      "path": "tmp/pdfs/preliminary_v07/build_proposal.py",
+      "unchanged": true,
+      "sha256": "77af64e2754d8fb9a7a6186c918f129ab515962fda215ee40f3f96abcbed46da"
+    },
+    {
+      "path": "output/pdf/figures/v07/coop.pdf",
+      "unchanged": true,
+      "sha256": "45204bc73dc2bb482efe8d3f688c3e90c12aa45d89cd328a57ebe2817cfd38e2"
+    },
+    {
+      "path": "output/pdf/figures/v07/coop.png",
+      "unchanged": true,
+      "sha256": "fac4693b93aa5ea40932892ca8b0c4b35b56755f20b9a582243f6f4b518902e0"
+    },
+    {
+      "path": "output/pdf/figures/v07/coop.svg",
+      "unchanged": true,
+      "sha256": "ea4f6d068ffc6c1a275c580c2f2982f0c03f41ee28730745ba75d1f557a57d09"
+    },
+    {
+      "path": "output/pdf/figures/v07/loop.pdf",
+      "unchanged": true,
+      "sha256": "9844182f9c00db53183aaaec5a19e8762686cb9cc53e1b7737f18ae9c8b3d68b"
+    },
+    {
+      "path": "output/pdf/figures/v07/loop.png",
+      "unchanged": true,
+      "sha256": "44c52fd0bfdb5c90ba4f90a584c15154cd60a76da43cc7e6cc7adb847c864d04"
+    },
+    {
+      "path": "output/pdf/figures/v07/loop.svg",
+      "unchanged": true,
+      "sha256": "70f9a443d5e19d8de256557c91bb64ea66da19d0ed0139077621fbd429acf186"
+    },
+    {
+      "path": "output/pdf/figures/v07/reset.pdf",
+      "unchanged": true,
+      "sha256": "f16dc546b39a002869e2318ffc388680befb1b9aad65ea283b32622fd6177db6"
+    },
+    {
+      "path": "output/pdf/figures/v07/reset.png",
+      "unchanged": true,
+      "sha256": "058df666e5e97112fc26926a4ddf97f19f87dbd452b826973dac88320225d2ba"
+    },
+    {
+      "path": "output/pdf/figures/v07/reset.svg",
+      "unchanged": true,
+      "sha256": "ab381392bf8bbb7618c223ac4d247f2c370ad875e241678d4916be970c2b45f6"
+    },
+    {
+      "path": "output/pdf/figures/v07/roles.pdf",
+      "unchanged": true,
+      "sha256": "1cebc52c51d8e56e9d12fe23b2d628c5f1d4610e578856e279b678b4316b5e22"
+    },
+    {
+      "path": "output/pdf/figures/v07/roles.png",
+      "unchanged": true,
+      "sha256": "ccb515b7659c2e5cd1aabd676cd8a5bfb501c20b8474c58896dcf2745924c8a0"
+    },
+    {
+      "path": "output/pdf/figures/v07/roles.svg",
+      "unchanged": true,
+      "sha256": "736ed3fa15514e547c6b8e9e4425e4190dff84b73b1b8c06d59bddd9716f72ec"
+    }
+  ],
+  "vector_figures": [
+    {
+      "figure": "roles",
+      "labels": 10,
+      "missing": [],
+      "same_as_v07": true
+    },
+    {
+      "figure": "coop",
+      "labels": 18,
+      "missing": [],
+      "same_as_v07": true
+    },
+    {
+      "figure": "loop",
+      "labels": 29,
+      "missing": [],
+      "same_as_v07": true
+    },
+    {
+      "figure": "reset",
+      "labels": 17,
+      "missing": [],
+      "same_as_v07": true
+    }
+  ],
+  "raster_images_per_page": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+  ],
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "dpi": 110,
+    "latest_page_2_rechecked": true,
+    "finding": "No clipping, overlap or illegible labels observed"
+  },
+  "scope": "Document and figure verification only; no gameplay or model tests",
+  "failures": []
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507.28" height="432" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 432" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507.28" height="432"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-432)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="507.28" height="432" style="stroke: rgb(4%,9%,14%); stroke-linecap: butt; stroke-width: 1; fill: rgb(4%,9%,14%); fill-rule: evenodd;"/>
+			<path d="M 12,0 L 12,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 36,0 L 36,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 60,0 L 60,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 84,0 L 84,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 108,0 L 108,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 132,0 L 132,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 156,0 L 156,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 180,0 L 180,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 204,0 L 204,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 228,0 L 228,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 252,0 L 252,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 276,0 L 276,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 300,0 L 300,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 324,0 L 324,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 348,0 L 348,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 372,0 L 372,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 396,0 L 396,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 420,0 L 420,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 444,0 L 444,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 468,0 L 468,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 492,0 L 492,432 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,12 L 507.28,12 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,36 L 507.28,36 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,60 L 507.28,60 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,84 L 507.28,84 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,108 L 507.28,108 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,132 L 507.28,132 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,156 L 507.28,156 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,180 L 507.28,180 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,204 L 507.28,204 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,228 L 507.28,228 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,252 L 507.28,252 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,276 L 507.28,276 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,300 L 507.28,300 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,324 L 507.28,324 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,348 L 507.28,348 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,372 L 507.28,372 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,396 L 507.28,396 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,420 L 507.28,420 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<rect x="0" y="429" width="54" height="3" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<path d="M 16,396 L 491.28,396 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="16" y="409" style="font-family: YHB; font-size: 12.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,818) scale(1,-1)">周期定位</text>
+			<text x="491.28" y="409" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,818) scale(1,-1)"></text>
+			<polygon points="16 376, 156 376, 163 369, 163 310, 23 310, 16 317" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="16" y="318" width="2" height="50" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<text x="26" y="359" style="font-family: YH; font-size: 8.1px;fill: rgb(35%,87%,82%); stroke:none;" transform="translate(0,718) scale(1,-1)">玩家</text>
+			<text x="26" y="341" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,682) scale(1,-1)">移动、维修</text>
+			<text x="26" y="325" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,650) scale(1,-1)">设备持续观察</text>
+			<polygon points="180 376, 320 376, 327 369, 327 310, 187 310, 180 317" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="180" y="318" width="2" height="50" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,89%,92%); fill-rule: evenodd;"/>
+			<text x="190" y="359" style="font-family: YH; font-size: 8.1px;fill: rgb(83%,89%,92%); stroke:none;" transform="translate(0,718) scale(1,-1)">设备</text>
+			<text x="190" y="341" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,682) scale(1,-1)">定时上报</text>
+			<text x="190" y="325" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,650) scale(1,-1)">时间、区域、观察结果</text>
+			<polygon points="344 376, 484 376, 491 369, 491 310, 351 310, 344 317" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="344" y="318" width="2" height="50" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,89%,92%); fill-rule: evenodd;"/>
+			<text x="354" y="359" style="font-family: YH; font-size: 8.1px;fill: rgb(83%,89%,92%); stroke:none;" transform="translate(0,718) scale(1,-1)">游戏程序</text>
+			<text x="354" y="341" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,682) scale(1,-1)">暂停游戏</text>
+			<text x="354" y="325" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,650) scale(1,-1)">收到固定批次后</text>
+			<polyline points="163 343, 180 343" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="180 343, 176.147 341.091, 176.147 344.909" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(83%,89%,92%); fill-rule: evenodd;"/>
+			<polyline points="327 343, 344 343" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="344 343, 340.147 341.091, 340.147 344.909" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(100%,74%,41%); fill-rule: evenodd;"/>
+			<polyline points="417 310, 417 286" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="417 286, 415.091 289.853, 418.909 289.853" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(100%,74%,41%); fill-rule: evenodd;"/>
+			<polygon points="344 286, 484 286, 491 279, 491 220, 351 220, 344 227" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="344" y="228" width="2" height="50" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,74%,41%); fill-rule: evenodd;"/>
+			<text x="354" y="269" style="font-family: YH; font-size: 8.1px;fill: rgb(100%,74%,41%); stroke:none;" transform="translate(0,538) scale(1,-1)">城市系统</text>
+			<text x="354" y="251" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,502) scale(1,-1)">推测玩家所在区域</text>
+			<text x="354" y="235" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,470) scale(1,-1)">形状固定、大小受限</text>
+			<polygon points="180 286, 320 286, 327 279, 327 220, 187 220, 180 227" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="180" y="228" width="2" height="50" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,89%,92%); fill-rule: evenodd;"/>
+			<text x="190" y="269" style="font-family: YH; font-size: 8.1px;fill: rgb(83%,89%,92%); stroke:none;" transform="translate(0,538) scale(1,-1)">游戏程序</text>
+			<text x="190" y="251" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,502) scale(1,-1)">核对当前位置</text>
+			<polygon points="16 286, 156 286, 163 279, 163 220, 23 220, 16 227" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="16" y="228" width="2" height="50" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,74%,41%); fill-rule: evenodd;"/>
+			<text x="26" y="269" style="font-family: YH; font-size: 8.1px;fill: rgb(100%,74%,41%); stroke:none;" transform="translate(0,538) scale(1,-1)">未命中</text>
+			<text x="26" y="251" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,502) scale(1,-1)">城市系统调整设备</text>
+			<text x="26" y="235" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,470) scale(1,-1)">可新增1处设施</text>
+			<polyline points="344 253, 327 253" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="327 253, 330.853 254.909, 330.853 251.091" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(83%,89%,92%); fill-rule: evenodd;"/>
+			<polyline points="180 253, 163 253" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="163 253, 166.853 254.909, 166.853 251.091" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(100%,74%,41%); fill-rule: evenodd;"/>
+			<polyline points="89 286, 89 310" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="89 310, 90.90898 306.147, 87.09102 306.147" style="stroke: rgb(100%,74%,41%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(100%,74%,41%); fill-rule: evenodd;"/>
+			<text x="101" y="295" style="font-family: YH; font-size: 8.2px;fill: rgb(100%,74%,41%); stroke:none;" transform="translate(0,590) scale(1,-1)">恢复行动</text>
+			<polyline points="253 220, 253 194" style="stroke: rgb(100%,62%,66%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="253 194, 251.091 197.853, 254.909 197.853" style="stroke: rgb(100%,62%,66%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(100%,62%,66%); fill-rule: evenodd;"/>
+			<text x="266" y="202" style="font-family: YH; font-size: 8.6px;fill: rgb(100%,62%,66%); stroke:none;" transform="translate(0,404) scale(1,-1)">命中</text>
+			<polygon points="180 194, 320 194, 327 187, 327 132, 187 132, 180 139" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="180" y="140" width="2" height="46" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<text x="190" y="177" style="font-family: YH; font-size: 8.1px;fill: rgb(35%,87%,82%); stroke:none;" transform="translate(0,354) scale(1,-1)">玩家</text>
+			<text x="190" y="159" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,318) scale(1,-1)">是否回退？</text>
+			<polyline points="253 132, 253 119, 89 119, 89 100" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="89 100, 87.09102 103.853, 90.90898 103.853" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<polyline points="253 119, 417 119, 417 100" style="stroke: rgb(100%,62%,66%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="417 100, 415.091 103.853, 418.909 103.853" style="stroke: rgb(100%,62%,66%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(100%,62%,66%); fill-rule: evenodd;"/>
+			<text x="118" y="107" style="font-family: YH; font-size: 8.5px;fill: rgb(35%,87%,82%); stroke:none;" transform="translate(0,214) scale(1,-1)">回退</text>
+			<text x="338" y="107" style="font-family: YH; font-size: 8.5px;fill: rgb(100%,62%,66%); stroke:none;" transform="translate(0,214) scale(1,-1)">放弃或次数用尽</text>
+			<polygon points="16 100, 156 100, 163 93, 163 38, 23 38, 16 45" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="16" y="46" width="2" height="46" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<text x="26" y="72.0" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,144) scale(1,-1)">回到本周期起点</text>
+			<text x="26" y="56.0" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,112) scale(1,-1)">消耗1次回退</text>
+			<polygon points="344 100, 484 100, 491 93, 491 38, 351 38, 344 45" style="stroke: rgb(100%,62%,66%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="344" y="46" width="2" height="46" style="stroke: rgb(100%,62%,66%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,62%,66%); fill-rule: evenodd;"/>
+			<text x="354" y="72.0" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,144) scale(1,-1)">本轮失败</text>
+			<text x="354" y="56.0" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,112) scale(1,-1)">继续剩余轮次</text>
+			<polyline points="16 69, 7 69, 7 343, 16 343" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="16 343, 12.14697 341.091, 12.14697 344.909" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<text x="16" y="14" style="font-family: YH; font-size: 8.5px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,28) scale(1,-1)">修好电机并抵达出口，即本轮成功。</text>
+		</g>
+	</g>
+</svg>

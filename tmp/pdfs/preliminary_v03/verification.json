@@ -1,0 +1,40 @@
+{
+  "pages": 7,
+  "bytes": 3441820,
+  "manuscript_segments": 138,
+  "missing_segments": [],
+  "missing_image_files": [],
+  "invalid_local_links": [],
+  "page_sizes_points": [
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ]
+  ],
+  "render_review": "all seven pages rendered; visual review completed separately",
+  "verification_scope": "document completeness and proposed grid connectivity; no game or model balance results"
+}

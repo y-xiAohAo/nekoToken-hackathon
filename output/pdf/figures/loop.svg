@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507.27559055118115" height="66" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 66" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507.27559055118115" height="66"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-66)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0.0" y="30" width="114.81889763779529" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,95%); fill-rule: evenodd;"/>
+			<text x="34.909448818897644" y="40.5" style="font-family: MSYH; font-size: 9px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,81) scale(1,-1)">观察与交流</text>
+			<path d="M 117.818898,43.5 L 127.818898,43.5 Z" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="127.8189 43.5, 124.3086 45.4177, 124.3086 41.5823" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,43%,41%); fill-rule: evenodd;"/>
+			<rect x="130.8188976377953" y="30" width="114.81889763779529" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,95%); fill-rule: evenodd;"/>
+			<text x="170.22834645669292" y="40.5" style="font-family: MSYH; font-size: 9px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,81) scale(1,-1)">批准改线</text>
+			<path d="M 248.637795,43.5 L 258.637795,43.5 Z" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="258.6378 43.5, 255.1275 45.4177, 255.1275 41.5823" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,43%,41%); fill-rule: evenodd;"/>
+			<rect x="261.6377952755906" y="30" width="114.81889763779526" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,95%); fill-rule: evenodd;"/>
+			<text x="301.04724409448824" y="40.5" style="font-family: MSYH; font-size: 9px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,81) scale(1,-1)">亲自执行</text>
+			<path d="M 379.456693,43.5 L 389.456693,43.5 Z" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="389.4567 43.5, 385.9464 45.4177, 385.9464 41.5823" style="stroke: rgb(9%,43%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,43%,41%); fill-rule: evenodd;"/>
+			<rect x="392.45669291338584" y="30" width="114.81889763779532" height="27" rx="4" ry="4" style="stroke: rgb(83%,87%,88%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,95%); fill-rule: evenodd;"/>
+			<text x="431.8661417322835" y="40.5" style="font-family: MSYH; font-size: 9px;fill: rgb(9%,14%,17%); stroke:none;" transform="translate(0,81) scale(1,-1)">复盘结果</text>
+			<text x="165.7258812130906" y="10" style="font-family: MSYH; font-size: 8.3px;fill: rgb(36%,42%,45%); stroke:none;" transform="translate(0,20) scale(1,-1)">被抓获 → 世界修补与重建 → 带着记录重新观察</text>
+		</g>
+	</g>
+</svg>

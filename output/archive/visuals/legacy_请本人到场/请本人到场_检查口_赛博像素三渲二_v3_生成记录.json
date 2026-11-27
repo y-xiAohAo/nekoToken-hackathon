@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-14",
+  "mode": "imagegen bundled CLI API fallback, edit",
+  "model": "gpt-image-2.5",
+  "quality": "medium",
+  "api_edit_seconds": 53.4,
+  "input_role": "V2 raw image used only as spatial layout reference and edit target",
+  "input_image": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_世界观高俯角_v2_raw.png",
+  "prompt": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_赛博像素三渲二_v3_prompt.txt",
+  "raw_image": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_赛博像素三渲二_v3_raw.png",
+  "final_image": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_赛博像素三渲二_v3_标注版.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "annotation": "Local PIL title and device labels; underlying generated scene unchanged",
+  "visual_checks": [
+    "High overhead room composition retained",
+    "Sci-fi modular blue-gray surfaces with cyan and amber indicators",
+    "Simplified cel-shaded and pixel-edged appearance",
+    "One simple human player and one compact biped AI patrol robot",
+    "Two hiding cabinets, single staircase and rear maintenance platform",
+    "Closed security door and illuminated corridor in initial state"
+  ],
+  "limits": [
+    "Concept art only; no Godot meshes, animation rigs, shaders or sprites exported",
+    "Fine surface details in the picture are optional and may be removed in production",
+    "Decorative lights or sensors do not add new gameplay devices",
+    "No collision, sightline, movement timing or puzzle balance verification",
+    "Existing V0.1 PDF has not been updated"
+  ]
+}

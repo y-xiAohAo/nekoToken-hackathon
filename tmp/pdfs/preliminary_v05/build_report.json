@@ -1,0 +1,16 @@
+{
+  "pdf": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+  "pages": 4,
+  "page_char_counts": [
+    720,
+    856,
+    778,
+    945
+  ],
+  "figures": [
+    "coop",
+    "reset"
+  ],
+  "illustration": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_大地图_v5_clean.png",
+  "source": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md"
+}

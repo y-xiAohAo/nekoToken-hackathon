@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507.28" height="249" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 249" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507.28" height="249"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-249)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="191" width="145" height="44" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="60.3" y="216.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,432) scale(1,-1)">实时行动</text>
+			<text x="47.54384765625" y="202.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,404) scale(1,-1)">观察 / 移动 / 维修</text>
+			<rect x="181" y="191" width="145" height="44" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="208.05" y="216.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,432) scale(1,-1)">持续检测，周期上报</text>
+			<text x="220.7" y="202.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,404) scale(1,-1)">保留原观察时间戳</text>
+			<rect x="354" y="191" width="145" height="44" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(98%,95%,89%); fill-rule: evenodd;"/>
+			<text x="388.9085693359375" y="216.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,432) scale(1,-1)">累计 N 批后暂停</text>
+			<text x="393.7" y="202.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,404) scale(1,-1)">系统推理当前位置</text>
+			<polyline points="153 213, 181 213" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="181 213, 177.452 211.1529, 177.452 214.8471" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="326 213, 354 213" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="354 213, 350.452 211.1529, 350.452 214.8471" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="426 191, 426 166" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="426 166, 424.1529 169.548, 427.8471 169.548" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<rect x="354" y="128" width="145" height="38" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="391.15" y="144.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,288) scale(1,-1)">定位是否命中？</text>
+			<rect x="181" y="58" width="145" height="44" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(98%,95%,89%); fill-rule: evenodd;"/>
+			<text x="213.1" y="83.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,166) scale(1,-1)">未命中：调整设施</text>
+			<text x="220.7" y="69.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,138) scale(1,-1)">允许新增一处设施</text>
+			<polyline points="354 147, 341 147, 341 110, 254 110, 254 102" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="254 102, 252.1529 105.548, 255.8471 105.548" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<rect x="354" y="58" width="145" height="44" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="381.05" y="83.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,166) scale(1,-1)">命中：选择局部回退</text>
+			<text x="378.995654296875" y="69.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,138) scale(1,-1)">恢复本周期起点；总计3次</text>
+			<polyline points="426 128, 426 102" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="426 102, 424.1529 105.548, 427.8471 105.548" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<rect x="354" y="7" width="145" height="30" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="365.55478515625" y="19.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,38) scale(1,-1)">不回退 / 无次数：本轮失败</text>
+			<polyline points="426 58, 426 37" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="426 37, 424.1529 40.54798, 427.8471 40.54798" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<rect x="8" y="58" width="145" height="44" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="35.050000000000004" y="83.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,166) scale(1,-1)">完成维修并抵达出口</text>
+			<text x="64.1" y="69.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,138) scale(1,-1)">本轮成功</text>
+			<polyline points="80 191, 80 102" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="80 102, 78.15288 105.548, 81.84712 105.548" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="254 58, 254 47, 166 47, 166 175, 80 175, 80 191" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="80 191, 81.84712 187.452, 78.15288 187.452" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<polyline points="499 80, 504 80, 504 244, 80 244, 80 235" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="80 235, 78.15288 238.548, 81.84712 238.548" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(32%,40%,47%); fill-rule: evenodd;"/>
+			<text x="195.4" y="18" style="font-family: YH; font-size: 8.1px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,36) scale(1,-1)">两条返回线均恢复实时行动</text>
+		</g>
+	</g>
+</svg>

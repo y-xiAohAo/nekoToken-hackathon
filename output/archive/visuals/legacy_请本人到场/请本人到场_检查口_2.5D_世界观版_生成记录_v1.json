@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-14",
+  "source_document": "D:/djh/Wechat/Document/xwechat_files/wxid_i219l7ob5px722_9000/temp/RWTemp/2026-11/b26101f4cc5ea3ba510102071390195b/游戏背景v1(1).docx",
+  "worldview_elements_used": [
+    "2042 AGI时代",
+    "AGIers与CODers/HSF对立",
+    "蚁穴式旧工业与人工维护",
+    "AGI安防系统仍嵌入日常设施"
+  ],
+  "camera": "higher 2.5D top-down three-quarter view; approximately 50-60 degrees downward",
+  "model": "gpt-image-2.5",
+  "method": "edit existing level image through existing Codex custom provider configuration; labels added locally after generation",
+  "raw_image": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_2.5D_世界观版_raw.png",
+  "final_image": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_2.5D_世界观版_标注校正版.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "status": "concept_art_not_playable_level",
+  "visual_check": [
+    "higher camera exposes more floor and stair geometry",
+    "world material changed from clean sci-fi to repaired industrial checkpoint",
+    "one player and one guard",
+    "two hiding cabinets",
+    "closed D and exit visible",
+    "no jump gaps"
+  ],
+  "caveats": [
+    "Exact camera angle is an art approximation and must be matched in Godot",
+    "Sight cones, collision and movement windows still require graybox validation"
+  ]
+}

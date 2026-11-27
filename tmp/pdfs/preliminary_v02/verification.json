@@ -1,0 +1,23 @@
+{
+  "pdf": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_v0.2.pdf",
+  "sha256": "8c53d4212f8d599c072a0078b1839ddf533d11a40cd1ba1493b7c2a69424f06b",
+  "page_count": 6,
+  "all_required_sections_present": true,
+  "manuscript_segments_checked": 126,
+  "missing_segments": [],
+  "broken_current_links": [],
+  "image_files": [
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_方格潜入_v4_标注版.png",
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\figures\\v02\\loop.png",
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_方格潜入_v4_标注版.png",
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\figures\\v02\\contact.png",
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\figures\\v02\\reset.png"
+  ],
+  "visual_review": "Latest six rendered pages inspected; labels, diagrams, tables and page breaks legible",
+  "unresolved_submission_fields": [
+    "member email and phone",
+    "actual responsibilities",
+    "relevant experience and optional portfolio"
+  ],
+  "implementation_status": "proposal only; no gameplay, timing, balance or model performance validation claimed"
+}

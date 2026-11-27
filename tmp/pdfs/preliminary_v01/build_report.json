@@ -1,0 +1,21 @@
+{
+  "pdf": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_v0.1.pdf",
+  "pages": 4,
+  "page_char_counts": [
+    818,
+    754,
+    890,
+    950
+  ],
+  "rendered_pages": [
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\tmp\\pdfs\\preliminary_v01\\page-1.png",
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\tmp\\pdfs\\preliminary_v01\\page-2.png",
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\tmp\\pdfs\\preliminary_v01\\page-3.png",
+    "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\tmp\\pdfs\\preliminary_v01\\page-4.png"
+  ],
+  "figures": [
+    "loop",
+    "room",
+    "reset"
+  ]
+}

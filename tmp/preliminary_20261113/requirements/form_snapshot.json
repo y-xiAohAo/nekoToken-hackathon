@@ -1,0 +1,1405 @@
+{
+  "name": "预赛提交",
+  "fieldMap": {
+    "fldViM9apH": {
+      "name": "4人组-队长手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "scan": false,
+        "manual": true
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldjnut88k": {
+      "name": "4人组-队员3邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldrzrEp64": {
+      "name": "4人组-队员3姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fld7t2yetx": {
+      "name": "3人组",
+      "type": 4,
+      "property": {
+        "options": [
+          {
+            "id": "opt2LVFmV4",
+            "name": "队长姓名",
+            "color": 3
+          },
+          {
+            "id": "opthvDm1CZ",
+            "name": "队长手机号",
+            "color": 4
+          },
+          {
+            "color": 5,
+            "id": "optr081BEW",
+            "name": "队长邮箱"
+          },
+          {
+            "id": "opt4Jx5U01",
+            "name": "队员1姓名",
+            "color": 0
+          },
+          {
+            "id": "optSaGKgM4",
+            "name": "队员1手机号",
+            "color": 1
+          },
+          {
+            "id": "optWH4gZuP",
+            "name": "队员1邮箱",
+            "color": 2
+          },
+          {
+            "name": "队员2姓名",
+            "color": 6,
+            "id": "opt3g4U1zn"
+          },
+          {
+            "color": 7,
+            "id": "opt9wCfi6d",
+            "name": "队员2手机号"
+          },
+          {
+            "name": "队员2邮箱",
+            "color": 8,
+            "id": "optfMlzlct"
+          }
+        ],
+        "optionsType": 0
+      },
+      "description": {},
+      "fieldUIType": "MultiSelect",
+      "exInfo": {
+        "formOptionRelatedField": {
+          "opt9wCfi6d": {
+            "fieldUIType": "Text",
+            "type": "Other",
+            "fieldId": "fld7ZUySrW"
+          },
+          "optSaGKgM4": {
+            "fieldId": "fldFBRNbfq",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "optr081BEW": {
+            "type": "Other",
+            "fieldId": "fldTZYMzor",
+            "fieldUIType": "Text"
+          },
+          "opt3g4U1zn": {
+            "fieldId": "fldinDPvNK",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "optfMlzlct": {
+            "type": "Other",
+            "fieldId": "fldwZRRZKW",
+            "fieldUIType": "Text"
+          },
+          "opt4Jx5U01": {
+            "type": "Other",
+            "fieldId": "fldcrWVkhC",
+            "fieldUIType": "Text"
+          },
+          "optWH4gZuP": {
+            "fieldId": "fldNHDs2hI",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opt2LVFmV4": {
+            "fieldId": "fldn8UWPGD",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opthvDm1CZ": {
+            "fieldId": "fldPMEg9qD",
+            "fieldUIType": "Text",
+            "type": "Other"
+          }
+        },
+        "fieldUIType": "MultiSelect"
+      }
+    },
+    "fldaZ3ssWi": {
+      "name": "2人组-队员1姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldPMEg9qD": {
+      "name": "3人组-队长手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldN2wTPM0": {
+      "name": "请上传您的预赛文档附件",
+      "type": 17,
+      "property": {
+        "capture": []
+      },
+      "description": {},
+      "fieldUIType": "Attachment",
+      "exInfo": {
+        "fieldUIType": "Attachment"
+      }
+    },
+    "fldRddkVxK": {
+      "name": "4人组-队长邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fld4MSr9Dr": {
+      "name": "4人组-队员2手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "scan": false,
+        "manual": true
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldXjiLEw3": {
+      "name": "选择赛道",
+      "type": 3,
+      "property": {
+        "options": [
+          {
+            "color": 0,
+            "id": "opt6nYSApF",
+            "name": "AI原生游戏"
+          },
+          {
+            "color": 1,
+            "id": "optOcJeuhN",
+            "name": "AI互动剧"
+          }
+        ]
+      },
+      "description": {},
+      "fieldUIType": "SingleSelect",
+      "exInfo": {
+        "fieldUIType": "SingleSelect"
+      }
+    },
+    "fldmoDOSLG": {
+      "name": "2人组-队员1手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldZjm9K4G": {
+      "name": "2人组-队长姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fld7ZUySrW": {
+      "name": "3人组-队员2手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldn8UWPGD": {
+      "name": "3人组-队长姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldJGJCzVu": {
+      "name": "4人组-队员2姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldwZRRZKW": {
+      "name": "3人组-队员2邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldaPvODcL": {
+      "name": "4人组-队员1手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldZ4xxVNH": {
+      "name": "4人组-队员1邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "scan": false,
+        "manual": true
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldH8u2JLw": {
+      "name": "预赛资料提交方式",
+      "type": 3,
+      "property": {
+        "options": [
+          {
+            "name": "飞书文档链接",
+            "color": 0,
+            "id": "opt0H21Bck"
+          },
+          {
+            "id": "optJ5UzA5d",
+            "name": "附件上传",
+            "color": 1
+          }
+        ],
+        "optionsType": 0
+      },
+      "description": {},
+      "fieldUIType": "SingleSelect",
+      "exInfo": {
+        "fieldUIType": "SingleSelect"
+      }
+    },
+    "fldinDPvNK": {
+      "name": "3人组-队员2姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldnNUbBdR": {
+      "name": "2人组-队长邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldDAN0LjL": {
+      "name": "4人组-队长姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldcrWVkhC": {
+      "name": "3人组-队员1姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fld9UrT4Ze": {
+      "name": "4人组-队员2邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldEc69MGc": {
+      "name": "队伍人数",
+      "type": 3,
+      "property": {
+        "optionsType": 0,
+        "options": [
+          {
+            "color": 0,
+            "id": "opt0H21Bck",
+            "name": "2人"
+          },
+          {
+            "name": "3人",
+            "color": 1,
+            "id": "optJ5UzA5d"
+          },
+          {
+            "id": "optubEIqI1",
+            "name": "4人",
+            "color": 2
+          }
+        ]
+      },
+      "description": {},
+      "fieldUIType": "SingleSelect",
+      "exInfo": {
+        "fieldUIType": "SingleSelect"
+      }
+    },
+    "fldkBcLLJN": {
+      "name": "请填写您的预赛飞书文档链接",
+      "type": 15,
+      "property": {
+        "extractExternalUrl": false
+      },
+      "description": {},
+      "fieldUIType": "Url",
+      "exInfo": {
+        "fieldUIType": "Url"
+      }
+    },
+    "fldXyIydZ9": {
+      "name": "4人组-队员1姓名-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "scan": false,
+        "manual": true
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldNHDs2hI": {
+      "name": "3人组-队员1邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldmG9bDEV": {
+      "name": "4人组-队员3手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldP4MLKLZ": {
+      "name": "2人组-队长手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldKLCGWIa": {
+      "name": "2人组-队员1邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fldw2eGMZt": {
+      "name": "2人组",
+      "type": 4,
+      "property": {
+        "options": [
+          {
+            "name": "队长姓名",
+            "color": 3,
+            "id": "opt2LVFmV4"
+          },
+          {
+            "name": "队长手机号",
+            "color": 4,
+            "id": "opthvDm1CZ"
+          },
+          {
+            "name": "队长邮箱",
+            "color": 5,
+            "id": "optr081BEW"
+          },
+          {
+            "color": 0,
+            "id": "opt4Jx5U01",
+            "name": "队员1姓名"
+          },
+          {
+            "color": 1,
+            "id": "optSaGKgM4",
+            "name": "队员1手机号"
+          },
+          {
+            "color": 2,
+            "id": "optWH4gZuP",
+            "name": "队员1邮箱"
+          }
+        ],
+        "optionsType": 0
+      },
+      "description": {},
+      "fieldUIType": "MultiSelect",
+      "exInfo": {
+        "fieldUIType": "MultiSelect",
+        "formOptionRelatedField": {
+          "opt2LVFmV4": {
+            "fieldId": "fldZjm9K4G",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opt4Jx5U01": {
+            "type": "Other",
+            "fieldId": "fldaZ3ssWi",
+            "fieldUIType": "Text"
+          },
+          "opthvDm1CZ": {
+            "type": "Other",
+            "fieldId": "fldP4MLKLZ",
+            "fieldUIType": "Text"
+          },
+          "optr081BEW": {
+            "fieldId": "fldnNUbBdR",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "optSaGKgM4": {
+            "type": "Other",
+            "fieldId": "fldmoDOSLG",
+            "fieldUIType": "Text"
+          },
+          "optWH4gZuP": {
+            "fieldId": "fldKLCGWIa",
+            "fieldUIType": "Text",
+            "type": "Other"
+          }
+        }
+      }
+    },
+    "fldTZYMzor": {
+      "name": "3人组-队长邮箱-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    },
+    "fld1P4PtFD": {
+      "name": "4人组",
+      "type": 4,
+      "property": {
+        "optionsType": 0,
+        "options": [
+          {
+            "name": "队长姓名",
+            "color": 3,
+            "id": "opt2LVFmV4"
+          },
+          {
+            "color": 4,
+            "id": "opthvDm1CZ",
+            "name": "队长手机号"
+          },
+          {
+            "name": "队长邮箱",
+            "color": 5,
+            "id": "optr081BEW"
+          },
+          {
+            "name": "队员1姓名",
+            "color": 0,
+            "id": "opt4Jx5U01"
+          },
+          {
+            "color": 1,
+            "id": "optSaGKgM4",
+            "name": "队员1手机号"
+          },
+          {
+            "color": 2,
+            "id": "optWH4gZuP",
+            "name": "队员1邮箱"
+          },
+          {
+            "id": "opt3g4U1zn",
+            "name": "队员2姓名",
+            "color": 6
+          },
+          {
+            "color": 7,
+            "id": "opt9wCfi6d",
+            "name": "队员2手机号"
+          },
+          {
+            "color": 8,
+            "id": "optfMlzlct",
+            "name": "队员2邮箱"
+          },
+          {
+            "name": "队员3姓名",
+            "color": 9,
+            "id": "opt989TFme"
+          },
+          {
+            "color": 10,
+            "id": "optvSebPYB",
+            "name": "队员3手机号"
+          },
+          {
+            "id": "opt2l0sPjw",
+            "name": "队员3邮箱",
+            "color": 0
+          }
+        ]
+      },
+      "description": {},
+      "fieldUIType": "MultiSelect",
+      "exInfo": {
+        "formOptionRelatedField": {
+          "optWH4gZuP": {
+            "fieldId": "fldZ4xxVNH",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opt989TFme": {
+            "fieldUIType": "Text",
+            "type": "Other",
+            "fieldId": "fldrzrEp64"
+          },
+          "opt2l0sPjw": {
+            "fieldId": "fldjnut88k",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opt2LVFmV4": {
+            "fieldId": "fldDAN0LjL",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "optfMlzlct": {
+            "fieldUIType": "Text",
+            "type": "Other",
+            "fieldId": "fld9UrT4Ze"
+          },
+          "optvSebPYB": {
+            "type": "Other",
+            "fieldId": "fldmG9bDEV",
+            "fieldUIType": "Text"
+          },
+          "optr081BEW": {
+            "fieldId": "fldRddkVxK",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opt4Jx5U01": {
+            "fieldId": "fldXyIydZ9",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opt9wCfi6d": {
+            "fieldId": "fld4MSr9Dr",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opthvDm1CZ": {
+            "fieldId": "fldViM9apH",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "optSaGKgM4": {
+            "fieldId": "fldaPvODcL",
+            "fieldUIType": "Text",
+            "type": "Other"
+          },
+          "opt3g4U1zn": {
+            "fieldId": "fldJGJCzVu",
+            "fieldUIType": "Text",
+            "type": "Other"
+          }
+        },
+        "fieldUIType": "MultiSelect"
+      }
+    },
+    "fldxw1Gen7": {
+      "name": "队伍名称",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "scan": false,
+        "manual": true
+      }
+    },
+    "fldFBRNbfq": {
+      "name": "3人组-队员1手机号-补充内容",
+      "type": 1,
+      "description": {},
+      "fieldUIType": "Text",
+      "allowedEditModes": {
+        "manual": true,
+        "scan": false
+      },
+      "exInfo": {
+        "fieldUIType": "Text"
+      }
+    }
+  },
+  "tableLevel": 0,
+  "viewProperty": {
+    "fields": [
+      "fldxw1Gen7",
+      "fldXjiLEw3",
+      "fldEc69MGc",
+      "fldw2eGMZt",
+      "fld7t2yetx",
+      "fld1P4PtFD",
+      "fldH8u2JLw",
+      "fldkBcLLJN",
+      "fldN2wTPM0"
+    ],
+    "formBanner": "",
+    "fieldInfos": {
+      "fldOiIGCoC": {
+        "required": true,
+        "visible": true,
+        "title": "队长姓名、手机号、邮箱",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "description": {},
+        "mappingName": "队长姓名、手机号、邮箱"
+      },
+      "fldqp3bAtD": {
+        "required": true,
+        "visible": true,
+        "title": "请上传您的预赛文档附件",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "description": {},
+        "visibleRule": {
+          "filterInfo": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "conditionId": "confnGOaxo",
+                "fieldId": "fldH8u2JLw",
+                "fieldType": 3,
+                "operator": "is",
+                "value": [
+                  "optJ5UzA5d"
+                ]
+              }
+            ]
+          },
+          "defaultValue": false
+        },
+        "mappingName": "请上传您的预赛文档附件"
+      },
+      "fldEc69MGc": {
+        "required": true,
+        "visible": true,
+        "title": "队伍人数",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "displayAsList": true,
+        "description": {
+          "content": []
+        },
+        "mappingName": "队伍人数"
+      },
+      "fldH8u2JLw": {
+        "required": true,
+        "visible": true,
+        "title": "预赛资料提交方式",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "displayAsList": true,
+        "description": {
+          "content": [
+            {
+              "type": "text",
+              "text": "预赛内容准备请点击"
+            },
+            {
+              "type": "mention",
+              "text": "AI PLAY 72H 游戏 × 互动剧 创作黑客松 · 【填写队名】预赛材料",
+              "link": "https://ccns5xfa64kr.feishu.cn/wiki/JQQwweLoaiEAiHkDpVbcrzUCnSc",
+              "token": "JQQwweLoaiEAiHkDpVbcrzUCnSc",
+              "mentionType": 16,
+              "mentionNotify": false
+            },
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        "extra": {
+          "optionLimit": {}
+        },
+        "mappingName": "预赛资料提交方式"
+      },
+      "fld7t2yetx": {
+        "required": true,
+        "visible": true,
+        "title": "3人组",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "displayAsList": true,
+        "description": {
+          "content": [
+            {
+              "type": "text",
+              "text": "请全部选择并填写完整"
+            }
+          ]
+        },
+        "visibleRule": {
+          "filterInfo": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "conditionId": "conD563AGR",
+                "fieldId": "fldEc69MGc",
+                "fieldType": 3,
+                "operator": "is",
+                "value": [
+                  "optJ5UzA5d"
+                ]
+              }
+            ]
+          },
+          "defaultValue": false
+        },
+        "extra": {
+          "optionLimit": {}
+        },
+        "mappingName": "3人组"
+      },
+      "fld8uecFI9": {
+        "required": true,
+        "visible": true,
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "description": {},
+        "mappingName": "人员"
+      },
+      "fldN2wTPM0": {
+        "required": true,
+        "visible": true,
+        "title": "请上传您的预赛文档附件",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "description": {},
+        "visibleRule": {
+          "filterInfo": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "conditionId": "conp3KcdPP",
+                "fieldId": "fldH8u2JLw",
+                "fieldType": 3,
+                "operator": "is",
+                "value": [
+                  "optJ5UzA5d"
+                ]
+              }
+            ]
+          },
+          "defaultValue": false
+        },
+        "mappingName": "请上传您的预赛文档附件"
+      },
+      "fldXjiLEw3": {
+        "required": true,
+        "visible": true,
+        "title": "选择赛道",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "displayAsList": true,
+        "description": {
+          "content": [
+            {
+              "text": "提交后原则上不可更改赛道",
+              "type": "text"
+            }
+          ]
+        },
+        "extra": {
+          "optionLimit": {}
+        },
+        "mappingName": "选择赛道"
+      },
+      "fldAPjDtbP": {
+        "required": false,
+        "visible": true,
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "description": {},
+        "mappingName": "人员"
+      },
+      "fldkBcLLJN": {
+        "required": true,
+        "visible": true,
+        "title": "请填写您的预赛飞书文档链接",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "description": {
+          "content": [
+            {
+              "type": "text",
+              "text": "请确保文档已开启「互联网获得链接的人可阅读」权限"
+            }
+          ]
+        },
+        "visibleRule": {
+          "filterInfo": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "conditionId": "conoeeMLjR",
+                "fieldId": "fldH8u2JLw",
+                "fieldType": 3,
+                "operator": "is",
+                "value": [
+                  "opt0H21Bck"
+                ]
+              }
+            ]
+          },
+          "defaultValue": false
+        },
+        "mappingName": "请填写您的预赛飞书文档链接"
+      },
+      "fldxw1Gen7": {
+        "required": true,
+        "visible": true,
+        "title": "队伍名称",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "description": {
+          "content": [
+            {
+              "type": "text",
+              "text": "请确认队伍名称 不可更改"
+            }
+          ]
+        },
+        "valueRangeRule": {
+          "type": 1,
+          "data": {
+            "min": 1,
+            "max": 12
+          }
+        },
+        "mappingName": "队伍名称"
+      },
+      "fldw2eGMZt": {
+        "required": true,
+        "visible": true,
+        "title": "2人组",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "displayAsList": true,
+        "description": {
+          "content": [
+            {
+              "type": "text",
+              "text": "请全部选择并填写完整"
+            }
+          ]
+        },
+        "visibleRule": {
+          "filterInfo": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "conditionId": "conD563AGR",
+                "fieldId": "fldEc69MGc",
+                "fieldType": 3,
+                "operator": "is",
+                "value": [
+                  "opt0H21Bck"
+                ]
+              }
+            ]
+          },
+          "defaultValue": false
+        },
+        "extra": {
+          "optionLimit": {}
+        },
+        "mappingName": "2人组"
+      },
+      "fld1P4PtFD": {
+        "required": true,
+        "visible": true,
+        "title": "4人组",
+        "optionFilter": {
+          "conjunction": null,
+          "conditions": []
+        },
+        "displayAsList": true,
+        "description": {
+          "content": [
+            {
+              "text": "请全部选择并填写完整",
+              "type": "text"
+            }
+          ]
+        },
+        "visibleRule": {
+          "filterInfo": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "conditionId": "conD563AGR",
+                "fieldId": "fldEc69MGc",
+                "fieldType": 3,
+                "operator": "is",
+                "value": [
+                  "optubEIqI1"
+                ]
+              }
+            ]
+          },
+          "defaultValue": false
+        },
+        "extra": {
+          "optionLimit": {}
+        },
+        "mappingName": "4人组"
+      }
+    },
+    "primaryKey": "fldlQshOjE",
+    "formBannerInfo": null,
+    "isFormV2": true,
+    "themeSettings": {
+      "background": {
+        "color": "",
+        "imageToken": "",
+        "defaultImage": null
+      },
+      "illustration": {
+        "token": "G09XbhnyWoJbeaxWeIqcVewinIc",
+        "layout": "top",
+        "mimeType": "image/jpeg",
+        "height": 2250,
+        "width": 4000,
+        "defaultImage": null,
+        "backgroundUrl": "",
+        "mobileBackgroundUrl": ""
+      },
+      "title": {
+        "font": "text-title",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "description": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "fieldCardTitle": {
+        "font": "text-title",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "fieldCardPlaceholder": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "option": {
+        "font": "P800",
+        "border": "P200",
+        "background": "P50",
+        "hoverBackground": "",
+        "activeBackground": "",
+        "optionIcon": {
+          "font": "",
+          "border": "P800",
+          "background": "bg-body",
+          "hoverBackground": "",
+          "activeBackground": ""
+        }
+      },
+      "editor": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "submitBtn": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "fieldSerialNumber": {
+        "font": "P800",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "officialThemeTag": "purple",
+      "themeColor": "#4811A6",
+      "displayFormat": null,
+      "addQuestionBackgroundColor": "",
+      "selectImgHoverBackgroundColor": "",
+      "selectImgHoverLeftBackgroundColor": ""
+    },
+    "newThemeSettings": {
+      "background": {
+        "color": "",
+        "imageToken": "",
+        "defaultImage": null
+      },
+      "illustration": {
+        "token": "G09XbhnyWoJbeaxWeIqcVewinIc",
+        "layout": "top",
+        "mimeType": "image/jpeg",
+        "height": 2250,
+        "width": 4000,
+        "defaultImage": null,
+        "backgroundUrl": "",
+        "mobileBackgroundUrl": ""
+      },
+      "title": {
+        "font": "text-title",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "description": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "fieldCardTitle": {
+        "font": "text-title",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "fieldCardPlaceholder": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "option": {
+        "font": "P800",
+        "border": "P200",
+        "background": "P50",
+        "hoverBackground": "",
+        "activeBackground": "",
+        "optionIcon": {
+          "font": "",
+          "border": "P800",
+          "background": "bg-body",
+          "hoverBackground": "",
+          "activeBackground": ""
+        }
+      },
+      "editor": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "submitBtn": {
+        "font": "",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "fieldSerialNumber": {
+        "font": "P800",
+        "border": "",
+        "background": "",
+        "hoverBackground": "",
+        "activeBackground": ""
+      },
+      "officialThemeTag": "purple",
+      "themeColor": "#4811A6",
+      "displayFormat": null,
+      "addQuestionBackgroundColor": "",
+      "selectImgHoverBackgroundColor": "",
+      "selectImgHoverLeftBackgroundColor": ""
+    },
+    "userCustomSubmitButton": null,
+    "userCustomStartButton": null,
+    "userCustomSubmitResultPage": null,
+    "redirectAfterSubmit": null,
+    "tableQuestionConfigs": null,
+    "formSortOrder": null
+  },
+  "isExceedMaxRecord": false,
+  "description": {
+    "content": [
+      {
+        "type": "text",
+        "text": "预赛需填写资料请点击查看"
+      },
+      {
+        "text": "AI PLAY 72H 游戏 × 互动剧 创作黑客松 · 【填写队名】预赛材料",
+        "link": "https://ccns5xfa64kr.feishu.cn/wiki/JQQwweLoaiEAiHkDpVbcrzUCnSc",
+        "token": "JQQwweLoaiEAiHkDpVbcrzUCnSc",
+        "mentionType": 16,
+        "mentionNotify": false,
+        "type": "mention"
+      },
+      {
+        "type": "text",
+        "text": "组队规则\n"
+      },
+      {
+        "type": "text",
+        "text": "队伍规模 2–4 人：每支队伍由 2 至 4 名队员组成，自由组队\n"
+      },
+      {
+        "text": "每人限报一队：同一位参赛者只能加入一支队伍，不可重复报名\n",
+        "type": "text"
+      },
+      {
+        "type": "text",
+        "text": "赛道一经锁定：提交后赛道不可更改，请谨慎选择你的方向\n"
+      },
+      {
+        "type": "text",
+        "text": "全员完成选手登记：所有队员须先完成选手登记，方可提交预赛材料。队长及队员信息以 姓名+邮箱+手机号 作为唯一身份验证"
+      }
+    ]
+  },
+  "submitSettings": {
+    "enableAnonymousSubmit": false,
+    "submitLimit": {
+      "frequencyLimit": 0,
+      "frequencyCycle": 0
+    }
+  },
+  "forbiddenSubmit": false,
+  "forbiddenReason": {
+    "limitType": 0,
+    "reason": 0
+  },
+  "isOwner": false,
+  "permLinkShareEntity": 4,
+  "timeZone": "",
+  "banned": false,
+  "redirect_url": "",
+  "dashboard": null,
+  "recordEntity": null,
+  "viewShareEntity": null,
+  "formExtraEntity": {
+    "publishStatus": 1,
+    "enableAnonymousSubmit": false,
+    "relatedDashToken": "",
+    "fieldIDChartTokenMap": null,
+    "submitPeriod": {
+      "enableWriteValidDate": true,
+      "submitStartTime": 1793116800000,
+      "submitEndTime": 1794931199000
+    },
+    "relatedDashBoardBlockID": "",
+    "notifications": {
+      "scheduledNotification": null,
+      "submitNotification": null
+    },
+    "enableLoginSubmit": false,
+    "enableModifySubmit": false,
+    "globalSubmitLimit": null,
+    "totalSubmitCount": 2,
+    "schemaVersion": 5,
+    "isSupportTableQuestion": true,
+    "sourceLink": null,
+    "enableFormFieldDefault": true,
+    "supportMobileVoiceInput": false
+  },
+  "dashboardConfigSettings": null,
+  "baseLimitMaxRows": 10000000,
+  "isExceedBaseLimitMaxRows": false,
+  "ownerId": "7306047961786630172",
+  "tenantId": "7306047881849618433",
+  "vibeViewEntity": null,
+  "isCrossTenant": true
+}

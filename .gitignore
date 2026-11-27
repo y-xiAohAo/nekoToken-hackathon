@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.godot/
+.venv/
+__pycache__/
+*.pyc
+tools/
+tmp/imagegen/cli-deps/
+handoff/target_check.json
+build/
+exports/

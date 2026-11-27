@@ -1,0 +1,283 @@
+[
+  {
+    "name": "game-jam",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\game-jam\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "godot-2d-movement",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\godot-2d-movement\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "godot-export",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\godot-export\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "godot-gdscript",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\godot-gdscript\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "godot-gdscript-headless-testing",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\godot-gdscript-headless-testing\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "godot-nodes-scenes",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\godot-nodes-scenes\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "godot-physics",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\godot-physics\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "godot-ui-control",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\godot-ui-control\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "hackathon-spec",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\hackathon-spec\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "humanizer-zh",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\humanizer-zh\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "level-design",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\level-design\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "platformer",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\platformer\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "prototype-fast",
+    "origin": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\.agents\\skills\\prototype-fast\\SKILL.md",
+    "kind": "workspace"
+  },
+  {
+    "name": "visualize",
+    "origin": "C:\\Users\\msn\\.codex\\plugins\\cache\\openai-bundled\\visualize\\1.0.49\\skills\\visualize",
+    "kind": "copied",
+    "files": 13
+  },
+  {
+    "name": "documents",
+    "origin": "C:\\Users\\msn\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.1007.11041\\skills\\documents",
+    "kind": "copied",
+    "files": 80
+  },
+  {
+    "name": "pdf",
+    "origin": "C:\\Users\\msn\\.codex\\plugins\\cache\\openai-primary-runtime\\pdf\\26.1007.11041\\skills\\pdf",
+    "kind": "copied",
+    "files": 4
+  },
+  {
+    "name": "presentations",
+    "origin": "C:\\Users\\msn\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.1007.11041\\skills\\presentations",
+    "kind": "copied",
+    "files": 60
+  },
+  {
+    "name": "excel-live-control",
+    "origin": "C:\\Users\\msn\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.1007.11041\\skills\\excel-live-control",
+    "kind": "copied",
+    "files": 13
+  },
+  {
+    "name": "spreadsheets",
+    "origin": "C:\\Users\\msn\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.1007.11041\\skills\\spreadsheets",
+    "kind": "copied",
+    "files": 19
+  },
+  {
+    "name": "template-creator",
+    "origin": "C:\\Users\\msn\\.codex\\plugins\\cache\\openai-primary-runtime\\template-creator\\26.1007.11041\\skills\\template-creator",
+    "kind": "copied",
+    "files": 6
+  },
+  {
+    "name": "create-statusline",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\.system\\create-statusline",
+    "kind": "copied",
+    "files": 4
+  },
+  {
+    "name": "imagegen",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\.system\\imagegen",
+    "kind": "copied",
+    "files": 12
+  },
+  {
+    "name": "openai-docs",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\.system\\openai-docs",
+    "kind": "copied",
+    "files": 17
+  },
+  {
+    "name": "review-agent",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\.system\\review-agent",
+    "kind": "copied",
+    "files": 2
+  },
+  {
+    "name": "skill-creator",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\.system\\skill-creator",
+    "kind": "copied",
+    "files": 9
+  },
+  {
+    "name": "skill-installer",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\.system\\skill-installer",
+    "kind": "copied",
+    "files": 8
+  },
+  {
+    "name": "deepscientist-analysis-campaign",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-analysis-campaign",
+    "kind": "copied",
+    "files": 8
+  },
+  {
+    "name": "deepscientist-baseline",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-baseline",
+    "kind": "copied",
+    "files": 10
+  },
+  {
+    "name": "deepscientist-decision",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-decision",
+    "kind": "copied",
+    "files": 5
+  },
+  {
+    "name": "deepscientist-experiment",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-experiment",
+    "kind": "copied",
+    "files": 6
+  },
+  {
+    "name": "deepscientist-figure-polish",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-figure-polish",
+    "kind": "copied",
+    "files": 2
+  },
+  {
+    "name": "deepscientist-finalize",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-finalize",
+    "kind": "copied",
+    "files": 4
+  },
+  {
+    "name": "deepscientist-idea",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-idea",
+    "kind": "copied",
+    "files": 14
+  },
+  {
+    "name": "deepscientist-intake-audit",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-intake-audit",
+    "kind": "copied",
+    "files": 2
+  },
+  {
+    "name": "deepscientist-mentor",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-mentor",
+    "kind": "copied",
+    "files": 8
+  },
+  {
+    "name": "deepscientist-nature-data",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-nature-data",
+    "kind": "copied",
+    "files": 9
+  },
+  {
+    "name": "deepscientist-nature-figure",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-nature-figure",
+    "kind": "copied",
+    "files": 15
+  },
+  {
+    "name": "deepscientist-nature-paper2ppt",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-nature-paper2ppt",
+    "kind": "copied",
+    "files": 3
+  },
+  {
+    "name": "deepscientist-nature-polishing",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-nature-polishing",
+    "kind": "copied",
+    "files": 7
+  },
+  {
+    "name": "deepscientist-optimize",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-optimize",
+    "kind": "copied",
+    "files": 14
+  },
+  {
+    "name": "deepscientist-paper-outline",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-paper-outline",
+    "kind": "copied",
+    "files": 2
+  },
+  {
+    "name": "deepscientist-paper-plot",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-paper-plot",
+    "kind": "copied",
+    "files": 18
+  },
+  {
+    "name": "deepscientist-rebuttal",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-rebuttal",
+    "kind": "copied",
+    "files": 5
+  },
+  {
+    "name": "deepscientist-review",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-review",
+    "kind": "copied",
+    "files": 4
+  },
+  {
+    "name": "deepscientist-science",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-science",
+    "kind": "copied",
+    "files": 178
+  },
+  {
+    "name": "deepscientist-scout",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-scout",
+    "kind": "copied",
+    "files": 6
+  },
+  {
+    "name": "deepscientist-write",
+    "origin": "C:\\Users\\msn\\.codex\\skills\\deepscientist-write",
+    "kind": "copied",
+    "files": 58
+  },
+  {
+    "name": "sdd-riper-one",
+    "origin": "C:\\Users\\msn\\.kimi\\skills\\sdd-riper-one",
+    "kind": "optional_protocol",
+    "files": 22
+  },
+  {
+    "name": "vibe-coding-harness",
+    "origin": "C:\\Users\\msn\\.kimi\\skills\\vibe-coding-harness",
+    "kind": "optional_protocol",
+    "files": 5
+  }
+]

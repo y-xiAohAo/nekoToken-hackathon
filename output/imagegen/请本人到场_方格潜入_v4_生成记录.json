@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "mode": "imagegen bundled CLI API fallback; authorized existing provider",
+  "model": "gpt-image-2.5",
+  "quality": "medium",
+  "size": [1536, 1024],
+  "reference_role": "V3 raw image is a style reference only; obsolete elevated topology is discarded",
+  "reference": "请本人到场_检查口_赛博像素三渲二_v3_raw.png",
+  "primary_prompt": "请本人到场_方格潜入_v4_prompt.txt",
+  "cleanup_prompt": "请本人到场_方格潜入_v4_cleanup_prompt.txt",
+  "raw": "请本人到场_方格潜入_v4_raw.png",
+  "clean": "请本人到场_方格潜入_v4_clean.png",
+  "final": "请本人到场_方格潜入_v4_标注版.png",
+  "api_seconds": [72.2, 50.7],
+  "annotation": "Local exact labels and leader lines; generated scene retained",
+  "verified_visuals": [
+    "High overhead 2.5D with one flat tiled ground floor",
+    "No stairs, raised platform, jump route or human guard",
+    "One simplified human player and one simplified biped patrol robot",
+    "Two contact terminals, one motor, entrance, exit, cameras and lamps",
+    "Blue-gray cyberpunk metal, restrained cyan and amber signals, simple cel shading",
+    "Vision overlays and patrol line removed during cleanup to avoid presenting invented ranges"
+  ],
+  "limits": [
+    "Proposal illustration, not a Godot screenshot, production asset or validated level",
+    "Device counts and positions are illustrative",
+    "No visibility, collision, timing or balance verification"
+  ]
+}

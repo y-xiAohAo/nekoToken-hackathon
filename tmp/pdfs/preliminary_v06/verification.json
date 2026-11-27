@@ -1,0 +1,246 @@
+{
+  "date": "2026-11-16",
+  "status": "passed",
+  "scope": "Document completeness, local assets, vector diagram labels and retained originals; no gameplay or model validation",
+  "pdf": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.6.pdf",
+  "pages": 6,
+  "page_char_counts": [
+    799,
+    698,
+    726,
+    926,
+    303,
+    945
+  ],
+  "manuscript_fragments_checked": 92,
+  "missing_manuscript_fragments": [],
+  "local_links_checked": 30,
+  "local_links": [
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "target": "figures/v06/roles.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "target": "figures/v06/coop.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "target": "figures/v06/loop.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "target": "figures/v06/reset.png",
+      "exists": true
+    },
+    {
+      "document": "output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "target": "../imagegen/请本人到场_检查区_名称标注_v6.png",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.pdf",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛玩法框架_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "侦测定位_机制草案.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/方案自检与修订记录_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/imagegen/请本人到场_检查区_名称标注_v6.png",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/imagegen/请本人到场_检查区_路线示意_v6.png",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛要求复核与提交清单_2026-11-13.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛模板符合性复核_2026-11-15.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/预赛材料修订记录_2026-11-16.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "tmp/pdfs/preliminary_v04/verification.json",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.29.md",
+      "exists": true
+    },
+    {
+      "document": "PRELIMINARY_DESIGN_SPEC.md",
+      "target": "output/archive/侦测定位_机制草案_v0.19.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "imagegen/请本人到场_检查区_路线示意_v6.png",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_v0.4.md",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "pdf/AI_PLAY_72H_预赛方案_v0.4.pdf",
+      "exists": true
+    },
+    {
+      "document": "output\\预赛材料修订记录_2026-11-16.md",
+      "target": "预赛模板符合性复核_2026-11-15.md",
+      "exists": true
+    }
+  ],
+  "original_hashes": [
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.md",
+      "unchanged": true,
+      "sha256": "539793936c6ad6c6b9ee4761b68bdd7b9c8ee6a2fa2b4959f84192f8360ac499"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_v0.4.pdf",
+      "unchanged": true,
+      "sha256": "b9ee0edc781c9b4253f7c5380754b5908c7c2dedb42ff02f922947317ff63f4b"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md",
+      "unchanged": true,
+      "sha256": "2ed641c921a790cffd48f6beba4f85ac20eba55e4f5868155ec00b0e6e4fdc02"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+      "unchanged": true,
+      "sha256": "f35e7c143be9e6b810aafca061b24129ed29adc5d1ec460fa340bf7452dec15d"
+    },
+    {
+      "path": "output/imagegen/请本人到场_检查区_名称标注_v6.png",
+      "unchanged": true,
+      "sha256": "6c232ff4779b2695a0507a89541395838e2dafb8e22ff2a8dd2ab7e06b802f6f"
+    },
+    {
+      "path": "output/imagegen/请本人到场_检查区_路线示意_v6.png",
+      "unchanged": true,
+      "sha256": "3b6850b063daadf1ba8f73aaf9a62b1a2a48b6d19c64106ecdecd290516437f3"
+    }
+  ],
+  "diagram_text_verification": [
+    {
+      "figure": "roles",
+      "strings": 11,
+      "missing": []
+    },
+    {
+      "figure": "coop",
+      "strings": 22,
+      "missing": []
+    },
+    {
+      "figure": "loop",
+      "strings": 33,
+      "missing": []
+    },
+    {
+      "figure": "reset",
+      "strings": 23,
+      "missing": []
+    }
+  ],
+  "raster_images_per_page": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "visual_review": {
+    "render_dpi": 110,
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "latest_page_1_rechecked": true,
+    "finding": "No clipping or overlap observed; readable labels and preserved full-width scene image"
+  },
+  "failures": []
+}

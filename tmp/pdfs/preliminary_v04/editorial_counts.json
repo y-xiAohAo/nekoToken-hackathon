@@ -1,0 +1,37 @@
+{
+  "v0.3": {
+    "code_occurrences": 21,
+    "codes": [
+      "N",
+      "A",
+      "B",
+      "M1",
+      "C",
+      "A",
+      "C4",
+      "L6",
+      "M1",
+      "M1",
+      "A",
+      "M1",
+      "C4",
+      "L6",
+      "C4",
+      "L6",
+      "C4",
+      "L6",
+      "A",
+      "A",
+      "A"
+    ],
+    "characters": 4811
+  },
+  "v0.4": {
+    "code_occurrences": 2,
+    "codes": [
+      "C4",
+      "C4"
+    ],
+    "characters": 4777
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507.28" height="95" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 95" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507.28" height="95"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-95)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="35" width="111" height="50" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="20.15" y="63.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,126) scale(1,-1)">玩家观察与描述</text>
+			<text x="22.54384765625" y="49.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,98) scale(1,-1)">设备 / 路线 / 意图</text>
+			<rect x="132" y="35" width="111" height="50" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="152.15" y="63.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,126) scale(1,-1)">助手追问与比较</text>
+			<text x="146.5" y="49.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,98) scale(1,-1)">无地图，依据玩家描述</text>
+			<rect x="264" y="35" width="111" height="50" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="274.05" y="63.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,126) scale(1,-1)">接口提交，程序校验</text>
+			<text x="284.217578125" y="49.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,98) scale(1,-1)">每次最多1-2个改动</text>
+			<rect x="396" y="35" width="111" height="50" rx="4" ry="4" style="stroke: rgb(81%,85%,87%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,96%); fill-rule: evenodd;"/>
+			<text x="406.05" y="63.0" style="font-family: YHB; font-size: 10.1px;fill: rgb(9%,16%,23%); stroke:none;" transform="translate(0,126) scale(1,-1)">现场变化，玩家行动</text>
+			<text x="422.8" y="49.0" style="font-family: YH; font-size: 8.2px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,98) scale(1,-1)">离点后继续观察</text>
+			<polyline points="111 60, 132 60" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="132 60, 128.452 58.15288, 128.452 61.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<polyline points="243 60, 264 60" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="264 60, 260.452 58.15288, 260.452 61.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<polyline points="375 60, 396 60" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.85; fill: None; fill-rule: evenodd;"/>
+			<polygon points="396 60, 392.452 58.15288, 392.452 61.84712" style="stroke: rgb(7%,43%,47%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(7%,43%,47%); fill-rule: evenodd;"/>
+			<text x="168.14" y="11" style="font-family: YH; font-size: 9px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,22) scale(1,-1)">联络时暂停全部游戏计时；会话结束后生效</text>
+		</g>
+	</g>
+</svg>

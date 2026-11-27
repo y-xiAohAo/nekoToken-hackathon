@@ -1,0 +1,31 @@
+{
+  "workspace_files": 5104,
+  "skills": 49,
+  "discussion_messages": 382,
+  "portable_python_packages": 28,
+  "patched_source_copies": [
+    "tmp/pdfs/participant_intro/build_intro.py",
+    "tmp/pdfs/preliminary_v02/build_proposal.py",
+    "tmp/pdfs/preliminary_v03/build_proposal.py",
+    "tmp/pdfs/preliminary_v04/build_proposal.py",
+    "tmp/pdfs/preliminary_v05/build_proposal.py",
+    "tmp/pdfs/preliminary_v06/build_proposal.py",
+    "tmp/pdfs/preliminary_v07/build_proposal.py",
+    "tmp/pdfs/preliminary_v08/build_proposal.py"
+  ],
+  "document_scripts_syntax_checked": 11,
+  "relocation_test": {
+    "latest_proposal_pages": 8,
+    "participant_intro_pages": 1,
+    "both_rebuilt_with_portable_tools": true
+  },
+  "game_status": "No Godot project or playable prototype",
+  "engine_prerequisite": "Godot 4.x; version to confirm on target",
+  "platform": "Windows x64",
+  "excluded": [
+    "migration-build temporary files",
+    "desktop screenshots",
+    "account credentials",
+    "unrelated parent TMS repository"
+  ]
+}

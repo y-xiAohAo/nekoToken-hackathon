@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507.28" height="258" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 258" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507.28" height="258"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-258)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="507.28" height="258" style="stroke: rgb(4%,9%,14%); stroke-linecap: butt; stroke-width: 1; fill: rgb(4%,9%,14%); fill-rule: evenodd;"/>
+			<path d="M 12,0 L 12,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 36,0 L 36,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 60,0 L 60,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 84,0 L 84,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 108,0 L 108,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 132,0 L 132,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 156,0 L 156,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 180,0 L 180,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 204,0 L 204,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 228,0 L 228,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 252,0 L 252,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 276,0 L 276,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 300,0 L 300,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 324,0 L 324,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 348,0 L 348,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 372,0 L 372,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 396,0 L 396,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 420,0 L 420,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 444,0 L 444,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 468,0 L 468,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 492,0 L 492,258 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,12 L 507.28,12 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,36 L 507.28,36 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,60 L 507.28,60 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,84 L 507.28,84 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,108 L 507.28,108 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,132 L 507.28,132 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,156 L 507.28,156 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,180 L 507.28,180 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,204 L 507.28,204 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,228 L 507.28,228 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<path d="M 0,252 L 507.28,252 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.22;"/>
+			<rect x="0" y="255" width="54" height="3" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<path d="M 16,222 L 491.28,222 Z" style="stroke: rgb(8%,15%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="16" y="235" style="font-family: YHB; font-size: 12.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,470) scale(1,-1)">与助手联络</text>
+			<text x="433.88" y="235" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,470) scale(1,-1)">交谈时暂停游戏</text>
+			<polygon points="16 198, 156 198, 163 191, 163 132, 23 132, 16 139" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="16" y="140" width="2" height="50" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<text x="26" y="181" style="font-family: YH; font-size: 8.1px;fill: rgb(35%,87%,82%); stroke:none;" transform="translate(0,362) scale(1,-1)">玩家</text>
+			<text x="26" y="163" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,326) scale(1,-1)">说明现场和打算</text>
+			<text x="26" y="147" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,294) scale(1,-1)">设备位置、准备走的路线</text>
+			<polygon points="180 198, 320 198, 327 191, 327 132, 187 132, 180 139" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="180" y="140" width="2" height="50" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,70%,100%); fill-rule: evenodd;"/>
+			<text x="190" y="181" style="font-family: YH; font-size: 8.1px;fill: rgb(54%,70%,100%); stroke:none;" transform="translate(0,362) scale(1,-1)">个人助手</text>
+			<text x="190" y="163" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,326) scale(1,-1)">追问、讨论对策</text>
+			<polygon points="344 198, 484 198, 491 191, 491 132, 351 132, 344 139" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="344" y="140" width="2" height="50" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,70%,100%); fill-rule: evenodd;"/>
+			<text x="354" y="181" style="font-family: YH; font-size: 8.1px;fill: rgb(54%,70%,100%); stroke:none;" transform="translate(0,362) scale(1,-1)">个人助手</text>
+			<text x="354" y="163" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,326) scale(1,-1)">选定改动</text>
+			<text x="354" y="147" style="font-family: YH; font-size: 8.2px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,294) scale(1,-1)">灯或摄像头，最多1-2项</text>
+			<polyline points="163 171, 180 171" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="180 171, 176.147 169.091, 176.147 172.909" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<polyline points="180 148, 163 148" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="163 148, 166.853 149.909, 166.853 146.091" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(54%,70%,100%); fill-rule: evenodd;"/>
+			<polyline points="327 165, 344 165" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="344 165, 340.147 163.091, 340.147 166.909" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(54%,70%,100%); fill-rule: evenodd;"/>
+			<polyline points="417 132, 417 96" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="417 96, 415.091 99.85303, 418.909 99.85303" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(54%,70%,100%); fill-rule: evenodd;"/>
+			<text x="430" y="111" style="font-family: YH; font-size: 8.2px;fill: rgb(54%,70%,100%); stroke:none;" transform="translate(0,222) scale(1,-1)">结束会话</text>
+			<polygon points="344 96, 484 96, 491 89, 491 30, 351 30, 344 37" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="344" y="38" width="2" height="50" style="stroke: rgb(54%,70%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,70%,100%); fill-rule: evenodd;"/>
+			<text x="354" y="79" style="font-family: YH; font-size: 8.1px;fill: rgb(54%,70%,100%); stroke:none;" transform="translate(0,158) scale(1,-1)">个人助手</text>
+			<text x="354" y="61" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,122) scale(1,-1)">提交指令</text>
+			<polygon points="180 96, 320 96, 327 89, 327 30, 187 30, 180 37" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="180" y="38" width="2" height="50" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,89%,92%); fill-rule: evenodd;"/>
+			<text x="190" y="79" style="font-family: YH; font-size: 8.1px;fill: rgb(83%,89%,92%); stroke:none;" transform="translate(0,158) scale(1,-1)">游戏程序</text>
+			<text x="190" y="61" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,122) scale(1,-1)">检查并执行改动</text>
+			<polygon points="16 96, 156 96, 163 89, 163 30, 23 30, 16 37" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(7%,14%,21%); fill-rule: evenodd;"/>
+			<rect x="16" y="38" width="2" height="50" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<text x="26" y="79" style="font-family: YH; font-size: 8.1px;fill: rgb(35%,87%,82%); stroke:none;" transform="translate(0,158) scale(1,-1)">玩家</text>
+			<text x="26" y="61" style="font-family: YHB; font-size: 10.3px;fill: rgb(92%,96%,98%); stroke:none;" transform="translate(0,122) scale(1,-1)">继续潜入</text>
+			<polyline points="344 63, 327 63" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="327 63, 330.853 64.90898, 330.853 61.09102" style="stroke: rgb(83%,89%,92%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(83%,89%,92%); fill-rule: evenodd;"/>
+			<polyline points="180 63, 163 63" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polygon points="163 63, 166.853 64.90898, 166.853 61.09102" style="stroke: rgb(35%,87%,82%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(35%,87%,82%); fill-rule: evenodd;"/>
+			<text x="16" y="12" style="font-family: YH; font-size: 8.5px;fill: rgb(68%,74%,79%); stroke:none;" transform="translate(0,24) scale(1,-1)">每个联络点每轮可用一次。</text>
+		</g>
+	</g>
+</svg>

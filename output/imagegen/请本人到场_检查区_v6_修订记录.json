@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-14",
+  "mode": "local annotation and diagram revision; no new image-generation API call",
+  "art_source": "请本人到场_大地图_v5_clean.png",
+  "layout_source": "请本人到场_大地图_v5_布局.json",
+  "art": "请本人到场_检查区_名称标注_v6.png",
+  "diagram": "请本人到场_检查区_路线示意_v6.png",
+  "change": "replace proposal-facing device codes with descriptive Chinese names; preserve source geometry and original generated art",
+  "limits": "candidate layout only; no visibility, timing or balance measurements"
+}

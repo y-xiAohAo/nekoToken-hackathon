@@ -1,0 +1,4497 @@
+{
+  "created_utc": "2026-11-27T01:36:48.399415+00:00",
+  "root": "nekoToken-hackathon",
+  "scope": "Stable project materials; excludes bundled runtime, temp files, caches and generated machine check",
+  "files": [
+    {
+      "path": ".agents/skills/create-statusline/agents/openai.yaml",
+      "bytes": 45,
+      "sha256": "3bf863a8856d04a6a1c4f23b3aae6cbf5388544129662c55cc733c2d9c23bbbf"
+    },
+    {
+      "path": ".agents/skills/create-statusline/assets/statusline.py",
+      "bytes": 3425,
+      "sha256": "2c63f7bf996fc65ed1be9dabc19df548601528554bf6b1b843d39a37f9c54af6"
+    },
+    {
+      "path": ".agents/skills/create-statusline/references/statusline.d.ts",
+      "bytes": 5493,
+      "sha256": "b716c3c55a38105ab81c111386a410a681ab9b72558934b2b153a771776eee71"
+    },
+    {
+      "path": ".agents/skills/create-statusline/SKILL.md",
+      "bytes": 2838,
+      "sha256": "a19fba9320e56dc88b01e2ec5c49ce437e43cdf72f097682905f3c66afe4f72b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/references/artifact-flow-examples.md",
+      "bytes": 2808,
+      "sha256": "c9873e9f8c85103ccfb7be237343c05eb479856132022346ca2436f4b2632665"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/references/boundary-cases.md",
+      "bytes": 2879,
+      "sha256": "4d769e23801ba9dd5ba7a9bb5fafd8623a7ccfe264ee1c5afb54947a4f1493a9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/references/campaign-checklist-template.md",
+      "bytes": 2503,
+      "sha256": "53ffc784fe10463a2a968723dfc3336cfccc347fc877191562b59e8141f2b897"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/references/campaign-design.md",
+      "bytes": 2113,
+      "sha256": "41a6df9af92064815498ed82f51e3d1ed4f3b18af99d253bbf67c5c8d60b9a42"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/references/campaign-plan-template.md",
+      "bytes": 2241,
+      "sha256": "c16c0df3c982b4715f3ef2c5d2a91bf48d276db9135170f40fabc50aac634c0c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/references/operational-guidance.md",
+      "bytes": 6965,
+      "sha256": "ba98f5df68a994355475498b3ce0d2e2203f1d12f78357ed7e787ec9b5302367"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/references/writing-facing-slice-examples.md",
+      "bytes": 1905,
+      "sha256": "b3aef1d4bba0bc3355dfe0ceed2d211f00dbb70f1845b89e4e3f28bba95a2eb8"
+    },
+    {
+      "path": ".agents/skills/deepscientist-analysis-campaign/SKILL.md",
+      "bytes": 21973,
+      "sha256": "9dcb5f01f030ba1826f8ad53d8e8c8c91f949bcbc0c3d92ceac1b79609174472"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/artifact-flow-examples.md",
+      "bytes": 3294,
+      "sha256": "510d34f38f06fc808103eddbcc4a83dd836882b7b5f5037fe47235ef691560cf"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/artifact-payload-examples.md",
+      "bytes": 900,
+      "sha256": "416a82bb211d25b0bcaab059ec8d4768d58e19fc271fd9f09ce0fbda22bcbed7"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/baseline-checklist-template.md",
+      "bytes": 1537,
+      "sha256": "0bb3a6d255aec86893779afc0f1c31afc3f1fce8f37ba67190f97e9b8f4abb6b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/baseline-plan-template.md",
+      "bytes": 1273,
+      "sha256": "5bdf080fc3088a2c7fd6eff11c2878669b12321212778babbbf62146386de594"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/boundary-cases.md",
+      "bytes": 2523,
+      "sha256": "1c448133746249a46f4f35e27b4eac3056902dd15876ff4b36075205a46affb2"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/codebase-audit-checklist.md",
+      "bytes": 973,
+      "sha256": "72a71c0c0027631ca3d8e36d5fecf9eeaef695e7bb46a5c3e909de3b1c3fcf77"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/comparability-contract.md",
+      "bytes": 692,
+      "sha256": "69db66c20ae0c5eef5d38e5ae943aaf076c9bc8a3a602d9b6b6188859b8e9cd1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/operational-guidance.md",
+      "bytes": 3756,
+      "sha256": "49deb7aea2c405e71b2f3438e27eb062900eee635f90ab09f3ab26b3d04af25c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/references/route-selection.md",
+      "bytes": 727,
+      "sha256": "d67899d46a9ccfe66a4ef08790e36e8f325722da4e3d1c865ccd38993e2721da"
+    },
+    {
+      "path": ".agents/skills/deepscientist-baseline/SKILL.md",
+      "bytes": 18906,
+      "sha256": "086559ce02e744f7dea7e79c19f4363e96d01e421dcd4dd59e9535267a460b3c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-decision/references/checkpoint-memory-template.md",
+      "bytes": 1085,
+      "sha256": "edb1d7290cbed285d7250a314441bf3bef63e2b6277abd377a7d4e849611f4df"
+    },
+    {
+      "path": ".agents/skills/deepscientist-decision/references/operational-guidance.md",
+      "bytes": 4015,
+      "sha256": "697fd53b4c90553c5956808e4979e19791d0f71e9f8f88a5546acb5184a855d3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-decision/references/research-route-criteria.md",
+      "bytes": 995,
+      "sha256": "ad21e242b0d41b4ee97aeb25b2d2206d33ad9e7d696b30d7b55b327b67988422"
+    },
+    {
+      "path": ".agents/skills/deepscientist-decision/references/strategic-decision-template.md",
+      "bytes": 1171,
+      "sha256": "cda134e8022adce35e52ff2edb57f9c1d7d28c56cc4d8708f41da7a06d22a8a3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-decision/SKILL.md",
+      "bytes": 10760,
+      "sha256": "95d3431099a4ade0146a4a3c360937290d35eda1aa66e8675b7388677af27304"
+    },
+    {
+      "path": ".agents/skills/deepscientist-experiment/references/evidence-ladder.md",
+      "bytes": 1198,
+      "sha256": "c5b49cb1c7aa24f71dc6f67bc4ff5984dd21e480e42f286e1ed75e9270261fa1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-experiment/references/execution-playbook.md",
+      "bytes": 19290,
+      "sha256": "862f7a5b5cafbc2ca52b7ba3069cce24431887f083b527534eeefc7fb18a38d3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-experiment/references/main-experiment-checklist-template.md",
+      "bytes": 1802,
+      "sha256": "26bd77de45e247811f951f5ff8a2c78a8904213da523f8b88f43ef3dad0e2eaf"
+    },
+    {
+      "path": ".agents/skills/deepscientist-experiment/references/main-experiment-plan-template.md",
+      "bytes": 2214,
+      "sha256": "6e81745704804af313748065c7649ac951372fbf2ef25c7e97a971664fedaac4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-experiment/references/operational-guidance.md",
+      "bytes": 5533,
+      "sha256": "baf21243a0210cf78ef6cd8314955af9bccbaeef2c100cd40cee0b85fbaa96af"
+    },
+    {
+      "path": ".agents/skills/deepscientist-experiment/SKILL.md",
+      "bytes": 13063,
+      "sha256": "cf78d994d2cbaf2befa42298c1695b25eb19a0cfb389062967edafe6f7903e07"
+    },
+    {
+      "path": ".agents/skills/deepscientist-figure-polish/assets/deepscientist-academic.mplstyle",
+      "bytes": 1010,
+      "sha256": "7e761fd336a55ca4eca6f82b21d1741d5b35706165d791c7c2d4d2322d35d954"
+    },
+    {
+      "path": ".agents/skills/deepscientist-figure-polish/SKILL.md",
+      "bytes": 6615,
+      "sha256": "1182e639908b71866eb506ea5b21d37bd0b4680afff0c9511947650205f28e1c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-finalize/references/checkpoint-memory-template.md",
+      "bytes": 1262,
+      "sha256": "00caa84761fd5dd8fcbc426a922046bd665b02921d71d8da5b6d4416d8fe90ca"
+    },
+    {
+      "path": ".agents/skills/deepscientist-finalize/references/finalization-checklist.md",
+      "bytes": 1440,
+      "sha256": "6c3277ba271c382393466aaaf6950b8c0c27937d0fbd183ab31fa6f40096bcfd"
+    },
+    {
+      "path": ".agents/skills/deepscientist-finalize/references/resume-packet-template.md",
+      "bytes": 949,
+      "sha256": "867f9b9c2e37a7bd068b6d3f7518a30beb23767452a62f99008661e11a9140f4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-finalize/SKILL.md",
+      "bytes": 16286,
+      "sha256": "6c79c49c230d51c410843f64b8f308c2b6dd723a919591823328d34054184a10"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/controlled-brainstorming-playbook.md",
+      "bytes": 2227,
+      "sha256": "6d4317e89bb45b0841cc9e398e62aaf116ea8fa47b8353ecbaf81f1e2deca383"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/current-board-packet-template.md",
+      "bytes": 2072,
+      "sha256": "c1b98c5b767fa7f2984c860dee0a28d8d1fced76d2bac2f8fab2105c75f7fa9d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/high-value-idea-sourcing.md",
+      "bytes": 4738,
+      "sha256": "0da1d1dc7129a6a8bcfbe9a0de962a878fba5be8eddd53ce7ac4f1fce1502277"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/idea-generation-playbook.md",
+      "bytes": 3786,
+      "sha256": "7abf21c19fd8ce7768dc8d7b1c715279e62c6cb7b63ccf84e5872bb713453668"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/idea-thinking-flow.md",
+      "bytes": 3829,
+      "sha256": "cfe2af3c844b96e3c1200a0aae87c59f04b6e63084f5e4e70f3f12fd598bc709"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/literature-survey-template.md",
+      "bytes": 4088,
+      "sha256": "4b80311ed3fbd191641790563c1a68681d6130bb821935360d9893bf96459426"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/objective-contract-template.md",
+      "bytes": 2010,
+      "sha256": "0fc310203fee460d3064dc50c57a81a3e35b903c2f6f824e540d967e7013dce2"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/outline-seeding-example.md",
+      "bytes": 4407,
+      "sha256": "9945ee8bdf66ad01707ea23d6fb4d5039f1efc124c77034eb7899858292508c8"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/pre-idea-draft-template.md",
+      "bytes": 3398,
+      "sha256": "c6c07d13137f5844c9ee347e0ff92ea2d5babae05da6ff3f35b590a2ef57b68c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/related-work-playbook.md",
+      "bytes": 8437,
+      "sha256": "af432f816b42b5d90e282ff3f5d2e2af8ee282bb9578a4f806d036a37d28438e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/research-history-playbook.md",
+      "bytes": 3694,
+      "sha256": "eca86d91cbcfd9f974d2e7163ec2137242ae4f05d2575dbdf7aa8a01c0c869f0"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/research-outline-template.md",
+      "bytes": 1444,
+      "sha256": "b27f67112f5bedfe5a65ad8a47b4e7af4f1948d8c79bda270a5d464030c1a3c5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/references/selection-gate.md",
+      "bytes": 5541,
+      "sha256": "db461a8e388d1177b49aabf3681507fb63ea61601b3ead15c5e29d871b60b87f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-idea/SKILL.md",
+      "bytes": 72977,
+      "sha256": "e7f7430dd033a501d2176da4849501d8820aea23655698aca14296babbe45384"
+    },
+    {
+      "path": ".agents/skills/deepscientist-intake-audit/references/state-audit-template.md",
+      "bytes": 957,
+      "sha256": "d80f9df8c435d8df9b05eb94a59bf4f4d60e37c65fa8a9249ef7db6a704675a5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-intake-audit/SKILL.md",
+      "bytes": 12519,
+      "sha256": "2ac59d8695b1e2cb55a66d3fc4f8ea8c05fd36595e2895479f9796885a9ef45f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/references/correction-rules.md",
+      "bytes": 5054,
+      "sha256": "3ac8abe43c46042dc2c6b065680a3a751be12e1d228178d43d8a816828619181"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/references/knowledge-profile.md",
+      "bytes": 4067,
+      "sha256": "a15ee63a2600761e742c94477d2231eeb6e0b1a086313c4566a184dc013c5bbc"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/references/persona-profile.md",
+      "bytes": 5276,
+      "sha256": "54ed4c623167306c492cb138cc981a8571a5dc8e92efa793d1f907bed083141d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/references/taste-profile.md",
+      "bytes": 3478,
+      "sha256": "586843100f5fe7adf588099e0ec46fd5019dcba2a10d8f4f6e0cfc97c2622b94"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/references/thought-style-profile.md",
+      "bytes": 3908,
+      "sha256": "bac3576465228203e0ef1340591091a785145fc034fa155889fc05a6fe90bfce"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/references/work-profile.md",
+      "bytes": 9418,
+      "sha256": "928a2c3b88442ef0b881ac1c1d2fba41996d938477b8423148d6de0b2885aaf4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/references/workflow-profile.md",
+      "bytes": 7531,
+      "sha256": "e0e583c7b476bacb1c2aa526a7ed19ca4b671fbd4f537e31fc35cb0d0eadb42d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-mentor/SKILL.md",
+      "bytes": 8451,
+      "sha256": "6f49f57cfb17ab3dc93bc5f4198a62e46b6e06ed80fa73334209fd25cc95d08d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/agents/openai.yaml",
+      "bytes": 282,
+      "sha256": "c3db96ee4d3d19c461ef014082c80c5152387fb7bbf76bf496f5b6d10e067b07"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/references/chinese-author-alignment.md",
+      "bytes": 5010,
+      "sha256": "31e315ea091192643103ab2d7e130f58e192c51caf52632279ab5991f4812383"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/references/fair-metadata-checklist.md",
+      "bytes": 4076,
+      "sha256": "35fb836b3310ae50976434f4a36611cf9d0d145c513705e576cffb616fc01f2a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/references/policy-principles.md",
+      "bytes": 5305,
+      "sha256": "23b0dd9581a92bfb15e3049384b1c698ca6775e0b0531bdb7a38e736ddb9ed73"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/references/repository-and-identifiers.md",
+      "bytes": 4390,
+      "sha256": "da3ce50339c03194811170477da88edececafba5571b4b82866d04492dfbc697"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/references/source-basis.md",
+      "bytes": 5391,
+      "sha256": "46f726a79e7a28fca6e342e59e2d87753aaab827de500647d3335f866fe76af8"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/references/statement-patterns.md",
+      "bytes": 7193,
+      "sha256": "81dd63e799e245f1ea71fbd56cdae500cd401f10927b8f4991b0a946db040949"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/SKILL.md",
+      "bytes": 7135,
+      "sha256": "7753af00e23eb90a31902807ce55f9face1951f131b0f4d2a3828375afc81eb5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-data/UPSTREAM_LICENSE.txt",
+      "bytes": 1067,
+      "sha256": "5ef38c0d20ccbbf9e0b2bd9f689aee045df683d298a6ea97bc33f9e15cb321b3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/agents/openai.yaml",
+      "bytes": 261,
+      "sha256": "a445eca49fdc2d0d83a15c1974ae424792b8128ea85c2da69f28b907a0492df7"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/evals/evals.json",
+      "bytes": 2127,
+      "sha256": "c5d4c7b8c64ee251771262dff2a50d346054b4f871116f4b119bcf9c707c697c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/api.md",
+      "bytes": 13552,
+      "sha256": "4d4f47ab46d082c4d1f2065058dd4756302a7d0770929845a635fab1fdddb71d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/backend-selection.md",
+      "bytes": 4694,
+      "sha256": "f30b3e5c9293e8732c6de27c2f695284d3267ac5f4ecf21d8d5209020eb2e052"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/chart-types.md",
+      "bytes": 8911,
+      "sha256": "585b5e59c0a528e020750df6b77914759eaa285f8a2a025d3810e40a8637c2ab"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/common-patterns.md",
+      "bytes": 9879,
+      "sha256": "a2f9d839d4284dc2a8dcac0e5682446db037ff197aa2b4b5e995128eeadf6a1e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/design-theory.md",
+      "bytes": 15620,
+      "sha256": "0a7b3a8a964635fa1c7a59d82640e0adb31a6e9845beae77bc6e87503f8597c1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/figure-contract.md",
+      "bytes": 3970,
+      "sha256": "d989b4ebdb3aeab14c09e261980756abe72a67bc5eb866e1b91cdaac9c5d5201"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/nature-2026-observations.md",
+      "bytes": 5622,
+      "sha256": "e4f7800316740297ae3573b2f1830a2d150e3e306546144f6c0547806431c307"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/qa-contract.md",
+      "bytes": 4736,
+      "sha256": "5323f234fa5319784ce4b06e4eba1d242ba39a72ce83198f9e2ba126eb500339"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/r-template-index.md",
+      "bytes": 3903,
+      "sha256": "0ebbbd4171896b61639d7969a010401d0aa257bafb99783026a1ba32c91ce19e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/r-workflow.md",
+      "bytes": 5275,
+      "sha256": "67ca5126e54b22373a6646c7f7c23c892ef237174092a2b5c94edbd9b25ead5e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/references/tutorials.md",
+      "bytes": 8073,
+      "sha256": "7f9232dab5f1b10dd5d5f93f4c9cde2fe70dd514a9c8cf490059366391b45670"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/SKILL.md",
+      "bytes": 11805,
+      "sha256": "b78feb089e4c6650e4032eb2c57deaff06e78b9d3dbf38e7a63d6f2509033c9a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-figure/UPSTREAM_LICENSE.txt",
+      "bytes": 1067,
+      "sha256": "5ef38c0d20ccbbf9e0b2bd9f689aee045df683d298a6ea97bc33f9e15cb321b3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-paper2ppt/agents/openai.yaml",
+      "bytes": 231,
+      "sha256": "a939be97ee7653d9362036510d5052a015e1fb0e12423af52329a574b588dea7"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-paper2ppt/SKILL.md",
+      "bytes": 24480,
+      "sha256": "740c9f8256eabd5eececa9758d1f38909fce17a63d2b7b271061e18cfa38b48a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-paper2ppt/UPSTREAM_LICENSE.txt",
+      "bytes": 1067,
+      "sha256": "5ef38c0d20ccbbf9e0b2bd9f689aee045df683d298a6ea97bc33f9e15cb321b3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-polishing/agents/openai.yaml",
+      "bytes": 266,
+      "sha256": "a0229b725f76438e392791f1d56e09cb4c9af902bab855418c8f159d7ff69ba0"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-polishing/references/phrasebank-playbook.md",
+      "bytes": 3671,
+      "sha256": "03b1640264ef18ac95e362d73f9ca9dd60042c85d2ef17a2660ace34ffc525f9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-polishing/references/section-moves.md",
+      "bytes": 5769,
+      "sha256": "77c259d570ec130889a6ea03b84e454955bbf890db1a0cafec14c2962dd33365"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-polishing/references/style-guardrails.md",
+      "bytes": 2669,
+      "sha256": "f909c7adfc46b96c1b8a80fb8da86bee5786d2eda13062ba4dc3dbeb38bbc509"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-polishing/references/writing-strategy.md",
+      "bytes": 4425,
+      "sha256": "03a5eee892df1083ad94b5b0aa9be6f96f43592c0e4dead3935318f06d379dd1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-polishing/SKILL.md",
+      "bytes": 13355,
+      "sha256": "e232fa09c1a042d4f994b405747d32bfa13a6ae5f73aae7cf73d546dcfdfa18e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-nature-polishing/UPSTREAM_LICENSE.txt",
+      "bytes": 1067,
+      "sha256": "5ef38c0d20ccbbf9e0b2bd9f689aee045df683d298a6ea97bc33f9e15cb321b3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/brief-shaping-playbook.md",
+      "bytes": 3443,
+      "sha256": "3f2e95293a94ac4c4df6968d31ec6b60299a3161b731f34cc7ca316ba1e04ea3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/candidate-board-template.md",
+      "bytes": 660,
+      "sha256": "5c6d112fedcd7740fe5a70ca152c78f915533287b9eeedc67fa71f7eee8c1d29"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/candidate-ranking-template.md",
+      "bytes": 1030,
+      "sha256": "59f4cc10f70de4f350a2054dca857fc8ef487662ff8a7a6b346a4ad645fa1209"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/codegen-route-playbook.md",
+      "bytes": 1468,
+      "sha256": "1c7f551f3e66922c17d5cc76a5e649fa78398153febf955c797977b8e3325a0d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/debug-response-template.md",
+      "bytes": 582,
+      "sha256": "894f28f3d3f678a92b31a21cc47fce6c7f314bebf9e6ebb67596d43d73fee41a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/frontier-review-template.md",
+      "bytes": 595,
+      "sha256": "255d2a05c7ef8416cdb5fd6b7f31829c2f1899a49b7a9404b0536c86bb0b39de"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/fusion-playbook.md",
+      "bytes": 916,
+      "sha256": "f25aeae57d457c409e8265b71b15417db7f74c30855d78510ea301da39c3571b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/method-brief-template.md",
+      "bytes": 1329,
+      "sha256": "8ee846f740bb05343ea657f966d093e5effafef6493cea676257c4da10dbc0aa"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/operational-guidance.md",
+      "bytes": 23294,
+      "sha256": "338ba8b08ff251ee399347c9ea7b6d6fb8279479bc92a6b9c01a127d14291a2a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/optimization-memory-template.md",
+      "bytes": 467,
+      "sha256": "4c5794c36f4c167084c79710fa629c50830e845e4bc6a1ad1f74091a5c75fae4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/optimize-checklist-template.md",
+      "bytes": 924,
+      "sha256": "a23dcb14181cf40ed6a801c5e6dbe7b7df92516e741676fa7dbcae5a7859f0db"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/plateau-response-playbook.md",
+      "bytes": 887,
+      "sha256": "e22d567844f1aa174a6830b65715b8dc1561fe3a583166d8a2e243a6f077268d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/references/prompt-patterns.md",
+      "bytes": 1353,
+      "sha256": "ac3452398e2a20d4244003751d483e0b896a7640f6c99cde8067a343a7ec9a4b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-optimize/SKILL.md",
+      "bytes": 14323,
+      "sha256": "495cd3cee9a5b052de60a3d674bf87378f5b1dd51330ec3fa1c1c4efecf7da0e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-outline/references/outline-patterns.md",
+      "bytes": 2697,
+      "sha256": "539d4d5d815718a1ef1f2229482282677334bef1bddf569b2447e3ce2a728a2e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-outline/SKILL.md",
+      "bytes": 9996,
+      "sha256": "79ae0ec49d7528a3aa506ab2194158063c0098169f3b4fb6c609987fcee0e9a3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/agents/openai.yaml",
+      "bytes": 282,
+      "sha256": "9d86d2e15ab29f4c3b4b7ae8a393ed6c1b76d2bb2fea6eb7befb48ab34ae1178"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/bar_grouped_hatch.md",
+      "bytes": 3609,
+      "sha256": "5ffd847202a82085d4f25510288cc55cb3d5599007eeb6d4aff7d2d55204dec3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/bar_paired_delta.md",
+      "bytes": 2318,
+      "sha256": "237331845fa2739eca062b5a2acfa95ae6ec22a0205215b7c7e46cd145b9530d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/line_confidence_band.md",
+      "bytes": 2395,
+      "sha256": "bfd07c12382731962ca0b03a4dd0ef91ed739f04e9e18fcadb21ba3caa995d26"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/line_loss_with_inset.md",
+      "bytes": 2123,
+      "sha256": "4420ccbfc2ed9c6ce6ca996a4387b9e0c8bb7a4f6e708c477ea0ab02f47a2f94"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/line_training_curve.md",
+      "bytes": 1154,
+      "sha256": "7990555b0840c9a82a2b2cdbacab909b723b0d6c6386aa6aa94ccd074ed3c31f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/radar_dual_series.md",
+      "bytes": 1817,
+      "sha256": "ed40fabd3f71f75219f3aee2dc1568883233e0154e76485d9c2717009acc995f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/scatter_broken_axis.md",
+      "bytes": 1602,
+      "sha256": "a8042c14313e81b709868727eaf393f742c91f962e4ac864d5bbbb77665103c1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/references/scatter_tsne_cluster.md",
+      "bytes": 1933,
+      "sha256": "1bc9524556e364b16e11fb94066be7c49329310078523f70edb7db02ca8c32bd"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/bar_memevolve.py",
+      "bytes": 4733,
+      "sha256": "d2b4593ed6d908071286f5fb45f7b060caba746d0a025cc57667efdcb7d9f644"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/bar_spice.py",
+      "bytes": 5948,
+      "sha256": "0d5a4ff7e00b090eeb6fd491188fdf3173046f08bcc47cf22b59be86c3140626"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/line_aime.py",
+      "bytes": 3035,
+      "sha256": "2ad48a28fd98006550024512c218739513a8ccb3a640ceb50687e480c785f85d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/line_loss_inset.py",
+      "bytes": 5550,
+      "sha256": "3fcd6cc0dc552425cd467e10e885668d9d755135fc4c7c5dd26f3b8ff22716c3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/line_selfdistill.py",
+      "bytes": 7259,
+      "sha256": "1a9c412222f302658378e1385a4617e5436f5a0be55e52c9e95a403eee61ac4c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/radar_dora.py",
+      "bytes": 4912,
+      "sha256": "dcaadc375e64212c3b229f275137037e7c82f524e06f3e651a3be7bb4825123f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/scatter_break.py",
+      "bytes": 5908,
+      "sha256": "ec00987965e7c1cb6adddd9eb1b6e138fb13aa5d1cacbeccdf031a1112b9ab50"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/scripts/scatter_tsne.py",
+      "bytes": 4506,
+      "sha256": "abd6c76a601b908bd2c5d5e854eb4137ad07b14e170044f8ff456bdb42c4d691"
+    },
+    {
+      "path": ".agents/skills/deepscientist-paper-plot/SKILL.md",
+      "bytes": 4943,
+      "sha256": "f15341716598b6753bd7f72c759e0cb73cc86f35a045352c4848a1cd7bed1f29"
+    },
+    {
+      "path": ".agents/skills/deepscientist-rebuttal/references/action-plan-template.md",
+      "bytes": 1209,
+      "sha256": "9119d58d22f4b61a18a6f9fcc387b503f905891d585fb52e024e6fb9b6683550"
+    },
+    {
+      "path": ".agents/skills/deepscientist-rebuttal/references/evidence-update-template.md",
+      "bytes": 668,
+      "sha256": "9ddfc3ca7e73fef93a071d37cf6a7f992c2c2f2888ff0bf0a95271b8440e6760"
+    },
+    {
+      "path": ".agents/skills/deepscientist-rebuttal/references/response-letter-template.md",
+      "bytes": 3980,
+      "sha256": "447787761168c8a350e1eddf4af7a502b79ebb45be3d9a1f070c39ca1cc1662e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-rebuttal/references/review-matrix-template.md",
+      "bytes": 1463,
+      "sha256": "e6afe2bbbccaf54fad85b4c67c782aeafa01eb5f8710c047c3ad801def1e3b0a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-rebuttal/SKILL.md",
+      "bytes": 21531,
+      "sha256": "c65af527cd5a71e7ae509c6692b64c833bb8c4b35e25f9740a745c17aae91681"
+    },
+    {
+      "path": ".agents/skills/deepscientist-review/references/experiment-todo-template.md",
+      "bytes": 1010,
+      "sha256": "57105e814785fdb7960024ca4bf22895e3add3a2014af728815fd593fd288d77"
+    },
+    {
+      "path": ".agents/skills/deepscientist-review/references/review-report-template.md",
+      "bytes": 1449,
+      "sha256": "cdc95979c1b2040643b773582b2795cb27f2d19b21f0b0d8b12f311b8c7609b4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-review/references/revision-log-template.md",
+      "bytes": 708,
+      "sha256": "15e577df45be643407f96f46c7a13e90e297b02ed59094bea1d494bf0ad60c5d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-review/SKILL.md",
+      "bytes": 23620,
+      "sha256": "b11c062ef0c6b0a282fcb407534a046aecf20bdd91c5c36f4a671ccadfe5e91e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/PROVENANCE.md",
+      "bytes": 1594,
+      "sha256": "12be1b7ce00eb593c944df14cc38a22dc45d81d4120094da7069505ccab06450"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/artifact-science-tool.md",
+      "bytes": 3654,
+      "sha256": "5f4375fce1b83c2be48e5bd9789a52c03fed3aa95635fc5175778e5d0dabed1c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/claim-type-discipline.md",
+      "bytes": 1361,
+      "sha256": "5ee92e06b47d90e338cb00466920c210795b3d346672961102ca29ed2b0add32"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/domain-index.md",
+      "bytes": 21460,
+      "sha256": "b6b63ee6856c984063ed45d1127903864f6cc38d959f6bcbaa15c80cac8aa278"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/hpc-via-bash-exec.md",
+      "bytes": 1473,
+      "sha256": "dc1667c1b312b0e0ed3c6efe408bec395476d8f3bf7f3f1c71ed1ffd0c117858"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/package-check-playbook.md",
+      "bytes": 1838,
+      "sha256": "58ce54f63093706d8ea2227450767c4eb646af11831f343aaf37ce053ce5da84"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/package-index.min.json",
+      "bytes": 151993,
+      "sha256": "3a0fbacba988e039baa447455e06aa2c4d2802eeb44c562bf2aab6f02d574149"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/abinit.md",
+      "bytes": 4032,
+      "sha256": "661c11e97c1d088057119e2f00cec08a46bbd42164cad69630b929b314790f7c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/acts.md",
+      "bytes": 3877,
+      "sha256": "9d5c1fe70174a0f4b1a0e1cf90005fd082306ff333e1648dab1c8dbf2657177c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/aiida-core.md",
+      "bytes": 4060,
+      "sha256": "af88068dd4ac8b53105e2c97b9acee7f7df1b25cbff346da745b059547a20c93"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/alamode.md",
+      "bytes": 4060,
+      "sha256": "5d712db547bd99c0fde51fb7fb497e227bb30d5cdd11b9e47b7ecc73f7bb4cb3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/amuse.md",
+      "bytes": 4543,
+      "sha256": "fe908dbfc7588c7e6bafdf10e453c9ea345a8d996286916a5321af90f657175a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/anndata.md",
+      "bytes": 4406,
+      "sha256": "b854a29ccec01e753000834b08405a43dbdee97b89acec8f7f4687cb81d889b5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/arbor.md",
+      "bytes": 4045,
+      "sha256": "79de2521c173224cb9d4451cdf337b6d123b61a0c82482d803d20da263f9170a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/arc.md",
+      "bytes": 3944,
+      "sha256": "d7f48a6e82d17b4f5579298a467ef6af6e4c059b037b85cd2d641d89ce13a775"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/astropy.md",
+      "bytes": 4383,
+      "sha256": "0ad2ce4a990ff4f9b4fd503d66ba98ae295cff4233b82c43463e14a3b7e54d0c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/astroquery.md",
+      "bytes": 4495,
+      "sha256": "c9a88db72037e9dd7ba9af25075b350000428ede4b018655050937e4988698f3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/atomate2.md",
+      "bytes": 4140,
+      "sha256": "4729357a252fd403a137c0f2fdab79a98cdd46eec432a159878b29fe661f6dde"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/atomsmltr.md",
+      "bytes": 3873,
+      "sha256": "12b5040c361b2cf88add24499f86f99393337c575c846af43cdbb9e728b01b61"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/awkward.md",
+      "bytes": 3837,
+      "sha256": "df72d94e40c9e549aa763e915feeae8e8be2b3db819777b4e35b679f80a3acf2"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/batman.md",
+      "bytes": 4430,
+      "sha256": "bb5d536d8ade359d57e44825513243759878005e2d3b343880e09fbccf006ff5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/biopython.md",
+      "bytes": 4442,
+      "sha256": "2c754eb7fa205877d38c8295f3d63a7a2351e9a71843bb01cb135dda78abe667"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/bloqade.md",
+      "bytes": 3853,
+      "sha256": "a914a49b6e5f678c3e578d3ca66a1b959f15deff87a776ac1c1a557d60fab719"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/brian2.md",
+      "bytes": 3845,
+      "sha256": "fb0ed97786d020b2ef3d2c1c5dddc4c7ca103f3aa1dfda9b5c18dea782eb9adb"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/bullet3.md",
+      "bytes": 3859,
+      "sha256": "5976c7c93d36ce42029ddd40de123127ced88619a0926b65e0a975fb20dc9db6"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/calculix.md",
+      "bytes": 4091,
+      "sha256": "715bb9c348d0460e7838bf1a3c7d9b24f0d6808756958d11b0dabe4fd82f7cd1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/cantera.md",
+      "bytes": 3940,
+      "sha256": "2c2db35afb19328e76333b68d3f3c1479b18149e9a6d578bfa245d4b55aa8dc5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/cavity-md-ipi.md",
+      "bytes": 4164,
+      "sha256": "b2a8cc0b61c1f048ea2c48bec42afccaabea681c18e6d87fbb2c36f2eca75c5a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/ccdproc.md",
+      "bytes": 4415,
+      "sha256": "cfb84e0bf90da2fc4a09e2272dbb19bc74885cfa63f735b07cc150ed3984f33c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/celerite2.md",
+      "bytes": 4518,
+      "sha256": "69e4973b5d3b41991b20ecf568aba2bee18b48d89270bcfff5719e8527e82f76"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/cellrank.md",
+      "bytes": 3898,
+      "sha256": "f269517883d4a1ae34be90575860a55785770e76c1457b4ace45375391abeb75"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/cesm.md",
+      "bytes": 3989,
+      "sha256": "d44f235bd46a26c71c54fa1f4096e1d85e224200c4f7511a0a4a0740a48aec55"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/chemicals.md",
+      "bytes": 3961,
+      "sha256": "0f5e4bc3f1f07b445e0d551331805b090e556617f860490f1e93a5f96b4a0b64"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/chempy.md",
+      "bytes": 3886,
+      "sha256": "7ff0ba8fb52187607d0aab3d9199a3befa50e917b5cfb368510a4a36f94c2ab0"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/cirq.md",
+      "bytes": 3790,
+      "sha256": "956e2249e8efa888fc28ef469cdcdb6e91538d6565865c4027d278d15f1f5706"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/coffea.md",
+      "bytes": 3901,
+      "sha256": "702c442c9443599341e3a744a0a702bf98214ec1d813f58b032e10fce57dd42a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/cp2k.md",
+      "bytes": 4424,
+      "sha256": "a8c9ab44d74a018aee3a8472266f7ae341fbc1ce1badc5f404214d70fa19ae97"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/custodian.md",
+      "bytes": 4227,
+      "sha256": "b8a88d6cc99d410b344bea53387c974f225efd135fcba1ca75e18f26ced98e6c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dart.md",
+      "bytes": 3807,
+      "sha256": "e2c0f7773f30e89845f86671c0ffe98a17459e7fbc03723c23e60ba41e73d8e0"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/datamol.md",
+      "bytes": 4506,
+      "sha256": "2e7007d4656dcfee67864f540164be6a1c01f22630a16229333e181a76317da6"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dd4hep.md",
+      "bytes": 3859,
+      "sha256": "54779bad7fab6ff75264239f253b7e6b7be4b785cec8f655e5513ef4eb255fba"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dealii.md",
+      "bytes": 4081,
+      "sha256": "50cea5de359e99d7aec1fe2cd19797448a6f589d7f0ed874d44e247ce5c3b9b3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/deepchem.md",
+      "bytes": 4543,
+      "sha256": "4692b957baec2de15f86110bf01e15d5ac5c22cf4117392f52adc8cb70ba2f00"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/delphes.md",
+      "bytes": 3838,
+      "sha256": "e1b9ce167b8c5d07a50031a46a66203ac1cbb28cae5df55866bea4703baa00fa"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/devito.md",
+      "bytes": 4033,
+      "sha256": "99429edb064ee0b5b53801c1a752fadb1d80bfd0e8fd63518b7ab85d39584503"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dftb.md",
+      "bytes": 4476,
+      "sha256": "44608f6e8bf67771c6f21a3d6040dea60ee23d7d52004ba1d6128064d411daeb"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dftd4.md",
+      "bytes": 4404,
+      "sha256": "f2337df2953f78f0748013d02d191449d2e36dd26139361418e5e0cb92c1c476"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dftk-jl.md",
+      "bytes": 4071,
+      "sha256": "0cf2340dbdc988d73a5ee62c554b99f2846f97d8974501c00454eccca398219f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dolfinx.md",
+      "bytes": 4017,
+      "sha256": "4876e6abe1802aaa65a7a351f0b6f312003f2e2621dc56ada6d759f6a6cccc34"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/drake.md",
+      "bytes": 3779,
+      "sha256": "f8cb46a8c95734eff01f7896dbe43bcc0fadea107953b0d6eb7c164220d91685"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/dumux.md",
+      "bytes": 3837,
+      "sha256": "cf7504adff301a350e9efc24f1a8be39115b07ef0baa12ea4458440042e503a9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/elk.md",
+      "bytes": 4049,
+      "sha256": "e8984c8aec6879bcb55462d1e1536e065619f67320db43fadfbccba4735e61fc"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/elmerfem.md",
+      "bytes": 4125,
+      "sha256": "dba7117612e696a59f0566e2a7e6ecf64fb7e4f7f949505e08296eca437afefa"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/enzo-e.md",
+      "bytes": 4469,
+      "sha256": "d083c5bdf0baf465b8a835968c4ece35ddc52acb7da17c0f5e45a3ca377ba44d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/espresso.md",
+      "bytes": 4128,
+      "sha256": "d69b6974e6d26e8d717526d48dff03469ec91806a24a1c3f1d73028f6da5ad7d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/exoplanet.md",
+      "bytes": 4474,
+      "sha256": "640e5e7a6cbab741992161dca5f8582a6192214d181630b21bd16dd2b8eaa5d9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/fairroot.md",
+      "bytes": 3888,
+      "sha256": "cb0d048ae01cd37d21e1543455a882bf49d8beba98ab7ea394a57673ea695ee3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/fbpic.md",
+      "bytes": 4014,
+      "sha256": "89ba2899f1a394ef8eb88f9858ecdd4299fa50ff1f605498453dea0193d80aa8"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/fdtdbath-meep.md",
+      "bytes": 4093,
+      "sha256": "b142b5d2ee958d5124a2b29b9ade3157736fe097b8b864d90d300d26d1dc4b44"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/geant4.md",
+      "bytes": 3878,
+      "sha256": "f0b132e35a011068a4bf96ba22b99a60ba3463856bf71b3aeb8098379be4a100"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/geosx.md",
+      "bytes": 4119,
+      "sha256": "fc60428c3a32250eb12211cabd1b8f97abd0451c9a5876a42ae52ba7e861d507"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/gprmax.md",
+      "bytes": 4000,
+      "sha256": "dccb6fab968cad887e3d3983574a87247901bd84f33c76712e5e7152be698fbc"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/gromacs.md",
+      "bytes": 4083,
+      "sha256": "5074cfef5d38a55fa02a11c6af916cd43f8859ca4d07c971b4d5ccde1f4fbd0b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/gwaslab.md",
+      "bytes": 3878,
+      "sha256": "0d802944d9762cb19f4f79a38e62beef75f7148c9dfc3a16a3efe072a0ba7459"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/gz-sim.md",
+      "bytes": 3834,
+      "sha256": "b0d177cb9c85dcbe987703218a58d608cb259bea4c9e2b1083487eb6d41de8da"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/hail.md",
+      "bytes": 4391,
+      "sha256": "2d570e8e0e4fcc285d1b91c5212bd817cebda7d294e26ee15e5ffc5ea8b1af56"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/hiphive.md",
+      "bytes": 4096,
+      "sha256": "adc447c2c601a9cf36fc05cbd3b68f9ac7f3ac1f9e05b887faf24b8a4e65b401"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/hoomd-blue.md",
+      "bytes": 4091,
+      "sha256": "4a557a0e46f1706f6b8555235f9b4aef70939555df2331bcfba47f3579655052"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/itensor.md",
+      "bytes": 3812,
+      "sha256": "ba6d7bad5821fe0122bfbe06ed39b2cb76b1e70d6fdcdb6d7b22f16ff4b6da6d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/itensors-jl.md",
+      "bytes": 3861,
+      "sha256": "35e4e549bcbc702b404ed729c0bc51272677e0d331de75cf5f0446ea2127bbb1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/jdftx.md",
+      "bytes": 3897,
+      "sha256": "33d5c81781ee08c14cfb903eda59ae9b39ea896dab9eb96366b92c1b51827e0f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/jobflow.md",
+      "bytes": 4129,
+      "sha256": "542b704c5bdc3b668ba71c3ef81f3f5c283feefd69444fe8d86e6e9f8a191aa6"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/kadanoffbaym-jl.md",
+      "bytes": 3926,
+      "sha256": "05b4db280fd7f89b311bdbde2ccb0e4051919e9717239b1ba0764a57647c493c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/kite.md",
+      "bytes": 4067,
+      "sha256": "be627f0b821844bb43be5c2ee0600cb04345560ac6fb7ab0fb606ba1b35664df"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/kratos.md",
+      "bytes": 4094,
+      "sha256": "573a85758dd910b8a4966892f54904c2caacfa7e367969df621a8886e6f249ac"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/kwant.md",
+      "bytes": 3872,
+      "sha256": "c679dc523c1006b26b498cfa3082bc324fbcd151aaefd1c0de73a5186fb5c1ec"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/lammps.md",
+      "bytes": 4030,
+      "sha256": "c8525be9e51552823de7f7bb7480c4ebc9b2fb47e8cfab2d479f37667b12123c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/lightkurve.md",
+      "bytes": 4495,
+      "sha256": "334de900cdf4189d0e10bf907ff4a986b40d56ee8130697b6648d4dc33acd03e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/limix.md",
+      "bytes": 3923,
+      "sha256": "8303bed7bb4a74a63c3f8ba5661c1890658907d09e29996e22309942413a9c86"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/maxwelllink.md",
+      "bytes": 4145,
+      "sha256": "af6a2dcbb3aa7dd72e6816e93fa3e9c18511fe0fdba1a2fb4c1115297e3afbe4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/mcdc.md",
+      "bytes": 3877,
+      "sha256": "61281383244e09aaee237ea9a1015de7db53bd95bee0e870f9f5b96dac61ac6c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/meep.md",
+      "bytes": 4025,
+      "sha256": "4d4ed0c5df56a6ec92f76f1caa038464e288c63fb0d876d4a86caeb0eb86eadd"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/mfem.md",
+      "bytes": 4022,
+      "sha256": "69eade1de8c301e9cca4ddc2b565cd720f1fd396d9f7e57a7df36ec1ccdb1194"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/mitgcm.md",
+      "bytes": 3852,
+      "sha256": "a2d2e66e23865dc5d9c1a262b82ffa4ce9c840d6ff208dcfb462feb7832bf3ff"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/modflow6.md",
+      "bytes": 3906,
+      "sha256": "04873c669fb7e1ef63ecccc4e1da726c23dde5759a298b1955e6f91d90b0a088"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/molecool.md",
+      "bytes": 3956,
+      "sha256": "af07616244752b0cac74b92f28c5e37e43dc235a7e689251664d9786ea4a339f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/mom6.md",
+      "bytes": 3894,
+      "sha256": "8845e0befb885488cd7efc5aa71f9a273fe60e3c1e67d5dc8a21b0ed67e1c9e2"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/moose.md",
+      "bytes": 4059,
+      "sha256": "29967f2fdc54ca084a89387076693c459b4516b50fac7d3a63d443c369a52f34"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/mpas-model.md",
+      "bytes": 3906,
+      "sha256": "a53d6e99b6a959a7117728829a61ccf4e275d710edb862d726a4a087d1b14c16"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/mujoco.md",
+      "bytes": 3845,
+      "sha256": "4d3216e36785058850b29a8e30b013edf42a3914a7f8d133fa9c0b0000d7b0f6"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/mumax3.md",
+      "bytes": 3833,
+      "sha256": "071d707f84031b3f1aefa1e98cb767f2cdb372112b239464efd3860468b6acb5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/nekrs.md",
+      "bytes": 4009,
+      "sha256": "1406c32c9f7c11f75c993de8407f9dc24347ab86c1b0a04e969f60e1fd1f0f37"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/nessi.md",
+      "bytes": 3936,
+      "sha256": "0c16f79065dcb8a0fda0303ec36ac26455435a2e46aec2024e325a7f4cf44270"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/nest-simulator.md",
+      "bytes": 3958,
+      "sha256": "d0eb2c5c207efcfe243e5e28cefbf152f74173470b08410871277326b8735022"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/netket.md",
+      "bytes": 3900,
+      "sha256": "51f5c9aa478406c79f37398476167637fedd66950c3cadff66e7b6d55c808253"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/neuron.md",
+      "bytes": 3917,
+      "sha256": "57f0b208093b346cebd33fb17ca2c959d2362fa723b6552eb95733c973d768a1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/nextflow.md",
+      "bytes": 4421,
+      "sha256": "0bd495b5c0d5b378cfaf3d41c199f97b2213812b69c0deadd3c9f60a297baaa1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/nwchem.md",
+      "bytes": 4527,
+      "sha256": "4529300425253996a87d2df8ef8131a537c92ee77ff5eb35568f6106a4746329"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openbabel.md",
+      "bytes": 4403,
+      "sha256": "31533d1032b4a7635be1b9d9ab96bd7164a9705ee32ca0f29c31492a913a1a3f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openems.md",
+      "bytes": 4037,
+      "sha256": "1c73438c4c2225f239185a9ab6fc74134df5506fc8c81931bdc804ac375f53f6"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openff-toolkit.md",
+      "bytes": 4532,
+      "sha256": "63103e8f4c0837678f1bc67dd53de26f7bc77a3e13c00fbf946eed1e97d6e93d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openfoam-dev.md",
+      "bytes": 4117,
+      "sha256": "12bac72fd4b85558728735b920ae386ccfb97cd2f3a991578e60279e01b2abd3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openmc.md",
+      "bytes": 3850,
+      "sha256": "caffab61acc5603d98ae858e84eebc748387c8b22c85f1bd48c2909ad81181df"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openmm.md",
+      "bytes": 4076,
+      "sha256": "1ab65b08a980de8f9e6eb6ca3b9357197cf02f5475dbaf58fc7f7e41e3d48dad"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openmoc.md",
+      "bytes": 3894,
+      "sha256": "18e156d7d8a4727d0d79db4893213a847634506f967bc540b1571349e76b0340"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/openmx.md",
+      "bytes": 4233,
+      "sha256": "7b7bccfbffe525f80b1bc9382e6eea20a194c18ae250207ae479b148bbf97a1c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/opensees.md",
+      "bytes": 4105,
+      "sha256": "77b6e3fd6f6f7803e29b5b584d350184605b20d7ad2d4c5d6fbc8e39f66017aa"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/opensn.md",
+      "bytes": 4028,
+      "sha256": "c9012dae7c4b7cf4b82e72cbe311a65aa05dac37a5f9b0f194d4c1f92e1e9040"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/opm-simulators.md",
+      "bytes": 3953,
+      "sha256": "1d8cbc930763d26a3839dd31b592bd78bcea05a0c6646bf75f051e1713b2bdb0"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/oqupy.md",
+      "bytes": 3743,
+      "sha256": "925c988d6adfad55811bb21365c5acf68896e88f09a496c068f8bdba1d248f41"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/packmol.md",
+      "bytes": 4096,
+      "sha256": "fa15905fb2402ccc6143ada7420d3bb4b0c737971beb0690365849d24d4834ff"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/palabos.md",
+      "bytes": 4045,
+      "sha256": "7ff3b00b7a8cd1e3fbf90532054232c6ceb83b39ec402b97ba1dbce040091a15"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/parflow.md",
+      "bytes": 4036,
+      "sha256": "6c0a58a22478bd712474937cd0fb5781d70b46d4945cb2edde78d0b6b976dbd7"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pennylane.md",
+      "bytes": 4459,
+      "sha256": "34a8f38385323b6c2791d71f7ca6de1fee2d3afa32583cab761facc5876cb69d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/perceval.md",
+      "bytes": 3860,
+      "sha256": "114c870f88ce017b1927d1131d708bc4d67fdb2bae151cfbab398dbd66706a7e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/phono3py.md",
+      "bytes": 3848,
+      "sha256": "df080af3ce3d52f3b2e943509754061870a64a13c644b4b4e529165965c6b675"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/phonopy.md",
+      "bytes": 3897,
+      "sha256": "253b19f86ce26791be3b99692790ad9761d2b2fa3bdb158a1d6e814a701895f1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/photutils.md",
+      "bytes": 4509,
+      "sha256": "0977b029a5d73530b922e120491016683d7a6ce125e41f549561297b30afad9c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/picongpu.md",
+      "bytes": 4107,
+      "sha256": "ad34a686698d4b80506cf3520e972e7df852f54b02aef75afee1433a49b75a37"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/plink-ng.md",
+      "bytes": 4475,
+      "sha256": "6c2028ff342ba81de2b227b90dd0c56c5156c615752d7cf5df4586fd07a78537"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/precice.md",
+      "bytes": 3878,
+      "sha256": "afa280194b88d6e8aaff49290c78dd2db91863c93854027c13584a9104bc1f78"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/psc.md",
+      "bytes": 4051,
+      "sha256": "93050362dc6943b240a945d46637379ca947eb17c811a1b1341813c2e6850b88"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/psi4.md",
+      "bytes": 4443,
+      "sha256": "2d393a19ecddcc72c902a7c29410a306bd0c71707f1ed15e42e62289ba71d9a3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pybinding.md",
+      "bytes": 3891,
+      "sha256": "48fa26f4cf341f22d8ea7ae87279cbb9479443b3af2a750d8859b98f26a057ee"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pyfr.md",
+      "bytes": 4012,
+      "sha256": "a22ddbb5858c8c506c646674cc320a3f90c016deea46c0569c44a794742db56c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pyhf.md",
+      "bytes": 3838,
+      "sha256": "c030f2d84362efdfa7af28371c83c2cf1f37b2ada997b7f794d26456a5a4aaff"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pyiron_base.md",
+      "bytes": 4098,
+      "sha256": "36a126fab612989e2f67f8f15d6e2252c8ba9942952608b7cce18ae7b62dc4ff"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pylcp.md",
+      "bytes": 3865,
+      "sha256": "77b07465bae2d8f5da994d09e208c2242e3569736d53fb68db12017e24c1dd66"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pylith.md",
+      "bytes": 4096,
+      "sha256": "873da2c3c9b79631333d1a87e00c7e8c18eab1a0f145af0c6b6463ee2fa299e7"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pynbody.md",
+      "bytes": 4451,
+      "sha256": "430d5543669672182425ac8ee394f810ee682bdcc486354a0d15e1c0808925a4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pysam.md",
+      "bytes": 4411,
+      "sha256": "73610ac73b381b54ab384dd1bfd9383f6990f8a71f3dcfc7b87022f518ba912f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/pyscf.md",
+      "bytes": 4514,
+      "sha256": "ccbdfb8c60e7b7f8874c1d9b9cf327a31b0fcb00f94637d7ec266a51fbe33b02"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/q-e.md",
+      "bytes": 3850,
+      "sha256": "9c01cf71c04e5d1900d11bf1e4ed7e6e05fa3f059a8a0928be9f1808229d9667"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/qibo.md",
+      "bytes": 3868,
+      "sha256": "aebfba86df4694c5af168854044f99badbac27ecf7f76d4d3d6910fedf101314"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/qiskit.md",
+      "bytes": 3845,
+      "sha256": "218e8437e2282b57123cab6f850017f04bfff2d5b266778413f05b611bdbbf91"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/quantica-jl.md",
+      "bytes": 3930,
+      "sha256": "0edbc691306a246fabf936ddedb3b33081b8b25803a23b2648a6eebc02add806"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/quantumoptics-jl.md",
+      "bytes": 3912,
+      "sha256": "aef61ea053f03af9dcdf3ff4e1937f22540e6bf31aed5bb27c8938ca61d96486"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/quimb.md",
+      "bytes": 3819,
+      "sha256": "c66bfdd389a94c67536f5477f3d53ada3121e83f1917d0f32c1d003cc640835e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/qulacs.md",
+      "bytes": 3861,
+      "sha256": "4c1813977d7932870c93424fd2d3ce29f29f2831fdbb82a3dd22f97ce9d9a53b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/qutip.md",
+      "bytes": 3868,
+      "sha256": "4530c273da158215536c23afe5f1fdd602687a7e2396d048132c163f3d7cf071"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/rdkit.md",
+      "bytes": 4480,
+      "sha256": "3043073d799e3dcc117f6a81527af37f5031ddf3725023250c1864013d34e9dc"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/rmg-py.md",
+      "bytes": 3977,
+      "sha256": "4ff269f1051229d3d2756fdc156e10414ecf564cda664aeb7d33f7a7e307ca83"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/root.md",
+      "bytes": 3867,
+      "sha256": "e1d60b85353124533669ca0ba3a9c3dc46e162ec88081d63bf3e4c92e8d1d8af"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/scanpy.md",
+      "bytes": 4396,
+      "sha256": "5a8489fc87f825d21609d592735cf3834b4a89a92381429543f8c5e501454ee9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/scikit-allel.md",
+      "bytes": 4452,
+      "sha256": "04b2d2231ca70f69ad06a96afdbef20f45bd373987e0df0a976c613ff3cc41aa"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/scikit-bio.md",
+      "bytes": 4463,
+      "sha256": "b2fbcac40af377e2f2fb531a62111336876921b350929fbf1c84d6a30d0261c4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/scqubits.md",
+      "bytes": 3901,
+      "sha256": "d22dce8f870021bc17bde0ba31000206fc045b3af9f29a0b5e64b57f9cb740eb"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/scuff-em.md",
+      "bytes": 4115,
+      "sha256": "f554f4f73d02c37308b78d41f84b7e370270d4ba92567f4f9f332bb584fa060d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/scvi-tools.md",
+      "bytes": 3945,
+      "sha256": "7371fdc630fb511f6bb42afecdb95dd0de84035e8f3fee0705b6bbb668200b20"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/seissol.md",
+      "bytes": 3823,
+      "sha256": "d2892482af5005920654989ebe77c74bf4063c59a0405f2358bc8a999ef8944b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/sfepy.md",
+      "bytes": 4025,
+      "sha256": "2a057956a08d95af3268d5e4572bde01a41ce739944de8b386c9941699835b91"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/sisl.md",
+      "bytes": 3899,
+      "sha256": "49673a7116b674dbe89471952b5970a44e127564ada64c0d95529646413f28aa"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/smilei.md",
+      "bytes": 4087,
+      "sha256": "4d4e7cc534aedb8c331697c204bac808533d3fe97d210b6f8e8f55add04d7834"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/snakemake.md",
+      "bytes": 4447,
+      "sha256": "2457e4bc594a382506399b77ba7fefa56a85cfffe15c9542344c45a68ce9130d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/specfem3d-globe.md",
+      "bytes": 4045,
+      "sha256": "9de49f9349b1f1c3da4759581ba2fc1cc213524f21dbc70e068a07a678f7dcc8"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/specutils.md",
+      "bytes": 4499,
+      "sha256": "64d82bf2e0855a6dc78a3aed3bda2a31896cfd3f8fe7b5cf4e2ad80c5e1b2265"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/spglib.md",
+      "bytes": 4136,
+      "sha256": "7c19f0b79dd54fae83febafe47fe96beb855002585763cb27279fc2c046e2821"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/squidpy.md",
+      "bytes": 4490,
+      "sha256": "e36b28104ca98cfd87c4d206ee8101a75fa0779e6d38e445378d3d2d9d62027d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/starry.md",
+      "bytes": 4371,
+      "sha256": "20e04774fa86b6e36175bf1a687a48d9df58f1187eeae01761bce217b30aead9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/strawberryfields.md",
+      "bytes": 3985,
+      "sha256": "7e6c7f05e744eedbf2b77c56f04659b144f0a4c0b42016f64ea2419984e0b09f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/su2.md",
+      "bytes": 3977,
+      "sha256": "5fd3e79567aa8cb07fac455a8c3008bd9e8ab6a7171a62cb1a33c978da12c0f5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/sunny-jl.md",
+      "bytes": 3867,
+      "sha256": "492689608f33a2e83a2714177f46bb823bfd141d71dfdf17f7c605914ca74009"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/sw4.md",
+      "bytes": 3852,
+      "sha256": "70dcdf2feafeacf92bdb5b5aa33218bdc7c675783b3c51522f0239bb251ae4c6"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/swift.md",
+      "bytes": 4477,
+      "sha256": "6f2ee72976527731712b39a384230e0dc48a0ea6bace7354e3087a74eb6bdb6b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/tdnegf.md",
+      "bytes": 3887,
+      "sha256": "fb20f0d4a09260163542189ec6721f3f5fc8c7c742f60d1292c646520dd84695"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/tenpy.md",
+      "bytes": 3895,
+      "sha256": "dfa8089ad6c7aa7aae0d69644580cfd11948596de75be7ae9211aa05c4045169"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/thermo.md",
+      "bytes": 3905,
+      "sha256": "78e30c68c35b8f9d27547f590280d534a11a57694d0db3a36fa60ca40a5f6f80"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/tkwant.md",
+      "bytes": 3950,
+      "sha256": "d49cd7ee3dcf29f3782fd43d6a53d55fb725e0ea8746e21e7d857f5c8ee716e0"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/tvb-root.md",
+      "bytes": 3932,
+      "sha256": "5bff6ad64e92342a86067b03a909eed74eda48a175feb65a642c09939fa331e2"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/uproot5.md",
+      "bytes": 3842,
+      "sha256": "955fce3036ff824cc33701c00d196548a92aa847eb8f09019bf9307a0cdd1c6b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/vampire.md",
+      "bytes": 4099,
+      "sha256": "277317b1d1d3f84bb81a7b10d02e5d1b61390858fe82c9d69c34392bdc7579f9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/wannier_tools.md",
+      "bytes": 3984,
+      "sha256": "7672d731658fa8965be10f7b5c1cb2eea2a476da5203681da73ffbf93220961c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/warpx.md",
+      "bytes": 4137,
+      "sha256": "d260bfaa6e01e3a0019f5e52026d90affd24591868138ccd5d3ef3b1753d6b4c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/wrf.md",
+      "bytes": 3899,
+      "sha256": "c4e97a9be0ff8990ad445d9c8c84ee55c5d78d85254f6d67a2729b45a5726dd0"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/xtb.md",
+      "bytes": 4470,
+      "sha256": "9e2b70082d2ff5fc9611c13bd56cc6af9cab45cb646e2fea799fa8e510ce8c70"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/packages/yt.md",
+      "bytes": 3849,
+      "sha256": "14d384231a3ac80cb1f80a09af40a735f3ce040d227e7a960915f1c5d1854c8b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/references/science-task-brief-template.md",
+      "bytes": 1859,
+      "sha256": "29e70fe928fc3950ef74c9d3c6c82dcddaecde8cf461e4a2ef9d8f21705c2ed3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-science/SKILL.md",
+      "bytes": 8216,
+      "sha256": "4d61b39e63d9cb3f471023b0bad367a5b761b8796689a4a82075c9b879ae541d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-scout/references/baseline-shortlist-template.md",
+      "bytes": 787,
+      "sha256": "4164cbc26f7a11903bacff2e02b785702026812b9585e139a44463665d5cd723"
+    },
+    {
+      "path": ".agents/skills/deepscientist-scout/references/eval-contract-template.md",
+      "bytes": 612,
+      "sha256": "e92f0ded8f37c2607432f47cb9aed7156356373807843afa00bd5a4047a21fb7"
+    },
+    {
+      "path": ".agents/skills/deepscientist-scout/references/literature-scout-template.md",
+      "bytes": 1913,
+      "sha256": "76ea7e05117c6962730cf4aad8db9e9b883c69335e743c7e721fc2d814ab0219"
+    },
+    {
+      "path": ".agents/skills/deepscientist-scout/references/operational-guidance.md",
+      "bytes": 6516,
+      "sha256": "1ab33e8f307bef7557502f39747754c579213c948e2e12a92642edffe6d666d4"
+    },
+    {
+      "path": ".agents/skills/deepscientist-scout/references/paper-triage-playbook.md",
+      "bytes": 1482,
+      "sha256": "ea3cb9e97589dd196f8015a2e0cae45a9e6652d198a6365c820b2cfc4d54d44a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-scout/SKILL.md",
+      "bytes": 7814,
+      "sha256": "5c607cfa6db4bf11a3a58b68641b9daba4cc3b63d1da7efcef0b995c1364b804"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/references/experiments_analysis_patterns.md",
+      "bytes": 4876,
+      "sha256": "bbeb88ccb923957cac311a56f80508dc6a9a71b964b312ec1833ce64b64de7ec"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/references/oral_package_patterns.md",
+      "bytes": 9227,
+      "sha256": "6afccf93d5d46aff8ed494503cee104508e2a3f6560546ea99ea48addf2dd50c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/references/oral_writing_principles.md",
+      "bytes": 8449,
+      "sha256": "7b4ca79a1568942e73d3c0ae8cdba966df64b661231add42bcdde1a0d1ead42a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/references/section_rewrite_checklist.md",
+      "bytes": 9285,
+      "sha256": "963e95c18be96f6805c3fff2a7ad8c5daba3249ca7f8995aaf050c05ff88db79"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/SKILL.md",
+      "bytes": 56038,
+      "sha256": "e5f6b28b8a739c7157c2e45e5b396f98ba82e04e9a1a18126f86ad75c20ef438"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/aaai2026/aaai2026-unified-supp.tex",
+      "bytes": 4548,
+      "sha256": "35adcff419efc25a032140c520d40520d0d0fc69123e9d8e38ad161c40ad07b7"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/aaai2026/aaai2026-unified-template.tex",
+      "bytes": 63140,
+      "sha256": "bed12c50b5e027fd88097d238ec4e7ebf1ae7b450cb06d6df7c8ae126a620aea"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/aaai2026/aaai2026.bib",
+      "bytes": 4766,
+      "sha256": "d8fcf3dc09b9d489aeff13631174c5998a48cb0d0800ac8a00a2f7bdbc40295b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/aaai2026/aaai2026.bst",
+      "bytes": 30207,
+      "sha256": "ac26e2c66047435c0ed25f21ae36ad42d731cf3d794c4a8b5f05a62141a27294"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/aaai2026/aaai2026.sty",
+      "bytes": 11802,
+      "sha256": "a39f1866a04dd1e2603613c876fa446aaea2c2f3e34d02be868fd21520bfade5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/aaai2026/README.md",
+      "bytes": 17987,
+      "sha256": "ee2c61a8b06e1471c0df7c774074d2ff1be824e6377a9e38f6adca5c68ddbb60"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/acl.sty",
+      "bytes": 11615,
+      "sha256": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/acl_latex.tex",
+      "bytes": 14533,
+      "sha256": "339c9ee9705c1767d44ef24b85365c0bb8619ecc3fcf66172bf1356292389614"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/acl_lualatex.tex",
+      "bytes": 3050,
+      "sha256": "0d9987ba833331a996f9abcd1a03eebba7d7ae331145793e7ddb6b5ae8db27b3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/acl_natbib.bst",
+      "bytes": 45186,
+      "sha256": "e332fd51dcea48e2a8a89754892c3cb99674a1cd70b527b661e9aaffc235e83c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/anthology.bib.txt",
+      "bytes": 1169,
+      "sha256": "2b78d2d9aeda62e14c4e46099e8225b5fc116387d8e0a54aad776485e249ceff"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/custom.bib",
+      "bytes": 2071,
+      "sha256": "d76ccb30ddceb70c9e1ad0be3f43dfe301ad5765aab2c960fc830ef67bf8232a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/formatting.md",
+      "bytes": 17923,
+      "sha256": "9e004a136c5dd43300d97e5bef5eb3a77d0e2a2d3502f0f2436ec011d1c49e9c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/acl/README.md",
+      "bytes": 2126,
+      "sha256": "e55608f9bc0b564f58d864d43197547785ef021c3ec1c5f0a6d2057aa615681e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/asplos2027/main.tex",
+      "bytes": 15845,
+      "sha256": "4a1837ef362f6d9dfc7bd65342daeed76991f766cb865946c605ab6f2c9224a9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/asplos2027/references.bib",
+      "bytes": 5172,
+      "sha256": "bb91a9682e9039be84b7ad5dfa319f126ad1d739b4ebf7f02268e70f3a5ef6d8"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/colm2025_conference.bib",
+      "bytes": 496,
+      "sha256": "c5fabf46cc7d7a6e527b82860b9a9d658eb07f63abaafa9b7beb631d8abb91bd"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/colm2025_conference.bst",
+      "bytes": 26973,
+      "sha256": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/colm2025_conference.sty",
+      "bytes": 7727,
+      "sha256": "79df8b2a1b142dfb324a0a7e87fabcd9d5dc2a34700e1c6c083a9bbb9e5daa8e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/colm2025_conference.tex",
+      "bytes": 12830,
+      "sha256": "baf01cd056ccd1b35165d190019414946217de1683f8ae3ddc66b11e3c653dbc"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/fancyhdr.sty",
+      "bytes": 20521,
+      "sha256": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/math_commands.tex",
+      "bytes": 12284,
+      "sha256": "90473c4d0542070db244cea73ef962d6cddc5b2a746757e6a40ddf5fdfb90ba9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/natbib.sty",
+      "bytes": 45154,
+      "sha256": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/colm2025/README.md",
+      "bytes": 51,
+      "sha256": "7c2c585d565482357dffdf499b567929e07a9f09619608c19ce9eb2984697ea1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/DEEPSCIENTIST_NOTES.md",
+      "bytes": 990,
+      "sha256": "634a23460ee9d57bbbc9a7df43d5bb8c6d285c276eaf2788c7abd4df61809c9e"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/iclr2026/fancyhdr.sty",
+      "bytes": 20521,
+      "sha256": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/iclr2026/iclr2026_conference.bib",
+      "bytes": 629,
+      "sha256": "cdd86e7d4c31854dcf2145871657c944588a6d44c3b72e160ff4baa8df1a52fb"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/iclr2026/iclr2026_conference.bst",
+      "bytes": 26973,
+      "sha256": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/iclr2026/iclr2026_conference.sty",
+      "bytes": 9025,
+      "sha256": "a4852f68e080d6c5245057ca2039100b409e31727898aa93c03d78ddb84374a3"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/iclr2026/iclr2026_conference.tex",
+      "bytes": 16899,
+      "sha256": "941b58de6e52f5538de0ebfe2d20425a79e1768cb271d453b7436904b5159859"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/iclr2026/math_commands.tex",
+      "bytes": 12284,
+      "sha256": "90473c4d0542070db244cea73ef962d6cddc5b2a746757e6a40ddf5fdfb90ba9"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/iclr2026/natbib.sty",
+      "bytes": 45154,
+      "sha256": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/icml2026/algorithm.sty",
+      "bytes": 2223,
+      "sha256": "93fd0eb31c112eb405833db8f1d7f5d238c7e691b1c05680d7276e68f36d564a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/icml2026/algorithmic.sty",
+      "bytes": 7414,
+      "sha256": "48d18794a5d97c0479a588cc2eac0917992feb9da83acc4631b8f55757d80f9b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/icml2026/example_paper.bib",
+      "bytes": 2051,
+      "sha256": "df950103d38f9cfc81b1f40d84c9be2a3525d046d2991a6973a4446922c06bd1"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/icml2026/example_paper.tex",
+      "bytes": 29714,
+      "sha256": "c2ca8140bf255d1ff77d1278eb3eefed4018b4b1e71065b8e1ccbc68b74c8acf"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/icml2026/fancyhdr.sty",
+      "bytes": 31715,
+      "sha256": "9130c52f91087abc6d223164ffa587e207e3257fcbcd069ef09ecb5391043f14"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/icml2026/icml2026.bst",
+      "bytes": 27147,
+      "sha256": "0ec3d5eb9b02efb7e0b44a32f3775882f42a743d0bdc618f34e6936309b98764"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/icml2026/icml2026.sty",
+      "bytes": 27344,
+      "sha256": "7cdcf90f6a59c5219e7f15c88f7ed09fcaf598dad91e6cdddc4dc3cb0e397a95"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/neurips2025/extra_pkgs.tex",
+      "bytes": 2837,
+      "sha256": "fcd6b09156fa193c347f6acd8188d430fa28f769fb6e2c2514cbbd215c39014a"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/neurips2025/main.tex",
+      "bytes": 574,
+      "sha256": "366c093fbc3018c46de28f3fe0ecb063b4aba10a089afe037837bbf673a9c4d6"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/neurips2025/Makefile",
+      "bytes": 1054,
+      "sha256": "0983425d74e769f2457f6ff0654cf76fc0c95f8d158fc8eaec66c5697ba0594f"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/neurips2025/neurips.sty",
+      "bytes": 11625,
+      "sha256": "ef7a55f0a7c9da12fea39af7990a6a314a721b74a23b1544f252e55fcba940cd"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/nsdi2027/main.tex",
+      "bytes": 15006,
+      "sha256": "4a5913c17310d955b9612d3f1a105e43d2191c57c4cba77776975ae8abcf0a9c"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/nsdi2027/references.bib",
+      "bytes": 5848,
+      "sha256": "5637b0148fc843a355bb1ef1b14eb9721e9955dce477a2611a23b44832883984"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/nsdi2027/usenix-2020-09.sty",
+      "bytes": 2294,
+      "sha256": "2ac10f959e00fc4dbb56a8b98897def8fcc61299ea78eb8381585e64d98a1a9d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/osdi2026/main.tex",
+      "bytes": 14716,
+      "sha256": "1fe19e1dbb91f8971c0a40bcedc5543691efee9e1b36544020c08e650f3d6f48"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/osdi2026/references.bib",
+      "bytes": 5785,
+      "sha256": "5e7b2647081796958a3bb94b24f198718e4f3d3bd803cc9c5f5840873ca6af4b"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/osdi2026/usenix-2020-09.sty",
+      "bytes": 2294,
+      "sha256": "2ac10f959e00fc4dbb56a8b98897def8fcc61299ea78eb8381585e64d98a1a9d"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/README.md",
+      "bytes": 11513,
+      "sha256": "9cb5081dde7b2dcf9dd4a1be8dc18762c01c9836767b56a1e7b2f2bad0e7c057"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/sosp2026/main.tex",
+      "bytes": 17451,
+      "sha256": "c15c1e4a96790a2599f129951e950d9cc91f6afeb3867accb573922fb64ef0c2"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/sosp2026/references.bib",
+      "bytes": 5395,
+      "sha256": "099c4aeffa0978d7a71d71e313f0723100c8d04071830bec5bf74fc43ba08cdb"
+    },
+    {
+      "path": ".agents/skills/deepscientist-write/templates/UPSTREAM_LICENSE.txt",
+      "bytes": 1095,
+      "sha256": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00"
+    },
+    {
+      "path": ".agents/skills/documents/agents/openai.yaml",
+      "bytes": 321,
+      "sha256": "8fc41ecccfae0d0310060235a43f9c4aea6e6c2aa05cec737a59599968ec22c4"
+    },
+    {
+      "path": ".agents/skills/documents/assets/file-document.png",
+      "bytes": 10876,
+      "sha256": "faec8ad51ed2c8db6bb7ba51aa4be1d5d88b80974f7f3c167d56781fbb8d3218"
+    },
+    {
+      "path": ".agents/skills/documents/container_tools/mark_artifact_operation_started.mjs",
+      "bytes": 736,
+      "sha256": "703516891e879553004822815dfb454f3277ab22bc031bcc217dd9a4c8825793"
+    },
+    {
+      "path": ".agents/skills/documents/examples/end_to_end_smoke_test.md",
+      "bytes": 962,
+      "sha256": "2abd9bdec48f2dcb905bf950423e021b61ca8169f56bcff58b4b3131663aec50"
+    },
+    {
+      "path": ".agents/skills/documents/LICENSE.txt",
+      "bytes": 1437,
+      "sha256": "d31e7017b70c25daf83b7b01804816ddad6bd984b724e03d52b20b9a81746bd1"
+    },
+    {
+      "path": ".agents/skills/documents/manifest.txt",
+      "bytes": 2144,
+      "sha256": "3357b7233af9bc79d448737b6c6c48d991cfab13b8ab48d9dd03817461ee76e4"
+    },
+    {
+      "path": ".agents/skills/documents/ooxml/comments.md",
+      "bytes": 1916,
+      "sha256": "aa8004a76499c36a4046041eaff8966fd3ec43fab3a48e1b158e95534ec61557"
+    },
+    {
+      "path": ".agents/skills/documents/ooxml/hyperlinks_and_fields.md",
+      "bytes": 2574,
+      "sha256": "88b8615aabd48727086208d981958dc1d74a4432b81060707d97c3ded9d7764c"
+    },
+    {
+      "path": ".agents/skills/documents/ooxml/rels_and_content_types.md",
+      "bytes": 1418,
+      "sha256": "d64fe64dc3daa56f4c90baa9098f94f6fcf52e5d4ce041ab548392e06c9691c2"
+    },
+    {
+      "path": ".agents/skills/documents/ooxml/tracked_changes.md",
+      "bytes": 1694,
+      "sha256": "9293157ade79498db26fdb79b3d7835896f4f87ebb73c28eddc6a5e48aae47f3"
+    },
+    {
+      "path": ".agents/skills/documents/references/template-elicitation.md",
+      "bytes": 1491,
+      "sha256": "ceb9dc18ab22e26cc03eaf7fe62381f5be34a836dd0766b6caa99a099cb3683c"
+    },
+    {
+      "path": ".agents/skills/documents/render_docx.py",
+      "bytes": 20248,
+      "sha256": "8b48b8f05f30cc6c7b5a7bd8e18e7ea93a61aec1ea601026a3358b2105f0903a"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/a11y_audit.py",
+      "bytes": 13207,
+      "sha256": "a832e288503704a24ae4e7d9bde4444dee01c835c651f746f19167c4ef4632bf"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/accept_tracked_changes.py",
+      "bytes": 5727,
+      "sha256": "7842a79bc73941a50318bfb4178fd9c01cec8984a4f10565a08f485282799f06"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/add_tracked_replacements.py",
+      "bytes": 6051,
+      "sha256": "2c66d170f70335dbfab691e6d76c73e49dd14b753ead0728a55dbf228c510ba5"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/apply_template_styles.py",
+      "bytes": 4180,
+      "sha256": "47dbba6245fc1f9b5237cb975981ce5c42bb96d513a030ba93c3ad80497ecde9"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/captions_and_crossrefs.py",
+      "bytes": 9983,
+      "sha256": "2d8db89e3f18b7287877c61b9851d083163d3888c8e8d57b52708c1e63db6d03"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/comments_add.py",
+      "bytes": 8904,
+      "sha256": "78fbfc023c644466fd0eb9cdf2ac55983bb6aed1c070e8e7a9126b1a6233efe0"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/comments_apply_patch.py",
+      "bytes": 5082,
+      "sha256": "0c82868fd104f121a830e0394cbf6d6a288e84d8aafddb334ae1298de178edc2"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/comments_extract.py",
+      "bytes": 5589,
+      "sha256": "9eedfdb515111b77cc04bc30030bae13de907ff2202b838cc9ba37a9b1060c09"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/comments_strip.py",
+      "bytes": 5007,
+      "sha256": "b3b27cd86527248a54b3794e7e907b244ea4a2e0e9efa726485aa0b296b906ab"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/content_controls.py",
+      "bytes": 11851,
+      "sha256": "783b38cdbc36864c757c20ec3473d033ead50f2db78b1741405481d070d7c56c"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/docx_ooxml_patch.py",
+      "bytes": 22752,
+      "sha256": "39a998f10e786d892854246accff85c86548fd58ed1429e94eb98a984023f7bb"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/docx_table_to_csv.py",
+      "bytes": 2178,
+      "sha256": "fa993cce50372ae2f647387547d5037c9eca66f0bd6d7f94bc0b2ef481c0d55e"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/fields_materialize.py",
+      "bytes": 10804,
+      "sha256": "d8d0cfe5b0f637e5324bd4ac7d5f384953167acdc247987f491a7d00b4d51889"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/fields_report.py",
+      "bytes": 5867,
+      "sha256": "807537b56e333c613eac74c4cf288c88908bec5a450d7018c612afd5ef879af7"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/flatten_ref_fields.py",
+      "bytes": 4872,
+      "sha256": "01e1089664f005e9aa4590dccc4156addc49c9668a8fbb404bde04fe5678cb39"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/footnotes_report.py",
+      "bytes": 3004,
+      "sha256": "3318c8d535beeee94db3496d80e42a03aeb6522e20f4a4776771f7be677919cb"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/google_docs_title_sanitize.py",
+      "bytes": 10376,
+      "sha256": "c8dafcef80220593411103ea3caefaa221e0ec7970bf31237f6ffbe762b0d4bf"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/heading_audit.py",
+      "bytes": 3330,
+      "sha256": "6c95509da0932cf870ead927a5d9f8d0170cdf31d2f6718d64a3641b8f3931dc"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/images_audit.py",
+      "bytes": 6010,
+      "sha256": "57443a088015fa7a3f28b1f2785d0839cd78b6c6f6dd08eee9601bd7b840bb2c"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/insert_note.py",
+      "bytes": 9269,
+      "sha256": "9584b502051317923e183b3f45fb78cbb855e1a8e944948976ea854e18f4e5ed"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/insert_ref_fields.py",
+      "bytes": 7353,
+      "sha256": "4b20bbc5c297d7f607db6428e6ad00580c5411c949dfe52fb13710d7301c917c"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/insert_toc.py",
+      "bytes": 5242,
+      "sha256": "b069ad3a0c1824742e31c84f417f08b9abba7aff236494544f9a22055ed68943"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/internal_nav.py",
+      "bytes": 12335,
+      "sha256": "53e1695c08f1abb81b4cd07c97c7e27019214f7dda0e37ca84697bce4cc01292"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/make_fixtures.py",
+      "bytes": 8928,
+      "sha256": "c11118357e78084345544c2c232c7d0fc785e766c7c7fcc481f59abf4154968c"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/merge_docx_append.py",
+      "bytes": 3952,
+      "sha256": "0fac13945db9cf61b9cfaa708862dd7ee37fb02d72ae1e8b4745c38ba636d414"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/privacy_scrub.py",
+      "bytes": 5851,
+      "sha256": "ae8d9bc7ef52cc91370a17070f4ee12b400fa7baf2af0ee403099d7762d072a4"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/redact_docx.py",
+      "bytes": 9823,
+      "sha256": "cd02f988732823adb6c1524398bf499cf7d93236871262bbab0074b95b7f4310"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/render_and_diff.py",
+      "bytes": 4989,
+      "sha256": "7b2d613289047a54e8d747520f079c276ab899bd99f76556d5c2827bef2ddb67"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/section_audit.py",
+      "bytes": 2792,
+      "sha256": "c718d416f0d7512ceadc07f76fefd42d633f443dda3412b0722470ce0302d482"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/set_protection.py",
+      "bytes": 5141,
+      "sha256": "3a9fa60ee0fe11ba40a97b84ea1b3a10c8595173aedb35f5b95e18911a91bf14"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/style_lint.py",
+      "bytes": 5586,
+      "sha256": "52e485a8fb96dda954a7f7e88ce3a59714ee1a4c945a41e7dff0d1d77ee5da4d"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/style_normalize.py",
+      "bytes": 5848,
+      "sha256": "9e293590db1e6b71d932dc3b811d9f8b6d1a4351dc07f8d1ccccd868dcddafe0"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/table_geometry.py",
+      "bytes": 10066,
+      "sha256": "c792883c6785663588e80900b73f1bbf696a5e48dd2d56718af3bfbfa2d2b42e"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/watermark_add.py",
+      "bytes": 5492,
+      "sha256": "44f7556f7e6a57ab6ac78f7b9ff35b78e6fa10f2b0c94cf4dc12e5b135330542"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/watermark_audit_remove.py",
+      "bytes": 4813,
+      "sha256": "ed2b0eb4d58970e8f215656f130240c6bd561fdd4fd1b4887366d7ec055ce156"
+    },
+    {
+      "path": ".agents/skills/documents/scripts/xlsx_to_docx_table.py",
+      "bytes": 5843,
+      "sha256": "181c3bc9fd8789aab352df984da5ef0cccc4d664a967f51dccaab79815e3c9f2"
+    },
+    {
+      "path": ".agents/skills/documents/SKILL.md",
+      "bytes": 42118,
+      "sha256": "e3e5486c9e9f8c59ec89dd9de997bb76a4b65db7960d72437df2f5ed26a4df7f"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/accessibility_a11y.md",
+      "bytes": 2019,
+      "sha256": "951dca7ba7e520792776a636c22e512a9a3c53699c6da80c5c3e47b0690c1374"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/captions_crossrefs.md",
+      "bytes": 3900,
+      "sha256": "20a50a2663b2d020d8a7e1bd3a31ae60a45ba41e40b437c9ada4e958987c421f"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/clean_tracked_changes.md",
+      "bytes": 1713,
+      "sha256": "6bd628bce5a571b73b59993a474bae039a7ea2e63e85f1292996688e1e2fa446"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/comments_manage.md",
+      "bytes": 3002,
+      "sha256": "2ec577fca8ef24d2ee3df9bbd3268eda9ca54a84169499c2fbb293d08a3bbbe0"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/compare_diff.md",
+      "bytes": 1204,
+      "sha256": "e06551fbfadd651aa761ba497c04c98449150ddd61ae1221f0ec6f9947fe30a9"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/create_edit.md",
+      "bytes": 1787,
+      "sha256": "a842b20c8709f8bc19526de246e9f8722b4304d30c7a3d9fb7b111fdd6f8ec65"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/equations.md",
+      "bytes": 4674,
+      "sha256": "add25da4ccc4a796db1dd4e793e0b45c68c355d531495df9b42539d2076db947"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/fields_update.md",
+      "bytes": 2429,
+      "sha256": "1ea14774b8e39b37884187e98059e0829e6bc9e0db502b26d4aea38ab68a4148"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/fixtures_edge_cases.md",
+      "bytes": 1749,
+      "sha256": "41718f5b067990ca5e32f4065bb24ec152b3e9ec110fad6e81e81cc08af48cef"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/footnotes_endnotes.md",
+      "bytes": 1902,
+      "sha256": "6e8bd0a290fc5261e85c2dfcfcde483c685a0cacd00b24950f1fadad8b7b7072"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/forms_content_controls.md",
+      "bytes": 2103,
+      "sha256": "d09c066658b0fd8cda6fc51413d57f37dfc12d6828799f52a6137cba20568ec7"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/headings_numbering.md",
+      "bytes": 1902,
+      "sha256": "36bbf196fecac25e2e8c1239356fa2af6994a8939048eb7b59f14d2c5bc1999c"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/images_figures.md",
+      "bytes": 1418,
+      "sha256": "482e14799b7021a9c191b320c60e492ab58f6f36a16187586c7f5bff38c85b45"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/multi_doc_merge.md",
+      "bytes": 1537,
+      "sha256": "9706902b4f91fd8e9af87297a8a66e2767c512a357511ca3ae9bcc56f1a4cd35"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/navigation_internal_links.md",
+      "bytes": 2152,
+      "sha256": "33ee4fa5c4e051a0216728a43f92d4de8319169080834b008c48a837bc5acdbd"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/privacy_scrub_metadata.md",
+      "bytes": 864,
+      "sha256": "6a1360d873bcade5dd2989f5406ea1c415dbcb52da25cc6c3580da3126880b93"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/protection_restrict_editing.md",
+      "bytes": 1232,
+      "sha256": "97024dcc16af3b3666a2d1fc7ae8199f18d881ea62cdb367bd4d37ad0e9e8f53"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/read_review.md",
+      "bytes": 2586,
+      "sha256": "ed1bce5450e03011225dbd2974f307cd5dec6fa48bde0a071e4907fd06f6bb16"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/redaction_anonymization.md",
+      "bytes": 2421,
+      "sha256": "df3b89d5bacc8405e73f4ec16056a78dc655c6d181086a1b37464038cae2bd02"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/sections_layout.md",
+      "bytes": 2282,
+      "sha256": "3b36b7f96ee095c66d4e3d24681b0b9cd1b6b82b1b3b5491aeb748545c89f5cf"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/style_lint_normalize.md",
+      "bytes": 2647,
+      "sha256": "993bb9c5129dc6ccb63d28b95f4e3bc5f716eee9fd6a6c75c106031ed42b12e8"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/tables_spreadsheets.md",
+      "bytes": 1153,
+      "sha256": "eeb08bc4d64db98679a5648a041f7786dca160f35c0909a10b7963e1af3f88db"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/templates_style_packs.md",
+      "bytes": 1302,
+      "sha256": "a75db63fcdfd135bab27b164fe7747adda75c63501e6300d7eb5d56b9fc6a580"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/toc_workflow.md",
+      "bytes": 2012,
+      "sha256": "ae2c36431d7ba8f7be1fad51c5af79831f4e38441060ca5fb0058247a54e9ab9"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/verify_render.md",
+      "bytes": 2483,
+      "sha256": "e94db9fefda34eefb65ea527467d8307eb0e834dca2705b04d027a426ebc9d9b"
+    },
+    {
+      "path": ".agents/skills/documents/tasks/watermarks_background.md",
+      "bytes": 1366,
+      "sha256": "9f87e23d4b5e54edb1560367e231bb3c0a6ef88193c600af8842d8537dcb9757"
+    },
+    {
+      "path": ".agents/skills/documents/template-create.md",
+      "bytes": 5177,
+      "sha256": "f02df8f6fa8f764de7a9b0ed4dcd38ae3560df364edd259b127bf53c3f496dd3"
+    },
+    {
+      "path": ".agents/skills/documents/template-distill.md",
+      "bytes": 4375,
+      "sha256": "dd01e59b5ffc7fb28f43fd4bd0eeb02a7d0e881f7d24780d195e6b3f6fc1f658"
+    },
+    {
+      "path": ".agents/skills/documents/troubleshooting/libreoffice_headless.md",
+      "bytes": 1667,
+      "sha256": "929b2b124ce2e65b3de17565a8aad2ff9d569f38ae648ec7ca0e3bed87041ae8"
+    },
+    {
+      "path": ".agents/skills/documents/troubleshooting/run_splitting.md",
+      "bytes": 836,
+      "sha256": "37df942902847797e8060308121d3db10273f71fd9dac748e0157e3c29624b85"
+    },
+    {
+      "path": ".agents/skills/documents/writing_quality.md",
+      "bytes": 19371,
+      "sha256": "f3b37e02e3a2b4890f036ae9f279c2f3ce673b9b2c2d0dd893b998b028261129"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/agents/openai.yaml",
+      "bytes": 410,
+      "sha256": "e7dd753d45019ad2196cef0e2dd866e50bb14832f0653d019d69b0eb4d1a82ea"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/domain_guidance/financial_models.md",
+      "bytes": 7282,
+      "sha256": "3169cc0e2453f3c34f63ef639aab22abc5686c6e2639f1d4ad7dc0235e8480ee"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/domain_guidance/healthcare.md",
+      "bytes": 4736,
+      "sha256": "8edae030b3abb0ef178f5a38691f64d7d9f4a462a70c0656ae8650605363f921"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/domain_guidance/marketing_advertising.md",
+      "bytes": 3950,
+      "sha256": "b2e087facba8e407fb5d47d55505ea544ca7c7ff5d402fd6a535093df740d086"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/domain_guidance/scientific_research.md",
+      "bytes": 3725,
+      "sha256": "bad46ddb8561c02b5460cd8dcb9bc9018b8b24df03a6688af7b9a3977b5b298c"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/features/charts.md",
+      "bytes": 5870,
+      "sha256": "a5bb73e5a3c0f7ec44cf0737d5dc25ae690e420a99d37e23cf8144d8316f56a3"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/officejs.md",
+      "bytes": 8866,
+      "sha256": "cb3d4292191d6a6adfc5251b88ea5a62aab75bb5c9c863fc1ed546b881045955"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/references/image-references.md",
+      "bytes": 1072,
+      "sha256": "7fe546860468950ed80f428c79eea269383aa30f421b957546666ee15161e6b8"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/references/read_only_qna.md",
+      "bytes": 1102,
+      "sha256": "993fa777f0f3003c2a1c3b2021a1f9d78f7a177620603e47cc9cff097cf156fd"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/SKILL.md",
+      "bytes": 72454,
+      "sha256": "55335802aeb641f8819f0020d4fa172b069376aaa00ab7934f3426d8a121509a"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/style_guidelines.md",
+      "bytes": 10165,
+      "sha256": "a0e328147991a4acc3d867d8e10a0a6697373ff2fe43eefd41646c83b29ad630"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/workflows/create_workflows.md",
+      "bytes": 1575,
+      "sha256": "b24cbf85c4358c2269352bf44002ad5a1e24174983010a836f5ead6e6c0b3958"
+    },
+    {
+      "path": ".agents/skills/excel-live-control/workflows/edit_workflows.md",
+      "bytes": 2505,
+      "sha256": "d195ef03edbb07036706659bfc899b97afd0aa6121f7d607c1d1e0cd8a47f8e8"
+    },
+    {
+      "path": ".agents/skills/game-jam/SKILL.md",
+      "bytes": 8917,
+      "sha256": "bf166b82872f5a9d04e61d01d8efa3159a7d1291af22010c8d0e002467b98655"
+    },
+    {
+      "path": ".agents/skills/godot-2d-movement/references/controller-recipes.md",
+      "bytes": 3503,
+      "sha256": "bcf89d3e8a820d75a78ed32eaa8eaf20c01ea1a8154791f58a8e3546d6fb0fba"
+    },
+    {
+      "path": ".agents/skills/godot-2d-movement/SKILL.md",
+      "bytes": 6277,
+      "sha256": "ea396576540acb85f0ca2050a96cfa6399a03668971bb320ef612e52a32c8f0a"
+    },
+    {
+      "path": ".agents/skills/godot-export/references/presets-and-cli.md",
+      "bytes": 4875,
+      "sha256": "ab2388a1870a0b813d110066bb54bad9f3787d067d13043d10944baec5b13dc1"
+    },
+    {
+      "path": ".agents/skills/godot-export/SKILL.md",
+      "bytes": 6021,
+      "sha256": "473552185df50d5ab4a2ef874f47e08ffd7f6f552e191a7a5922c288b29800a6"
+    },
+    {
+      "path": ".agents/skills/godot-gdscript/references/annotations-and-typing.md",
+      "bytes": 3886,
+      "sha256": "b905cae5114ecbbba2cac14ad49b05a2c252535a670f5a1d701b41def3a90f78"
+    },
+    {
+      "path": ".agents/skills/godot-gdscript/SKILL.md",
+      "bytes": 5723,
+      "sha256": "9039fb6de0980495fbc77fb87aae22256d92e7b5cca558b9e318b53dbf557459"
+    },
+    {
+      "path": ".agents/skills/godot-gdscript-headless-testing/SKILL.md",
+      "bytes": 9866,
+      "sha256": "980ecf1815cb179bc92749e419e3d5c87cc998413c57ed87035e34dc45e87034"
+    },
+    {
+      "path": ".agents/skills/godot-nodes-scenes/references/tree-and-instancing.md",
+      "bytes": 3010,
+      "sha256": "be3c86180bd18dd46bfdfd7a47317bdb50fc6942cfc3e3d7342b4d0f7834b7a4"
+    },
+    {
+      "path": ".agents/skills/godot-nodes-scenes/scripts/check_godot_project.py",
+      "bytes": 54905,
+      "sha256": "779b2130ce00c9566b6a1972dc49916bc270922e1df7fb705a93cc0d5053ef85"
+    },
+    {
+      "path": ".agents/skills/godot-nodes-scenes/SKILL.md",
+      "bytes": 6617,
+      "sha256": "fc0096a774a8581678180ed0e71039eea52533411b4b45dee708ebad10c920af"
+    },
+    {
+      "path": ".agents/skills/godot-physics/references/bodies-and-queries.md",
+      "bytes": 4159,
+      "sha256": "5d1616f73d9f0161df501cbcb1bdbbc3c4b8c2abb687172e1d02a5d5e7907223"
+    },
+    {
+      "path": ".agents/skills/godot-physics/SKILL.md",
+      "bytes": 8936,
+      "sha256": "e318719b45091bc2731eb2ebd256027f23f7f50a39b06eb7047608cf8426b297"
+    },
+    {
+      "path": ".agents/skills/godot-ui-control/references/layout-and-theming.md",
+      "bytes": 5045,
+      "sha256": "5f54eed206cd7d7f5fecffd2ce1c189739eba5b5e18b2d1773f9ba7202427f66"
+    },
+    {
+      "path": ".agents/skills/godot-ui-control/SKILL.md",
+      "bytes": 6198,
+      "sha256": "0b2cc92d670cc2274f6579748a1703ec6a2bf70dc3d2875985deea1018f05bdc"
+    },
+    {
+      "path": ".agents/skills/hackathon-spec/SKILL.md",
+      "bytes": 2740,
+      "sha256": "eab68950e2ecaf9750e5b20f5347f1e18530b434eb31d087348f5273d2c8f460"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/.gitignore",
+      "bytes": 128,
+      "sha256": "60e2fa4bf2647667b82c5351d453847ae233821ff6af15846b19f40a0c1a45d0"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/CHANGELOG.md",
+      "bytes": 1482,
+      "sha256": "254ac282ea3a224237d7778d1704165f5dd51db29839de6431569435561fd0fe"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/LICENSE",
+      "bytes": 1063,
+      "sha256": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/README.md",
+      "bytes": 6459,
+      "sha256": "c4f42c5f590b2845608c3913754e0339db0783481efb6d5ec90144fb721bd1d4"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/SKILL.md",
+      "bytes": 20527,
+      "sha256": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/tests/check_structure.py",
+      "bytes": 1373,
+      "sha256": "82ba1f91aab7a70abf039e79009fb1b77c036aa892925e5e3df5c2550d20230a"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/tests/fixtures/cases.json",
+      "bytes": 5297,
+      "sha256": "6a62586ee93dd9695976cd45271036f2a92be4f74e1b3b9b6c21a411c8497c0e"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/tests/fixtures/structure.md",
+      "bytes": 852,
+      "sha256": "d2d0c2740d28c44b7aac88e81aed8d50dc6ad90cc08f93a5a00c6ada1d6368e2"
+    },
+    {
+      "path": ".agents/skills/humanizer-zh/tests/README.md",
+      "bytes": 2292,
+      "sha256": "ece3c1f808c4ef2ad8ac7ccb0977138cbc6f842455c725703b5bf780ae3cc36c"
+    },
+    {
+      "path": ".agents/skills/imagegen/agents/openai.yaml",
+      "bytes": 281,
+      "sha256": "1797be4076717806df54aa9331c07ac8eebe32c69f32132d5858712b05406146"
+    },
+    {
+      "path": ".agents/skills/imagegen/assets/imagegen-small.svg",
+      "bytes": 2894,
+      "sha256": "087c1632a3b8a2ed4d6218952e7ba7ae2221a979f84233667ed2c587998784da"
+    },
+    {
+      "path": ".agents/skills/imagegen/assets/imagegen.png",
+      "bytes": 1711,
+      "sha256": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20"
+    },
+    {
+      "path": ".agents/skills/imagegen/LICENSE.txt",
+      "bytes": 10977,
+      "sha256": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc"
+    },
+    {
+      "path": ".agents/skills/imagegen/references/cli.md",
+      "bytes": 9897,
+      "sha256": "29dc8c1e3e5d9a20aee587fedb46a464552b6ec118d93bbd90c8d86e30502c8c"
+    },
+    {
+      "path": ".agents/skills/imagegen/references/codex-network.md",
+      "bytes": 1812,
+      "sha256": "cba3b4d24d30f38adf8021b6e9b49ec5261a9e45e7df31047ec451c916c99b0a"
+    },
+    {
+      "path": ".agents/skills/imagegen/references/image-api.md",
+      "bytes": 6162,
+      "sha256": "695909437b792aff171477dba127476a11235c220beb06533cce7c1495a042c8"
+    },
+    {
+      "path": ".agents/skills/imagegen/references/prompting.md",
+      "bytes": 8394,
+      "sha256": "d957a45cb24fe2cf1a85858674fc533f15a5f4621355f559a13a93168999c2dd"
+    },
+    {
+      "path": ".agents/skills/imagegen/references/sample-prompts.md",
+      "bytes": 18039,
+      "sha256": "76cc8a2988efb6e844a99ff9908b2b11cc07467510fc909002abcc0ee3f0701b"
+    },
+    {
+      "path": ".agents/skills/imagegen/scripts/image_gen.py",
+      "bytes": 35697,
+      "sha256": "3666b807de3f0a1d0a4a767b886d612c0b8f71025c500bba6693d1c6995a0873"
+    },
+    {
+      "path": ".agents/skills/imagegen/scripts/remove_chroma_key.py",
+      "bytes": 14354,
+      "sha256": "fa2989807052b857bed08f7fee0caa2502b54c46afc0a6f28cd706c25f636630"
+    },
+    {
+      "path": ".agents/skills/imagegen/SKILL.md",
+      "bytes": 19516,
+      "sha256": "706d4d96e1d5c9e6023fe3ccabba1bb34b364024d344fd25b8515ec7d28fe3c4"
+    },
+    {
+      "path": ".agents/skills/level-design/references/pacing-and-flow.md",
+      "bytes": 4500,
+      "sha256": "e8e3940f585e376f353aefea009befe8199a1871f99d34d7b2340cb35cb61872"
+    },
+    {
+      "path": ".agents/skills/level-design/SKILL.md",
+      "bytes": 8907,
+      "sha256": "9dd60fec5dc09957f7836739da96b5a2bcff2b46ecaab020f0a9ccff7463ba3a"
+    },
+    {
+      "path": ".agents/skills/openai-docs/agents/openai.yaml",
+      "bytes": 367,
+      "sha256": "a4e37375d0f096a27867dbb39a2ce917c96035b37692afe8206c3d3335077d97"
+    },
+    {
+      "path": ".agents/skills/openai-docs/assets/openai-small.svg",
+      "bytes": 1094,
+      "sha256": "85ef0a2cde497872edec1525f1d538ccc42b33ff47acdbb88499a1631a4bdb21"
+    },
+    {
+      "path": ".agents/skills/openai-docs/assets/openai.png",
+      "bytes": 1429,
+      "sha256": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c"
+    },
+    {
+      "path": ".agents/skills/openai-docs/LICENSE.txt",
+      "bytes": 10977,
+      "sha256": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/codex-self-knowledge.md",
+      "bytes": 7488,
+      "sha256": "f945bf2a7cea6892d7a11ac38fb18b744fefd6d273654a8410c4c79e9f647fbe"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/latest-model.md",
+      "bytes": 1354,
+      "sha256": "66303f714cd51408fcd6eaa81acef1769cbeb6af844883fef2847926fe324fe4"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/mcp-diagnostics.md",
+      "bytes": 2345,
+      "sha256": "e9df2b2f8faa28930db4a2937cdb3665b4548ac958e80a8601a5dd0da1e6fad0"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/model-migration.md",
+      "bytes": 5976,
+      "sha256": "469229631360fa6899ebc4cbbad8c4161ccf9e6b38b241054e8fe499dcd45cc2"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/model-selection.md",
+      "bytes": 1356,
+      "sha256": "ce020100a28004500c927abcd57cff154c5c360eb72d918ef7d72492e2484cce"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/official-docs.md",
+      "bytes": 3362,
+      "sha256": "b2301d72b8092be5f5727d8d1cbc75740887d836f4f13b469f40c1db16b39fe3"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/prompting-guide.md",
+      "bytes": 10243,
+      "sha256": "69517cde6c3bac945100a9da946d65c9effdd145d7600dead41f8adc1c1a7e38"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/upgrade-guide.md",
+      "bytes": 1526,
+      "sha256": "3ec7763f8adab0e2d35d752cc762f1382726108e166bbf10dbe9d38608d3fc5a"
+    },
+    {
+      "path": ".agents/skills/openai-docs/references/upgrading-to-gpt-6-astra.md",
+      "bytes": 19912,
+      "sha256": "789fcaf0999f56cebf801d0f6e6bdfe347dcfb5eff3d9a40ff815c15336f8699"
+    },
+    {
+      "path": ".agents/skills/openai-docs/scripts/fetch-codex-manual.mjs",
+      "bytes": 16248,
+      "sha256": "6172bd2caa95593b735c3e60c0bd5d7ae49ca0a345440f2d2a36e0dfc556801a"
+    },
+    {
+      "path": ".agents/skills/openai-docs/scripts/resolve-latest-model-info",
+      "bytes": 1077,
+      "sha256": "8f5006efa15c034ede29821b627d7b86c43f7dfaab422d335f45b9be8d04e2d5"
+    },
+    {
+      "path": ".agents/skills/openai-docs/scripts/resolve-latest-model-info.cjs",
+      "bytes": 4079,
+      "sha256": "2eee6052aa77c9e98d7ea8a59caca73c3158eded7ee707308ec563211c30692f"
+    },
+    {
+      "path": ".agents/skills/openai-docs/SKILL.md",
+      "bytes": 2672,
+      "sha256": "60e2a9ae371c11b0686aa802ab19c542bb1bbaf360dab0d7fc0cd495748178e6"
+    },
+    {
+      "path": ".agents/skills/pdf/agents/openai.yaml",
+      "bytes": 302,
+      "sha256": "5819dd168e544e3293d1501174130c56e139eb37c7d176884d8c6de4b9354f56"
+    },
+    {
+      "path": ".agents/skills/pdf/assets/file-document.png",
+      "bytes": 1550,
+      "sha256": "bbb3c29874cb3bc706eef9ba4436c7ef8ef33462a173c4c3d4deeec774e4da79"
+    },
+    {
+      "path": ".agents/skills/pdf/container_tools/mark_artifact_operation_started.mjs",
+      "bytes": 735,
+      "sha256": "968d66a7b491c7728f2ab009dcb54ac0025d6f474de6f3734f66b8809f6c18a8"
+    },
+    {
+      "path": ".agents/skills/pdf/SKILL.md",
+      "bytes": 7978,
+      "sha256": "5e14b4b8f944dc5e678ee703dfacf583010431d64d5d829902c5b2541f736c89"
+    },
+    {
+      "path": ".agents/skills/platformer/references/feel-tuning.md",
+      "bytes": 12087,
+      "sha256": "6873494513777bda6f77dfa4d825acabab61c415127c7cc3c22a7069af322598"
+    },
+    {
+      "path": ".agents/skills/platformer/SKILL.md",
+      "bytes": 8198,
+      "sha256": "4a6f3887d6e3f8ed03fc3aec3d3a76aeb859b72ed7a4b70f4e83cc706e6a2e15"
+    },
+    {
+      "path": ".agents/skills/presentations/agents/openai.yaml",
+      "bytes": 317,
+      "sha256": "35fa03254b9d9e2c859a2e1d343406df161e70c07af43a352fc6424d01c03776"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/API_DOCS.md",
+      "bytes": 13889,
+      "sha256": "f7ea5a8a2cfae1ea3e72e74d95b1a7c9644fdfac6171b7be5540d17f6bfb7d89"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/auto-layout.spec.md",
+      "bytes": 2132,
+      "sha256": "e58ac421e5aed6e944cab4fb3e59e3d5b33874844485fe89571ee2b6e3319051"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/charts.spec.md",
+      "bytes": 11206,
+      "sha256": "58f663ad37dfb3fe4396738a2baf7de6fa384f7e2273cefa6a5975db801c0961"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/comments.md",
+      "bytes": 2257,
+      "sha256": "7289cf3218ca948898f3d38a0a7951062b719277472c18ce2f672314dea0c416"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/connectors.md",
+      "bytes": 5937,
+      "sha256": "27c58bf7e31163648e95dcb730e1374097121d6657ebec93a5bae1b112bb3b40"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/cookbook/imported-deck.md",
+      "bytes": 5821,
+      "sha256": "c14afbe4cb05bf4843528333e9f7bbccda0e3d2f4a936e8fa2e72f61f59e9d22"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/cookbook/layout.md",
+      "bytes": 13361,
+      "sha256": "75484d640897d2ec8614aefcee6e17bb714b54eb2744c707562a632267e57264"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/fill.spec.md",
+      "bytes": 5460,
+      "sha256": "0c081891cb2355aa9a562a7f43cf168d2fafad8aa6af6ae11ed62115c162fb81"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/help.md",
+      "bytes": 6850,
+      "sha256": "087277c6b7c572dfd7b52ecc6c8cc9affbf33ab56c0b928651b18f476e03e044"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/images.spec.md",
+      "bytes": 7405,
+      "sha256": "fc2fedb1690527fdd14d847153f209ef22cb0d71dc389e2029cf19ccf01007f8"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/inspect.md",
+      "bytes": 5331,
+      "sha256": "be8353950fe46064af5d9d437d546c5abd61c634a249bc5c8e6c3487d25775ee"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/inspect.schema.json",
+      "bytes": 19480,
+      "sha256": "1a60266cc79bef1ff04ae15143480495c206a3fd5e2b48002d2efbb77a82e134"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/jsx.md",
+      "bytes": 10082,
+      "sha256": "5461aa523334ee56f5f44beee273846393478ad4ca106b1a1f0da9a300e34d3d"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/layout.spec.md",
+      "bytes": 6123,
+      "sha256": "0f003841d75c1c6243c990aaf090c7ae1aaa878d4d830032f07744521f4075e6"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/master.spec.md",
+      "bytes": 1499,
+      "sha256": "25f5032926c3bd7345ca46ca4bc7401d837e8c3d4645853ebd0c21e4d842ac4f"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/presentation.spec.md",
+      "bytes": 10167,
+      "sha256": "f5f91a626b63d7c5fe177c2666791e4895618e9d0773d2c83edad5cd3599f8d8"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/rich-text.spec.md",
+      "bytes": 6258,
+      "sha256": "9ff88fde3ac6595aabc3b17ad767c442f2eb35ff1aeb171f2b11a839b22dc93a"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/shapes.spec.md",
+      "bytes": 7832,
+      "sha256": "bcef41da95bf05cf5e12f14b7e2b916dcd4ab48eb7a8bf8242094cf59532684b"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/slide.spec.md",
+      "bytes": 5404,
+      "sha256": "7f7a6e82e3f295ea0523963108f7d5cb776b7d40483b52719f063ef589791479"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/speaker-notes.spec.md",
+      "bytes": 1103,
+      "sha256": "52b09b2cf44fa3eb5224a7507a784cea17b37601520d587fb9e29a4ea3666eb9"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/styles.spec.md",
+      "bytes": 2114,
+      "sha256": "142d7abd0e54404fa49067f9a294bf20512540b89d304174386c4db90a73e74c"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/tables.spec.md",
+      "bytes": 4441,
+      "sha256": "5d294873f5ca630f4400f627e176517b170ef1a61414be008c926c8c216414d4"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/theme.spec.md",
+      "bytes": 2232,
+      "sha256": "12976bae67a923f9028c9af51db1b733f733544bd11dfce807e6ebf4bc5bafb4"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/api/references/tokens.md",
+      "bytes": 11903,
+      "sha256": "aa7601c6e7156d45ceeba151ad48633f8556a080678b7ee44daa74c32b42c478"
+    },
+    {
+      "path": ".agents/skills/presentations/artifact_tool_docs/API_QUICK_START.md",
+      "bytes": 8150,
+      "sha256": "7d85a27810a5c784062d37df9fa6dbda36a74c34e171df7d31819ed5fbcd4fe3"
+    },
+    {
+      "path": ".agents/skills/presentations/assets/file-presentation.png",
+      "bytes": 11787,
+      "sha256": "a3c03edcadfe5af5a06c709b264d276d7e8ac6e150d69729c502459998b2a680"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/artifact_tool_utils.mjs",
+      "bytes": 55404,
+      "sha256": "17e988ef8c486800328e624154aa20b42c30fa85a236f60fbc9254d7a86bf18f"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/create_montage.py",
+      "bytes": 10635,
+      "sha256": "1b9031247132b787748ccd5f65d29f2be6e25bc362578e2cf040b3394811e86b"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/ensure_raster_image.py",
+      "bytes": 7332,
+      "sha256": "2c3bc18a8cddf737f5b3f769561b2cf8c55fe190387e53c2487f7c1b4d0ae8a7"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/inspect_presentation_layout_geometry.py",
+      "bytes": 101992,
+      "sha256": "cfdc5076ffc4bc8c0c1d4578b6ce64c883e2d514780348bb278365fdb9f0e10d"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/inspect_presentation_package_integrity.py",
+      "bytes": 29495,
+      "sha256": "b54cb6004fe58213bcf4268c355e3f15ea78cd9dbfe0c955d65e92024fe080c8"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/mark_artifact_operation_started.mjs",
+      "bytes": 743,
+      "sha256": "6f46ccf38f7d266ad459309233c597d8f7221ad3fda26af91aeba80bbcd322dd"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/materialize_literal_chart_workbooks.py",
+      "bytes": 36857,
+      "sha256": "5f9c89e72f0dd3e8aeca48d2ac7c429fb57dd801e4d3fb57d9c71d189154c8bd"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/native_chart_title_gate.py",
+      "bytes": 6135,
+      "sha256": "494f8dddc3de753fda80f61498c07ca0e744e585a0b84f46ba9e2a88dfb1613f"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/native_quantitative_chart_gate.py",
+      "bytes": 45307,
+      "sha256": "047ac10a0acda115d95a551c91fe16225aaa8d44735170091c80294518225c60"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/native_table_arithmetic_gate.py",
+      "bytes": 21259,
+      "sha256": "604db17de8cce452c515a8e7929bf1fccfc08ad7851ac29eff1a9b70879a50b0"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/rasterize_svg.mjs",
+      "bytes": 1611,
+      "sha256": "73d9ed4573d4a286c1dae520245df86885520f6c85dc83e19649d962e4852982"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/render_presentation.mjs",
+      "bytes": 3317,
+      "sha256": "49024ae5949965f2d163daafb05d4e33b543ea59007a95253a78183b9357c1b8"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/render_slides.py",
+      "bytes": 8661,
+      "sha256": "af5fbe8caf40be4ba57ad42993ff0c3792c0a7e97bd65bbba86ed1494911a220"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/runtime_helpers.mjs",
+      "bytes": 1871,
+      "sha256": "79ed0013a2d5ae7d45ad111cbc9188a5c804d461c24a123725832c5eeaab11f1"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/runtime_helpers.py",
+      "bytes": 3600,
+      "sha256": "93322ca08c0bf5e29e7fd1297d1b3cfc307550cf4251098b366bf4cc42b4370a"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/slides_test.py",
+      "bytes": 6560,
+      "sha256": "e0f660c3a03c524e54a2b0ac4cdd55646502f18bad409593d056a1ea570f5de0"
+    },
+    {
+      "path": ".agents/skills/presentations/container_tools/template_source_fidelity_gate.py",
+      "bytes": 22193,
+      "sha256": "0e070dce9102403cdd418bfe0810c23f8886d074430ba8fe597cde352a83b7be"
+    },
+    {
+      "path": ".agents/skills/presentations/domain_guidance/finance.md",
+      "bytes": 1824,
+      "sha256": "a0c1799721deab74867b624b15bee44f80a4bd7a6813db2f0bcd61ad90c6b41a"
+    },
+    {
+      "path": ".agents/skills/presentations/references/cover_art_direction.md",
+      "bytes": 1364,
+      "sha256": "753e58efd6da31fc68076c554ae919e46893d7a0a15f37c4cf357e7c41025d00"
+    },
+    {
+      "path": ".agents/skills/presentations/references/finalization.md",
+      "bytes": 6040,
+      "sha256": "41a51f6269a26ba30120d575a6736edd313187fb6de4060fd72debbebd0d6806"
+    },
+    {
+      "path": ".agents/skills/presentations/references/implementation.md",
+      "bytes": 3489,
+      "sha256": "797de82fbe324ff30229190c433ccb13122eb2570040c747cd76d9b78a09d4a4"
+    },
+    {
+      "path": ".agents/skills/presentations/references/native_bullets.md",
+      "bytes": 1554,
+      "sha256": "727fc17af9a12fb6937b1a7ac41ba6d99ce0e28ced94c06df3c05fd33ecca15d"
+    },
+    {
+      "path": ".agents/skills/presentations/references/native_evidence.md",
+      "bytes": 3197,
+      "sha256": "9aadd5bfb102663a9b4cf1b9282fa209645e6ce1906381c2c9e0e573659b4cc3"
+    },
+    {
+      "path": ".agents/skills/presentations/references/template-elicitation.md",
+      "bytes": 1503,
+      "sha256": "b0aab045f830d6a05dbab2bd7d9ca747bd68826e69328e01479589026f7ab7c0"
+    },
+    {
+      "path": ".agents/skills/presentations/references/template_following.md",
+      "bytes": 2570,
+      "sha256": "16ce4367c3029497bb441c850c577dbfb8de767cb450d52d8c0be9688dcd0649"
+    },
+    {
+      "path": ".agents/skills/presentations/routing/google_slides.md",
+      "bytes": 1307,
+      "sha256": "fd3998117596a48fd73eb22bb8c1e7998d0e53949382b837ff6922deaf5bfa3a"
+    },
+    {
+      "path": ".agents/skills/presentations/SKILL.md",
+      "bytes": 30044,
+      "sha256": "97fedde4ba6c9b9aa56e12b05b13acf035c29f9cd2f6906b8f27ceab11aea9a8"
+    },
+    {
+      "path": ".agents/skills/presentations/style_guidelines.md",
+      "bytes": 3179,
+      "sha256": "b682d1beb638b6ce77ecab86f83afcbde7a68207a749bc7994d8fd805feec619"
+    },
+    {
+      "path": ".agents/skills/presentations/template_following_scripts/check_template_fidelity.mjs",
+      "bytes": 18101,
+      "sha256": "204c580f53818ca188b04af66b2cec6e588520d832bc9f25305686893bf0bd18"
+    },
+    {
+      "path": ".agents/skills/presentations/template_following_scripts/inspect_template_deck.mjs",
+      "bytes": 8977,
+      "sha256": "03a8ea3b36a7b1859ccda3b2cce7c3c73bb0c691fa0114548b804bf5a5465661"
+    },
+    {
+      "path": ".agents/skills/presentations/template_following_scripts/make_contact_sheet.py",
+      "bytes": 1781,
+      "sha256": "69a1f031bca5e0a214aaa848460b36ee17c641b8865d7a5d0a9a0308dea320e8"
+    },
+    {
+      "path": ".agents/skills/presentations/template_following_scripts/prepare_template_starter_deck.mjs",
+      "bytes": 11169,
+      "sha256": "67b18d023a5c28e6c8e9c8d7a139ec441b55ae73f8f3159d122f4b2d34c371bf"
+    },
+    {
+      "path": ".agents/skills/presentations/template_following_scripts/validate_template_plan.mjs",
+      "bytes": 19353,
+      "sha256": "d8aad11b03275eaf800f96ec6c58731c68033312f5b13a44f5c9291ca5e3bacf"
+    },
+    {
+      "path": ".agents/skills/prototype-fast/SKILL.md",
+      "bytes": 6024,
+      "sha256": "02491395c621833d2252f7a33a96aa11f26eb48523fea167c68272fb3c785ba1"
+    },
+    {
+      "path": ".agents/skills/README.md",
+      "bytes": 1410,
+      "sha256": "b5ddc3ff9bbeec2f5674a881eb03717655e98219af74fa7d54acb67cd906fee6"
+    },
+    {
+      "path": ".agents/skills/review-agent/agents/openai.yaml",
+      "bytes": 258,
+      "sha256": "579774dde24f21ee57d5cb63f69c2fce0da04b81538c636a0e0dd37dc836c811"
+    },
+    {
+      "path": ".agents/skills/review-agent/SKILL.md",
+      "bytes": 2718,
+      "sha256": "bb46315f6bc4b7051c05f807d19b1689b20418ac6c42590406d805c10fa2fd1a"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/agents/openai.yaml",
+      "bytes": 934,
+      "sha256": "b012a8f98d3c12b0a24a143ce261bd915eb73478c730b2a4d068556dbc746ceb"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/agents.md",
+      "bytes": 328,
+      "sha256": "fad807e2a0a62c0001b12b0ecc47285c928bd5fb5fb26c2afa0c7802dc6ad0a8"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/README.md",
+      "bytes": 14813,
+      "sha256": "0a677cb30a9e36f4c2599a441f2ff2eb8ece942dbb027667d34c7c07a52b2ff0"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/anti-context-decay.md",
+      "bytes": 2578,
+      "sha256": "e7eb4bd5f6b4f0e4de87dfec77734f8077e46a35b9ceb1cb8fa1c027c0821f7d"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/archive-template.md",
+      "bytes": 1795,
+      "sha256": "611da87dcc543567bd8be71fc6e378217587d7147f336ac31b750f15f4dcddbd"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/commands.md",
+      "bytes": 6997,
+      "sha256": "02cc5971975d27bea30dd2d3feafc450af5e213ae085e315a31dbf4d5064331c"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/default-prompt-setup.md",
+      "bytes": 3100,
+      "sha256": "7c9fccc878df4426ab862cb0c30c4f3e30cea2da869a7eb42ee2fa00184738eb"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/minimum-chaos-unit.md",
+      "bytes": 1691,
+      "sha256": "6eb37bbd84e04969ba4bc78cff9b9892f6ffab7fd0a50b3f9aae9e05e134d70e"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/mode-selection.md",
+      "bytes": 2191,
+      "sha256": "b1b6c9af803cdce6c08641472dfba16cd47be05ce464169d05fc4c1e3df120a1"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/multi-project.md",
+      "bytes": 2905,
+      "sha256": "8153ea965837dfe5ea616ea5ceb2b2b31680e5f7a6fce72c828622fbb306a506"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/project-sync-boundary.md",
+      "bytes": 3154,
+      "sha256": "0016b8d462ff6047e8008e5196372c0e3e592c95de3664fae260ee3f2dc9e803"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/routing-map.md",
+      "bytes": 2043,
+      "sha256": "0beb42c1b4c0fa156e8b38e59b8cdf2d677a663d53d931a8d9f810137007af37"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/script-map.md",
+      "bytes": 1267,
+      "sha256": "d315d0a59d579ca0de34f5cc6d2922a03460778b5c749674e5d7e915c2147bc5"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/sdd-riper-one-protocol.md",
+      "bytes": 31844,
+      "sha256": "439a5c836928d9822e46bb12ba981cefb7072fd11aa14ddfa4b0a7e5424373b6"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/skill-injection-check.md",
+      "bytes": 2665,
+      "sha256": "232d65cd92915073a80e97f000f920365196dda35d7428d1f37d4c3a79e62c00"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/spec-template.md",
+      "bytes": 12460,
+      "sha256": "55d3d7e4537364e851a65a86d3da1ed821357103090ccabe23320a88fcb33ef4"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/usage-examples.md",
+      "bytes": 13589,
+      "sha256": "19240817c4c4a258286bf578c313891c8bec90a74a2d6f3da7330699e361e00c"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/water-flow.md",
+      "bytes": 1191,
+      "sha256": "3f532322a3a73936fcfaf209e9a689fbf59f48980b3a664528be3b0b7af89aa0"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/references/workflow-quickref.md",
+      "bytes": 7059,
+      "sha256": "d8e700d8c5975e2ddd506248dcd5dd7cada49b6ecf102731585abb34ed55fc91"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/scripts/archive_builder.py",
+      "bytes": 16148,
+      "sha256": "d51d58f5ff158894b98d86332137d2388478247715fa87edfa7dc7187f248020"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/scripts/default_prompt_check.py",
+      "bytes": 7589,
+      "sha256": "a4a7fae1f4848ae88abb3268440c64c425854d1a1ecf4acb5371f29e800b666b"
+    },
+    {
+      "path": ".agents/skills/sdd-riper-one/SKILL.md",
+      "bytes": 14801,
+      "sha256": "92f8c170e8d0945ee0573ca413963b53b19b54f1c86dcd194b3a4e226da65a46"
+    },
+    {
+      "path": ".agents/skills/skill-creator/agents/openai.yaml",
+      "bytes": 188,
+      "sha256": "b750627cdd588fdbb5b46e854d3384d1a504fad3b8ed73ca5d7ead3804df78b6"
+    },
+    {
+      "path": ".agents/skills/skill-creator/assets/skill-creator-small.svg",
+      "bytes": 1322,
+      "sha256": "edb19a0c59f9a1b5253b9af6d2f9f03cac27b2fe6a0275ebccbbdbff07891a1a"
+    },
+    {
+      "path": ".agents/skills/skill-creator/assets/skill-creator.png",
+      "bytes": 1563,
+      "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162"
+    },
+    {
+      "path": ".agents/skills/skill-creator/license.txt",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+    },
+    {
+      "path": ".agents/skills/skill-creator/references/openai_yaml.md",
+      "bytes": 2405,
+      "sha256": "7039d465b05342cbacf861f08d20192ab1eeee112bc5d8ff0fb66234756887a9"
+    },
+    {
+      "path": ".agents/skills/skill-creator/scripts/generate_openai_yaml.py",
+      "bytes": 6900,
+      "sha256": "30c73f1ea7d47dbab2b231bb92c5bf9026f1ad14ba8e3b3a4a544092c4d24ebe"
+    },
+    {
+      "path": ".agents/skills/skill-creator/scripts/init_skill.py",
+      "bytes": 10622,
+      "sha256": "74dfa9361a93bee6932d6cbb332ed19ac26a27ba3800e69fb07ba7512c1025f9"
+    },
+    {
+      "path": ".agents/skills/skill-creator/scripts/quick_validate.py",
+      "bytes": 4376,
+      "sha256": "6068513d924ed3559e186dfcdead7439129828dcf402167fd925c06dffbf2806"
+    },
+    {
+      "path": ".agents/skills/skill-creator/SKILL.md",
+      "bytes": 15540,
+      "sha256": "cccd291077ec57c6f50ca6529f0f3fb93212da09473effb2fcec808e81b21288"
+    },
+    {
+      "path": ".agents/skills/skill-installer/agents/openai.yaml",
+      "bytes": 226,
+      "sha256": "bd64b4d6893138706b3e3540f266ab809ccdcd08375652ae9f9d1e029fe50d02"
+    },
+    {
+      "path": ".agents/skills/skill-installer/assets/skill-installer-small.svg",
+      "bytes": 926,
+      "sha256": "099e5a4b5e5f0f918a8de0d2059f0a86211da623dbb75f86f13dc9f7c08c778d"
+    },
+    {
+      "path": ".agents/skills/skill-installer/assets/skill-installer.png",
+      "bytes": 1086,
+      "sha256": "d0a230b1a79b71b858b7c215a0fbb0768d6459c14ea4ef80c61592629bf0e605"
+    },
+    {
+      "path": ".agents/skills/skill-installer/LICENSE.txt",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+    },
+    {
+      "path": ".agents/skills/skill-installer/scripts/github_utils.py",
+      "bytes": 680,
+      "sha256": "2f9702afb9f0da740181fa4a3214f663e460f80cd5cea2e7dcaab00ad269082e"
+    },
+    {
+      "path": ".agents/skills/skill-installer/scripts/install-skill-from-github.py",
+      "bytes": 12272,
+      "sha256": "110cc7e4e395c2c9ba070d47db7d21be5164591c35015ae364fc9c9905b08de8"
+    },
+    {
+      "path": ".agents/skills/skill-installer/scripts/list-skills.py",
+      "bytes": 3054,
+      "sha256": "2cd6eecbaf9be7c86e80a14d7042f95d6abb83b6baee5f17dd075fa7a71c83de"
+    },
+    {
+      "path": ".agents/skills/skill-installer/SKILL.md",
+      "bytes": 3425,
+      "sha256": "2892d8b2fb11631132118f340aed80ae17e59d5a571fc2c4f4a4a7e73f139d52"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/agents/openai.yaml",
+      "bytes": 371,
+      "sha256": "18eb739db3a18e7d1bbd2c17b6884eff011f9b07814ab23216aba926b4de9cd7"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/artifact_tool_docs/API_QUICK_START.md",
+      "bytes": 26274,
+      "sha256": "313e2256d212671638006006926bd80474ba04c9347d2caff7f575e9ea958ab2"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/artifact_tool_docs/DATA_TABLES.md",
+      "bytes": 3649,
+      "sha256": "627423c5c263a0df909c3f7b2253098d80a2c10f068c0756a828d68509d3021e"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/artifact_tool_docs/SPARKLINES.md",
+      "bytes": 1702,
+      "sha256": "284d40cb8624604c638bd3131b004db73fc193bce421e0a085959e0ea6f1afef"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/assets/file-spreadsheet.png",
+      "bytes": 11988,
+      "sha256": "3a1c5e6c52a1877942b8ef8654247fbe1c4a82f6df8ef464dc99983fc72cd6fb"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/container_tools/mark_artifact_operation_started.mjs",
+      "bytes": 765,
+      "sha256": "fd95cb9918e52bbc2323ed1854fdc7510361f66cbe50446f6fcf0b9b21fa1ded"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/domain_guidance/financial_models.md",
+      "bytes": 7282,
+      "sha256": "3169cc0e2453f3c34f63ef639aab22abc5686c6e2639f1d4ad7dc0235e8480ee"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/domain_guidance/healthcare.md",
+      "bytes": 4736,
+      "sha256": "8edae030b3abb0ef178f5a38691f64d7d9f4a462a70c0656ae8650605363f921"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/domain_guidance/marketing_advertising.md",
+      "bytes": 3950,
+      "sha256": "b2e087facba8e407fb5d47d55505ea544ca7c7ff5d402fd6a535093df740d086"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/domain_guidance/scientific_research.md",
+      "bytes": 3725,
+      "sha256": "bad46ddb8561c02b5460cd8dcb9bc9018b8b24df03a6688af7b9a3977b5b298c"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/features/charts.md",
+      "bytes": 5870,
+      "sha256": "a5bb73e5a3c0f7ec44cf0737d5dc25ae690e420a99d37e23cf8144d8316f56a3"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/references/image-references.md",
+      "bytes": 1072,
+      "sha256": "7fe546860468950ed80f428c79eea269383aa30f421b957546666ee15161e6b8"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/references/read_only_qna.md",
+      "bytes": 1102,
+      "sha256": "993fa777f0f3003c2a1c3b2021a1f9d78f7a177620603e47cc9cff097cf156fd"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/references/template-elicitation.md",
+      "bytes": 1501,
+      "sha256": "3f87388cf81f6cbc72949a6842b614bbc373238bf0f52f7d43d25e9b4dab757a"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/routing/google_sheets.md",
+      "bytes": 1509,
+      "sha256": "1f55af62cc2819f5610a35abde281aa7b0b105ef6edb2c49996809760ddc0685"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/SKILL.md",
+      "bytes": 66538,
+      "sha256": "b8290a0c6a18182dc1fbb9432aae518a25bf5354978b7d4c60a834d0e79821aa"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/style_guidelines.md",
+      "bytes": 10165,
+      "sha256": "a0e328147991a4acc3d867d8e10a0a6697373ff2fe43eefd41646c83b29ad630"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/workflows/create_workflows.md",
+      "bytes": 1575,
+      "sha256": "b24cbf85c4358c2269352bf44002ad5a1e24174983010a836f5ead6e6c0b3958"
+    },
+    {
+      "path": ".agents/skills/spreadsheets/workflows/edit_workflows.md",
+      "bytes": 2505,
+      "sha256": "d195ef03edbb07036706659bfc899b97afd0aa6121f7d607c1d1e0cd8a47f8e8"
+    },
+    {
+      "path": ".agents/skills/template-creator/agents/openai.yaml",
+      "bytes": 528,
+      "sha256": "d98af7dcec7cb30c53b5de0e914d92a8d0de0b250328f272754bdaa3038e6e44"
+    },
+    {
+      "path": ".agents/skills/template-creator/assets/site-preview.png",
+      "bytes": 8136,
+      "sha256": "0f644a80c9832957d40fb50ba72fc13a75c4f7f6085f59aaa62fdd5f361ae871"
+    },
+    {
+      "path": ".agents/skills/template-creator/host/export-google-workspace-file.mjs",
+      "bytes": 10017,
+      "sha256": "e3f569243d0a7243e2e9579d26e24d95315dd7a69f70f06fa6fcb027f07f12e9"
+    },
+    {
+      "path": ".agents/skills/template-creator/host/google-workspace-export-stdin-receiver.mjs",
+      "bytes": 4630,
+      "sha256": "d4dbac9ee213eb3b8cd6ac656af0268f1fb826f2020967dc0a6e4dd8c4d9a111"
+    },
+    {
+      "path": ".agents/skills/template-creator/scripts/create-template-skill.mjs",
+      "bytes": 30865,
+      "sha256": "5bb6f574c46ccffbbad39405414b43a04d49360be3421ee58a4acfd2373659d2"
+    },
+    {
+      "path": ".agents/skills/template-creator/SKILL.md",
+      "bytes": 19242,
+      "sha256": "244bfef01d3e17c6013952ccf34621a90ddfee9c7828058245c3c46f51114944"
+    },
+    {
+      "path": ".agents/skills/vibe-coding-harness/SKILL.md",
+      "bytes": 4417,
+      "sha256": "7917582ccc43d59b23bd7c3b807d0ae438f7fcf2756f9444cd25ecf650d0afd7"
+    },
+    {
+      "path": ".agents/skills/vibe-coding-harness/templates/peer-review-template.md",
+      "bytes": 714,
+      "sha256": "18f68c777acd2a7ed710bb70389adf6db9010d594b708a07c8e4db7c9cfffddd"
+    },
+    {
+      "path": ".agents/skills/vibe-coding-harness/templates/self-check-report-template.md",
+      "bytes": 861,
+      "sha256": "b396359fe523fc536087132d38250a21e31f751f40656cfaa1cd61e84e2f29fa"
+    },
+    {
+      "path": ".agents/skills/vibe-coding-harness/templates/spec-template.md",
+      "bytes": 1470,
+      "sha256": "432db153db0e8bb4cbdd2c03b666e41a15d4751f3bc0dee85fdd323a33919d46"
+    },
+    {
+      "path": ".agents/skills/vibe-coding-harness/templates/task-package-template.md",
+      "bytes": 634,
+      "sha256": "637798b04f9a108f2e92dc86eec76e4f7618e8bb758e717e7da3180dcbdb9e4c"
+    },
+    {
+      "path": ".agents/skills/visualize/agents/openai.yaml",
+      "bytes": 311,
+      "sha256": "6882440afd1978a5324ea7adc5c3c62ed1efa11caabd1b97f58e8be721e89c2f"
+    },
+    {
+      "path": ".agents/skills/visualize/assets/calendar.js",
+      "bytes": 13770,
+      "sha256": "f6517bf5584f34b36ae024188b2c93715e8e4e86869afdbe0fe7a8265b0fa74e"
+    },
+    {
+      "path": ".agents/skills/visualize/assets/share-shell.css",
+      "bytes": 7523,
+      "sha256": "bdbdafad34540fde5f4ce75f4f1f80b27033545973b8313db1a6b7d1416c8f77"
+    },
+    {
+      "path": ".agents/skills/visualize/assets/share-shell.js",
+      "bytes": 19184,
+      "sha256": "4073d949ebd36346a79029fb2ccfbfc92ac5bc23eec3f43f1ffdb24995e48401"
+    },
+    {
+      "path": ".agents/skills/visualize/assets/standalone-host-bridge.js",
+      "bytes": 9970,
+      "sha256": "0b19685a4a762846461f42ee0f7af67b86a35df7d93eee0c057ebf6e8d291bed"
+    },
+    {
+      "path": ".agents/skills/visualize/assets/standalone-shell.js",
+      "bytes": 6012,
+      "sha256": "5c3ae7035fcd3df868b9f41ffd0a5f23d6e24c1da581e772b783bef0aec08b80"
+    },
+    {
+      "path": ".agents/skills/visualize/assets/visualize.css",
+      "bytes": 36570,
+      "sha256": "038fc5e0e41de359ab0873b63dd5c2c70e1eed0e01735233b885abd4a9c6d1a0"
+    },
+    {
+      "path": ".agents/skills/visualize/assets/visualize.html",
+      "bytes": 20663,
+      "sha256": "3b25c0d80c2880eab8b69e52ed7361aa4f6a6acfba27b1d29758326458429234"
+    },
+    {
+      "path": ".agents/skills/visualize/examples/calendar.html",
+      "bytes": 576,
+      "sha256": "6c5bed2bb9a94b915a8fb7f14642540ce9a1096eed74b57c01fda353d8a9b8a3"
+    },
+    {
+      "path": ".agents/skills/visualize/scripts/render.py",
+      "bytes": 15398,
+      "sha256": "26233f0378d1fb6d2306e3227f7415f43843c73aedb95755e34b299d753914a4"
+    },
+    {
+      "path": ".agents/skills/visualize/SKILL.md",
+      "bytes": 33657,
+      "sha256": "f5a095fb4812ad76369f5d2d476099ab2c30246c0bf80af8d49d593fa2713da8"
+    },
+    {
+      "path": ".agents/skills/visualize/tweak.md",
+      "bytes": 5355,
+      "sha256": "197aae99fc9d4d263fece0eacc81117be12a7f1ae18b75afe916aae015dd177c"
+    },
+    {
+      "path": ".agents/skills/visualize/widgets/calendar.md",
+      "bytes": 6480,
+      "sha256": "28543248b92c1f4916f81ba2ff232178f9d2e8915fe78b6c05cf24f97885db9f"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 146,
+      "sha256": "0957d67b37229f848d09dcbe8d50a1fdbd571b1f8124fe3c7c7c27419b1875b4"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 85,
+      "sha256": "0a1663782108c964454e4a6e9e204361e836fae740c494a2162a9332d136b6f7"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 132,
+      "sha256": "f96695f0a1d3effda2e91eb0159538c528b29ee26c8c021ea659db62e36b8cc5"
+    },
+    {
+      "path": ".kimi/hooks/tms-coding-check.sh",
+      "bytes": 1406,
+      "sha256": "0deb744f7c20082cdef99e3572c6c3850017e8ce3c3244480802f61076c3d44f"
+    },
+    {
+      "path": ".kimi/skills/tms-coding-discipline/scripts/lint_check.py",
+      "bytes": 4266,
+      "sha256": "6dd9945994825d54b1fa684b1a83112ee12d74ce4b149d05aa162e81590f0c41"
+    },
+    {
+      "path": ".kimi/skills/tms-coding-discipline/SKILL.md",
+      "bytes": 3284,
+      "sha256": "2a179bb0984909f1aab3e93259c7eecd0cf8b914e66009f3e68033b7359f3710"
+    },
+    {
+      "path": ".kimi/skills/tms-optimizer-codebase/SKILL.md",
+      "bytes": 18286,
+      "sha256": "f37bc60c415c0d562d14540a8292b77fef2bab4fc0a544668a06d84e4eab0cd1"
+    },
+    {
+      "path": ".kimi/skills/tms-optimizer-experiment/SKILL.md",
+      "bytes": 21878,
+      "sha256": "4c954afd69c95cf0de1650ed8b0ad483d73a57ab33ea552bc71455af50dd2cd1"
+    },
+    {
+      "path": ".kimi/skills/tms-optimizer-project/references/roles.md",
+      "bytes": 1725,
+      "sha256": "316cf003a59daffbfb6112ac177ffc0ff71325195d93090e5ccd562c142d4188"
+    },
+    {
+      "path": ".kimi/skills/tms-optimizer-project/references/task-lifecycle.md",
+      "bytes": 2417,
+      "sha256": "a2eaab83c74e385195bc09fd62032b157ec0c8b6349e9f68227f6bb4b0e9173d"
+    },
+    {
+      "path": ".kimi/skills/tms-optimizer-project/references/troubleshooting.md",
+      "bytes": 2684,
+      "sha256": "c5a1a23bde4889ea914304363aab00a717277a62ba66accced4e7fe93a2a3423"
+    },
+    {
+      "path": ".kimi/skills/tms-optimizer-project/SKILL.md",
+      "bytes": 6460,
+      "sha256": "a1b2c7a7aed127c569b3e73672e6a78bfa300b8561562fc86610adc34bd52523"
+    },
+    {
+      "path": ".kimi/skills/tms-research-assistant/SKILL.md",
+      "bytes": 12738,
+      "sha256": "dc92991903db80061ada16151551b70f79048f9a6604ea1caa036083aaa45c08"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3701,
+      "sha256": "de85c7c13de41b9987ed2b119ad0f59f5c4f2a040ab294fe3a7992ec1ad649b2"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 5628,
+      "sha256": "bbc0cb838580c75d6738e9c161320c8bb3bd878d3d84f24306932ee70dea850f"
+    },
+    {
+      "path": "archive/concepts/AGENT_NECESSITY_RESEARCH.md",
+      "bytes": 6053,
+      "sha256": "c7ba68541b7f534131483e13c681699643a6b63f97505b3e9943be7f5b131dc4"
+    },
+    {
+      "path": "archive/concepts/CONCRETE_GAME_LOOP_CANDIDATE.md",
+      "bytes": 6331,
+      "sha256": "2eb15ca86a4a00a88ba1ccba3726c84be1da8e1cfe5c7daa3e4839e61e590ab8"
+    },
+    {
+      "path": "archive/concepts/CONTRACT_ROOM_CANDIDATE.md",
+      "bytes": 8581,
+      "sha256": "48807fb26e3317db2f8e84c754d0bb9a2aed5c9531ed7b8f7627ab60b730b6a1"
+    },
+    {
+      "path": "archive/concepts/protocol_room_level.png",
+      "bytes": 148453,
+      "sha256": "4e3865fb76b155997db4efe05693379073b37ff06ff4384d4a14d71c7c7a2ae2"
+    },
+    {
+      "path": "archive/concepts/TWO_OBSTACLE_PROTOCOL_CANDIDATE.md",
+      "bytes": 10424,
+      "sha256": "7f377bdc64269b0425b8254924bcc0444b96e1e567fa2d3e18356a5cc2508d14"
+    },
+    {
+      "path": "archive/concepts/个人Agent_联络点协作候选.md",
+      "bytes": 6782,
+      "sha256": "03982de80911b319e94e676a97fc75fde4ac3fdf16b284283672c9610d60b0d5"
+    },
+    {
+      "path": "archive/concepts/潜入改线_关卡候选.md",
+      "bytes": 16331,
+      "sha256": "88e8268162aa73151d76b9c2c336e063b4dccc37d146281924425ffbd85ef4a5"
+    },
+    {
+      "path": "archive/concepts/请本人到场_检查口关卡候选.md",
+      "bytes": 16355,
+      "sha256": "e12be83f7d351d988f56f8800dced38c9a9bc7f50a926e916211b20177942d6c"
+    },
+    {
+      "path": "archive/README.md",
+      "bytes": 1737,
+      "sha256": "76724b07bd2f6d33391ad8ab9e8b3446f441a873d590f81fb3e3b8ee6acfbfcc"
+    },
+    {
+      "path": "archive/story/legacy_请本人到场/背景故事素材.docx",
+      "bytes": 22698,
+      "sha256": "fcbd2f538eb2a6ceef33b0eca7415d26b185e3da2b5833daac2dbdbba921e50d"
+    },
+    {
+      "path": "archive/story/legacy_请本人到场/请本人到场_原文提取.md",
+      "bytes": 7451,
+      "sha256": "058507eb0cf72722c64074758469e03c68912762e1a82f4eff8ae4cfb0fa77df"
+    },
+    {
+      "path": "archive/story/README.md",
+      "bytes": 1285,
+      "sha256": "23ae9d21a6a3fa2e622d2b292449769ff33d77dee264fd88b2d30f4f246cdfc8"
+    },
+    {
+      "path": "archive/story/reconciliation/故事线对照_2026片段.md",
+      "bytes": 3666,
+      "sha256": "989409283f8458d1a8edbd916e8aa53e2c3fd82aeda3c2ae6b30ce50f53df255"
+    },
+    {
+      "path": "archive/story/superseded_2026/游戏背景——2026.docx",
+      "bytes": 12916,
+      "sha256": "aafa926bf749ed16cf9618a5ef68167426c5c50277377d470d0a4e78536bc5ef"
+    },
+    {
+      "path": "archive/story/superseded_2042/游戏背景v1(1).docx",
+      "bytes": 17492,
+      "sha256": "b757fbf01cb20a284ae8dc9b2bba04f1778b45be43438fe9c908724260b64178"
+    },
+    {
+      "path": "archive/story/superseded_2042/游戏背景v1.docx",
+      "bytes": 15969,
+      "sha256": "9292e65ee9d8cc075f6b2ae942611d165252be9c84eb3e1fb7382c57f1d17c3d"
+    },
+    {
+      "path": "handoff/conversation.jsonl",
+      "bytes": 586878,
+      "sha256": "c775d2e93612b0976474203f950c3eeef771af43864e5dbde098958538d9c0ec"
+    },
+    {
+      "path": "handoff/maintenance_sources/rebase_archive_links.py",
+      "bytes": 3905,
+      "sha256": "e34871afbd84c1c4fe974c75c7dd6fe472c8beebd0c40bd0fff8709beabcb60b"
+    },
+    {
+      "path": "handoff/maintenance_sources/rebase_story_archive_links.py",
+      "bytes": 3232,
+      "sha256": "298e1f3066c8a2e4a29037e7a94391eaa14a1d4d983c9170974839a161805997"
+    },
+    {
+      "path": "handoff/migration/MANIFEST.sha256.json",
+      "bytes": 2542474,
+      "sha256": "4f5ef241acf4fba1cafa5841e83e4241753dec34dfe9216d03ae7f814e8b58b2"
+    },
+    {
+      "path": "handoff/migration/README_迁移包.md",
+      "bytes": 4028,
+      "sha256": "e9da4d0a9e34e6dbf34295001534f2585bd4ff6a244103e02069bb866ec4d723"
+    },
+    {
+      "path": "handoff/package_build_sources/finalize_package.py",
+      "bytes": 3775,
+      "sha256": "6e53cde8d6ead9bd124d6f1f0e2c47a0579fde3625c8026d370bdc4b3bab4b5b"
+    },
+    {
+      "path": "handoff/package_build_sources/package_workspace.py",
+      "bytes": 17069,
+      "sha256": "e62221af7c50c9705299ce6b9947681b798f362ce19ac6ec87a947a3478f1b92"
+    },
+    {
+      "path": "handoff/package_build_sources/README.md",
+      "bytes": 234,
+      "sha256": "fbe21f229b1b1fbaa77b03a22b911794b6a5576bfe73cc29992bd591de08f462"
+    },
+    {
+      "path": "handoff/package_build_sources/tests/test_package_workspace.py",
+      "bytes": 2025,
+      "sha256": "38fbc008e1d9d68894793be80a8cb79be708f548894b01be585f0b0883ab1110"
+    },
+    {
+      "path": "handoff/package_summary.json",
+      "bytes": 1061,
+      "sha256": "5ac2174d0a2003531bae3c11557428ba3ea42fff82fe0e7191baad1c5fa9a225"
+    },
+    {
+      "path": "handoff/portable_changes.json",
+      "bytes": 396,
+      "sha256": "459412d9f764176accd3d5499f5db98b5d6753dcdc97df197ad172b9d2de76a9"
+    },
+    {
+      "path": "handoff/python_packages.json",
+      "bytes": 714,
+      "sha256": "2c1a81de4497634c47a3b8064957818ccbccdef88935645823cdfd350b6eec9b"
+    },
+    {
+      "path": "handoff/skills_inventory.json",
+      "bytes": 8479,
+      "sha256": "c373620c2f367c96d7e0f623748c4c8ef4b2332ffc2f6cc7d1123c9808df388b"
+    },
+    {
+      "path": "handoff/source_machine_verification.json",
+      "bytes": 684,
+      "sha256": "14a6c4144fb3a3d94539c268064028751bdacb39f02cbfa92721b95ac176b1e2"
+    },
+    {
+      "path": "handoff/source_materials.json",
+      "bytes": 1821,
+      "sha256": "45c1c4eb8044ca6271acf41f8f913a8a4707aae05560dc21deaa58d570615adc"
+    },
+    {
+      "path": "handoff/workspace_coverage.json",
+      "bytes": 1703347,
+      "sha256": "ec375474e3a2be0d7b20c5a3e8158fea88f6f7fd511796175d8ff29d79468fa5"
+    },
+    {
+      "path": "handoff/历次讨论记录.md",
+      "bytes": 571309,
+      "sha256": "e6a8c554a933a15e5c598d85a9bb4475c71fd6a78d6b2a82b9e018f6c2a647c8"
+    },
+    {
+      "path": "handoff/参赛机环境配置记录.md",
+      "bytes": 7729,
+      "sha256": "2bc56f797fadb04635fa31165494756f5b3d5b89f0d972a6ed235ac2fe579012"
+    },
+    {
+      "path": "handoff/开发起点.md",
+      "bytes": 2477,
+      "sha256": "0136feace521636c35c3e2f8af8801328c4306e8860557e2493f0056cfbe6523"
+    },
+    {
+      "path": "handoff/技能与环境.md",
+      "bytes": 5110,
+      "sha256": "5c147e06fae3a5504dc48015b5851d4c917f7418a713ad8d364e4a2ca0856e7d"
+    },
+    {
+      "path": "handoff/接手说明.md",
+      "bytes": 5589,
+      "sha256": "e0df250b255bfd1d15e49c57093c743a183d95ac293920158c93579359015e97"
+    },
+    {
+      "path": "handoff/整理记录_2026-11-26.md",
+      "bytes": 2627,
+      "sha256": "f45f940f1692383b72a912f6db6dd1601e8a4c2d61f03dc86c95f77f55238c4b"
+    },
+    {
+      "path": "handoff/给参赛机Agent的首条消息.md",
+      "bytes": 1184,
+      "sha256": "c63947902c7e8dddc3fa2cd191c67c882f4779ab4e08f61fe51fcfc93897c3e3"
+    },
+    {
+      "path": "handoff/赛前环境检查_2026-11-26.md",
+      "bytes": 16293,
+      "sha256": "e69b1b080a99eee05bc457cf4e33cc84f8286c2dbacf926f4cac30833234b142"
+    },
+    {
+      "path": "output/archive/briefs/预赛玩法框架_v0.2.md",
+      "bytes": 2560,
+      "sha256": "4cbab654744100bc6c8d9214045363fda6fd3af677ba29411a7f06c7b14e9824"
+    },
+    {
+      "path": "output/archive/briefs/预赛玩法框架_v0.3.md",
+      "bytes": 3078,
+      "sha256": "bb30b759f01cef74a4d10776d48b4e204ce56fc8436c1920537028cbce17ad83"
+    },
+    {
+      "path": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.27.md",
+      "bytes": 27265,
+      "sha256": "c87d87780c954bc9a2ac5091627cf8fcd12333720ff4c1e5f25a6821efc790bc"
+    },
+    {
+      "path": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.29.md",
+      "bytes": 8518,
+      "sha256": "c90b772ecf2404ca5252e2310dea868aac2019d4d2a01fb044030fffcbe933d7"
+    },
+    {
+      "path": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.30.md",
+      "bytes": 8655,
+      "sha256": "9499642e0b4c7a0fd4f7928975ffb2fd340875d73bfecbbe7a6c9282f02606df"
+    },
+    {
+      "path": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.31.md",
+      "bytes": 9283,
+      "sha256": "ed7f7bbba07fc47570a8eba8293e84f862a27f696ae055e419b9be4e36cce28c"
+    },
+    {
+      "path": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.32.md",
+      "bytes": 9589,
+      "sha256": "491ab88fbea99446aecfadd8a16379beeec89b989afeb0cc9bf34d3165c8fff9"
+    },
+    {
+      "path": "output/archive/PRELIMINARY_DESIGN_SPEC_v0.33.md",
+      "bytes": 9884,
+      "sha256": "9cdb908a0d30d8933488b168f682dd81a27c89060ada62b205d08ebf3658f0fc"
+    },
+    {
+      "path": "output/archive/reviews/预赛材料修订记录_2026-11-14.md",
+      "bytes": 4825,
+      "sha256": "b1b87655dea4b860457ec49a09902012ee00629f716a7e5e3efe1981cd171699"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_2042故事线版_v0.9.md",
+      "bytes": 16253,
+      "sha256": "a8ecc777bf830133dc60f371b28191463426a31c8ab9d5c973207a3df3b15ddc"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.1.md",
+      "bytes": 8711,
+      "sha256": "39783e9c6065de253dc386758d344d0977e5df48ecc9e3bd8dab32d2305a43d1"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.1.pdf",
+      "bytes": 405610,
+      "sha256": "4f86ca9b2eca063d24f50d70302f0f26927b2bfa1e72fed975b8cb341218db76"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.2.md",
+      "bytes": 12302,
+      "sha256": "ec86b95f37017df621686f176a5b8b35fc3a692a9c8f6f62a7a953e4539401a9"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.2.pdf",
+      "bytes": 3027774,
+      "sha256": "8c53d4212f8d599c072a0078b1839ddf533d11a40cd1ba1493b7c2a69424f06b"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.3.md",
+      "bytes": 13282,
+      "sha256": "d506a233223caa6625cbe9da24bb504e15c67ac8c0c17607dcb58c2f6e88bd5c"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.3.pdf",
+      "bytes": 3441820,
+      "sha256": "f4a6f60c45b6c23f4c0ce9a7675cfa5b9b01e2da55dd65076983acdd2a26eabe"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.4.md",
+      "bytes": 13401,
+      "sha256": "6388ae481b07ad47c55aa3a3f3eba3e195fbdb9698ee754526312294f3ded9e6"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_v0.4.pdf",
+      "bytes": 3535777,
+      "sha256": "b9ee0edc781c9b4253f7c5380754b5908c7c2dedb42ff02f922947317ff63f4b"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.md",
+      "bytes": 9121,
+      "sha256": "abca17486c8c86941301949c1d5a1bbbc41cbf794b0577f99f12bfefdb74e83a"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.5.pdf",
+      "bytes": 3247710,
+      "sha256": "f35e7c143be9e6b810aafca061b24129ed29adc5d1ec460fa340bf7452dec15d"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.md",
+      "bytes": 9626,
+      "sha256": "1553b9415caf0c671940b17ae049a3b9d1431d3389de7208e130af9908b6b032"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.6.pdf",
+      "bytes": 3071719,
+      "sha256": "38be7f3eb3a3e7a0e5047147994cacdfa6c44310fbf2044753985f044b6a984d"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.md",
+      "bytes": 9626,
+      "sha256": "9d40b6602763c96295685648ac34195be8f58c44c508d5aa157555e359f8bfec"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.7.pdf",
+      "bytes": 3068643,
+      "sha256": "e48b5d8f5807f611719904f774cd39a1c6af31b7b7ddf63f3c1831ea38e0e4e6"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md",
+      "bytes": 14685,
+      "sha256": "91081c8f027ee4540686bac2b85e3a834db49c7722ac72dfb3214f4c337fa38c"
+    },
+    {
+      "path": "output/archive/submissions/AI_PLAY_72H_预赛方案_精炼特色版_v0.8.pdf",
+      "bytes": 3285326,
+      "sha256": "e46819b5bf631c85a471c991f527c817624cf33f19d63e94bec1eb83a324586f"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_世界观视觉要点_2026-11-14.md",
+      "bytes": 3782,
+      "sha256": "230f9f4370ecbabff5fa18033348346962c8045b17d300047c84c947539f36f2"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_v1.png",
+      "bytes": 1450536,
+      "sha256": "946432ae7930d96871ce0635719b99ede32620f8fc18aed5bbc75dc366befb40"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_v1_标注校正版.png",
+      "bytes": 1478923,
+      "sha256": "91bfc2fa3ca7310698b110596a346540fe57f95e56e73117e1050d8005721237"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_世界观版_raw.png",
+      "bytes": 2002655,
+      "sha256": "edb2f80ef3766c1ad002dcd2092a192d2ba812e0d9a6a7c3a5ef19b9e8038bdb"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_世界观版_实际提示词_v1.txt",
+      "bytes": 5595,
+      "sha256": "02693a0d0c0cc8c8c4c47445f753ff9fd0c156d9124936c0698d6012bed86cae"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_世界观版_标注校正版.png",
+      "bytes": 1987212,
+      "sha256": "e9808d3e8c6da8ceb8ecb7ae5b6c55972c69faa4275263da36ae21f6d9f792d1"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_世界观版_生成记录_v1.json",
+      "bytes": 1477,
+      "sha256": "d552f86f5424403adc9736ba28385a5ca4361f3356a8f576f4400b048c3745be"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_实际提示词_v1.txt",
+      "bytes": 4326,
+      "sha256": "46746c57bebb048694bdec6a2b9d68bd2c6b16311537ba9684cccd098fb7beda"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D_生成记录_v1.json",
+      "bytes": 1112,
+      "sha256": "3d85245195ec2a21be707fd2381325f2563eb197c356db99a1f2aa8bd5f66db7"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_2.5D绘制说明_v1.md",
+      "bytes": 12605,
+      "sha256": "c3635435f9f361e0de4d953fe12ef00b3a746c1d336970aa37cc769ca9ffb487"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_世界观高俯角_v2_prompt.txt",
+      "bytes": 5188,
+      "sha256": "fde26853407554f1cd152719ed2f2bcdfa9b27c53a18a91dc1d1f05c345a259a"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_世界观高俯角_v2_raw.png",
+      "bytes": 1863051,
+      "sha256": "97b4dc916d2a0d602c7e092dde7f34a961e6f4e76199c230a37d44704e9c3bfb"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_世界观高俯角_v2_标注校正版.png",
+      "bytes": 1868170,
+      "sha256": "acdba1f706074c21bd2fcb19c926928da8bdb8815ff2f9c1278b7d03427d26d5"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_世界观高俯角_v2_生成记录.json",
+      "bytes": 1451,
+      "sha256": "07e60e418896a7e338cf41ddde4012724b62985a024e76dc8232323768b7654b"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_赛博像素三渲二_v3_prompt.txt",
+      "bytes": 4783,
+      "sha256": "368d5df7c18c8e97ac08e8fa5b3c588f806124d9e58e2813d429641a5d7aca24"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_赛博像素三渲二_v3_raw.png",
+      "bytes": 1379952,
+      "sha256": "c0847c134a09126bf28439fafa9813756cdb57d4aba7dbd35b805e239f97c3ac"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_赛博像素三渲二_v3_标注版.png",
+      "bytes": 1492650,
+      "sha256": "0b75534bd0f63988ebd8292451bfd067ea77df25e616f523e9212708dbaeb472"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_检查口_赛博像素三渲二_v3_生成记录.json",
+      "bytes": 1785,
+      "sha256": "f9fce8d9e3853217122581caf6dd281db2c55c0be3e8ea2b736709efcb63e4cc"
+    },
+    {
+      "path": "output/archive/visuals/legacy_请本人到场/请本人到场_赛博像素三渲二_美术与敌人说明_v3.md",
+      "bytes": 4054,
+      "sha256": "716d292c34073392d76ba6786d0e78f68210dfe2aea2ef8b2a96009e847c007d"
+    },
+    {
+      "path": "output/archive/侦测定位_机制草案_v0.19.md",
+      "bytes": 51349,
+      "sha256": "cb6ee75ae61244bf5b89a41933a51f41ee90780c684fdf77bf577662bf38d6f0"
+    },
+    {
+      "path": "output/Humanizer-zh_安装记录.md",
+      "bytes": 981,
+      "sha256": "bab6c4704c2a6825cb23c55be7ec332d39d9eb731a04693b49053aa4ddbfa153"
+    },
+    {
+      "path": "output/imagegen/README.md",
+      "bytes": 689,
+      "sha256": "a8fb5e23b8d6d74dd53bcab4e4d3155165230ac35751e55b2ae809dd669fc2e4"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_clean.png",
+      "bytes": 1415117,
+      "sha256": "c02bf11a1a216206de8d20b30d5cf8ce27edff5dcdc40bb030c392f94a93aad2"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_cleanup_prompt.txt",
+      "bytes": 1239,
+      "sha256": "9a78aa91a264bb94fe02536572d81fdc2da85aecb36d164466f4ba111b48eebd"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_prompt.txt",
+      "bytes": 2992,
+      "sha256": "1582b988fd828bcbe99271981085277bd3e47e6f25b4a037acf0675c02ec7ce5"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_raw.png",
+      "bytes": 1412452,
+      "sha256": "6d182261a499453626406ff1125aa622e69189972f5dc70f31f34ac3f245a39b"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_定位示意.png",
+      "bytes": 85964,
+      "sha256": "9a210fd1da59410d457c4e7fe094bf3edfd45eb9c851abe5f34512fd10923fd2"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_布局.json",
+      "bytes": 8509,
+      "sha256": "afebaf035c52cfdd945f275aaea64943eaed34af6f140f11a14211a35eefb1c4"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_方格底图.png",
+      "bytes": 90262,
+      "sha256": "bdf2d7f8389c4f36d3b273364bcca2c73aa5dbaee487236ee3219746709ef90b"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_标注版.png",
+      "bytes": 1521020,
+      "sha256": "ac57858db7c00330dac92c8ed8a09de59dcf79598f6e533af804646a5c4a0d44"
+    },
+    {
+      "path": "output/imagegen/请本人到场_大地图_v5_生成记录.json",
+      "bytes": 1808,
+      "sha256": "96efbb2d680878376db818c5df91b62d6d23f38921e3b8408f50032776d14fa7"
+    },
+    {
+      "path": "output/imagegen/请本人到场_方格潜入_v4_clean.png",
+      "bytes": 1350947,
+      "sha256": "fe1a932b115a79909727d1c2bfffd68567f7f0e106a6817651447a350f88f9e0"
+    },
+    {
+      "path": "output/imagegen/请本人到场_方格潜入_v4_cleanup_prompt.txt",
+      "bytes": 1078,
+      "sha256": "fed981f4a7e6e9b39c7341caee6c305f288d06022ca3424f38f8f5781c5febd5"
+    },
+    {
+      "path": "output/imagegen/请本人到场_方格潜入_v4_prompt.txt",
+      "bytes": 3671,
+      "sha256": "a1daa6e3d1c7af20612a6eb05c28abd4e784eb12062d4da9914e6606a1e5c300"
+    },
+    {
+      "path": "output/imagegen/请本人到场_方格潜入_v4_raw.png",
+      "bytes": 1405557,
+      "sha256": "28eaabe6e081981253e92a06151cf703a475382103b56231c75a9a672e393330"
+    },
+    {
+      "path": "output/imagegen/请本人到场_方格潜入_v4_标注版.png",
+      "bytes": 1422603,
+      "sha256": "558f8168f11dbd26196abcb8a9c76875b7929fc2d887925a43d546e067d4b068"
+    },
+    {
+      "path": "output/imagegen/请本人到场_方格潜入_v4_生成记录.json",
+      "bytes": 1485,
+      "sha256": "d91df757e86bf826af4ebefa581653aff7f146e59e45976ae2cc4d9f11ec4bf4"
+    },
+    {
+      "path": "output/imagegen/请本人到场_检查区_v6_修订记录.json",
+      "bytes": 581,
+      "sha256": "01f62debb9972d87dd8d85c2060d10a1630991082826c14b9478d6a6025156ec"
+    },
+    {
+      "path": "output/imagegen/请本人到场_检查区_名称标注_v6.png",
+      "bytes": 1520344,
+      "sha256": "6c232ff4779b2695a0507a89541395838e2dafb8e22ff2a8dd2ab7e06b802f6f"
+    },
+    {
+      "path": "output/imagegen/请本人到场_检查区_路线示意_v6.png",
+      "bytes": 143104,
+      "sha256": "3b6850b063daadf1ba8f73aaf9a62b1a2a48b6d19c64106ecdecd290516437f3"
+    },
+    {
+      "path": "output/pdf/AI_PLAY_72H_预赛方案_2042世界观整合_v1.0.md",
+      "bytes": 17354,
+      "sha256": "7d2f7c8017e8e46d946e60e488af734ebcc77055e68e70a45ffb14e071d5fee2"
+    },
+    {
+      "path": "output/pdf/figures/loop.png",
+      "bytes": 36584,
+      "sha256": "1e4fe5184d75ac6ea924dec28c6469236eef2d20ebebac1e851b6b0905887994"
+    },
+    {
+      "path": "output/pdf/figures/loop.svg",
+      "bytes": 3377,
+      "sha256": "e931323253b130d17cb6a5be9e0d7c3660ca916a225736379c0015ab97e6f2fb"
+    },
+    {
+      "path": "output/pdf/figures/reset.png",
+      "bytes": 39164,
+      "sha256": "f801353f3e4c22d555516b77ac5791dc18ee5580c7989e9f5fd7daad240400ff"
+    },
+    {
+      "path": "output/pdf/figures/reset.svg",
+      "bytes": 3194,
+      "sha256": "48d1379f3b8ac72ae7d2c73aba72164f049aa454382f4ef6fe3816f78489ef3f"
+    },
+    {
+      "path": "output/pdf/figures/room.png",
+      "bytes": 58334,
+      "sha256": "23a3fbd5cc21ba0797f13f1d6b7cd0aba21d59b9da005c4f59633af716260a5b"
+    },
+    {
+      "path": "output/pdf/figures/room.svg",
+      "bytes": 8341,
+      "sha256": "37864bd26c553caed94d046046ea0cd95af6bc28d0b5bd51dc43da4fafedb418"
+    },
+    {
+      "path": "output/pdf/figures/v02/contact.png",
+      "bytes": 69679,
+      "sha256": "5b868cae10677dcc67f4de9c9132fb87258e4d6a811fd156d1c9582c9df55706"
+    },
+    {
+      "path": "output/pdf/figures/v02/contact.svg",
+      "bytes": 4051,
+      "sha256": "4f8fb4b0579dee0d9286e65f700cbcaf849b4e9e8258f0371e8054bd1be36e0e"
+    },
+    {
+      "path": "output/pdf/figures/v02/loop.png",
+      "bytes": 113787,
+      "sha256": "3507b3378b2f49530d9b79ce49b14795424fa03ede19c2b51acf96948a98e409"
+    },
+    {
+      "path": "output/pdf/figures/v02/loop.svg",
+      "bytes": 8001,
+      "sha256": "e13a83532c6980fcfd9da7bc29595a36f8c03424e624334ede4ec5a25414b6ab"
+    },
+    {
+      "path": "output/pdf/figures/v02/reset.png",
+      "bytes": 110022,
+      "sha256": "6f79b8b01026c21c59985212777a7b452239c8ef131eebb4fba3482ca3d34f34"
+    },
+    {
+      "path": "output/pdf/figures/v02/reset.svg",
+      "bytes": 7055,
+      "sha256": "ab3ad3a85c1d95b8ef34399cef8ca2fa649a230a0694cdbe0531631aa78a731b"
+    },
+    {
+      "path": "output/pdf/figures/v03/contact.png",
+      "bytes": 69679,
+      "sha256": "5b868cae10677dcc67f4de9c9132fb87258e4d6a811fd156d1c9582c9df55706"
+    },
+    {
+      "path": "output/pdf/figures/v03/contact.svg",
+      "bytes": 4051,
+      "sha256": "4f8fb4b0579dee0d9286e65f700cbcaf849b4e9e8258f0371e8054bd1be36e0e"
+    },
+    {
+      "path": "output/pdf/figures/v03/loop.png",
+      "bytes": 113787,
+      "sha256": "3507b3378b2f49530d9b79ce49b14795424fa03ede19c2b51acf96948a98e409"
+    },
+    {
+      "path": "output/pdf/figures/v03/loop.svg",
+      "bytes": 8001,
+      "sha256": "e13a83532c6980fcfd9da7bc29595a36f8c03424e624334ede4ec5a25414b6ab"
+    },
+    {
+      "path": "output/pdf/figures/v03/reset.png",
+      "bytes": 110022,
+      "sha256": "6f79b8b01026c21c59985212777a7b452239c8ef131eebb4fba3482ca3d34f34"
+    },
+    {
+      "path": "output/pdf/figures/v03/reset.svg",
+      "bytes": 7055,
+      "sha256": "ab3ad3a85c1d95b8ef34399cef8ca2fa649a230a0694cdbe0531631aa78a731b"
+    },
+    {
+      "path": "output/pdf/figures/v04/contact.png",
+      "bytes": 74681,
+      "sha256": "049e083e803e7d592be78964dd2f5d2a9ba0bbfd8550b60ad6ed610b7175326c"
+    },
+    {
+      "path": "output/pdf/figures/v04/contact.svg",
+      "bytes": 4055,
+      "sha256": "b49c07142849a55e7e97decc06cb1115356399acda6c4e314abfeaa7368c3a1c"
+    },
+    {
+      "path": "output/pdf/figures/v04/loop.png",
+      "bytes": 130639,
+      "sha256": "3867159e3e0e583b30775220904c92b87876f5f487b6d1296c56824022ed491d"
+    },
+    {
+      "path": "output/pdf/figures/v04/loop.svg",
+      "bytes": 8847,
+      "sha256": "fbc5d640c90862e396e3ea1c4a1055232009272e744641e8ce2363350db9d893"
+    },
+    {
+      "path": "output/pdf/figures/v04/reset.png",
+      "bytes": 117350,
+      "sha256": "c097ed9c37f1a86bf3d06a5c0246dd9421545af8e6508c7ad8404f2fecb0f8a4"
+    },
+    {
+      "path": "output/pdf/figures/v04/reset.svg",
+      "bytes": 7046,
+      "sha256": "804ddcfaa81e7654d8c6a7d7cf3ff2797a0de9b83e39dbae1aa1f05b0a8b568a"
+    },
+    {
+      "path": "output/pdf/figures/v05/coop.png",
+      "bytes": 70928,
+      "sha256": "b26188eb7557f44f93971dc5bd98aac603bd927b09d106c6c67bac5d3e72bbd6"
+    },
+    {
+      "path": "output/pdf/figures/v05/coop.svg",
+      "bytes": 4027,
+      "sha256": "f96a142498e029eb309eee1239231c008872fccfb0a72dcb46ac6141c4436f37"
+    },
+    {
+      "path": "output/pdf/figures/v05/reset.png",
+      "bytes": 72199,
+      "sha256": "b5d525f5a4c560c73617f7269c63e8179278d222678e4395c3d69328f1452870"
+    },
+    {
+      "path": "output/pdf/figures/v05/reset.svg",
+      "bytes": 5746,
+      "sha256": "44d752eb5b4a2cfd32c564cb8d1e35da743ce324df7787124656566ff56a1156"
+    },
+    {
+      "path": "output/pdf/figures/v06/coop.pdf",
+      "bytes": 95708,
+      "sha256": "00a922760871443b794a94521777e88de446b2994aa222bd8b2cef511b2a90c4"
+    },
+    {
+      "path": "output/pdf/figures/v06/coop.png",
+      "bytes": 206334,
+      "sha256": "167e58a5c7d21ec2bc6021376fd1f409a2a90472c81df7cccbc849128eb05800"
+    },
+    {
+      "path": "output/pdf/figures/v06/coop.svg",
+      "bytes": 12716,
+      "sha256": "ccebafb3126d4c5a31d4c50b8fdae881f2b0e9cd870f30467842fd2e603bb3b9"
+    },
+    {
+      "path": "output/pdf/figures/v06/loop.pdf",
+      "bytes": 103209,
+      "sha256": "cdf248cc9ce0f788533463767cc1b748f475926eddcacd4fd2fc532ef34840a9"
+    },
+    {
+      "path": "output/pdf/figures/v06/loop.png",
+      "bytes": 285458,
+      "sha256": "4ccfc62a053ef9ed08f99626297335540cf98f1e0f963348a164f3c98b0a79ea"
+    },
+    {
+      "path": "output/pdf/figures/v06/loop.svg",
+      "bytes": 17926,
+      "sha256": "8cb662cdb87f778431f7faa855067739415b1f95a01bb9899128176769618f0d"
+    },
+    {
+      "path": "output/pdf/figures/v06/reset.pdf",
+      "bytes": 93317,
+      "sha256": "b2de9aa52cc8a665d54b7c60cc4983cc1b53ced7e3b9298adc3fc1f0ec53e2a9"
+    },
+    {
+      "path": "output/pdf/figures/v06/reset.png",
+      "bytes": 241380,
+      "sha256": "95f5a1a033a64db0ff07dcb061f0e8d5a86aeec9609e57fdafaa0b74b068a1a9"
+    },
+    {
+      "path": "output/pdf/figures/v06/reset.svg",
+      "bytes": 13370,
+      "sha256": "975155f25285812c8234efbf26edc91fe5dba3e808a55e37b023fa0237a3233e"
+    },
+    {
+      "path": "output/pdf/figures/v06/roles.pdf",
+      "bytes": 65713,
+      "sha256": "1c67e06e415084b9fc87d170c4b5e0d2b2bc94c69940510f6e35645b5761413e"
+    },
+    {
+      "path": "output/pdf/figures/v06/roles.png",
+      "bytes": 89063,
+      "sha256": "523eb74bc4cc269a9549cb2cdad75dec48cf72afb01e178ae1237b20599340c1"
+    },
+    {
+      "path": "output/pdf/figures/v06/roles.svg",
+      "bytes": 6956,
+      "sha256": "cd400a70169f18c014f57fce67f984c978c97bccce76cdc7a1e11cbe289955c3"
+    },
+    {
+      "path": "output/pdf/figures/v07/coop.pdf",
+      "bytes": 71498,
+      "sha256": "45204bc73dc2bb482efe8d3f688c3e90c12aa45d89cd328a57ebe2817cfd38e2"
+    },
+    {
+      "path": "output/pdf/figures/v07/coop.png",
+      "bytes": 134164,
+      "sha256": "fac4693b93aa5ea40932892ca8b0c4b35b56755f20b9a582243f6f4b518902e0"
+    },
+    {
+      "path": "output/pdf/figures/v07/coop.svg",
+      "bytes": 11873,
+      "sha256": "ea4f6d068ffc6c1a275c580c2f2982f0c03f41ee28730745ba75d1f557a57d09"
+    },
+    {
+      "path": "output/pdf/figures/v07/loop.pdf",
+      "bytes": 90142,
+      "sha256": "9844182f9c00db53183aaaec5a19e8762686cb9cc53e1b7737f18ae9c8b3d68b"
+    },
+    {
+      "path": "output/pdf/figures/v07/loop.png",
+      "bytes": 205141,
+      "sha256": "44c52fd0bfdb5c90ba4f90a584c15154cd60a76da43cc7e6cc7adb847c864d04"
+    },
+    {
+      "path": "output/pdf/figures/v07/loop.svg",
+      "bytes": 17168,
+      "sha256": "70f9a443d5e19d8de256557c91bb64ea66da19d0ed0139077621fbd429acf186"
+    },
+    {
+      "path": "output/pdf/figures/v07/reset.pdf",
+      "bytes": 71177,
+      "sha256": "f16dc546b39a002869e2318ffc388680befb1b9aad65ea283b32622fd6177db6"
+    },
+    {
+      "path": "output/pdf/figures/v07/reset.png",
+      "bytes": 143660,
+      "sha256": "058df666e5e97112fc26926a4ddf97f19f87dbd452b826973dac88320225d2ba"
+    },
+    {
+      "path": "output/pdf/figures/v07/reset.svg",
+      "bytes": 12115,
+      "sha256": "ab381392bf8bbb7618c223ac4d247f2c370ad875e241678d4916be970c2b45f6"
+    },
+    {
+      "path": "output/pdf/figures/v07/roles.pdf",
+      "bytes": 58831,
+      "sha256": "1cebc52c51d8e56e9d12fe23b2d628c5f1d4610e578856e279b678b4316b5e22"
+    },
+    {
+      "path": "output/pdf/figures/v07/roles.png",
+      "bytes": 72068,
+      "sha256": "ccb515b7659c2e5cd1aabd676cd8a5bfb501c20b8474c58896dcf2745924c8a0"
+    },
+    {
+      "path": "output/pdf/figures/v07/roles.svg",
+      "bytes": 6896,
+      "sha256": "736ed3fa15514e547c6b8e9e4425e4190dff84b73b1b8c06d59bddd9716f72ec"
+    },
+    {
+      "path": "output/pdf/figures/v08/coop.pdf",
+      "bytes": 71498,
+      "sha256": "d7caecbe09758461890ea679cc65e8c2a802144e4e5276c7c795fc3a293e0141"
+    },
+    {
+      "path": "output/pdf/figures/v08/coop.png",
+      "bytes": 134164,
+      "sha256": "fac4693b93aa5ea40932892ca8b0c4b35b56755f20b9a582243f6f4b518902e0"
+    },
+    {
+      "path": "output/pdf/figures/v08/coop.svg",
+      "bytes": 11873,
+      "sha256": "ea4f6d068ffc6c1a275c580c2f2982f0c03f41ee28730745ba75d1f557a57d09"
+    },
+    {
+      "path": "output/pdf/figures/v08/loop.pdf",
+      "bytes": 90142,
+      "sha256": "513d445ff7498c3adb585717f43f6bbda6980746836396a76d11330891419d9a"
+    },
+    {
+      "path": "output/pdf/figures/v08/loop.png",
+      "bytes": 205141,
+      "sha256": "44c52fd0bfdb5c90ba4f90a584c15154cd60a76da43cc7e6cc7adb847c864d04"
+    },
+    {
+      "path": "output/pdf/figures/v08/loop.svg",
+      "bytes": 17168,
+      "sha256": "70f9a443d5e19d8de256557c91bb64ea66da19d0ed0139077621fbd429acf186"
+    },
+    {
+      "path": "output/pdf/figures/v08/reset.pdf",
+      "bytes": 71177,
+      "sha256": "6ea1e5661fad8b47aeaf51d8a10dfef57501951273111224186ac99ed6cb20c5"
+    },
+    {
+      "path": "output/pdf/figures/v08/reset.png",
+      "bytes": 143660,
+      "sha256": "058df666e5e97112fc26926a4ddf97f19f87dbd452b826973dac88320225d2ba"
+    },
+    {
+      "path": "output/pdf/figures/v08/reset.svg",
+      "bytes": 12115,
+      "sha256": "ab381392bf8bbb7618c223ac4d247f2c370ad875e241678d4916be970c2b45f6"
+    },
+    {
+      "path": "output/pdf/figures/v08/roles.pdf",
+      "bytes": 58831,
+      "sha256": "7b4e1fcc7219bc50b8f5f30396a115cf9e410e63a96ca015c332a683bf6c731b"
+    },
+    {
+      "path": "output/pdf/figures/v08/roles.png",
+      "bytes": 72068,
+      "sha256": "ccb515b7659c2e5cd1aabd676cd8a5bfb501c20b8474c58896dcf2745924c8a0"
+    },
+    {
+      "path": "output/pdf/figures/v08/roles.svg",
+      "bytes": 6896,
+      "sha256": "736ed3fa15514e547c6b8e9e4425e4190dff84b73b1b8c06d59bddd9716f72ec"
+    },
+    {
+      "path": "output/pdf/董骏豪_AI_PLAY_参赛者介绍_v1.md",
+      "bytes": 2433,
+      "sha256": "75a446f50dcde2273fb52d4703116a0baf17a19d00195857645e31ef38e10d25"
+    },
+    {
+      "path": "output/pdf/董骏豪_AI_PLAY_参赛者介绍_v1.pdf",
+      "bytes": 368964,
+      "sha256": "ccc13a8c2eb1880146316514caaacb181d6dabe1f05fe7e4f186fab137fb6cd2"
+    },
+    {
+      "path": "output/README.md",
+      "bytes": 1957,
+      "sha256": "fd0e014625dfce300686217055ae4fee7f2882085e69c228944b1cff0513a4dd"
+    },
+    {
+      "path": "output/大地图修订说明_v0.3.md",
+      "bytes": 3429,
+      "sha256": "ab14cff879c56f7df9d009c717ca7d7c66bf0d78ea8ee64eb18bbdd240af2779"
+    },
+    {
+      "path": "output/方案自检与修订记录_v0.4.md",
+      "bytes": 6176,
+      "sha256": "c3d333bd57524ad16798c623606de55610ef3ffe13d47f5c0a9bc698057f9a4e"
+    },
+    {
+      "path": "output/预赛材料修订记录_2026-11-16.md",
+      "bytes": 6929,
+      "sha256": "6b60887572e3b028cb64c3d5fd8ff7bd63f73c0c39f7a4c18215585f5a7ae7a7"
+    },
+    {
+      "path": "output/预赛模板符合性复核_2026-11-15.md",
+      "bytes": 9072,
+      "sha256": "6e1a28bb721b2bcb26b8db788e678c452d88cd290a6aab0bba80d0e45490d2a3"
+    },
+    {
+      "path": "output/预赛玩法框架_v0.4.md",
+      "bytes": 3147,
+      "sha256": "1dc6b2b23a340d5acfce92769794efc6037e849f9651c421bd6d97575f300f42"
+    },
+    {
+      "path": "output/预赛要求复核与提交清单_2026-11-13.md",
+      "bytes": 5252,
+      "sha256": "f71a9bc922a989eee9ee131b64bc427d1e00f520b1b20366b57132e7604ec4b5"
+    },
+    {
+      "path": "PRELIMINARY_DESIGN_SPEC.md",
+      "bytes": 25270,
+      "sha256": "2af9fb7cfb9174f22c5a0344c81cfe4f46ee043a39e1c32a713db7a4e7fe2247"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2878,
+      "sha256": "4651e829bca57562628ebcd5f530818452419dec937f38dcd0b60f43d41f171c"
+    },
+    {
+      "path": "README_先读这里.md",
+      "bytes": 2954,
+      "sha256": "07ade8df209be8e82fc778a4df7278f1669f0e4ab48cbfa906cdbdb38aebe38c"
+    },
+    {
+      "path": "requirements.migration.lock.txt",
+      "bytes": 513,
+      "sha256": "21cb18c1de0d11bbaec7633905cf35076f324c5709faec224bdca237d5c20e3b"
+    },
+    {
+      "path": "scripts/Check-Workspace.ps1",
+      "bytes": 561,
+      "sha256": "54be3514ed68183a1fd4b8691bc7567a3b48f7f58e68f516d270942d3fef95de"
+    },
+    {
+      "path": "scripts/check_project_links.py",
+      "bytes": 2101,
+      "sha256": "e0b705e7db0bd1114030e7c989ed33edcdfcc2ea9988d34365204d79b0ab1a39"
+    },
+    {
+      "path": "scripts/Install-UserSkills.ps1",
+      "bytes": 944,
+      "sha256": "f80baae0465db5cde0f8475667de1cacee3b4687cd3a37d1dba821d269797751"
+    },
+    {
+      "path": "scripts/rebuild_manifest.py",
+      "bytes": 1827,
+      "sha256": "06b1932d75c97aa7730203c06c4b84e722c777c9e89a64f9e609333b6d32210e"
+    },
+    {
+      "path": "scripts/verify_workspace.py",
+      "bytes": 4277,
+      "sha256": "17c1f99aeea8d1be6e7c540777e5766b4bfc7230fba4c39a1457ce0d4398b035"
+    },
+    {
+      "path": "source_materials/engineering/AGENTS.parent.original.md",
+      "bytes": 5133,
+      "sha256": "569c80820b7cdf53fc6a07c1c892a2fea5c4bf52a218af255d06424dd0eaf4bb"
+    },
+    {
+      "path": "source_materials/engineering/vibe_coding_agent.md",
+      "bytes": 2521,
+      "sha256": "28cabadf71595d91adafd01a8f7408d6c13c734819fa25534102840bb7410732"
+    },
+    {
+      "path": "source_materials/resume/简历主文档.md",
+      "bytes": 20927,
+      "sha256": "cc3c040dd462195200ae0ef691cf8b3b1008955dee64c9b34d1726ac65b31102"
+    },
+    {
+      "path": "source_materials/resume/董骏豪的简历.pdf",
+      "bytes": 130865,
+      "sha256": "398a4fd72bcbed819e739d1a0f2bdbcefcebc9912fac3114409e9b5e42b3bd50"
+    },
+    {
+      "path": "source_materials/story/README.md",
+      "bytes": 1284,
+      "sha256": "fc09fe2916782ee1f303660d405c949a1091f93782fd9ffd141e8f4c0819e73f"
+    },
+    {
+      "path": "source_materials/story/世界观一致性与剧情插入点评估_2042.md",
+      "bytes": 14234,
+      "sha256": "bc93c90326bc4a751fc767f4b0485c5f8cae69c3236e0a9b6c6267911335978c"
+    },
+    {
+      "path": "source_materials/story/当前故事主线_2042.md",
+      "bytes": 7084,
+      "sha256": "aa25323625c3acf0022b546f221b198be5a744eeb81510c32edb543b6b1a7732"
+    },
+    {
+      "path": "source_materials/story/游戏背景——2026ai.docx",
+      "bytes": 13314,
+      "sha256": "360bd55b7237c3ae0f96b864c334d10358e118ac49bbcd0acee4a24a360ef4fe"
+    },
+    {
+      "path": "source_materials/story/背景故事v2_2026至2042.md",
+      "bytes": 69508,
+      "sha256": "5e902e9c7d3488689cdf322b0c5739e3e685f9b9856cd0a2d66f866b8c8650b5"
+    },
+    {
+      "path": "Start-Workspace.ps1",
+      "bytes": 1029,
+      "sha256": "229481ba1cd808c886ed62e124e14fa6fa712be019ae437e2458cd55e1b3b658"
+    },
+    {
+      "path": "侦测定位_机制草案.md",
+      "bytes": 8971,
+      "sha256": "ec4931b1ac3a610c6159f654c562e59208f635b88f053f393bf3f9500315228c"
+    }
+  ]
+}

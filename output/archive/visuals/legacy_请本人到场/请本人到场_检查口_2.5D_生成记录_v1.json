@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-14",
+  "method": "imagegen bundled fallback CLI with existing Codex custom provider configuration",
+  "model": "gpt-image-2.5",
+  "size": [
+    1536,
+    1024
+  ],
+  "quality": "medium",
+  "raw_image": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_2.5D_v1.png",
+  "final_image": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查口_2.5D_v1_标注校正版.png",
+  "annotation_correction": "Replaced incorrect generated C→L→D legend with two independent rows C→L and S→D. No environment geometry altered.",
+  "generation_seconds": 47.6,
+  "status": "generated_concept_not_gameplay",
+  "verified": [
+    "single player and single guard",
+    "two hiding cabinets",
+    "visible staircase and upper switch",
+    "closed door and illuminated corridor",
+    "no jump gaps"
+  ],
+  "remaining_validation": [
+    "Camera and guard sightline collision coverage requires graybox validation",
+    "Upper platform sightline and walkable boundaries require graybox validation"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "pdf": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.pdf",
+  "pages": 8,
+  "page_char_counts": [
+    768,
+    987,
+    424,
+    673,
+    640,
+    512,
+    765,
+    990
+  ],
+  "figures": [
+    "roles",
+    "coop",
+    "loop",
+    "reset"
+  ],
+  "illustration": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_检查区_名称标注_v6.png",
+  "source": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_精炼特色版_v0.8.md"
+}

@@ -1,0 +1,19 @@
+{
+  "pdf": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_v0.2.pdf",
+  "pages": 6,
+  "page_char_counts": [
+    641,
+    759,
+    529,
+    852,
+    609,
+    1056
+  ],
+  "figures": [
+    "loop",
+    "contact",
+    "reset"
+  ],
+  "illustration": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\imagegen\\请本人到场_方格潜入_v4_标注版.png",
+  "source": "D:\\djh\\search_agent\\tms_optimizer\\hackathon\\output\\pdf\\AI_PLAY_72H_预赛方案_v0.2.md"
+}
