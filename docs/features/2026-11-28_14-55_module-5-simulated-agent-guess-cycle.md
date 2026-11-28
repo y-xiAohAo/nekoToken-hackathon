@@ -333,6 +333,14 @@ func GameRuntime.get_agent_snapshot() -> Dictionary
 
 **剩余限制与模块 6 恢复边界。** 本地脚本 Agent 只用于确定性原型，不代表推理质量；未接网络、真实超时服务、完整局部 RESET／整轮重启／四轮结算、正式地图、美术和数值平衡。模块 6 应在同一周期起点成组保存／恢复 WorldState（含障碍和设备运行态）、SessionState／CycleState（含尝试数、revision、冻结帧身份）、RuntimeSensingCoordinator 的当前有效报告与事件时 sidecar、SceneSync 派生状态；持久猜测／调度历史不随局部回退回滚，旧 branch/request 回调失效。当前仅提供快照字段和停点，没有执行恢复。
 
+### P10. 独立提交分支复核（2026-11-28）
+
+为只提交模块 5，从模块 4B HEAD 建立 `feat/module5-simulated-agent-cycle` 独立工作树。将世界、感知、协议、会话、运行时、场景、测试与设计迁移文档的模块 5 改动移入；共享 `main.gd`、`game_runtime.gd`、`prototype_config.gd`、`runtime_world_view.gd` 和 runner 只保留模块 5 接线。原共享工作树中模块 6 草案、模块 7 玩家助手聊天／确认 UI、场景节点和测试留在原处，未进入本分支；原工作树未被清理或重置。§P9 的 920 项是原共享工作树验证证据，其中包含并行模块 7 的 68 项；独立分支须以本节结果作为提交门禁。
+
+独立分支重新运行 Godot 4.7.2 `--import`：exit 0；共享 runner：Session 81、World 226、Motion 47、Scene 344、SensingRuntime 130、Module5World 12、Module5Cycle 12，共 **852 passed / 0 failed**、exit 0；4A 独立 26＋88＝**114 passed / 0 failed**、exit 0；失败探针 exit 1（符合预期）。主场景与 Windows release 导出程序各运行 120 帧，均 exit 0，均输出 `RUNTIME_AGENT_READY` 和 `MODULE5_CYCLE_START_PENDING`。Python unittest 13/13、exit 0。原工作区忽略目录中保存 `tmp/module5-publish-import.log`、`tmp/module5-publish-shared.log`、`tmp/module5-publish-4a.log`、`tmp/module5-publish-probe.log`、`tmp/module5-publish-main.log`、`tmp/module5-publish-export.log`、`tmp/module5-publish-windows-engine.log`、`tmp/module5-publish-python.log`。仓库检查、链接检查与暂存差异检查在提交前完成；任何失败均不得推送。
+
+本次隔离不改变 §0 决策、公开 DTO、命令权限、拒绝重试或模块 6 恢复边界。Review Matrix 沿用 §P9 三轴结论，但以本分支 852/852 和 114/114 复测确认，避免把并行模块 7 的测试或文件误算进模块 5 提交。
+
 ## A. 旧版 Research / Plan（已被 §0 最新裁决取代）
 
 以下旧文保留了早期踏板-only 方案、空 history 起点和所有非法调度即 fault 的取舍。凡与 §0 冲突，均以 §0 为准；旧 File Changes、Signatures 和 Checklist 不可直接执行。
