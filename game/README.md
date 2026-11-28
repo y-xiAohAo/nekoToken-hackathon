@@ -59,11 +59,11 @@ tools/godot/4.7.2/Godot_v4.7.2-stable_win64_console.exe --headless --path game -
 
 ## 模块 5：模拟系统 Agent 单猜测周期
 
-模块 5 按 [当前 Spec 的 §0 与 §P](../docs/features/2026-11-28_14-55_module-5-simulated-agent-guess-cycle.md) 实施。世界现有稳定 ID 的固定 2×2 组合障碍，可整件移动；摄像头为不依赖墙体的非实心单锚设备。系统 Agent 只收到显式白名单公开视图；统一报告完整发布后，程序才请求本地模拟 Agent，并以冻结帧计算 hit。普通 miss 进入调度，正式命令经 `WorldCommandService` 和 `SceneWorldSyncAdapter` 提交。世界拒绝最多允许一次安全回执修正；协议／程序故障直接 STOP。合法调度停在 `CYCLE_START_PENDING`，等待模块 6 实现真实快照与 RESET。模块 7 的玩家助手工作独立于此边界。
+按[模块 5 当前 Spec §0 与 §P](../docs/features/2026-11-28_14-55_module-5-simulated-agent-guess-cycle.md)实施。世界采用稳定 ID 的固定 2×2 组合障碍，摄像头为无墙安装、非实心单锚设备。系统 Agent 只收显式白名单公开视图；统一报告完整发布后，程序以冻结帧计算 hit，再由真实 `WorldCommandService` 和 `SceneWorldSyncAdapter` 提交未命中调度。合法世界拒绝最多允许一次携安全回执的修正；协议和程序故障直接 STOP。成功调度停在 `CYCLE_START_PENDING`，等待模块 6 的真实快照与 RESET。
 
-2026-11-28 最终本机验证：Godot 4.7.2 headless import 退出 0；共享 runner **920 passed / 0 failed**（其中模块 5 世界 12、周期 12）；4A 独立 runner **114 passed / 0 failed**；失败探针按预期退出 1。真实灰盒用例覆盖整屋固定贴图、四格碰撞与遮挡、完整发布后猜测、摄像头／机器人／踏板／障碍真实场景提交、首次拒绝后新请求修正及二次拒绝 STOP。主场景和 Windows release 导出程序的 120 帧 smoke 均退出 0，并输出 `RUNTIME_AGENT_READY`、`MODULE5_CYCLE_START_PENDING`。Python unittest 13/13；仓库检查 0 issues；项目链接检查 0 broken；CRLF 兼容 diff 检查退出 0。主要日志在 `../tmp/module5-review-*.log`，原型 Windows 程序在 `../tmp/module5-review-windows.exe`。
+模块 5 独立发布分支于 2026-11-28 本机验证：Godot 4.7.2 headless import 退出 0；共享 runner **852 passed / 0 failed**（模块 5 世界 12、周期 12）；4A 独立 runner **114 passed / 0 failed**；失败探针按预期退出 1。主场景及 Windows release 导出程序的 120 帧 smoke 均退出 0，输出 `RUNTIME_AGENT_READY` 和 `MODULE5_CYCLE_START_PENDING`；Python unittest 13/13。真实灰盒合同测试覆盖整屋固定贴图、四格碰撞与遮挡、完整报告后的猜测、摄像头／机器人／踏板／障碍场景提交、安全拒绝和有限重试。独立分支日志位于原工作区 `tmp/module5-publish-*.log`（忽略目录，不入库）。原共享工作树另含并行模块 7 测试，曾跑得 920/920；该结果不代替本分支的 852/852。
 
-Review：Spec 已批准的模块 5 合同均有对应实现或验证；公开状态、拒绝回执和完整请求身份与代码一致；新增测试与既有回归通过。Plan-Execution Diff：原型 fixture 使用有限 30 tick／2 报告批；共享套件计入并行模块 7 新测试，因此总数由 Plan 基线 830 增至 920；模块 7 的联络 UI 改动由其它工作会话维护，本模块仅做场景标记兼容。剩余边界：本地脚本 Agent 不代表模型推理；没有真实计时服务、完整 RESET、分支恢复、四轮结算和正式地图／数值平衡。模块 6 恢复时须一起恢复 WorldState、SessionState／CycleState、4B 有效报告与事件 sidecar、场景同步状态，并将持久 Agent 历史与当前有效报告分离；旧回调必须失效。
+Review Matrix：Spec 完成度 PASS；Spec 与代码一致性 PASS；代码质量 PASS（原型范围）。Plan-Execution Diff：发布时将并行模块 7 联络 UI 和测试从模块 5 分支剔除；模块 5 的接口、运行时和场景合同在隔离树重新验证。剩余边界：本地脚本 Agent 不代表模型推理；没有真实计时服务、完整 RESET、分支恢复、四轮结算或正式地图／平衡。模块 6 恢复时须一起恢复 WorldState、SessionState／CycleState、4B 当前有效报告及事件 sidecar、场景派生状态，并将持久 Agent 历史与有效报告分离；旧回调必须失效。
 
 ## 模块 6：周期快照、分支与双重 RESET
 

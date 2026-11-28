@@ -125,7 +125,7 @@ Godot 物理步结束时，玩家与设备的实际运动状态写入本步隔�
 
 检查点 1 工程壳已用 Godot 4.7.2 stable 本地启动并导出 Windows 构建；检查点 2 规则内核已有实现，原 75 条断言属于历史证据，见 [模块 0 Spec](features/2026-11-27_14-22_module-0-project-shell.md)、[模块 1 Spec](features/2026-11-27_14-22_module-1-rule-kernel.md)。[模块 2 Feature Spec](features/2026-11-27_20-53_module-2-world-command.md) 已完成内存世界、注册表、原子命令和同步合同；[模块 3A Feature Spec](features/2026-11-27_22-25_module-3a-runtime-scene.md) 已完成真实运行时、运动、碰撞和场景同步，历史本地正式检查共 558 条通过。[模块 3B Feature Spec](features/2026-11-27_22-51_module-3b-interactions.md) 已接入目标、联络与出口交互；[模块 4A Feature Spec](features/2026-11-27_23-31_module-4a-sensing-kernel.md) 与 [模块 4B Feature Spec](features/2026-11-28_10-44_module-4b-runtime-sensing.md) 均为 Plan Approved、REVIEW PASS（各自范围），真实视觉、踏板和统一报告已接入。[模块 5 Feature Spec](features/2026-11-28_14-55_module-5-simulated-agent-guess-cycle.md) 已完成确定性模拟猜测周期；[模块 6 Feature Spec](features/2026-11-28_module-6-snapshot-branch-reset.md) 已完成周期快照、局部回退和轮间重启原语。当前共享 Godot 套件 959 项、模块 6 专项 25 项、4A 独立套件 114 项本地通过；真实 AgentGateway、7C 玩家助手历史 UI 和完整四轮剧情体验仍待接入。测试策略与数值不替代最终权限、关卡或平衡决策。
 
-## 10. 模块 5 后续工程合同（2026-11-28；Plan NOT APPROVED）
+## 10. 模块 5 后续工程合同（2026-11-28；Plan Approved / Review PASS）
 
 本节为模块 5 的迁移目标，替代上文涉及安装墙、静态系统地图、踏板限定调度和其它设备权限未开放的建议；不改变模块 2–4B 的历史测试证据。[模块 5 Feature Spec §0 与新 Plan](features/2026-11-28_14-55_module-5-simulated-agent-guess-cycle.md)为细化执行依据。
 
