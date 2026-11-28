@@ -1,5 +1,6 @@
 # 开发文档
 
+- [神启 Godot 协同开发指南](godot-handoff.md)记录试玩入口、工程结构、互动配置和交付检查。
 - [开发与目录约定](development.md)：新电脑准备、代码落点与首个实现检查点。
 - [仓库管理决策](decisions/0001-repository-workflow.md)：本轮整理的取舍与验证边界。
 - [协作说明](../CONTRIBUTING.md)：任务分支、提交、PR、验证和发布。
