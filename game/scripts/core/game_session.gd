@@ -103,6 +103,12 @@ func period_for_event_tick(event_tick: int) -> int:
 	return event_tick / _rules.ticks_per_report_period
 
 
+func is_guess_tick(expected_tick: int) -> bool:
+	if not _rules.is_valid() or expected_tick <= 0 or expected_tick % _rules.ticks_per_report_period != 0:
+		return false
+	return _cycle.sealed_reports_in_guess_cycle + 1 >= _rules.report_periods_per_guess_cycle
+
+
 func begin_contact() -> bool:
 	if _state.phase != SessionPhase.Phase.ACTION:
 		return false

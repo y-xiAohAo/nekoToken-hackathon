@@ -22,6 +22,66 @@ func get_world_snapshot() -> WorldState:
 	return _world.snapshot_copy() if _world != null else null
 
 
+func commit_runtime_step(
+	expected_tick: int,
+	step: WorldStepResult,
+	session_snapshot: Dictionary,
+	cycle_snapshot: Dictionary
+) -> Dictionary:
+	if _activation_failed:
+		return _runtime_error("SYNC_ACTIVATION_FAILED")
+	if _busy or _world == null or step == null:
+		return _runtime_error("INVALID_COMMAND")
+	if session_snapshot.get("phase") != SessionPhase.Phase.ACTION:
+		return _runtime_error("INVALID_PHASE")
+	if expected_tick <= 0 or cycle_snapshot.get("simulation_tick") != expected_tick - 1:
+		return _runtime_error("INVALID_TICK")
+	if step.world_frame == null or step.world_frame.simulation_tick != expected_tick:
+		return _runtime_error("INVALID_TICK")
+	if step.candidate_world == null:
+		return _runtime_error("INVALID_WORLD")
+	var candidate: WorldState = step.candidate_world.snapshot_copy()
+	if candidate == null:
+		return _runtime_error("INVALID_WORLD")
+	var validation_errors: Array[Dictionary] = candidate.validate()
+	if not validation_errors.is_empty():
+		return {"ok": false, "errors": validation_errors}
+	if candidate.world_revision != _world.world_revision:
+		return _runtime_error("STALE_WORLD")
+	if not step.world_frame.player_world_position.is_equal_approx(candidate.player_position):
+		return _runtime_error("INVALID_FRAME")
+	if not _runtime_structure_unchanged(_world, candidate):
+		return _runtime_error("INVALID_WORLD")
+	_busy = true
+	_world = candidate
+	_busy = false
+	return {"ok": true, "tick": expected_tick}
+
+
+func _runtime_error(code: String) -> Dictionary:
+	return {"ok": false, "errors": [{"code": code}]}
+
+
+func _runtime_structure_unchanged(current: WorldState, candidate: WorldState) -> bool:
+	var before: Dictionary = current.to_snapshot()
+	var after: Dictionary = candidate.to_snapshot()
+	for field: String in ["template_key", "grid_size", "cell_size", "origin", "terrain", "device_rules", "next_entity_id"]:
+		if before[field] != after[field]:
+			return false
+	if before.entities.size() != after.entities.size():
+		return false
+	for index: int in before.entities.size():
+		var old_entity: Dictionary = before.entities[index].duplicate(true)
+		var new_entity: Dictionary = after.entities[index].duplicate(true)
+		if old_entity.get("id") != new_entity.get("id"):
+			return false
+		old_entity.erase("runtime_state")
+		new_entity.erase("runtime_state")
+		if old_entity != new_entity:
+			return false
+	return true
+
+
 func validate_batch(batch: WorldCommandBatch, expected_context: Dictionary) -> WorldCommandResult:
 	var result: WorldCommandResult = _check_context(batch, expected_context)
 	if not result.errors.is_empty():

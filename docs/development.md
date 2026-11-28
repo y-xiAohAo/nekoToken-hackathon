@@ -26,11 +26,11 @@
 
 ## 首个开发检查点
 
-工程壳与模块 1 规则内核已有实现；[模块 2 Feature Spec](features/2026-11-27_20-53_module-2-world-command.md) 已获 Plan Approved，完成权威世界、注册表、动态命令及联络结束即刻提交的模块 1 接口迁移。同行评审的 3 项 P2 已修复并独立复核关闭，正式检查共 304 条通过，当前交接结论为 PASS（本模块范围），见该 Spec §21。派生同步仅验证数据合同和替身，实际运动、感知、RESET 后置。模块 1 的 Agent payload 尚非严格 DTO，猜测结果入口依赖上游校验；这两项须在真实 AgentGateway 接入前解决。首个可玩切片仍需按玩法 Spec 验证行动、上报、猜测和回退。
+模块 1 规则内核、模块 2 世界命令、[模块 3A](features/2026-11-27_22-25_module-3a-runtime-scene.md) 真实灰盒运动及[模块 3B](features/2026-11-27_22-51_module-3b-interactions.md) 目标/联络/出口交互均已实现并通过各自范围 Review；正式检查共 695 条通过，Windows 导出已复验。实际感知、完整 RESET 和 Agent 仍后置。模块 1 的 Agent payload 尚非严格 DTO，猜测结果入口依赖上游校验；这两项须在真实 AgentGateway 接入前解决。首个完整可玩切片仍需按玩法 Spec 验证上报、猜测和回退。
 
 真实模型接入前明确：两类 Agent 的输入字段、合法动作、超时和非法输出的恢复路径，以及演示时的密钥提供方式。`.env.example` 不会被 Godot 自动读取，当前也没有实现 `.env` 加载器。
 
-每次开发先处理一个可验证目标。模块 1/2 共用 Godot 4.7.2 headless runner 与轻量 CI；CI 的远端实际结果以对应 PR / Actions 运行为准，不能由本地通过替代。
+每次开发先处理一个可验证目标。模块 1/2/3A/3B 共用 Godot 4.7.2 headless runner 与轻量 CI；CI 的远端实际结果以对应 PR / Actions 运行为准，不能由本地通过替代。
 
 ## 历史工具与素材
 

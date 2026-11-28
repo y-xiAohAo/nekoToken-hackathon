@@ -145,15 +145,20 @@ func validate() -> Array[Dictionary]:
 			return [{"code": "OCCUPANCY_CONFLICT"}]
 	if get_cell_profile(world_to_cell(player_position)).blocks_movement:
 		return [{"code": "INVALID_POSITION"}]
+	var active_goals: int = 0
 	for entity: Dictionary in entities:
 		if entity.kind == "camera" and solids.has(DeviceRegistry.grid(entity.cell)):
 			return [{"code": "OCCUPANCY_CONFLICT"}]
 		if entity.kind == "robot" and not _robot_valid(entity):
 			return [{"code": "INVALID_PATH"}]
+		if entity.kind == "goal" and entity.runtime_state.active:
+			active_goals += 1
 		if entity.kind == "pressure_plate":
 			for actor: int in entity.runtime_state.occupants:
 				if actor != 0 and registry.get_entity(actor).get("kind") != "robot":
 					return [{"code": "INVALID_WORLD"}]
+	if active_goals > 1:
+		return [{"code": "INVALID_WORLD"}]
 	return []
 
 

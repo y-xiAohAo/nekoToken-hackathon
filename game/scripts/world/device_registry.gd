@@ -200,7 +200,7 @@ static func make_entity(data: Dictionary, id: int, position: Vector2) -> Diction
 		"pressure_plate":
 			entity["runtime_state"] = {"occupants": [], "baseline_ready": false}
 		"goal":
-			entity["runtime_state"] = {"progress": 0.0, "complete": false}
+			entity["runtime_state"] = {"active": false, "progress": 0.0, "complete": false}
 		"contact":
 			entity["runtime_state"] = {"used": false}
 		"exit":
@@ -254,7 +254,13 @@ static func entity_valid(entity: Variant, rules: Dictionary) -> bool:
 				seen[actor] = true
 			return state.baseline_ready or state.occupants.is_empty()
 		"goal":
-			return fields(state, ["progress", "complete"]) and number(state.progress) and state.progress >= 0 and typeof(state.complete) == TYPE_BOOL
+			if not fields(state, ["active", "progress", "complete"]) or typeof(state.active) != TYPE_BOOL or typeof(state.complete) != TYPE_BOOL:
+				return false
+			if not number(state.progress) or state.progress < 0 or state.progress > 1:
+				return false
+			if state.active and state.complete:
+				return false
+			return not state.complete or float(state.progress) == 1.0
 		"contact":
 			return fields(state, ["used"]) and typeof(state.used) == TYPE_BOOL
 		"exit":
