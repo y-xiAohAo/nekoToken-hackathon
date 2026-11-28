@@ -65,7 +65,7 @@ func _runtime_error(code: String) -> Dictionary:
 func _runtime_structure_unchanged(current: WorldState, candidate: WorldState) -> bool:
 	var before: Dictionary = current.to_snapshot()
 	var after: Dictionary = candidate.to_snapshot()
-	for field: String in ["template_key", "grid_size", "cell_size", "origin", "terrain", "device_rules", "next_entity_id"]:
+	for field: String in ["template_key", "grid_size", "cell_size", "origin", "terrain", "obstacle_templates", "obstacle_instances", "next_obstacle_id", "device_rules", "next_entity_id"]:
 		if before[field] != after[field]:
 			return false
 	if before.entities.size() != after.entities.size():
@@ -86,7 +86,7 @@ func validate_batch(batch: WorldCommandBatch, expected_context: Dictionary) -> W
 	var result: WorldCommandResult = _check_context(batch, expected_context)
 	if not result.errors.is_empty():
 		return result
-	var candidate: WorldState = _build_candidate(batch.to_data(), result)
+	var candidate: WorldState = _build_candidate(batch.to_data(), result, false)
 	if candidate != null:
 		result.status = "VALID"
 		# Candidate allocation is private: callers cannot rely on preview IDs.
@@ -107,7 +107,7 @@ func commit_batch(batch: WorldCommandBatch, expected_context: Dictionary) -> Wor
 		if data == _cached_batch:
 			return _cached_result.snapshot_copy()
 		return _reject(result, "REQUEST_REUSE")
-	var candidate: WorldState = _build_candidate(data, result)
+	var candidate: WorldState = _build_candidate(data, result, true)
 	if candidate == null:
 		_remember(key, data, result)
 		return result
@@ -148,6 +148,40 @@ func commit_batch(batch: WorldCommandBatch, expected_context: Dictionary) -> Wor
 	return result
 
 
+func restore_trusted_snapshot(world_data: Dictionary, expected_revision: int, min_next_entity_id: int, min_next_obstacle_id: int) -> Dictionary:
+	if _activation_failed:
+		return _runtime_error("SYNC_ACTIVATION_FAILED")
+	if _busy or _world == null or expected_revision != _world.world_revision or min_next_entity_id < 1 or min_next_obstacle_id < 1:
+		return _runtime_error("INVALID_CONTEXT")
+	var candidate: WorldState = WorldState.from_snapshot(world_data)
+	if candidate == null:
+		return _runtime_error("INVALID_WORLD")
+	candidate.next_entity_id = maxi(candidate.next_entity_id, min_next_entity_id)
+	candidate.next_obstacle_id = maxi(candidate.next_obstacle_id, min_next_obstacle_id)
+	if _sync == null:
+		return _runtime_error("SYNC_PREPARE_FAILED")
+	var before: Dictionary = _world.to_snapshot()
+	var after: Dictionary = candidate.to_snapshot()
+	_busy = true
+	var changes: Dictionary = _changes(before, after)
+	changes["restore_player"] = true
+	var prepared: Dictionary = _sync.prepare(before.duplicate(true), after.duplicate(true), changes)
+	if prepared.get("ok") != true or not prepared.get("prepared") is Dictionary:
+		_busy = false
+		return _runtime_error("SYNC_PREPARE_FAILED")
+	var activated: Variant = _sync.activate(prepared.prepared)
+	if activated != true:
+		_activation_failed = true
+		_busy = false
+		return _runtime_error("SYNC_ACTIVATION_FAILED")
+	_world = candidate
+	_busy = false
+	_request_key.clear()
+	_cached_batch.clear()
+	_cached_result = null
+	return {"ok": true, "errors": []}
+
+
 func _check_context(batch: WorldCommandBatch, expected: Dictionary) -> WorldCommandResult:
 	var result := WorldCommandResult.new()
 	if _world != null:
@@ -168,14 +202,16 @@ func _check_context(batch: WorldCommandBatch, expected: Dictionary) -> WorldComm
 	var phase: Variant = expected.get("phase")
 	var contact: bool = phase == SessionPhase.Phase.CONTACT_PAUSED
 	var dispatch: bool = phase == SessionPhase.Phase.DISPATCH_PAUSED
-	if not contact and not dispatch:
+	var round_setup: bool = phase == SessionPhase.Phase.ROUND_SETUP_PAUSED
+	if not contact and not dispatch and not round_setup:
 		return _reject(result, "INVALID_PHASE")
-	if data.source != ("contact" if contact else "dispatch") or data.context.role != (AgentProtocol.PLAYER_ASSISTANT if contact else AgentProtocol.SYSTEM_AGENT):
+	var expected_source: String = "contact" if contact else ("dispatch" if dispatch else "round_setup")
+	if data.source != expected_source or data.context.role != (AgentProtocol.PLAYER_ASSISTANT if contact else AgentProtocol.SYSTEM_AGENT):
 		return _reject(result, "INVALID_CONTEXT")
 	return result
 
 
-func _build_candidate(data: Dictionary, result: WorldCommandResult) -> WorldState:
+func _build_candidate(data: Dictionary, result: WorldCommandResult, authoritative: bool) -> WorldState:
 	if data.base_world_revision != _world.world_revision:
 		_reject(result, "STALE_WORLD")
 		return null
@@ -190,11 +226,20 @@ func _build_candidate(data: Dictionary, result: WorldCommandResult) -> WorldStat
 		_reject(result, "PERMISSION_DENIED")
 		return null
 	for index: int in data.commands.size():
+		if authoritative and _hidden_placement_blocked(candidate, data.commands[index], role_policy):
+			_reject(result, "PLACEMENT_REJECTED", index)
+			return null
 		var code: String = _apply(candidate, data.commands[index], role_policy, result, index)
 		if not code.is_empty():
 			_reject(result, code, index)
 			return null
 		result.command_results.append({"command_index": index, "status": "VALID"})
+	if not _limits_valid(candidate, role_policy):
+		_reject(result, "DEVICE_LIMIT")
+		return null
+	if _new_robot_overlap(candidate, result.created_ids, authoritative):
+		_reject(result, "PLACEMENT_REJECTED")
+		return null
 	# Intermediate moves are private; only the final placement changes the baseline.
 	for entity: Dictionary in candidate.registry.to_snapshot():
 		if entity.kind != "pressure_plate":
@@ -213,9 +258,12 @@ func _build_candidate(data: Dictionary, result: WorldCommandResult) -> WorldStat
 			if absf(offset) > entity.parameters.scan_half_angle + 0.000001:
 				entity["runtime_state"]["heading"] = entity.parameters.scan_center + clampf(offset, -entity.parameters.scan_half_angle, entity.parameters.scan_half_angle)
 				candidate.registry._put(entity)
-	var errors: Array[Dictionary] = candidate.validate()
+	var errors: Array[Dictionary] = candidate.validate(not authoritative)
 	if not errors.is_empty():
-		_reject(result, errors[0].code)
+		var code: String = errors[0].code
+		if role_policy.has("obstacle_protection_radius") and code in ["OCCUPANCY_CONFLICT", "INVALID_POSITION"] and _has_placement_command(data.commands):
+			code = "PLACEMENT_REJECTED"
+		_reject(result, code)
 		return null
 	return candidate
 
@@ -225,6 +273,31 @@ func _apply(world: WorldState, command: Dictionary, policy: Dictionary, result: 
 	if not permissions is Dictionary or not permissions.get(command.type) is Array:
 		return "PERMISSION_DENIED"
 	var allowed: Array = permissions[command.type]
+	if command.type == "MoveObstacle":
+		if "obstacle" not in allowed:
+			return "PERMISSION_DENIED"
+		for instance: Dictionary in world.obstacle_instances:
+			if instance.obstacle_id != command.obstacle_id:
+				continue
+			var template: ObstacleTemplate = world.obstacle_template(instance.template_id)
+			if template == null:
+				return "INVALID_WORLD"
+			for cell: Vector2i in template.covered_cells(DeviceRegistry.grid(command.anchor_cell)):
+				if not _region_allowed([cell.x, cell.y], policy):
+					return "PERMISSION_DENIED"
+			instance["anchor_cell"] = command.anchor_cell.duplicate()
+			return ""
+		return "UNKNOWN_ID"
+	if command.type == "SetCameraScanState":
+		if "camera" not in allowed:
+			return "PERMISSION_DENIED"
+		var camera: Dictionary = world.registry.get_entity(command.id)
+		if camera.get("kind") != "camera":
+			return "UNKNOWN_ID"
+		camera.runtime_state.heading = command.heading
+		camera.runtime_state.scan_direction = command.scan_direction
+		world.registry._put(camera)
+		return ""
 	if command.type == "SetMapCell":
 		if "map" not in allowed or not _region_allowed(command.cell, policy):
 			return "PERMISSION_DENIED"
@@ -247,6 +320,8 @@ func _apply(world: WorldState, command: Dictionary, policy: Dictionary, result: 
 			for waypoint: Array in definition.patrol_path:
 				if not _region_allowed(waypoint, policy):
 					return "PERMISSION_DENIED"
+				if world.get_cell_profile(DeviceRegistry.grid(waypoint)).blocks_movement:
+					return "INVALID_PATH"
 		var id: int = world.next_entity_id
 		world.registry._put(DeviceRegistry.make_entity(definition, id, world.cell_to_world(DeviceRegistry.grid(definition.cell))))
 		world.next_entity_id += 1
@@ -270,20 +345,6 @@ func _apply(world: WorldState, command: Dictionary, policy: Dictionary, result: 
 		"MoveDevice":
 			if entity.kind not in ["camera", "pressure_plate"] or not _region_allowed(command.cell, policy):
 				return "PERMISSION_DENIED"
-			if entity.kind == "pressure_plate":
-				if command.has("mount_type") or command.has("wall_side"):
-					return "INVALID_COMMAND"
-			else:
-				if command.get("mount_type") not in ["wall", "ceiling"]:
-					return "INVALID_COMMAND"
-				entity["mount_type"] = command.mount_type
-				entity.erase("wall_side")
-				if command.mount_type == "wall":
-					if command.get("wall_side") not in DeviceRegistry.SIDES:
-						return "INVALID_COMMAND"
-					entity["wall_side"] = command.wall_side
-				elif command.has("wall_side"):
-					return "INVALID_COMMAND"
 			entity["cell"] = command.cell.duplicate()
 		"SetDeviceParameter":
 			var parameters: Variant = policy.get("parameters", {})
@@ -313,6 +374,70 @@ func _region_allowed(cell: Array, policy: Dictionary) -> bool:
 	return policy.allowed_cells is Array and cell in policy.allowed_cells
 
 
+func _limits_valid(world: WorldState, policy: Dictionary) -> bool:
+	if not policy.has("device_limits"):
+		return true
+	if not policy.device_limits is Dictionary or not DeviceRegistry.fields(policy.device_limits, ["camera", "robot", "pressure_plate"]):
+		return false
+	var counts: Dictionary = {"camera": 0, "robot": 0, "pressure_plate": 0}
+	for entity: Dictionary in world.registry.to_snapshot():
+		if counts.has(entity.kind):
+			counts[entity.kind] += 1
+	for kind: String in counts:
+		if typeof(policy.device_limits[kind]) != TYPE_INT or policy.device_limits[kind] < 0 or counts[kind] > policy.device_limits[kind]:
+			return false
+	return true
+
+
+func _hidden_placement_blocked(world: WorldState, command: Dictionary, policy: Dictionary) -> bool:
+	if not policy.has("obstacle_protection_radius"):
+		return false
+	var player_cell: Vector2i = world.world_to_cell(world.player_position)
+	if command.type == "MoveObstacle":
+		var radius: int = int(policy.obstacle_protection_radius)
+		if radius < 0:
+			return true
+		for instance: Dictionary in world.obstacle_instances:
+			if instance.obstacle_id == command.obstacle_id:
+				var template: ObstacleTemplate = world.obstacle_template(instance.template_id)
+				if template != null:
+					for cell: Vector2i in template.covered_cells(DeviceRegistry.grid(command.anchor_cell)):
+						if absi(cell.x - player_cell.x) <= radius and absi(cell.y - player_cell.y) <= radius:
+							return true
+	if command.type == "MoveDevice":
+		var entity: Dictionary = world.registry.get_entity(command.id)
+		return entity.get("kind") in ["camera", "pressure_plate"] and DeviceRegistry.grid(command.cell) == player_cell
+	if command.type == "AddDevice" and command.device.get("kind") in ["camera", "pressure_plate"] and DeviceRegistry.cell(command.device.get("cell")):
+		return DeviceRegistry.grid(command.device.cell) == player_cell
+	return false
+
+
+func _new_robot_overlap(world: WorldState, created_ids: Array[Dictionary], authoritative: bool) -> bool:
+	var half: float = minf(10.0, world.cell_size * 0.25)
+	for created: Dictionary in created_ids:
+		var robot: Dictionary = world.registry.get_entity(created.id)
+		if robot.get("kind") != "robot":
+			continue
+		var position: Vector2 = DeviceRegistry.vector(robot.runtime_state.position)
+		if authoritative and _actors_overlap(position, world.player_position, half):
+			return true
+		for other: Dictionary in world.registry.to_snapshot():
+			if other.kind == "robot" and other.id != robot.id and _actors_overlap(position, DeviceRegistry.vector(other.runtime_state.position), half):
+				return true
+	return false
+
+
+func _actors_overlap(a: Vector2, b: Vector2, half: float) -> bool:
+	return absf(a.x - b.x) < half * 2.0 and absf(a.y - b.y) < half * 2.0
+
+
+func _has_placement_command(commands: Array) -> bool:
+	for command: Dictionary in commands:
+		if command.type in ["AddDevice", "MoveDevice", "MoveObstacle"]:
+			return true
+	return false
+
+
 func _reject(result: WorldCommandResult, code: String, index: int = -1) -> WorldCommandResult:
 	result.status = "REJECTED"
 	result.errors = [{"code": code, "command_index": index}]
@@ -330,6 +455,8 @@ func _remember(key: Array, batch: Dictionary, result: WorldCommandResult) -> voi
 func _changes(before: Dictionary, after: Dictionary) -> Dictionary:
 	var changed: Array[int] = []
 	var removed: Array[int] = []
+	var changed_obstacles: Array[int] = []
+	var removed_obstacles: Array[int] = []
 	var old_entities: Dictionary = {}
 	for entity: Dictionary in before.entities:
 		old_entities[entity.id] = entity
@@ -339,4 +466,14 @@ func _changes(before: Dictionary, after: Dictionary) -> Dictionary:
 		old_entities.erase(entity.id)
 	for id: int in old_entities:
 		removed.append(id)
-	return {"terrain_changed": before.terrain != after.terrain, "changed_ids": changed, "removed_ids": removed}
+	var old_obstacles: Dictionary = {}
+	for instance: Dictionary in before.obstacle_instances:
+		old_obstacles[instance.obstacle_id] = instance
+	for instance: Dictionary in after.obstacle_instances:
+		if old_obstacles.get(instance.obstacle_id, {}) != instance:
+			changed_obstacles.append(instance.obstacle_id)
+		old_obstacles.erase(instance.obstacle_id)
+	for id: int in old_obstacles:
+		removed_obstacles.append(id)
+	return {"terrain_changed": before.terrain != after.terrain, "changed_ids": changed, "removed_ids": removed,
+		"changed_obstacle_ids": changed_obstacles, "removed_obstacle_ids": removed_obstacles}

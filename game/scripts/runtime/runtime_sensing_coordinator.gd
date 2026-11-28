@@ -20,14 +20,14 @@ var _prepared_context: Dictionary = {}
 var _prepared_world: Dictionary = {}
 var _staged: Dictionary = {}
 
-func initialize_round(world: WorldState, context: Dictionary, ticks_per_report_period: int) -> bool:
+func initialize_round(world: WorldState, context: Dictionary, ticks_per_report_period: int, dispatch_rules: Dictionary = {}) -> bool:
 	if _n != 0 or world == null or not DeviceRegistry.fields(context, CONTEXT_FIELDS) or context.sense_tick != 0 or ticks_per_report_period <= 0:
 		return false
 	var result: SensingStepResult = SensingKernel.initialize_round(world, context, ticks_per_report_period)
 	if not result.succeeded():
 		return false
 	var view := SystemAgentView.new()
-	if not view.initialize(world):
+	if not view.initialize(world, dispatch_rules):
 		return false
 	var buffer := ReportBuffer.new(ticks_per_report_period)
 	if not buffer.append_all(result.visual_records, result.plate_records):
@@ -47,6 +47,43 @@ func initialize_round(world: WorldState, context: Dictionary, ticks_per_report_p
 	_view = view
 	_last_world = committed_copy
 	return true
+
+
+static func from_cycle_checkpoint(data: Dictionary, restored_world: WorldState, new_branch_id: int, lineage: Array[Dictionary], fork_tick: int) -> RuntimeSensingCoordinator:
+	if restored_world == null or not DeviceRegistry.plain(data) or not DeviceRegistry.fields(data, SNAPSHOT_FIELDS) or new_branch_id <= data.get("branch_id", 0) or fork_tick < 0:
+		return null
+	var coordinator := RuntimeSensingCoordinator.new()
+	var context: Dictionary = {"round_id": data.round_id, "branch_id": data.branch_id,
+		"guess_cycle_id": 1, "report_cycle_id": 1, "sense_tick": 0}
+	var rules: Dictionary = data.system_view.get("world", {}).get("dispatch_rules", {})
+	if not coordinator.initialize_round(restored_world, context, data.ticks_per_report_period, rules) or not coordinator.restore(data):
+		return null
+	if not coordinator._device_buffer.rebranch_checkpoint_pending(new_branch_id, data.branch_id, fork_tick):
+		return null
+	for goal: Dictionary in coordinator._goal_pending:
+		if goal.event_tick != fork_tick or goal.branch_id != data.branch_id or goal.has("origin_branch_id"):
+			return null
+		goal.branch_id = new_branch_id
+		goal["origin_branch_id"] = data.branch_id
+	for sidecar: Dictionary in coordinator._device_sidecars:
+		var tick: int = _entry_tick(sidecar)
+		if tick != fork_tick or sidecar.data.branch_id != data.branch_id or sidecar.has("origin_branch_id"):
+			return null
+		sidecar.data.branch_id = new_branch_id
+		sidecar["origin_branch_id"] = data.branch_id
+	var view := SystemAgentView.new()
+	if not view.restore(data.system_view) or not view.set_branch_lineage(lineage):
+		return null
+	coordinator._branch_id = new_branch_id
+	coordinator._view = view
+	coordinator._last_world = restored_world.snapshot_copy()
+	var verifier := RuntimeSensingCoordinator.new()
+	var child_context: Dictionary = context.duplicate(true)
+	child_context.branch_id = new_branch_id
+	if not verifier.initialize_round(restored_world, child_context, data.ticks_per_report_period, rules) or not verifier.restore(coordinator.snapshot()):
+		return null
+	return coordinator
+
 
 func prepare_step(previous_actor_cells: Dictionary, candidate: WorldState, context: Dictionary) -> SensingStepResult:
 	_clear_prepared()
@@ -130,18 +167,24 @@ func seal_report_batch(boundary: ReportBoundary) -> bool:
 	if selected_sidecars.size() != device_batch.records.size():
 		return false
 	for index: int in selected_sidecars.size():
-		if selected_sidecars[index].record_type != device_batch.records[index].record_type or selected_sidecars[index].data != device_batch.records[index].data:
+		if selected_sidecars[index].record_type != device_batch.records[index].record_type or selected_sidecars[index].data != device_batch.records[index].data or selected_sidecars[index].get("origin_branch_id") != device_batch.records[index].get("origin_branch_id"):
 			return false
 	var selected_goals: Array[Dictionary] = []
 	var remaining_goals: Array[Dictionary] = []
 	for raw_goal: Dictionary in _goal_pending:
-		var goal: GoalOperationRecord = GoalOperationRecord.from_data(raw_goal)
+		var goal_data: Dictionary = raw_goal.duplicate(true)
+		var origin_branch_id: Variant = goal_data.get("origin_branch_id")
+		goal_data.erase("origin_branch_id")
+		var goal: GoalOperationRecord = GoalOperationRecord.from_data(goal_data)
 		if goal == null or goal.event_tick < boundary.start_tick:
 			return false
 		if goal.event_tick < boundary.end_tick:
 			if goal.report_cycle_id != boundary.report_period_id or goal.round_id != boundary.round_id or goal.branch_id != boundary.branch_id:
 				return false
-			selected_goals.append({"record_type": "goal_operation", "data": goal.to_data()})
+			var wrapped: Dictionary = {"record_type": "goal_operation", "data": goal.to_data()}
+			if origin_branch_id != null:
+				wrapped["origin_branch_id"] = origin_branch_id
+			selected_goals.append(wrapped)
 		else:
 			remaining_goals.append(raw_goal.duplicate(true))
 	var combined: Array[Dictionary] = selected_sidecars
@@ -212,23 +255,33 @@ func restore(data: Dictionary) -> bool:
 	for raw: Variant in data.goal_pending:
 		if not raw is Dictionary:
 			return false
-		var goal: GoalOperationRecord = GoalOperationRecord.from_data(raw)
+		var goal_data: Dictionary = raw.duplicate(true)
+		var origin_branch_id: Variant = goal_data.get("origin_branch_id")
+		goal_data.erase("origin_branch_id")
+		var goal: GoalOperationRecord = GoalOperationRecord.from_data(goal_data)
 		if goal == null or goal.round_id != _round_id or goal.branch_id != _branch_id or goal.report_cycle_id != goal.event_tick / _n + 1 or goal.report_cycle_id <= data.device_buffer.last_sealed_period_id:
 			return false
-		goals.append(goal.to_data())
+		if origin_branch_id != null and (typeof(origin_branch_id) != TYPE_INT or origin_branch_id < 1 or origin_branch_id == goal.branch_id):
+			return false
+		var restored_goal: Dictionary = goal.to_data()
+		if origin_branch_id != null:
+			restored_goal["origin_branch_id"] = origin_branch_id
+		goals.append(restored_goal)
 	var sidecars: Array[Dictionary] = []
 	for raw: Variant in data.device_sidecars:
-		if not raw is Dictionary or not DeviceRegistry.fields(raw, ["record_type", "data", "device_configuration"]):
+		if not raw is Dictionary or not DeviceRegistry.fields(raw, ["record_type", "data", "device_configuration"], ["origin_branch_id"]):
 			return false
 		var record: Variant = ObservationRecord.from_data(raw.data) if raw.record_type == "visual" else (PlateActivationRecord.from_data(raw.data) if raw.record_type == "plate_activation" else null)
 		if record == null or record.round_id != _round_id or record.branch_id != _branch_id or record.report_cycle_id != (record.sense_tick if raw.record_type == "visual" else record.event_tick) / _n + 1 or not UnifiedReportBatch.public_device_configuration_valid(raw.device_configuration, record.device_id, raw.record_type):
+			return false
+		if raw.has("origin_branch_id") and (typeof(raw.origin_branch_id) != TYPE_INT or raw.origin_branch_id < 1 or raw.origin_branch_id == record.branch_id):
 			return false
 		sidecars.append(raw.duplicate(true))
 	var view := SystemAgentView.new()
 	if not view.restore(data.system_view) or sidecars.size() != data.device_buffer.pending.size():
 		return false
 	for index: int in sidecars.size():
-		if sidecars[index].record_type != data.device_buffer.pending[index].record_type or sidecars[index].data != data.device_buffer.pending[index].data:
+		if sidecars[index].record_type != data.device_buffer.pending[index].record_type or sidecars[index].data != data.device_buffer.pending[index].data or sidecars[index].get("origin_branch_id") != data.device_buffer.pending[index].get("origin_branch_id"):
 			return false
 	_device_buffer = buffer
 	_goal_pending = goals
@@ -266,7 +319,7 @@ func _step_data(step: SensingStepResult) -> Dictionary:
 		plates.append(record.to_data())
 	return {"states": step.next_visual_states.duplicate(true), "visuals": visuals, "plates": plates, "errors": step.errors.duplicate(true)}
 
-func _entry_tick(entry: Dictionary) -> int:
+static func _entry_tick(entry: Dictionary) -> int:
 	return entry.data.sense_tick if entry.record_type == "visual" else entry.data.event_tick
 
 func _entry_id(entry: Dictionary) -> int:

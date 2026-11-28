@@ -111,7 +111,7 @@ Out of Scope：
 - 连续坐标为 Vector2；序列化为两个有限数。使用 `origin + (cell + 0.5) * cell_size` 推导格心。
 - 从连续位置到格坐标采用 floor，统一处理负坐标和格界；地图外结果不会被自动夹入地图。
 - 静态设备锚点按格/墙面表达，连续显示位置由转换推导；机器人当前连续位置与格心路线同时存在，分别表达当前位置与未来路径。
-- world_revision 每次实际世界变更后递增；预检、拒绝、保持现状或无实际差异的有效提交不递增。
+- world_revision 是部署配置版本：成功的实际部署变更后递增；预检、拒绝、保持现状或无实际差异的有效提交不递增。玩家/设备普通运动只推进 simulation_tick，不增加部署 revision；该语义由模块 3A 运行时写回落实。
 - 动态占位与静态通行分开。踏板合法性不得查询隐藏玩家/机器人占位；实心地图变更必须避免把当前实体封入新障碍，其内部校验结果不直接开放给模型。
 
 ### 6.3 DeviceRegistry
@@ -248,6 +248,7 @@ WorldSyncAdapter 为可替换同步接口：
 | WorldCommandService | `_init(initial_world: WorldState, policy: Dictionary, sync_adapter: WorldSyncAdapter)` | 复制初始世界和可信策略，保存私有可变状态 |
 | WorldCommandService | `validate_batch(batch: WorldCommandBatch, expected_context: Dictionary) -> WorldCommandResult` | expected_context 由可信协调层提供，包含当前请求、phase；无副作用 |
 | WorldCommandService | `commit_batch(batch: WorldCommandBatch, expected_context: Dictionary) -> WorldCommandResult`、`get_world_snapshot() -> WorldState` | 重验、同步、提交；读口始终隔离 |
+| WorldCommandService | `commit_runtime_step(expected_tick: int, step: WorldStepResult, session_snapshot: Dictionary, cycle_snapshot: Dictionary) -> Dictionary` | 模块 3A 追加的可信内部入口；校验 ACTION、连续 tick、结构不变和完整候选，只更新玩家与实体运行状态，不查 Agent 权限、不增加部署 revision |
 | WorldSyncAdapter | `prepare(previous: Dictionary, candidate: Dictionary, changes: Dictionary) -> Dictionary`、`activate(prepared: Dictionary) -> bool` | prepare 返回 ok/prepared/errors；activate 不再正常失败，true 确认完成；意外中断锁定服务 |
 | GameSession | `renew_world_request() -> Dictionary` | 仅 CONTACT_PAUSED / DISPATCH_PAUSED；按阶段选择角色、分配新 request_id、更新期待 context |
 | GameSession | `end_contact(deploy: Callable = Callable()) -> bool`、`complete_dispatch(deploy: Callable = Callable()) -> bool` | deploy 接收期待上下文副本，返回内部 WorldCommandResult；成功/明确 unchanged 才转阶段；缺省回调返回 false |

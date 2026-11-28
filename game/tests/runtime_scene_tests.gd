@@ -20,8 +20,8 @@ class TrackingWorldView extends RuntimeWorldView:
 			created_nodes.append(layer)
 		return layer
 
-	func make_entity_node(entity: Dictionary) -> Node2D:
-		var node: Node2D = super.make_entity_node(entity)
+	func make_entity_node(entity: Dictionary, candidate: WorldState) -> Node2D:
+		var node: Node2D = super.make_entity_node(entity, candidate)
 		if node != null:
 			created_nodes.append(node)
 		return node
@@ -157,7 +157,6 @@ func _device_rules() -> Dictionary:
 			"camera": {"view_radius": [0.1, 2000.0], "fov_angle": [0.1, TAU], "scan_center": [-PI, PI], "scan_half_angle": [0.0, PI], "scan_speed": [0.0, 400.0]},
 			"robot": {"view_radius": [0.1, 2000.0], "move_speed": [0.1, 400.0]},
 		},
-		"camera_mount_limits": {"wall": {"half_angle": PI / 2.0}, "ceiling": {"center": 0.0, "half_angle": PI}},
 		"camera_per_anchor": 1,
 	}
 
@@ -172,6 +171,7 @@ func _patrol_world(path: Array) -> WorldState:
 	return LevelTemplate.from_data({
 		"template_key": "robot_scene_test", "grid_size": [5, 5], "cell_size": 100.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [150.0, 350.0], "device_rules": _device_rules(),
+		"obstacle_templates": [], "initial_obstacles": [],
 		"initial_entities": [{"kind": "robot", "cell": path[0], "parameters": {"view_radius": 400.0, "move_speed": 100.0}, "patrol_path": path}],
 	}).instantiate_world()
 
@@ -249,8 +249,9 @@ func _view_world() -> WorldState:
 	return LevelTemplate.from_data({
 		"template_key": "scene_sync_test", "grid_size": [6, 6], "cell_size": 64.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [96.0, 288.0], "device_rules": _device_rules(),
+		"obstacle_templates": [], "initial_obstacles": [],
 		"initial_entities": [
-			{"kind": "camera", "cell": [2, 2], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 384.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
+			{"kind": "camera", "cell": [2, 2], "parameters": {"enabled": true, "view_radius": 384.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
 			{"kind": "robot", "cell": [1, 3], "parameters": {"view_radius": 384.0, "move_speed": 64.0}, "patrol_path": [[1, 3], [2, 3]]},
 			{"kind": "pressure_plate", "cell": [2, 2], "parameters": {}},
 			{"kind": "goal", "cell": [4, 4], "parameters": {}},
@@ -324,7 +325,7 @@ func _deployment_sync() -> bool:
 	_check(view.get_entity_node(new_id) != null, "new plate has scene node with stable ID")
 	_check(view.get_entity_node(1) == original_camera, "unrelated camera node is not rebuilt")
 
-	var moved: WorldCommandResult = _commit(service, [{"type": "MoveDevice", "id": 1, "cell": [1, 2], "mount_type": "ceiling"}], 1)
+	var moved: WorldCommandResult = _commit(service, [{"type": "MoveDevice", "id": 1, "cell": [1, 2]}], 1)
 	_check(moved.status == "APPLIED", "camera move activates")
 	var moved_camera: DeviceView = view.get_entity_node(1)
 	_check(moved_camera.position.is_equal_approx(Vector2(96, 160)), "moved camera uses world coordinate conversion")
@@ -458,8 +459,8 @@ func _runtime_stays_action() -> bool:
 	for _i: int in 120:
 		await _tree().physics_frame
 		await runtime.step_once(Vector2.ZERO, 1.0 / 60.0)
-	_check(session.get_state_snapshot().phase == SessionPhase.Phase.ACTION, "graybox remains interactive beyond unsupported guess boundary")
-	_check(session.get_cycle_snapshot().simulation_tick == 120, "graybox fixture continues advancing physics ticks")
+	_check(session.get_state_snapshot().phase == SessionPhase.Phase.GUESS_PAUSED, "finite graybox fixture reaches guess pause")
+	_check(session.get_cycle_snapshot().simulation_tick == 60, "guess pause freezes graybox physics ticks")
 	runtime.queue_free()
 	bundle.view.queue_free()
 	await _tree().process_frame
@@ -571,8 +572,9 @@ func _interaction_world() -> WorldState:
 	return LevelTemplate.from_data({
 		"template_key": "interaction_scene_test", "grid_size": [8, 6], "cell_size": 64.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [96.0, 96.0], "device_rules": _device_rules(),
+		"obstacle_templates": [], "initial_obstacles": [],
 		"initial_entities": [
-			{"kind": "camera", "cell": [2, 1], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 384.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
+			{"kind": "camera", "cell": [2, 1], "parameters": {"enabled": true, "view_radius": 384.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
 			{"kind": "robot", "cell": [1, 3], "parameters": {"view_radius": 384.0, "move_speed": 64.0}, "patrol_path": [[1, 3], [2, 3]]},
 			{"kind": "goal", "cell": [4, 2], "parameters": {}},
 			{"kind": "goal", "cell": [5, 2], "parameters": {}},

@@ -87,10 +87,12 @@ func restore(data: Dictionary) -> bool:
 		return false
 	var candidate: Array[Dictionary] = []
 	for entry: Variant in data.pending:
-		if not DeviceRegistry.fields(entry, ["record_type", "data"]) or not entry.data is Dictionary:
+		if not DeviceRegistry.fields(entry, ["record_type", "data"], ["origin_branch_id"]) or not entry.data is Dictionary:
 			return false
 		var record: Variant = ObservationRecord.from_data(entry.data) if entry.record_type == "visual" else (PlateActivationRecord.from_data(entry.data) if entry.record_type == "plate_activation" else null)
 		if record == null:
+			return false
+		if entry.has("origin_branch_id") and (typeof(entry.origin_branch_id) != TYPE_INT or entry.origin_branch_id < 1 or entry.origin_branch_id == record.branch_id):
 			return false
 		var tick: int = record.sense_tick if entry.record_type == "visual" else record.event_tick
 		if record.report_cycle_id != tick / _n + 1 or record.report_cycle_id <= data.last_sealed_period_id:
@@ -104,6 +106,24 @@ func restore(data: Dictionary) -> bool:
 
 func pending_count() -> int:
 	return _pending.size()
+
+
+func rebranch_checkpoint_pending(new_branch_id: int, origin_branch_id: int, fork_tick: int) -> bool:
+	if new_branch_id <= 0 or origin_branch_id <= 0 or new_branch_id == origin_branch_id or fork_tick < 0:
+		return false
+	var candidate: Array[Dictionary] = _pending.duplicate(true)
+	for entry: Dictionary in candidate:
+		var tick: int = entry.data.sense_tick if entry.record_type == "visual" else entry.data.event_tick
+		if tick != fork_tick or entry.data.branch_id != origin_branch_id or entry.has("origin_branch_id"):
+			return false
+		entry.data.branch_id = new_branch_id
+		entry["origin_branch_id"] = origin_branch_id
+	var probe := ReportBuffer.new(_n)
+	if not probe.restore({"ticks_per_report_period": _n, "last_sealed_period_id": _last_sealed_period_id, "pending": candidate}):
+		return false
+	_pending = candidate
+	return true
+
 
 func _period_valid(event_tick: int, report_cycle_id: int) -> bool:
 	return event_tick >= 0 and report_cycle_id == event_tick / _n + 1 and report_cycle_id > _last_sealed_period_id

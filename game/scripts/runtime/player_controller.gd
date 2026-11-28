@@ -24,3 +24,10 @@ func touched_entity_ids() -> Array[int]:
 
 func motion_state() -> Dictionary:
 	return {"position": DeviceRegistry.pair(global_position), "velocity": DeviceRegistry.pair(velocity)}
+
+
+func restore_motion_state(position: Vector2, velocity: Vector2) -> void:
+	global_position = position
+	self.velocity = velocity
+	_touched_entity_ids.clear()
+	reset_physics_interpolation()

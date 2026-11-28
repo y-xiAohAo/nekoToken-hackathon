@@ -34,20 +34,22 @@ static func from_data(data: Dictionary) -> UnifiedReportBatch:
 		var event_tick: int = -1
 		var entity_id: int = -1
 		if entry.record_type == "visual":
-			if not DeviceRegistry.fields(entry, ["record_type", "data", "device_configuration"]):
+			if not DeviceRegistry.fields(entry, ["record_type", "data", "device_configuration"], ["origin_branch_id"]):
 				return null
 			record = ObservationRecord.from_data(entry.data)
 		elif entry.record_type == "plate_activation":
-			if not DeviceRegistry.fields(entry, ["record_type", "data", "device_configuration"]):
+			if not DeviceRegistry.fields(entry, ["record_type", "data", "device_configuration"], ["origin_branch_id"]):
 				return null
 			record = PlateActivationRecord.from_data(entry.data)
 		elif entry.record_type == "goal_operation":
-			if not DeviceRegistry.fields(entry, ["record_type", "data"]):
+			if not DeviceRegistry.fields(entry, ["record_type", "data"], ["origin_branch_id"]):
 				return null
 			record = GoalOperationRecord.from_data(entry.data)
 		else:
 			return null
 		if record == null:
+			return null
+		if entry.has("origin_branch_id") and (typeof(entry.origin_branch_id) != TYPE_INT or entry.origin_branch_id < 1 or entry.origin_branch_id == record.branch_id):
 			return null
 		if entry.record_type == "goal_operation":
 			event_tick = record.event_tick
@@ -82,7 +84,7 @@ static func public_device_configuration_valid(value: Variant, entity_id: int, re
 		return false
 	match value.get("kind"):
 		"camera":
-			if record_type == "plate_activation" or not DeviceRegistry.fields(value, ["id", "kind", "cell", "mount_type", "wall_side", "parameters"]) or not DeviceRegistry.cell(value.cell) or value.mount_type not in ["wall", "ceiling"] or not (value.wall_side == "" or value.wall_side in DeviceRegistry.SIDES) or not DeviceRegistry.fields(value.parameters, CAMERA_PARAMETERS):
+			if record_type == "plate_activation" or not DeviceRegistry.fields(value, ["id", "kind", "cell", "parameters", "heading", "scan_direction"]) or not DeviceRegistry.cell(value.cell) or not DeviceRegistry.fields(value.parameters, CAMERA_PARAMETERS) or not DeviceRegistry.number(value.heading) or typeof(value.scan_direction) != TYPE_INT or value.scan_direction not in [-1, 1]:
 				return false
 			if typeof(value.parameters.enabled) != TYPE_BOOL:
 				return false

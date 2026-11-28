@@ -9,6 +9,7 @@ var _world: WorldState
 @onready var body: Polygon2D = $Body
 @onready var solid: StaticBody2D = $Solid
 @onready var solid_shape: CollisionShape2D = $Solid/CollisionShape2D
+@onready var selection: Line2D = $Selection
 
 
 func configure(entity: Dictionary, world: WorldState) -> void:
@@ -16,6 +17,7 @@ func configure(entity: Dictionary, world: WorldState) -> void:
 	body = $Body
 	solid = $Solid
 	solid_shape = $Solid/CollisionShape2D
+	selection = $Selection
 	_world = world
 	entity_id = entity.id
 	apply(entity)
@@ -44,3 +46,13 @@ func apply(entity: Dictionary) -> void:
 	var rectangle: RectangleShape2D = solid_shape.shape
 	rectangle.size = Vector2.ONE * _world.cell_size
 	rotation = float(entity.runtime_state.get("heading", 0.0)) if kind == "camera" else 0.0
+	var marker_half: float = _world.cell_size * 0.35
+	selection.points = PackedVector2Array([
+		Vector2(-marker_half, -marker_half), Vector2(marker_half, -marker_half),
+		Vector2(marker_half, marker_half), Vector2(-marker_half, marker_half),
+		Vector2(-marker_half, -marker_half),
+	])
+
+
+func set_marked(marked: bool) -> void:
+	selection.visible = marked

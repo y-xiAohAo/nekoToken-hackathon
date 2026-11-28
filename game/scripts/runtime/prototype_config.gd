@@ -8,8 +8,77 @@ static func movement_rules() -> Dictionary:
 
 
 static func make_session_rules() -> SessionRules:
-	# Keep the motion fixture interactive: real guessing and recovery belong to later modules.
-	return SessionRules.new(30, 1000000)
+	# Prototype: two 30-tick reports make one observable guess cycle.
+	return SessionRules.new(30, 2)
+
+
+static func location_constraints() -> Dictionary:
+	return {"shape": "rectangle", "max_width": 2, "max_height": 2, "max_cells": 4}
+
+
+static func system_agent_rules() -> Dictionary:
+	return {"location_constraints": location_constraints(), "max_dispatch_attempts": 2}
+
+
+static func simulated_system_script() -> Dictionary:
+	return {"location": {"shape": "rectangle", "origin_cell": [10, 1], "size": [1, 1]},
+		"dispatch": {"mode": "APPLY", "commands": [{"type": "MoveObstacle", "obstacle_id": 1, "anchor_cell": [8, 2]}]}}
+
+
+static func system_dispatch_policy() -> Dictionary:
+	var cells: Array = []
+	var terrain: Array = level_data().terrain
+	for y: int in terrain.size():
+		for x: int in terrain[y].size():
+			if terrain[y][x] == "FLOOR":
+				cells.append([x, y])
+	return {"commands": {"AddDevice": ["camera", "robot", "pressure_plate"],
+		"RemoveDevice": ["camera", "robot", "pressure_plate"],
+		"MoveDevice": ["camera", "pressure_plate"],
+		"SetDeviceParameter": ["camera"], "SetCameraScanState": ["camera"],
+		"SetPatrolPath": ["robot"], "MoveObstacle": ["obstacle"]},
+		"parameters": {"camera": ["scan_center", "scan_half_angle"]},
+		"max_commands": 2, "allowed_cells": cells,
+		"device_limits": {"camera": 2, "robot": 2, "pressure_plate": 2},
+		"obstacle_protection_radius": 1, "max_dispatch_attempts": 2}
+
+
+static func round_setup_policy() -> Dictionary:
+	# Module 6 graybox fixture. This is not the final round setup permission budget.
+	return {"commands": {"SetDeviceParameter": ["camera"]},
+		"parameters": {"camera": ["scan_center"]}, "max_commands": 1}
+
+
+static func round_setup_fixture() -> Dictionary:
+	return {"scan_center_candidates": [-0.4, 0.4]}
+
+
+static func combined_policy() -> Dictionary:
+	var policy: Dictionary = player_assistant_policy()
+	policy[AgentProtocol.SYSTEM_AGENT] = system_dispatch_policy()
+	return policy
+
+
+static func player_assistant_policy() -> Dictionary:
+	# The contact coordinator expands one logical action into these narrow commands.
+	return {AgentProtocol.PLAYER_ASSISTANT: {
+		"commands": {"SetDeviceParameter": ["camera"], "SetPatrolPath": ["robot"]},
+		"parameters": {"camera": ["scan_center", "scan_half_angle"]},
+		"max_commands": 2,
+	}}
+
+
+static func player_assistant_route_rules() -> Dictionary:
+	# Replaceable 7B fixture, not settled gameplay limits.
+	return {"max_route_steps": 4, "max_route_attempts": 2}
+
+
+static func simulated_assistant_scan() -> Dictionary:
+	return {"scan_center": 0.2, "scan_half_angle": 0.4}
+
+
+static func simulated_assistant_route() -> Array:
+	return ["E", "N"]
 
 
 static func device_rules() -> Dictionary:
@@ -18,7 +87,6 @@ static func device_rules() -> Dictionary:
 			"camera": {"view_radius": [1.0, 1000.0], "fov_angle": [0.1, TAU], "scan_center": [-PI, PI], "scan_half_angle": [0.0, PI], "scan_speed": [0.0, TAU]},
 			"robot": {"view_radius": [1.0, 1000.0], "move_speed": [1.0, 400.0]},
 		},
-		"camera_mount_limits": {"wall": {"half_angle": PI / 2.0}, "ceiling": {"center": 0.0, "half_angle": PI}},
 		"camera_per_anchor": 1,
 	}
 
@@ -37,8 +105,11 @@ static func level_data() -> Dictionary:
 			["WALL", "WALL", "WALL", "WALL", "WALL", "WALL", "WALL", "WALL", "WALL", "WALL", "WALL", "WALL"],
 		],
 		"player_spawn": [96.0, 96.0], "device_rules": device_rules(),
+		"obstacle_templates": [{"template_id": "house_2x2", "footprint": [[0, 0], [1, 0], [0, 1], [1, 1]],
+			"blocks_movement": true, "blocks_vision": true, "scene_path": "res://scenes/runtime/obstacle_view.tscn"}],
+		"initial_obstacles": [{"template_id": "house_2x2", "anchor_cell": [7, 2]}],
 		"initial_entities": [
-			{"kind": "camera", "cell": [6, 1], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 320.0, "fov_angle": 1.2, "scan_center": 0.0, "scan_half_angle": 0.8, "scan_speed": 1.0}},
+			{"kind": "camera", "cell": [6, 1], "parameters": {"enabled": true, "view_radius": 320.0, "fov_angle": 1.2, "scan_center": 0.0, "scan_half_angle": 0.8, "scan_speed": 1.0}},
 			{"kind": "robot", "cell": [4, 3], "parameters": {"view_radius": 320.0, "move_speed": 60.0}, "patrol_path": [[4, 3], [5, 3], [6, 3]]},
 			{"kind": "pressure_plate", "cell": [3, 3], "parameters": {}},
 			{"kind": "goal", "cell": [9, 5], "parameters": {}},

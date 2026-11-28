@@ -26,7 +26,6 @@ func _rules() -> Dictionary:
 			"camera": {"view_radius": [0.1, 20.0], "fov_angle": [0.1, TAU], "scan_center": [-PI, PI], "scan_half_angle": [0.0, PI], "scan_speed": [0.0, 4.0]},
 			"robot": {"view_radius": [0.1, 20.0], "move_speed": [0.1, 4.0]},
 		},
-		"camera_mount_limits": {"wall": {"half_angle": PI / 2.0}, "ceiling": {"center": 0.0, "half_angle": PI}},
 		"camera_per_anchor": 1,
 	}
 
@@ -41,7 +40,8 @@ func _world() -> WorldState:
 	return LevelTemplate.from_data({
 		"template_key": "runtime_motion_test", "grid_size": [4, 4], "cell_size": 1.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [1.5, 1.5], "device_rules": _rules(),
-		"initial_entities": [{"kind": "camera", "cell": [2, 2], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 5.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}}],
+		"obstacle_templates": [], "initial_obstacles": [],
+		"initial_entities": [{"kind": "camera", "cell": [2, 2], "parameters": {"enabled": true, "view_radius": 5.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}}],
 	}).instantiate_world()
 
 
@@ -113,6 +113,7 @@ func _robot_world(path: Array) -> WorldState:
 	return LevelTemplate.from_data({
 		"template_key": "patrol_motion_test", "grid_size": [4, 4], "cell_size": 1.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [1.5, 2.5], "device_rules": _rules(),
+		"obstacle_templates": [], "initial_obstacles": [],
 		"initial_entities": [{"kind": "robot", "cell": path[0], "parameters": {"view_radius": 4.0, "move_speed": 1.0}, "patrol_path": path}],
 	}).instantiate_world()
 
@@ -165,6 +166,7 @@ func _multi_goal_world() -> WorldState:
 	return LevelTemplate.from_data({
 		"template_key": "multi_goal_motion_test", "grid_size": [8, 6], "cell_size": 64.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [96.0, 96.0], "device_rules": _rules(),
+		"obstacle_templates": [], "initial_obstacles": [],
 		"initial_entities": [
 			{"kind": "goal", "cell": [4, 2], "parameters": {}},
 			{"kind": "goal", "cell": [5, 2], "parameters": {}},

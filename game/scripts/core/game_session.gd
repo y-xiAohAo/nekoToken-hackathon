@@ -91,6 +91,9 @@ func _complete_report_boundary() -> void:
 			_state.guess_cycle_id
 		)
 		_next_request_id += 1
+		_state.active_request_type = "location_guess"
+		_state.dispatch_attempts = 0
+		_state.last_dispatch_rejection = {}
 	elif _pending_round_success:
 		_finish_round(SessionPhase.RoundResult.SUCCESS)
 
@@ -127,6 +130,7 @@ func end_contact(deploy: Callable = Callable()) -> bool:
 	if not _deploy_world(deploy):
 		return false
 	_state.active_request_context = {}
+	_state.active_request_type = ""
 	_state.phase = SessionPhase.Phase.ACTION
 	return true
 
@@ -134,12 +138,15 @@ func end_contact(deploy: Callable = Callable()) -> bool:
 func accept_guess_result(context: Dictionary, hit: bool) -> bool:
 	if _state.phase != SessionPhase.Phase.GUESS_PAUSED:
 		return false
+	if _state.active_request_type != "location_guess":
+		return false
 	if not AgentProtocol.contexts_match(context, _state.active_request_context):
 		return false
 	if context.get("role", "") != AgentProtocol.SYSTEM_AGENT:
 		return false
 
 	_state.active_request_context = {}
+	_state.active_request_type = ""
 	if hit:
 		_state.phase = SessionPhase.Phase.RESET_CHOICE
 	elif _state.frozen_guess_frame.goal_complete and _state.frozen_guess_frame.at_exit:
@@ -156,6 +163,9 @@ func complete_dispatch(deploy: Callable = Callable()) -> bool:
 	if not _deploy_world(deploy):
 		return false
 	_state.active_request_context = {}
+	_state.active_request_type = ""
+	_state.dispatch_attempts = 0
+	_state.last_dispatch_rejection = {}
 	_state.guess_cycle_id += 1
 	_cycle.sealed_reports_in_guess_cycle = 0
 	_state.frozen_guess_frame = null
@@ -168,8 +178,29 @@ func renew_world_request() -> Dictionary:
 		return {}
 	var role: String = AgentProtocol.PLAYER_ASSISTANT if _state.phase == SessionPhase.Phase.CONTACT_PAUSED else AgentProtocol.SYSTEM_AGENT
 	_state.active_request_context = AgentProtocol.make_request_context(role, _next_request_id, _state.round_id, _state.branch_id, _state.guess_cycle_id)
+	_state.active_request_type = "contact" if _state.phase == SessionPhase.Phase.CONTACT_PAUSED else "dispatch"
 	_next_request_id += 1
 	return _state.active_request_context.duplicate(true)
+
+
+func note_dispatch_rejection(context: Dictionary, receipt: Dictionary, max_attempts: int) -> Dictionary:
+	if _state.phase != SessionPhase.Phase.DISPATCH_PAUSED or _state.active_request_type != "dispatch" or max_attempts <= 0:
+		return {}
+	if not AgentProtocol.contexts_match(context, _state.active_request_context) or not DeviceRegistry.fields(receipt, ["status", "context", "errors"]):
+		return {}
+	if receipt.status != "REJECTED" or receipt.context != AgentProtocol.serialize_context(context) or not receipt.errors is Array or receipt.errors.is_empty():
+		return {}
+	for error: Variant in receipt.errors:
+		if not DeviceRegistry.fields(error, ["code", "command_index"]) or not error.code is String or error.code.is_empty() or typeof(error.command_index) != TYPE_INT:
+			return {}
+	_state.dispatch_attempts += 1
+	_state.last_dispatch_rejection = receipt.duplicate(true)
+	_state.active_request_context = {}
+	_state.active_request_type = ""
+	if _state.dispatch_attempts >= max_attempts:
+		return {"retry": false, "exhausted": true, "new_context": {}}
+	var next: Dictionary = renew_world_request()
+	return {"retry": true, "exhausted": false, "new_context": next}
 
 
 func _deploy_world(deploy: Callable) -> bool:
@@ -187,6 +218,77 @@ func resume_cycle(snapshot_saved: bool) -> bool:
 	if _state.phase != SessionPhase.Phase.CYCLE_START_PENDING or not snapshot_saved:
 		return false
 	_state.phase = SessionPhase.Phase.ACTION
+	return true
+
+
+func prepare_cycle_restore(checkpoint_state: Dictionary, checkpoint_cycle: Dictionary, new_branch_id: int) -> Dictionary:
+	if _state.phase != SessionPhase.Phase.RESET_CHOICE or new_branch_id <= _state.branch_id:
+		return {}
+	var restored_state: SessionState = SessionState.from_snapshot(checkpoint_state)
+	var restored_cycle: CycleState = CycleState.from_snapshot(checkpoint_cycle)
+	if restored_state == null or restored_cycle == null:
+		return {}
+	if restored_state.round_id != _state.round_id or restored_state.guess_cycle_id != _state.guess_cycle_id:
+		return {}
+	if restored_state.phase != SessionPhase.Phase.CYCLE_START_PENDING and not (restored_state.phase == SessionPhase.Phase.ACTION and restored_cycle.clock.tick == 0 and restored_state.guess_cycle_id == 1):
+		return {}
+	if not restored_state.active_request_context.is_empty() or not restored_state.active_request_type.is_empty() or restored_state.frozen_guess_frame != null:
+		return {}
+	if restored_state.dispatch_attempts != 0 or not restored_state.last_dispatch_rejection.is_empty() or restored_state.round_result != SessionPhase.RoundResult.NONE or restored_cycle.sealed_reports_in_guess_cycle != 0:
+		return {}
+	return {"state": restored_state.snapshot(), "cycle": restored_cycle.snapshot(), "new_branch_id": new_branch_id}
+
+
+func accept_cycle_restore(prepared: Dictionary) -> void:
+	var restored_state: SessionState = SessionState.from_snapshot(prepared.state)
+	restored_state.branch_id = prepared.new_branch_id
+	restored_state.phase = SessionPhase.Phase.ACTION
+	_state = restored_state
+	_cycle = CycleState.from_snapshot(prepared.cycle)
+	_pending_report_boundary = null
+	_pending_world_frame = null
+	_pending_round_success = false
+	_processing_report_boundary = false
+	_processing_deployment = false
+
+
+func decline_local_reset() -> bool:
+	if _state.phase != SessionPhase.Phase.RESET_CHOICE:
+		return false
+	_finish_round(SessionPhase.RoundResult.FAILURE)
+	return true
+
+
+func begin_round_setup(next_branch_id: int) -> Dictionary:
+	if _state.phase != SessionPhase.Phase.ROUND_END or _state.round_result == SessionPhase.RoundResult.NONE or next_branch_id <= _state.branch_id:
+		return {}
+	var next_round: int = _state.round_id + 1
+	_state = SessionState.new()
+	_state.round_id = next_round
+	_state.branch_id = next_branch_id
+	_state.phase = SessionPhase.Phase.ROUND_SETUP_PAUSED
+	_cycle = CycleState.new()
+	_pending_report_boundary = null
+	_pending_world_frame = null
+	_pending_round_success = false
+	_state.active_request_context = AgentProtocol.make_request_context(AgentProtocol.SYSTEM_AGENT, _next_request_id, next_round, next_branch_id, 1)
+	_state.active_request_type = "round_setup"
+	_next_request_id += 1
+	return {"context": _state.active_request_context.duplicate(true)}
+
+
+func complete_round_setup(context: Dictionary, result: WorldCommandResult) -> bool:
+	if _state.phase != SessionPhase.Phase.ROUND_SETUP_PAUSED or _state.active_request_type != "round_setup" or result == null:
+		return false
+	if not AgentProtocol.contexts_match(context, _state.active_request_context):
+		return false
+	var expected: Dictionary = context.duplicate(true)
+	expected["phase"] = SessionPhase.Phase.ROUND_SETUP_PAUSED
+	if not result.completes(expected):
+		return false
+	_state.active_request_context = {}
+	_state.active_request_type = ""
+	_state.phase = SessionPhase.Phase.CYCLE_START_PENDING
 	return true
 
 
@@ -208,5 +310,6 @@ func _finish_round(result: SessionPhase.RoundResult) -> void:
 	_state.phase = SessionPhase.Phase.ROUND_END
 	_state.round_result = result
 	_state.active_request_context = {}
+	_state.active_request_type = ""
 	_pending_report_boundary = null
 	_pending_world_frame = null

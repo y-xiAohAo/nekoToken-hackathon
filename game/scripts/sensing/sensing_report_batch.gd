@@ -26,7 +26,7 @@ static func from_data(data: Dictionary) -> SensingReportBatch:
 	var previous_key: Array = []
 	for index: int in data.records.size():
 		var entry: Variant = data.records[index]
-		if not DeviceRegistry.fields(entry, ["record_type", "data"]) or not entry.data is Dictionary:
+		if not DeviceRegistry.fields(entry, ["record_type", "data"], ["origin_branch_id"]) or not entry.data is Dictionary:
 			return null
 		var record: Variant = null
 		if entry.record_type == "visual":
@@ -36,6 +36,8 @@ static func from_data(data: Dictionary) -> SensingReportBatch:
 		else:
 			return null
 		if record == null:
+			return null
+		if entry.has("origin_branch_id") and (typeof(entry.origin_branch_id) != TYPE_INT or entry.origin_branch_id < 1 or entry.origin_branch_id == record.branch_id):
 			return null
 		var tick: int = record.sense_tick if entry.record_type == "visual" else record.event_tick
 		if tick < data.start_tick or tick >= data.end_tick or record.report_cycle_id != data.report_period_id or record.round_id != data.round_id or record.branch_id != data.branch_id:

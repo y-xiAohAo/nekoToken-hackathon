@@ -6,7 +6,6 @@ const KINDS: Array[String] = ["camera", "robot", "pressure_plate", "goal", "cont
 const FIXED: Array[String] = ["goal", "contact", "exit"]
 const CAMERA_NUMBERS: Array[String] = ["view_radius", "fov_angle", "scan_center", "scan_half_angle", "scan_speed"]
 const ROBOT_NUMBERS: Array[String] = ["view_radius", "move_speed"]
-const SIDES: Dictionary = {"north": Vector2i.UP, "east": Vector2i.RIGHT, "south": Vector2i.DOWN, "west": Vector2i.LEFT}
 const VECTOR2I_MIN: int = -2147483648
 const VECTOR2I_MAX: int = 2147483647
 var _entities: Dictionary = {}
@@ -103,9 +102,9 @@ static func pair(value: Vector2) -> Array:
 
 
 static func rules_valid(rules: Variant) -> bool:
-	if not plain(rules) or not fields(rules, ["parameter_ranges", "camera_mount_limits", "camera_per_anchor"]):
+	if not plain(rules) or not fields(rules, ["parameter_ranges", "camera_per_anchor"]):
 		return false
-	if typeof(rules.camera_per_anchor) != TYPE_INT or rules.camera_per_anchor < 1:
+	if typeof(rules.camera_per_anchor) != TYPE_INT or rules.camera_per_anchor != 1:
 		return false
 	if not fields(rules.parameter_ranges, ["camera", "robot"]):
 		return false
@@ -117,16 +116,6 @@ static func rules_valid(rules: Variant) -> bool:
 			var bounds: Variant = rules.parameter_ranges[kind][key]
 			if not point(bounds) or bounds[0] > bounds[1]:
 				return false
-	var mounts: Variant = rules.camera_mount_limits
-	if not fields(mounts, ["wall", "ceiling"]):
-		return false
-	if not fields(mounts.wall, ["half_angle"]) or not fields(mounts.ceiling, ["center", "half_angle"]):
-		return false
-	if not number(mounts.ceiling.center):
-		return false
-	for mount: String in ["wall", "ceiling"]:
-		if not number(mounts[mount].half_angle) or mounts[mount].half_angle < 0 or mounts[mount].half_angle > PI:
-			return false
 	return true
 
 
@@ -134,11 +123,7 @@ static func definition_valid(data: Variant, rules: Dictionary) -> bool:
 	if not plain(data) or not data is Dictionary or data.get("kind") not in KINDS:
 		return false
 	var required: Array = ["kind", "cell", "parameters"]
-	if data.kind == "camera":
-		required.append("mount_type")
-		if data.get("mount_type") == "wall":
-			required.append("wall_side")
-	elif data.kind == "robot":
+	if data.kind == "robot":
 		required.append("patrol_path")
 	if not fields(data, required) or not cell(data.cell):
 		return false
@@ -174,18 +159,9 @@ static func configuration_valid(entity: Dictionary, rules: Dictionary) -> bool:
 			if not cell(waypoint):
 				return false
 		return true
-	if entity.get("mount_type") not in ["wall", "ceiling"]:
-		return false
-	if entity.mount_type == "wall" and entity.get("wall_side") not in SIDES:
-		return false
 	if parameters.fov_angle <= 0 or parameters.fov_angle > TAU or parameters.scan_speed < 0 or parameters.scan_half_angle < 0 or parameters.scan_half_angle > PI:
 		return false
-	var mount: Dictionary = rules.camera_mount_limits[entity.mount_type]
-	var center: float = mount.get("center", 0.0)
-	if entity.mount_type == "wall":
-		center = Vector2(-SIDES[entity.wall_side]).angle()
-	var separation: float = absf(wrapf(parameters.scan_center - center, -PI, PI))
-	return mount.half_angle == PI or separation + parameters.scan_half_angle <= mount.half_angle + 0.000001
+	return true
 
 
 static func make_entity(data: Dictionary, id: int, position: Vector2) -> Dictionary:
@@ -220,10 +196,6 @@ static func entity_valid(entity: Variant, rules: Dictionary) -> bool:
 		required.append("cell")
 		if not cell(entity.get("cell")):
 			return false
-	if entity.kind == "camera":
-		required.append("mount_type")
-		if entity.get("mount_type") == "wall":
-			required.append("wall_side")
 	if not fields(entity, required) or not configuration_valid(entity, rules):
 		return false
 	var state: Variant = entity.runtime_state

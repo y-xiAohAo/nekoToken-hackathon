@@ -25,3 +25,105 @@ theme_override_constants/margin_bottom = 12
 
 [node name="StatusLabel" type="Label" parent="UI/StatusPanel/MarginContainer"]
 text = "2042 Framework Shell"
+
+[node name="ContactPanel" type="PanelContainer" parent="UI"]
+visible = false
+offset_left = 500.0
+offset_top = 160.0
+offset_right = 912.0
+offset_bottom = 525.0
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/ContactPanel"]
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="UI/ContactPanel/MarginContainer"]
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="UI/ContactPanel/MarginContainer/VBox"]
+text = "联络窗口 · 模拟助手"
+
+[node name="ContactInfo" type="RichTextLabel" parent="UI/ContactPanel/MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 180)
+size_flags_vertical = 3
+scroll_following = true
+text = "点击画面中的摄像头标记目标。"
+
+[node name="PlayerText" type="LineEdit" parent="UI/ContactPanel/MarginContainer/VBox"]
+placeholder_text = "描述现场或询问助手…"
+max_length = 500
+
+[node name="Buttons" type="HBoxContainer" parent="UI/ContactPanel/MarginContainer/VBox"]
+theme_override_constants/separation = 6
+
+[node name="Send" type="Button" parent="UI/ContactPanel/MarginContainer/VBox/Buttons"]
+text = "发送"
+
+[node name="Confirm" type="Button" parent="UI/ContactPanel/MarginContainer/VBox/Buttons"]
+disabled = true
+text = "确认改动"
+
+[node name="Change" type="Button" parent="UI/ContactPanel/MarginContainer/VBox/Buttons"]
+disabled = true
+text = "重提"
+
+[node name="Keep" type="Button" parent="UI/ContactPanel/MarginContainer/VBox/Buttons"]
+text = "保持现状"
+
+[node name="ResetPanel" type="PanelContainer" parent="UI"]
+visible = false
+offset_left = 500.0
+offset_top = 160.0
+offset_right = 912.0
+offset_bottom = 290.0
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/ResetPanel"]
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="UI/ResetPanel/MarginContainer"]
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="UI/ResetPanel/MarginContainer/VBox"]
+text = "RESET · 本周期起点"
+
+[node name="ResetInfo" type="Label" parent="UI/ResetPanel/MarginContainer/VBox"]
+text = "定位命中。"
+
+[node name="Buttons" type="HBoxContainer" parent="UI/ResetPanel/MarginContainer/VBox"]
+theme_override_constants/separation = 8
+
+[node name="LocalReset" type="Button" parent="UI/ResetPanel/MarginContainer/VBox/Buttons"]
+text = "局部回退"
+
+[node name="DeclineReset" type="Button" parent="UI/ResetPanel/MarginContainer/VBox/Buttons"]
+text = "放弃并结束本轮"
+
+[node name="RoundPanel" type="PanelContainer" parent="UI"]
+visible = false
+offset_left = 500.0
+offset_top = 160.0
+offset_right = 912.0
+offset_bottom = 270.0
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/RoundPanel"]
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="UI/RoundPanel/MarginContainer"]
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="UI/RoundPanel/MarginContainer/VBox"]
+text = "轮次结算"
+
+[node name="RoundInfo" type="Label" parent="UI/RoundPanel/MarginContainer/VBox"]
+text = "本轮结束。"
+
+[node name="AdvanceRound" type="Button" parent="UI/RoundPanel/MarginContainer/VBox"]
+text = "进入下一轮"

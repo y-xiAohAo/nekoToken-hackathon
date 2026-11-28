@@ -10,6 +10,11 @@ script = ExtResource("1_device")
 
 [node name="Body" type="Polygon2D" parent="."]
 
+[node name="Selection" type="Line2D" parent="."]
+visible = false
+width = 3.0
+default_color = Color(0.25, 1, 1, 1)
+
 [node name="Solid" type="StaticBody2D" parent="."]
 collision_layer = 0
 collision_mask = 0

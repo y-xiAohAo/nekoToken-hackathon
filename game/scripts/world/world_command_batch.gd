@@ -9,7 +9,9 @@ static func from_data(data: Dictionary) -> WorldCommandBatch:
 		return null
 	if not DeviceRegistry.fields(data.context, AgentProtocol.CONTEXT_FIELDS) or not AgentProtocol.contexts_match(data.context, data.context):
 		return null
-	if data.source not in ["contact", "dispatch"] or data.mode not in ["APPLY", "KEEP_CURRENT"]:
+	if data.source not in ["contact", "dispatch", "round_setup"] or data.mode not in ["APPLY", "KEEP_CURRENT"]:
+		return null
+	if data.source == "round_setup" and (data.context.role != AgentProtocol.SYSTEM_AGENT or data.context.guess_cycle_id != 1):
 		return null
 	if typeof(data.base_world_revision) != TYPE_INT or data.base_world_revision < 0 or not data.commands is Array:
 		return null
@@ -38,7 +40,11 @@ static func command_valid(command: Variant) -> bool:
 		"RemoveDevice":
 			return DeviceRegistry.fields(command, ["type", "id"]) and _id(command.id)
 		"MoveDevice":
-			return DeviceRegistry.fields(command, ["type", "id", "cell"], ["mount_type", "wall_side"]) and _id(command.id) and DeviceRegistry.cell(command.cell)
+			return DeviceRegistry.fields(command, ["type", "id", "cell"]) and _id(command.id) and DeviceRegistry.cell(command.cell)
+		"MoveObstacle":
+			return DeviceRegistry.fields(command, ["type", "obstacle_id", "anchor_cell"]) and _id(command.obstacle_id) and DeviceRegistry.cell(command.anchor_cell)
+		"SetCameraScanState":
+			return DeviceRegistry.fields(command, ["type", "id", "heading", "scan_direction"]) and _id(command.id) and DeviceRegistry.number(command.heading) and typeof(command.scan_direction) == TYPE_INT and command.scan_direction in [-1, 1]
 		"SetDeviceParameter":
 			return DeviceRegistry.fields(command, ["type", "id", "parameter", "value"]) and _id(command.id) and command.parameter is String
 		"SetPatrolPath":

@@ -7,6 +7,9 @@ var grid_size: Vector2i
 var cell_size: float = 1.0
 var origin: Vector2
 var terrain: Array = []
+var obstacle_templates: Array[Dictionary] = []
+var obstacle_instances: Array[Dictionary] = []
+var next_obstacle_id: int = 1
 var registry: DeviceRegistry = DeviceRegistry.new()
 var player_position: Vector2
 var player_velocity: Vector2
@@ -30,6 +33,12 @@ func in_bounds(cell: Vector2i) -> bool:
 func get_cell_profile(cell: Vector2i) -> Dictionary:
 	var kind: String = terrain[cell.y][cell.x] if in_bounds(cell) else "OUTSIDE"
 	var solid: bool = kind != "FLOOR"
+	var vision_blocked: bool = solid
+	for instance: Dictionary in obstacle_instances:
+		var template: ObstacleTemplate = obstacle_template(instance.template_id)
+		if template != null and cell in template.covered_cells(DeviceRegistry.grid(instance.anchor_cell)):
+			solid = solid or template.blocks_movement
+			vision_blocked = vision_blocked or template.blocks_vision
 	var plate_id: int = 0
 	var exit_id: int = 0
 	for entity: Dictionary in registry.to_snapshot():
@@ -37,11 +46,28 @@ func get_cell_profile(cell: Vector2i) -> Dictionary:
 			continue
 		if entity.kind in DeviceRegistry.FIXED:
 			solid = true
+			vision_blocked = true
 		if entity.kind == "pressure_plate":
 			plate_id = entity.id
 		if entity.kind == "exit":
 			exit_id = entity.id
-	return {"terrain": kind, "blocks_movement": solid, "blocks_vision": solid, "plate_id": plate_id, "exit_id": exit_id}
+	return {"terrain": kind, "blocks_movement": solid, "blocks_vision": vision_blocked, "plate_id": plate_id, "exit_id": exit_id}
+
+
+func obstacle_template(template_id: String) -> ObstacleTemplate:
+	for raw: Dictionary in obstacle_templates:
+		if raw.get("template_id") == template_id:
+			return ObstacleTemplate.from_data(raw)
+	return null
+
+
+func obstacle_cells(obstacle_id: int) -> Array[Vector2i]:
+	for instance: Dictionary in obstacle_instances:
+		if instance.obstacle_id == obstacle_id:
+			var template: ObstacleTemplate = obstacle_template(instance.template_id)
+			if template != null:
+				return template.covered_cells(DeviceRegistry.grid(instance.anchor_cell))
+	return []
 
 
 func snapshot_copy() -> WorldState:
@@ -50,8 +76,10 @@ func snapshot_copy() -> WorldState:
 
 func to_snapshot() -> Dictionary:
 	return {
-		"schema_version": 1, "template_key": template_key, "grid_size": [grid_size.x, grid_size.y],
+		"schema_version": 2, "template_key": template_key, "grid_size": [grid_size.x, grid_size.y],
 		"cell_size": cell_size, "origin": DeviceRegistry.pair(origin), "terrain": terrain.duplicate(true),
+		"obstacle_templates": obstacle_templates.duplicate(true), "obstacle_instances": obstacle_instances.duplicate(true),
+		"next_obstacle_id": next_obstacle_id,
 		"entities": registry.to_snapshot(), "player_position": DeviceRegistry.pair(player_position),
 		"player_velocity": DeviceRegistry.pair(player_velocity), "world_revision": world_revision,
 		"next_entity_id": next_entity_id, "device_rules": device_rules.duplicate(true),
@@ -59,9 +87,9 @@ func to_snapshot() -> Dictionary:
 
 
 static func from_snapshot(data: Dictionary) -> WorldState:
-	if not DeviceRegistry.plain(data) or not DeviceRegistry.fields(data, ["schema_version", "template_key", "grid_size", "cell_size", "origin", "terrain", "entities", "player_position", "player_velocity", "world_revision", "next_entity_id", "device_rules"]):
+	if not DeviceRegistry.plain(data) or not DeviceRegistry.fields(data, ["schema_version", "template_key", "grid_size", "cell_size", "origin", "terrain", "obstacle_templates", "obstacle_instances", "next_obstacle_id", "entities", "player_position", "player_velocity", "world_revision", "next_entity_id", "device_rules"]):
 		return null
-	if typeof(data.schema_version) != TYPE_INT or data.schema_version != 1 or not data.template_key is String or data.template_key.is_empty():
+	if typeof(data.schema_version) != TYPE_INT or data.schema_version != 2 or not data.template_key is String or data.template_key.is_empty():
 		return null
 	if not DeviceRegistry.cell(data.grid_size) or data.grid_size[0] <= 0 or data.grid_size[1] <= 0:
 		return null
@@ -71,6 +99,8 @@ static func from_snapshot(data: Dictionary) -> WorldState:
 		return null
 	if typeof(data.world_revision) != TYPE_INT or data.world_revision < 0 or typeof(data.next_entity_id) != TYPE_INT or data.next_entity_id < 1:
 		return null
+	if typeof(data.next_obstacle_id) != TYPE_INT or data.next_obstacle_id < 1 or not data.obstacle_templates is Array or not data.obstacle_instances is Array:
+		return null
 	if not terrain_valid(data.terrain, DeviceRegistry.grid(data.grid_size)) or not DeviceRegistry.rules_valid(data.device_rules) or not data.entities is Array:
 		return null
 	var world := WorldState.new()
@@ -79,6 +109,24 @@ static func from_snapshot(data: Dictionary) -> WorldState:
 	world.cell_size = data.cell_size
 	world.origin = DeviceRegistry.vector(data.origin)
 	world.terrain = data.terrain.duplicate(true)
+	for raw_template: Variant in data.obstacle_templates:
+		if not raw_template is Dictionary:
+			return null
+		var template: ObstacleTemplate = ObstacleTemplate.from_data(raw_template)
+		if template == null or world.obstacle_template(template.template_id) != null:
+			return null
+		world.obstacle_templates.append(template.to_data())
+	for raw_instance: Variant in data.obstacle_instances:
+		if not raw_instance is Dictionary:
+			return null
+		var instance: ObstacleInstance = ObstacleInstance.from_data(raw_instance)
+		if instance == null or instance.obstacle_id >= data.next_obstacle_id or world.obstacle_template(instance.template_id) == null:
+			return null
+		for prior: Dictionary in world.obstacle_instances:
+			if prior.obstacle_id == instance.obstacle_id:
+				return null
+		world.obstacle_instances.append(instance.to_data())
+	world.next_obstacle_id = data.next_obstacle_id
 	world.player_position = DeviceRegistry.vector(data.player_position)
 	world.player_velocity = DeviceRegistry.vector(data.player_velocity)
 	world.world_revision = data.world_revision
@@ -103,7 +151,7 @@ static func terrain_valid(value: Variant, size: Vector2i) -> bool:
 	return true
 
 
-func validate() -> Array[Dictionary]:
+func validate(ignore_player_overlap: bool = false) -> Array[Dictionary]:
 	if not terrain_valid(terrain, grid_size) or not DeviceRegistry.rules_valid(device_rules):
 		return [{"code": "INVALID_WORLD"}]
 	if not origin.is_finite() or not player_position.is_finite() or not player_velocity.is_finite() or not is_finite(cell_size) or cell_size <= 0:
@@ -111,9 +159,24 @@ func validate() -> Array[Dictionary]:
 	# Positive uniform scale: the first/last centers bound the grid's coordinates.
 	if not cell_to_world(Vector2i.ZERO).is_finite() or not cell_to_world(grid_size - Vector2i.ONE).is_finite():
 		return [{"code": "INVALID_WORLD"}]
+	var occupied_obstacles: Dictionary = {}
+	for raw: Dictionary in obstacle_templates:
+		if ObstacleTemplate.from_data(raw) == null:
+			return [{"code": "INVALID_WORLD"}]
+	for raw: Dictionary in obstacle_instances:
+		var instance: ObstacleInstance = ObstacleInstance.from_data(raw)
+		var template: ObstacleTemplate = obstacle_template(instance.template_id) if instance != null else null
+		if instance == null or template == null or instance.obstacle_id >= next_obstacle_id:
+			return [{"code": "INVALID_WORLD"}]
+		for cell: Vector2i in template.covered_cells(instance.anchor_cell):
+			if not in_bounds(cell) or terrain[cell.y][cell.x] != "FLOOR":
+				return [{"code": "INVALID_POSITION"}]
+			if occupied_obstacles.has(cell):
+				return [{"code": "OCCUPANCY_CONFLICT"}]
+			occupied_obstacles[cell] = instance.obstacle_id
 	var solids: Dictionary = {}
 	var plates: Dictionary = {}
-	var mounts: Dictionary = {}
+	var cameras: Dictionary = {}
 	var entities: Array[Dictionary] = registry.to_snapshot()
 	for entity: Dictionary in entities:
 		if not DeviceRegistry.entity_valid(entity, device_rules):
@@ -127,6 +190,8 @@ func validate() -> Array[Dictionary]:
 		var cell: Vector2i = DeviceRegistry.grid(entity.cell)
 		if not in_bounds(cell) or terrain[cell.y][cell.x] != "FLOOR":
 			return [{"code": "INVALID_POSITION"}]
+		if occupied_obstacles.has(cell):
+			return [{"code": "OCCUPANCY_CONFLICT"}]
 		if entity.kind in DeviceRegistry.FIXED:
 			if solids.has(cell):
 				return [{"code": "OCCUPANCY_CONFLICT"}]
@@ -136,25 +201,29 @@ func validate() -> Array[Dictionary]:
 				return [{"code": "OCCUPANCY_CONFLICT"}]
 			plates[cell] = true
 		elif entity.kind == "camera":
-			var key: String = str(entity.cell) + entity.mount_type + entity.get("wall_side", "")
-			mounts[key] = mounts.get(key, 0) + 1
-			if mounts[key] > device_rules.camera_per_anchor:
+			cameras[cell] = cameras.get(cell, 0) + 1
+			if cameras[cell] > 1:
 				return [{"code": "OCCUPANCY_CONFLICT"}]
-			if entity.mount_type == "wall":
-				var support: Vector2i = cell + DeviceRegistry.SIDES[entity.wall_side]
-				if not in_bounds(support) or terrain[support.y][support.x] != "WALL":
-					return [{"code": "INVALID_POSITION"}]
 	for cell: Vector2i in plates:
 		if solids.has(cell):
 			return [{"code": "OCCUPANCY_CONFLICT"}]
-	if get_cell_profile(world_to_cell(player_position)).blocks_movement:
+	if not ignore_player_overlap and get_cell_profile(world_to_cell(player_position)).blocks_movement:
 		return [{"code": "INVALID_POSITION"}]
+	if not ignore_player_overlap:
+		for cell: Vector2i in occupied_obstacles:
+			if _actor_overlaps_cell(player_position, cell):
+				return [{"code": "OCCUPANCY_CONFLICT"}]
 	var active_goals: int = 0
 	for entity: Dictionary in entities:
 		if entity.kind == "camera" and solids.has(DeviceRegistry.grid(entity.cell)):
 			return [{"code": "OCCUPANCY_CONFLICT"}]
 		if entity.kind == "robot" and not _robot_valid(entity):
 			return [{"code": "INVALID_PATH"}]
+		if entity.kind == "robot":
+			var position: Vector2 = DeviceRegistry.vector(entity.runtime_state.position)
+			for cell: Vector2i in occupied_obstacles:
+				if _actor_overlaps_cell(position, cell):
+					return [{"code": "OCCUPANCY_CONFLICT"}]
 		if entity.kind == "goal" and entity.runtime_state.active:
 			active_goals += 1
 		if entity.kind == "pressure_plate":
@@ -166,11 +235,19 @@ func validate() -> Array[Dictionary]:
 	return []
 
 
+func _actor_overlaps_cell(position: Vector2, cell: Vector2i) -> bool:
+	# Both graybox actors have a 20x20 collision rectangle.
+	var half: float = 10.0
+	var corner: Vector2 = origin + Vector2(cell) * cell_size
+	return position.x + half > corner.x and position.x - half < corner.x + cell_size \
+		and position.y + half > corner.y and position.y - half < corner.y + cell_size
+
+
 func _robot_valid(entity: Dictionary) -> bool:
 	var path: Array = entity.patrol_path
 	for i: int in path.size():
 		var cell: Vector2i = DeviceRegistry.grid(path[i])
-		if get_cell_profile(cell).blocks_movement:
+		if not _structural_open(cell):
 			return false
 		if i > 0 and not adjacent(DeviceRegistry.grid(path[i - 1]), cell):
 			return false
@@ -185,7 +262,7 @@ func _robot_valid(entity: Dictionary) -> bool:
 		var end: Vector2i = DeviceRegistry.grid(transition.to_cell)
 		if state.path_index != 0 or state.progress != 0 or transition.to_cell != path[0] or not adjacent(start, end):
 			return false
-		if get_cell_profile(start).blocks_movement or get_cell_profile(end).blocks_movement:
+		if not _structural_open(start) or not _structural_open(end):
 			return false
 		expected = cell_to_world(start).lerp(cell_to_world(end), transition.progress)
 	elif path.size() == 1:
@@ -204,6 +281,38 @@ static func adjacent(a: Vector2i, b: Vector2i) -> bool:
 	return delta.x + delta.y == 1
 
 
+static func patrol_anchor(entity: Dictionary) -> Array:
+	if entity.get("kind") != "robot" or not entity.get("patrol_path") is Array or entity.patrol_path.is_empty() or not entity.get("runtime_state") is Dictionary:
+		return []
+	var path: Array = entity.patrol_path
+	var state: Dictionary = entity.runtime_state
+	var index: Variant = state.get("path_index")
+	if typeof(index) != TYPE_INT or index < 0 or index >= path.size():
+		return []
+	var transition: Variant = state.get("transition", {})
+	if transition is Dictionary and not transition.is_empty():
+		return transition.get("to_cell", []).duplicate(true) if DeviceRegistry.cell(transition.get("to_cell")) else []
+	if DeviceRegistry.number(state.get("progress")) and state.progress > 0:
+		var next: int = index + int(state.get("travel_direction", 0))
+		return path[next].duplicate(true) if next >= 0 and next < path.size() else []
+	return path[index].duplicate(true) if DeviceRegistry.cell(path[index]) else []
+
+
+func expand_patrol_path(entity_id: int, steps: Array) -> Array:
+	var anchor: Array = patrol_anchor(registry.get_entity(entity_id))
+	if anchor.is_empty():
+		return []
+	var offsets: Dictionary = {"N": Vector2i(0, -1), "E": Vector2i(1, 0), "S": Vector2i(0, 1), "W": Vector2i(-1, 0)}
+	var cells: Array = [anchor.duplicate(true)]
+	var current: Vector2i = DeviceRegistry.grid(anchor)
+	for step: Variant in steps:
+		if not step is String or not offsets.has(step):
+			return []
+		current += offsets[step]
+		cells.append([current.x, current.y])
+	return cells
+
+
 func _set_patrol(entity: Dictionary, path: Array) -> bool:
 	if path.is_empty():
 		return false
@@ -212,11 +321,10 @@ func _set_patrol(entity: Dictionary, path: Array) -> bool:
 			return false
 	var state: Dictionary = entity.runtime_state
 	var transition: Dictionary = state.transition.duplicate(true)
-	var anchor: Array = entity.patrol_path[state.path_index]
-	if not transition.is_empty():
-		anchor = transition.to_cell
-	elif state.progress > 0:
-		anchor = entity.patrol_path[state.path_index + state.travel_direction]
+	var anchor: Array = patrol_anchor(entity)
+	if anchor.is_empty():
+		return false
+	if transition.is_empty() and state.progress > 0:
 		transition = {"from_cell": entity.patrol_path[state.path_index].duplicate(), "to_cell": anchor.duplicate(), "progress": state.progress}
 	if path[0] != anchor:
 		return false
@@ -228,3 +336,14 @@ func _set_patrol(entity: Dictionary, path: Array) -> bool:
 	state["travel_direction"] = 1
 	state["transition"] = transition
 	return true
+
+
+func _fixed_at(cell: Vector2i) -> bool:
+	for entity: Dictionary in registry.to_snapshot():
+		if entity.kind in DeviceRegistry.FIXED and DeviceRegistry.grid(entity.cell) == cell:
+			return true
+	return false
+
+
+func _structural_open(cell: Vector2i) -> bool:
+	return in_bounds(cell) and terrain[cell.y][cell.x] == "FLOOR" and not _fixed_at(cell)

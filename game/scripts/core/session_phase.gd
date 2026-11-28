@@ -11,6 +11,7 @@ enum Phase {
 	CYCLE_START_PENDING,
 	RESET_CHOICE,
 	ROUND_END,
+	ROUND_SETUP_PAUSED,
 }
 
 enum RoundResult {
