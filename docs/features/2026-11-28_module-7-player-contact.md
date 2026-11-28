@@ -283,7 +283,7 @@ Resume：当前 phase=`REVIEW`（仅 7A），approval=`Plan Approved`，status=`
 
 7C 的游戏规则已足够明确，主要需等模块 6 给出真实快照、分支和整轮恢复接口，再裁定**旧分支对话在玩家 UI 中的呈现**：推荐将已发生的描述、提案与安全回执保留为带轮次/分支标记的可查看历史，当前联络单独显示；旧目标句柄、待确认令牌和在途响应一律不恢复。此处是 UI／历史 DTO 设计问题，不改变 RESET 次数、联络点恢复或记忆保留规则。
 
-## 10. 模块 7B 详细实施 Plan（2026-11-28；Plan Approved / EXECUTE B0）
+## 10. 模块 7B 详细实施 Plan（2026-11-28；Plan Approved / REVIEW COMPLETE）
 
 ### P0. Goal、范围、Done Contract 与执行基线
 
@@ -422,7 +422,7 @@ static func simulated_assistant_route() -> Array
 - [x] **B2 锚点、目标与预览红测／实现**：先写格心、段中、空 steps、往返、非法方向和单点预览失败用例；再实现 WorldState 纯展开、通用设备命中、机器人高亮和场景预览。验证 `_set_patrol` 旧回归及不瞬移。
 - [x] **B3 可信路线会话红测／实现**：先写合法确认、路径拒绝、两次拒绝锁定、隐藏玩家等价、重选／迟到／旧 revision、prepare／activate 故障和 KEEP_CURRENT 用例；再实现协调层预校验、冻结、提交、安全回执与清理。任何失败均无部分世界变化。
 - [x] **B4 主场景、报告和双 Agent**：接 Main／Runtime／fixture；新增 7B 两套真实场景套件。验证段中换路、驻守、完整预览、主 UI 按钮、下一正常边界配置更新、旧事件配置不变，以及系统→助手／助手→系统覆盖和互斥窗口；不得伪造 checkpoint。
-- [ ] **B5 全面验证与 Review**：执行 P6 全部门禁，记录实际计数和日志；按 Spec 质量／Spec—代码一致性／代码质量三轴 Review，回写 Plan-Execution Diff。只把实际通过的 7B 范围标 PASS，7C／8 不随本模块关闭。
+- [x] **B5 全面验证与 Review**：执行 P6 全部门禁，记录实际计数和日志；按 Spec 质量／Spec—代码一致性／代码质量三轴 Review，回写 Plan-Execution Diff。只把实际通过的 7B 范围标 PASS，7C／8 不随本模块关闭。
 
 ### P6. Validation Plan 与回炉条件
 
@@ -449,3 +449,39 @@ Plan 自检：已给出公开 DTO、可信展开、冻结确认、失败映射�
 **批量执行授权。**用户随后明确要求“直接一口气完成B的所有环节”，构成 B1–B5 的 Batch Override；仍须逐项验证、遇合同冲突立即回 Plan，不代表预先通过 Review。
 
 Resume：7B phase=`EXECUTE / B1–B5 BATCH`，approval=`Plan Approved`，spec=`docs/features/2026-11-28_module-7-player-contact.md` §10。当前从 B1 连续执行至 B5，逐项回写证据；不得把中间红测或单套件通过称为整个 7B 通过。7A 的 Review PASS、7B 的 Grill 裁决和 7C／8 的后置边界继续有效。
+
+## 11. 7B Execute Validation 与 Plan-Execution Diff（2026-11-28）
+
+B1 合同与 7A 回归为 Assistant 26/0、RuntimeContact 54/0（`tmp/module7b-b1-contract.log`）。B2 红测先确认缺少展开和通用目标接口（`tmp/module7b-b2-red.log`），实现后为 RobotContact 17/0；测试发现方向展开经 `DeviceRegistry.pair(Vector2)` 变成浮点格，已改为显式整数对。B3 最终 RobotContact 67/0，contact-only 合计 147/0（`tmp/module7b-b3.log`、`tmp/module7b-b3-contact.log`）。B4 主场景和双 Agent 接入后 `--module7b-only` 为合同 26＋RobotContact 74＋DualAgent 13＝**113/0**（`tmp/module7b-b4.log`）。
+
+| 最终验证 | 实际结果 |
+| --- | --- |
+| Godot 4.7.2 import | 退出 0，无解析错误；`tmp/module7b-b4-import.log` |
+| `--module7b-only` | **113/0**，退出 0 |
+| `--contact-only` | Assistant 26、7A RuntimeContact 54、RobotContact 74，合计 **154/0**；`tmp/module7b-final-contact.log` |
+| 完整共享 `run_tests.gd` | **1046 passed / 0 failed**，退出 0；`tmp/module7b-final-shared.log` |
+| 4A 独立 `run_sensing_tests.gd` | Geometry 26＋Kernel 88＝**114/0**；`tmp/module7b-final-sensing.log` |
+| `--module7b-only --fail-probe` | 各套件仍 113/0，注入失败使 runner 退出 1，符合门禁；`tmp/module7b-final-fail-probe.log` |
+| 主场景 120 帧 | 退出 0，输出 `RUNTIME_CONTACT_READY`、`RUNTIME_ROBOT_CONTACT_READY`、`RUNTIME_AGENT_READY`；`tmp/module7b-final-main.log` |
+| Windows Desktop release | 导出与导出程序 120 帧均退出 0，标记同上；EXE 109127680 字节、PCK 1485480 字节；`tmp/module7b-final-export.log`、`tmp/module7b-final-windows.log` |
+| Python／仓库／链接／格式 | unittest 13/13；仓库 0 issues；74 documents／0 broken；CRLF 兼容 `diff --check` 退出 0 |
+
+最终共享日志中的 `GAME RUNTIME FAULT` 行均来自既有故障注入断言，相关套件为 0 failed；主场景和 Windows smoke 无非注入 fault。1046 的总数包含同期模块 6 从 B0 基线继续增加的检查，不全部归为 7B 成绩；7B 自身的最终专项计数为 113。
+
+**Plan-Execution Diff。**公开 DTO、`SetPatrolRoute`、空 steps 驻守、预校验、冻结预览、统一安全回执、路线锁定和双顺序验收均按 §10 实施。`GameSession`、`WorldCommandService`、`WorldCommandBatch` 与 `main.tscn` 未改合同；`AgentProtocol` 只补 contact 白名单序列化。`RuntimeWorldView` 保留 7A camera wrappers，机器人使用自身 Selection 节点，路径预览由可信场景节点绘制。原型 4 步／2 次配置未升格为正式数值。测试 fixture 为完成段中驻守观察而把首次猜测延后到第 120 tick，生产规则不变；双 Agent 仍通过真实报告、猜测、调度和 `ResetCoordinator` 检查点，不直接写 phase。没有以自动 KEEP、STOP、隐藏玩家校验或自由格点编辑绕过失败。
+
+范围保持：7B 只证明确定性模拟助手、灰盒联络和两种 Agent 顺序；7C 的 RESET 历史 UI、模块 8 的真实 Gateway／异常恢复、正式路线数值和完整四轮体验仍未验收。
+
+## 12. 7B Review Matrix（2026-11-28）
+
+| 轴 | 结论 | 依据 |
+| --- | --- | --- |
+| Spec 质量与要求完成 | PASS（7B 范围） | §9.2 的八项 Grill 裁决均有 DTO、可信展开、预览、提交或测试落点；B0–B4 按序完成，§11 的当前运行证据覆盖 Done Contract。正式数值、7C 和真实模型仍明确后置。 |
+| Spec—代码一致性 | PASS | 公开动作仅为方向 `steps`；anchor helper 与 `_set_patrol` 共用；合法路径经非发布校验后冻结，确认仍走 `end_contact/commit_batch/SceneSync`。普通路径拒绝统一、有界并锁定，未改 GameSession／命令服务核心权限；双顺序使用真实系统周期。 |
+| 代码自身质量 | PASS（灰盒／模拟范围） | 严格字段和类型、深拷贝、当前身份／revision、单目标与故障锁保持；路线预览有完整生命周期清理，单点也有可见节点。7A 54 项及完整共享回归全绿，失败探针和导出程序均验证。无已知未关闭高优先缺陷。 |
+
+作者 Review 未发现需要回 Plan 的合同偏差或可达的信息越权；残余风险集中在真实模型输出／网络恢复、正式路线长度与尝试次数、7C 跨 RESET 历史和完整体验，这些不属于本次通过范围。
+
+Overall Verdict：**REVIEW COMPLETE / PASS（仅 7B，主会话三轴 Review）**。本结论不冒充独立同行评审；额外只读审查未形成结果，未作为通过依据。B0–B5 均已完成，当前通过依据为 §11 的实际运行日志和本矩阵。
+
+Resume：7B phase=`REVIEW COMPLETE`，approval=`Plan Approved`，status=`PASS（确定性模拟助手与灰盒 7B 范围）`，spec=`docs/features/2026-11-28_module-7-player-contact.md` §9–§12。下一步才是独立的 7C 或模块 8 规划；本次不自动启动它们，也不声称真实助手、正式数值或完整四轮已验收。

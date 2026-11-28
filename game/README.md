@@ -1,6 +1,6 @@
 # 游戏工程落点
 
-工程入口为 `project.godot` 和 `scenes/main.tscn`。当前包含规则内核、内存世界与命令服务、真实灰盒运动、模块 3B 交互、模块 4B 真实感知与统一报告、模块 5 本地模拟系统 Agent 单猜测周期、模块 6 周期快照／局部回退／轮间重启原语，以及模块 7A 摄像头联络：玩家可用 WASD 移动，接近核验装置按 E 开始停留操作，多个目标需全部完成；联络点成功进入即消耗，暂停时点击画面中的摄像头，在联络窗口向模拟助手描述现场，再确认结构化扫描改动或点击“保持现状”；全部目标完成后真实触碰出口形成通关条件。真实模型／网络、7C 助手持久记忆 UI 和完整四轮剧情体验仍由后续模块接入。
+工程入口为 `project.godot` 和 `scenes/main.tscn`。当前包含规则内核、内存世界与命令服务、真实灰盒运动、模块 3B 交互、模块 4B 真实感知与统一报告、模块 5 本地模拟系统 Agent 单猜测周期、模块 6 周期快照／局部回退／轮间重启原语，以及模块 7A／7B 摄像头与机器人联络：玩家可用 WASD 移动，接近核验装置按 E 开始停留操作，多个目标需全部完成；联络点成功进入即消耗，暂停时点击画面中的摄像头或机器人，在联络窗口向模拟助手描述现场，再确认结构化扫描改动、方向路线及完整路径预览，或点击“保持现状”；全部目标完成后真实触碰出口形成通关条件。真实模型／网络、7C 助手持久记忆 UI 和完整四轮剧情体验仍由后续模块接入。
 
 [模块 2](../docs/features/2026-11-27_20-53_module-2-world-command.md)、[模块 3A](../docs/features/2026-11-27_22-25_module-3a-runtime-scene.md) 和 [模块 3B](../docs/features/2026-11-27_22-51_module-3b-interactions.md) 均已按 Plan Approved 实施并通过各自范围 Review。运动只推进 `simulation_tick`，部署命令才推进 `world_revision`；目标与联络状态进入同一完整候选和唯一运行时写回。
 
@@ -72,3 +72,11 @@ Review：Spec 已批准的模块 5 合同均有对应实现或验证；公开状
 2026-11-28 本机验证：模块 6 专项 **25 passed / 0 failed**；当前共享 runner **959 passed / 0 failed**；4A 独立 runner **114 passed / 0 failed**；失败探针退出 1。主场景与 Windows release 导出程序的 120 帧 smoke 均退出 0。Python unittest 13/13、仓库检查 0 issues、链接检查 0 broken、CRLF 兼容 diff 检查通过。日志为 `../tmp/module6-final-*.log`、`../tmp/module6-main-smoke.log` 和 `../tmp/module6-export-*.log`。
 
 独立只读审查发现的第二轮谱系混合和同一非零检查点连续分叉问题已修复并复核关闭。当前通过范围不包括真实网络模型、7C 玩家助手历史 UI、正式轮间策略、完整四轮剧情／评分或十分钟试玩结论。
+
+## 模块 7A／7B：玩家助手联络与动态命令
+
+模块 7 按 [Feature Spec](../docs/features/2026-11-28_module-7-player-contact.md) 实施。7A 提供摄像头标记、严格 DTO、模拟对话、不可变提案确认和 KEEP_CURRENT；7B 增加已显示机器人标记与 `SetPatrolRoute` 方向序列。可信协调层从当前段终点展开完整路径，先非发布校验，再只向玩家显示路径／单点驻守预览，确认后仍经 `WorldCommandService` 和 `SceneWorldSyncAdapter` 原子提交。助手不接收内部 ID、坐标、旧路径、地图或系统报告；普通路线拒绝统一为 `ROUTE_REJECTED`，原型两次世界路径拒绝后锁定路线工具，只能明确保持现状结束。原型最大 4 步／2 次只是 fixture。
+
+2026-11-28 7B 本机验证：`--module7b-only` **113 passed / 0 failed**（合同 26、机器人联络 74、双 Agent 13）；`--contact-only` **154/0**，其中 7A RuntimeContact 54 项保持通过；完整共享 runner **1046/0**；4A 独立 runner **114/0**；失败探针按预期退出 1。主场景和 Windows release 导出程序的 120 帧 smoke 均输出 `RUNTIME_ROBOT_CONTACT_READY` 并退出 0。Python unittest 13/13、仓库检查 0 issues、链接检查 0 broken、CRLF 兼容 diff 检查通过。日志为 `../tmp/module7b-*.log`，原型程序为 `../tmp/module7b-review-windows.exe`。
+
+双 Agent 套件通过真实报告、猜测、调度和检查点验证系统→助手与助手→系统两种覆盖顺序，不把手工改 phase 当作集成证据。当前范围仍是确定性模拟助手与灰盒原型；7C 的 RESET 历史 UI、真实 Gateway／模型异常恢复、正式路线数值和完整四轮体验未因此完成。
