@@ -1,0 +1,221 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://opening/main_menu.gd" id="menu"]
+[ext_resource type="Texture2D" path="res://opening/title_backdrop.png" id="backdrop"]
+
+[sub_resource type="SystemFont" id="serif"]
+font_names = PackedStringArray("STZhongsong", "SimSun", "Noto Serif CJK SC", "Microsoft YaHei")
+font_weight = 900
+
+[sub_resource type="SystemFont" id="sans"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "SimHei")
+
+[sub_resource type="StyleBoxEmpty" id="empty"]
+
+[sub_resource type="StyleBoxFlat" id="highlight"]
+bg_color = Color(0.075, 0.071, 0.064, 0.87)
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.79, 0.62, 0.44, 0.64)
+
+[sub_resource type="StyleBoxFlat" id="focus"]
+bg_color = Color(0.075, 0.071, 0.064, 0.87)
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.86, 0.68, 0.47, 0.9)
+
+[sub_resource type="Gradient" id="vertical_gradient"]
+offsets = PackedFloat32Array(0, 0.45, 1)
+colors = PackedColorArray(0.067, 0.098, 0.176, 0.16, 0.067, 0.098, 0.176, 0, 0.043, 0.075, 0.137, 0.43)
+
+[sub_resource type="GradientTexture2D" id="vertical_shade"]
+gradient = SubResource("vertical_gradient")
+width = 2
+height = 512
+fill_to = Vector2(0, 1)
+
+[sub_resource type="Gradient" id="center_gradient"]
+offsets = PackedFloat32Array(0, 0.60, 1)
+colors = PackedColorArray(0.047, 0.067, 0.129, 0.46, 0.047, 0.067, 0.129, 0.19, 0.047, 0.067, 0.129, 0)
+
+[sub_resource type="GradientTexture2D" id="center_shade"]
+gradient = SubResource("center_gradient")
+width = 512
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.48)
+fill_to = Vector2(0.88, 0.48)
+
+[sub_resource type="Theme" id="menu_theme"]
+default_font = SubResource("sans")
+default_font_size = 18
+TitleButton/base_type = &"Button"
+TitleButton/colors/font_color = Color(0.97, 0.91, 0.80, 1)
+TitleButton/colors/font_disabled_color = Color(0.87, 0.82, 0.73, 0.44)
+TitleButton/colors/font_focus_color = Color(1, 0.81, 0.56, 1)
+TitleButton/colors/font_hover_color = Color(1, 0.81, 0.56, 1)
+TitleButton/colors/font_pressed_color = Color(1, 0.81, 0.56, 1)
+TitleButton/colors/font_outline_color = Color(0.055, 0.062, 0.09, 0.84)
+TitleButton/constants/outline_size = 3
+TitleButton/font_sizes/font_size = 26
+TitleButton/styles/normal = SubResource("empty")
+TitleButton/styles/disabled = SubResource("empty")
+TitleButton/styles/hover = SubResource("highlight")
+TitleButton/styles/pressed = SubResource("highlight")
+TitleButton/styles/focus = SubResource("focus")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("menu_theme")
+script = ExtResource("menu")
+
+[node name="Backdrop" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("backdrop")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="VerticalShade" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("vertical_shade")
+expand_mode = 1
+
+[node name="CenterShade" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("center_shade")
+expand_mode = 1
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Menu" type="VBoxContainer" parent="Center"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 28
+
+[node name="Heading" type="VBoxContainer" parent="Center/Menu"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="Title" type="Label" parent="Center/Menu/Heading"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.82, 1)
+theme_override_colors/font_shadow_color = Color(0.105, 0.08, 0.096, 0.83)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = SubResource("serif")
+theme_override_font_sizes/font_size = 118
+text = "神 启"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Center/Menu/Heading"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.97, 0.87, 0.70, 1)
+theme_override_colors/font_outline_color = Color(0.05, 0.052, 0.09, 0.85)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 22
+text = "在神启的年代，寻找旧日的真相"
+horizontal_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="Center/Menu"]
+custom_minimum_size = Vector2(295, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="Start" type="Button" parent="Center/Menu/Buttons"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_type_variation = &"TitleButton"
+text = "开始调查"
+
+[node name="Continue" type="Button" parent="Center/Menu/Buttons"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_type_variation = &"TitleButton"
+text = "继续调查"
+
+[node name="Settings" type="Button" parent="Center/Menu/Buttons"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_type_variation = &"TitleButton"
+text = "设置"
+
+[node name="Quit" type="Button" parent="Center/Menu/Buttons"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_type_variation = &"TitleButton"
+text = "退出"
+
+[node name="Restart" type="ConfirmationDialog" parent="."]
+title = "开始新的调查"
+initial_position = 4
+size = Vector2i(430, 150)
+visible = false
+dialog_text = "重新开始将清空当前调查进度。"
+
+[node name="Settings" type="AcceptDialog" parent="."]
+title = "设置"
+initial_position = 4
+size = Vector2i(360, 200)
+visible = false
+
+[node name="Options" type="VBoxContainer" parent="Settings"]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 344.0
+offset_bottom = 120.0
+theme_override_constants/separation = 14
+
+[node name="VolumeLabel" type="Label" parent="Settings/Options"]
+layout_mode = 2
+text = "主音量"
+
+[node name="Volume" type="HSlider" parent="Settings/Options"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="Fullscreen" type="CheckButton" parent="Settings/Options"]
+layout_mode = 2
+text = "全屏显示"
+
+[node name="Message" type="AcceptDialog" parent="."]
+title = "神启"
+initial_position = 4
+size = Vector2i(340, 130)
+visible = false

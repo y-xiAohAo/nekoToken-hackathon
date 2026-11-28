@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://districts/morning_star/arena.gd" id="arena"]
+
+[node name="MorningStarArena" type="Node3D"]
+script = ExtResource("arena")
+
+[node name="Markers" type="Node3D" parent="."]
+
+[node name="Spawn" type="Marker3D" parent="Markers"]
+position = Vector3(0, 0.05, 8.7)

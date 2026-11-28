@@ -109,16 +109,17 @@ func open_prop(data: Dictionary, texture: Texture2D, collected: int, total: int)
 
 
 func open_conversation(title: String, line: String, options: Array[String], select: Callable) -> void:
-	_begin()
-	_card.add_child(_label(title, 30, ACCENT))
-	var dialogue := _label(line, 22, INK)
-	dialogue.custom_minimum_size = Vector2(730, 44)
-	dialogue.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_card.add_child(dialogue)
+	_begin_message(title, line)
 	for index in range(options.size()):
 		_add_button(options[index], select.bind(index))
 	_add_button("先到这里", close)
 	_add_keys("↑ ↓ 选择    Enter 确认    Esc 关闭")
+
+
+func open_notice(title: String, line: String) -> void:
+	_begin_message(title, line)
+	_add_button("关闭", close)
+	_add_keys("Esc 或 E 关闭")
 
 
 func is_open() -> bool:
@@ -146,6 +147,15 @@ func _begin() -> void:
 	_hint.hide()
 	_shade.show()
 	_center.show()
+
+
+func _begin_message(title: String, line: String) -> void:
+	_begin()
+	_card.add_child(_label(title, 30, ACCENT))
+	var message := _label(line, 22, INK)
+	message.custom_minimum_size = Vector2(730, 44)
+	message.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_card.add_child(message)
 
 
 func _add_button(text: String, action: Callable) -> void:

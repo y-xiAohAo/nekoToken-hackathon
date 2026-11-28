@@ -4003,6 +4003,10 @@ position = Vector3(-2.1, 0.08, 15.6)
 position = Vector3(-2.1, 0, 17.15)
 metadata/display_offset = Vector3(0, 1.1, 0)
 
+[node name="HiddenGate" type="Marker3D" parent="Markers"]
+position = Vector3(-14.45, 2.8, -11.9)
+visible = false
+
 [node name="tomorrow_badge" type="Marker3D" parent="Markers"]
 position = Vector3(-17.45, 0, -3.7)
 metadata/display_offset = Vector3(0, 1.14, -1.15)

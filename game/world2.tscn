@@ -3,6 +3,11 @@
 [ext_resource type="PackedScene" path="res://modules/piece.tscn" id="piece"]
 [ext_resource type="Script" path="res://world2.gd" id="controller"]
 [ext_resource type="PackedScene" path="res://actors/characters_2046_v2/william.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://actors/guian_watch/resident_lookout.tscn" id="lookout"]
+[ext_resource type="PackedScene" path="res://actors/guian_watch/street_patroller.tscn" id="patroller"]
+[ext_resource type="Texture2D" path="res://actors/guian_watch/street_patroller_walk.png" id="patrol_walk"]
+[ext_resource type="Script" path="res://actors/guian_watch/watch_pose.gd" id="watch_pose"]
+[ext_resource type="Script" path="res://modules/patrol_robot.gd" id="linear_patrol"]
 
 [sub_resource type="Environment" id="environment"]
 background_mode = 1
@@ -20,6 +25,10 @@ default_font_size = 19
 Label/colors/font_color = Color(1, 0.98, 0.93, 1)
 Label/colors/font_outline_color = Color(0.04, 0.06, 0.08, 1)
 Label/constants/outline_size = 6
+
+[sub_resource type="CapsuleShape3D" id="guian_watch_body"]
+radius = 0.32
+height = 1.5
 
 [node name="ModularWorld" type="Node3D"]
 script = ExtResource("controller")
@@ -3110,3 +3119,34 @@ metadata/display_offset = Vector3(0.33, 1.7, 0.65)
 
 [node name="npc_jasper" type="Marker3D" parent="MapMount/Guian/Markers"]
 position = Vector3(6.87, 0, 11.6)
+
+[node name="WatchNPCs" type="Node3D" parent="MapMount/Guian"]
+
+[node name="ResidentLookout" type="StaticBody3D" parent="MapMount/Guian/WatchNPCs"]
+position = Vector3(-8.7, 0, 15.6)
+
+[node name="Collision" type="CollisionShape3D" parent="MapMount/Guian/WatchNPCs/ResidentLookout"]
+position = Vector3(0, 0.77, 0)
+shape = SubResource("guian_watch_body")
+
+[node name="Visual" parent="MapMount/Guian/WatchNPCs/ResidentLookout" instance=ExtResource("lookout")]
+position = Vector3(0, 0.02, 0)
+script = ExtResource("watch_pose")
+
+[node name="StreetPatroller" type="CharacterBody3D" parent="MapMount/Guian/WatchNPCs"]
+position = Vector3(-7.5, 0, -0.2)
+rotation_degrees = Vector3(0, -90, 0)
+motion_mode = 1
+script = ExtResource("linear_patrol")
+patrol_distance = 14.0
+patrol_speed = 1.7
+
+[node name="Collision" type="CollisionShape3D" parent="MapMount/Guian/WatchNPCs/StreetPatroller"]
+position = Vector3(0, 0.77, 0)
+shape = SubResource("guian_watch_body")
+
+[node name="Visual" parent="MapMount/Guian/WatchNPCs/StreetPatroller" instance=ExtResource("patroller")]
+position = Vector3(0, 0.02, 0)
+script = ExtResource("watch_pose")
+face_travel = true
+walk_texture = ExtResource("patrol_walk")

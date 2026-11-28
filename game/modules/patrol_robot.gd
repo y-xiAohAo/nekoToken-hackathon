@@ -28,5 +28,5 @@ func _physics_process(delta: float) -> void:
 		_wait_left = turnaround_wait
 		return
 
-	# A blocker stops the robot on its track until the lane clears.
+	# A blocker stops the patrol on its track until the lane clears.
 	move_and_collide(displacement.limit_length(patrol_speed * delta))

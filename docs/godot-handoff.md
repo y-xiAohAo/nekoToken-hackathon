@@ -11,7 +11,7 @@ git clone --branch team/branch-2 https://github.com/y-xiAohAo/nekoToken-hackatho
 cd nekoToken-hackathon
 ```
 
-用 Godot 导入 [game/project.godot](../game/project.godot)，等待资源导入后按 **F5**。主场景从归岸镇开始。WASD 移动，Shift 奔跑，靠近道具、NPC 或出口时按 E 交互。Tab 切换全景，R 回当前地图入口。按 1、2 可以快速检查归岸镇和明日镇。对话可用鼠标或方向键选择，Enter 确认，Esc 关闭。
+用 Godot 导入 [game/project.godot](../game/project.godot)，等待资源导入后按 **F5**。从主菜单选择「开始调查」播放序章，随后进入归岸镇。WASD 移动，Shift 奔跑，靠近道具、NPC 或出口时按 E 交互。Tab 切换全景，R 回当前地图入口。收齐飞艇两条线索后，可按 2 进入明日镇。按 1 返回归岸镇。对话可用鼠标或方向键选择，Enter 确认，Esc 关闭。[关卡解锁说明](../game/关卡解锁说明.md)
 
 试玩包括两张可往返的地图、15 件叙事道具和 4 名可交谈 NPC。建筑按 2 × 2 米单元拼装，两镇各用 26 × 18 格。归岸镇采用暖色像素贴图，明日镇采用蓝白材质和冷色灯带。[归岸镇全景](previews/world2-guian-current.png) · [明日镇全景](previews/world2-mtown-overview.png)
 
@@ -19,6 +19,7 @@ cd nekoToken-hackathon
 
 | 要改什么 | 从哪里开始 |
 | --- | --- |
+| 主菜单和两页序章 | [opening 目录](../game/opening/) |
 | 主场景、归岸镇建筑、旧居、飞艇与镇口 | [world2.tscn](../game/world2.tscn) 的 `MapMount/Guian` |
 | 明日镇建筑、住宅街和设备 | [modular_town.tscn](../game/districts/mtown/modular_town.tscn) 的功能区节点与 `SecurityUnits` |
 | 地图切换、靠近提示、道具存档 | [world2.gd](../game/world2.gd) |
@@ -60,7 +61,9 @@ cd nekoToken-hackathon
 $godot = 'C:\Tools\Godot_v4.7.2-stable_win64.exe'
 & $godot --headless --path game --import
 & $godot --headless --path game --quit-after 120
+& $godot --headless --path game --fixed-fps 60 --script res://tests/opening_smoke.gd
 & $godot --headless --path game --fixed-fps 60 --script res://tests/world2_smoke.gd
+& $godot --headless --path game --script res://tests/hidden_boss_smoke.gd
 
 python -m unittest discover -s tests -v
 python scripts/check_repository.py

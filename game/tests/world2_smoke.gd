@@ -25,7 +25,7 @@ func _run() -> void:
 
 	var world = packed.instantiate()
 	var args := OS.get_cmdline_user_args()
-	var base := args[0] if not args.is_empty() else "user://"
+	var base := args[0] if not args.is_empty() else ProjectSettings.globalize_path("res://.godot")
 	world._save_path = base.path_join("world2_smoke_%d.cfg" % OS.get_process_id())
 	root.add_child(world)
 	await _frames(4)
@@ -37,6 +37,22 @@ func _run() -> void:
 	_check(_uses_guian_textures(units), "Guian generated geometry and all 20 surface textures")
 	_check(world.props.size() == 15, "15 canonical props")
 	_check(_target_names(world._targets, "npc_") == ["npc_jasper"], "Guian active NPC")
+	var watch := guian.get_node("WatchNPCs")
+	var lookout := watch.get_node("ResidentLookout") as Node3D
+	var patroller := watch.get_node("StreetPatroller") as Node3D
+	_check(watch.get_child_count() == 2, "Guian has one lookout and one street patrol")
+	var lookout_position := lookout.global_position
+	var patrol_position := patroller.global_position
+	await _frames(30)
+	_check(lookout.global_position.is_equal_approx(lookout_position), "Guian lookout keeps its post")
+	_check(patroller.global_position.x > patrol_position.x + 0.5
+		and is_equal_approx(patroller.global_position.z, patrol_position.z), "Guian NPC starts its straight patrol")
+	var patrol_visual := patroller.get_node("Visual") as Sprite3D
+	var patrol_atlas := patrol_visual.texture as AtlasTexture
+	var frame_x := patrol_atlas.region.position.x
+	await _frames(12)
+	_check(patrol_atlas.atlas.resource_path.ends_with("street_patroller_walk.png")
+		and patrol_atlas.region.position.x != frame_x, "Guian NPC cycles through walk frames")
 	for id in world.props:
 		_check(world._prop_texture(id) is Texture2D, "imported image for " + id)
 
@@ -47,6 +63,8 @@ func _run() -> void:
 
 	await _climb(world.player, Vector3(-11, 0.03, -4.6), -13.34, "Guian home stairs")
 	await _open_prop(world, "photo_2026")
+	await _open_prop(world, "hospital_receipt")
+	await _open_prop(world, "usb_airship_audio")
 
 	world._switch_map(1)
 	await _frames(4)
@@ -67,10 +85,10 @@ func _run() -> void:
 	_check(is_equal_approx(robot.global_position.z, position.z), "robot stays on its line")
 	_check(robot.get_node("Chassis/SensorBand").mesh is CylinderMesh, "robot has round sensor band")
 	world._switch_map(0)
-	_check(world.collected.size() == 2, "collection survives map changes")
+	_check(world.collected.size() == 4, "collection survives map changes")
 	var save := ConfigFile.new()
 	_check(save.load(world._save_path) == OK, "collection saved to disk")
-	_check(save.get_value("collection", "items", []).size() == 2, "collection includes both maps")
+	_check(save.get_value("collection", "items", []).size() == 4, "collection includes both maps")
 	if FileAccess.file_exists(world._save_path):
 		DirAccess.remove_absolute(world._save_path)
 
@@ -101,11 +119,13 @@ func _open_prop(world, id: String) -> void:
 	press.physical_keycode = KEY_E
 	press.pressed = true
 	Input.parse_input_event(press)
+	Input.flush_buffered_events()
 	await _frames(3)
 	_check(world._ui.is_open() and world.collected.has(id), "E opens and collects " + id)
 	world._ui.close()
 	press.pressed = false
 	Input.parse_input_event(press)
+	Input.flush_buffered_events()
 
 
 func _climb(player, start: Vector3, end_z: float, label: String) -> void:
