@@ -89,6 +89,23 @@ static func serialize_request(request: Dictionary) -> String:
 	var view: Variant = request.get("view")
 	if not context is Dictionary or not view is Dictionary:
 		return ""
+	if request.has("request_type"):
+		if not DeviceRegistry.plain(request) or not _system_context(context):
+			return ""
+		var verified := SystemAgentView.new()
+		if not verified.restore(view):
+			return ""
+		if request.request_type == "location_guess":
+			if not DeviceRegistry.fields(request, ["context", "request_type", "view", "as_of", "constraints"]) or not _as_of_valid(request.as_of) or not _constraints_valid(request.constraints):
+				return ""
+		elif request.request_type == "dispatch":
+			if not DeviceRegistry.fields(request, ["context", "request_type", "view", "as_of", "policy", "previous_rejection"]) or not _as_of_valid(request.as_of) or not request.policy is Dictionary:
+				return ""
+			if request.previous_rejection != null and not _safe_receipt_valid(request.previous_rejection, context):
+				return ""
+		else:
+			return ""
+		return JSON.stringify(request)
 	if not _is_valid_context(context):
 		return ""
 	var role: String = str(context.get("role", ""))
@@ -153,3 +170,97 @@ static func response_matches(response: Dictionary, expected_context: Dictionary)
 	if not response["context"] is Dictionary:
 		return false
 	return contexts_match(response["context"], expected_context)
+
+
+static func make_location_request(context: Dictionary, view: Dictionary, as_of: Dictionary, constraints: Dictionary) -> Dictionary:
+	if not _system_context(context) or not _as_of_valid(as_of) or not _constraints_valid(constraints):
+		return {}
+	var verified := SystemAgentView.new()
+	if not verified.restore(view):
+		return {}
+	return {"context": context.duplicate(true), "request_type": "location_guess", "view": verified.to_data(),
+		"as_of": as_of.duplicate(true), "constraints": constraints.duplicate(true)}
+
+
+static func make_dispatch_request(context: Dictionary, view: Dictionary, as_of: Dictionary, policy: Dictionary, previous_rejection: Variant) -> Dictionary:
+	if not _system_context(context) or not _as_of_valid(as_of) or not DeviceRegistry.plain(policy) or not policy is Dictionary:
+		return {}
+	if previous_rejection != null and not _safe_receipt_valid(previous_rejection, context):
+		return {}
+	var verified := SystemAgentView.new()
+	if not verified.restore(view):
+		return {}
+	return {"context": context.duplicate(true), "request_type": "dispatch", "view": verified.to_data(),
+		"as_of": as_of.duplicate(true), "policy": policy.duplicate(true),
+		"previous_rejection": previous_rejection.duplicate(true) if previous_rejection is Dictionary else null}
+
+
+static func parse_location_response(raw: Variant, expected_context: Dictionary, constraints: Dictionary, grid_size: Vector2i) -> Dictionary:
+	var failure: Dictionary = {"ok": false, "payload": {}, "error": "INVALID_LOCATION_RESPONSE"}
+	if not _response_valid(raw, expected_context) or not _constraints_valid(constraints) or grid_size.x <= 0 or grid_size.y <= 0:
+		return failure
+	var payload: Variant = raw.payload
+	if not DeviceRegistry.fields(payload, ["shape", "origin_cell", "size"]) or payload.shape != "rectangle" or not DeviceRegistry.cell(payload.origin_cell) or not DeviceRegistry.cell(payload.size):
+		return failure
+	var x: int = payload.origin_cell[0]
+	var y: int = payload.origin_cell[1]
+	var width: int = payload.size[0]
+	var height: int = payload.size[1]
+	if x < 0 or y < 0 or width <= 0 or height <= 0 or width > constraints.max_width or height > constraints.max_height:
+		return failure
+	if width > grid_size.x or height > grid_size.y or x > grid_size.x - width or y > grid_size.y - height:
+		return failure
+	if width * height > constraints.max_cells:
+		return failure
+	return {"ok": true, "payload": payload.duplicate(true), "error": ""}
+
+
+static func parse_dispatch_response(raw: Variant, expected_context: Dictionary) -> Dictionary:
+	var failure: Dictionary = {"ok": false, "payload": {}, "error": "INVALID_DISPATCH_RESPONSE"}
+	if not _response_valid(raw, expected_context) or not DeviceRegistry.fields(raw.payload, ["mode", "commands"]):
+		return failure
+	var payload: Dictionary = raw.payload
+	if payload.mode not in ["APPLY", "KEEP_CURRENT"] or not payload.commands is Array or (payload.mode == "KEEP_CURRENT") != payload.commands.is_empty():
+		return failure
+	for command: Variant in payload.commands:
+		if not WorldCommandBatch.command_valid(command):
+			return failure
+	return {"ok": true, "payload": payload.duplicate(true), "error": ""}
+
+
+static func _system_context(context: Variant) -> bool:
+	return DeviceRegistry.fields(context, CONTEXT_FIELDS) and _is_valid_context(context) and context.role == SYSTEM_AGENT
+
+
+static func _response_valid(raw: Variant, expected_context: Dictionary) -> bool:
+	return DeviceRegistry.plain(raw) and DeviceRegistry.fields(raw, ["context", "status", "payload"]) \
+		and _system_context(raw.context) and _system_context(expected_context) \
+		and contexts_match(raw.context, expected_context) and raw.status == "ok"
+
+
+static func _as_of_valid(as_of: Variant) -> bool:
+	return DeviceRegistry.fields(as_of, ["simulation_tick", "report_period_id"]) \
+		and typeof(as_of.simulation_tick) == TYPE_INT and as_of.simulation_tick >= 0 \
+		and typeof(as_of.report_period_id) == TYPE_INT and as_of.report_period_id >= 0
+
+
+static func _constraints_valid(constraints: Variant) -> bool:
+	if not DeviceRegistry.fields(constraints, ["shape", "max_width", "max_height", "max_cells"]) or constraints.shape != "rectangle":
+		return false
+	for field: String in ["max_width", "max_height", "max_cells"]:
+		if typeof(constraints[field]) != TYPE_INT or constraints[field] <= 0:
+			return false
+	return true
+
+
+static func _safe_receipt_valid(receipt: Variant, current_context: Dictionary) -> bool:
+	if not DeviceRegistry.plain(receipt) or not DeviceRegistry.fields(receipt, ["status", "context", "errors"]) or receipt.status != "REJECTED":
+		return false
+	if not _system_context(receipt.context) or not receipt.errors is Array or receipt.errors.is_empty():
+		return false
+	if receipt.context.round_id != current_context.round_id or receipt.context.branch_id != current_context.branch_id or receipt.context.guess_cycle_id != current_context.guess_cycle_id or receipt.context.request_id >= current_context.request_id:
+		return false
+	for error: Variant in receipt.errors:
+		if not DeviceRegistry.fields(error, ["code", "command_index"]) or not error.code is String or error.code.is_empty() or typeof(error.command_index) != TYPE_INT or error.command_index < -1:
+			return false
+	return true

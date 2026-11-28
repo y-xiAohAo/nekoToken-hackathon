@@ -124,3 +124,17 @@ Godot 物理步结束时，玩家与设备的实际运动状态写入本步隔�
 ## 9. 开发准入
 
 检查点 1 工程壳已用 Godot 4.7.2 stable 本地启动并导出 Windows 构建；检查点 2 规则内核已有实现，原 75 条断言属于历史证据，见 [模块 0 Spec](features/2026-11-27_14-22_module-0-project-shell.md)、[模块 1 Spec](features/2026-11-27_14-22_module-1-rule-kernel.md)。[模块 2 Feature Spec](features/2026-11-27_20-53_module-2-world-command.md) 已完成内存世界、注册表、原子命令和同步合同；[模块 3A Feature Spec](features/2026-11-27_22-25_module-3a-runtime-scene.md) 已完成真实运行时、运动、碰撞和场景同步，历史本地正式检查共 558 条通过。[模块 3B Feature Spec](features/2026-11-27_22-51_module-3b-interactions.md) 已接入目标、联络与出口交互；[模块 4A Feature Spec](features/2026-11-27_23-31_module-4a-sensing-kernel.md) 与 [模块 4B Feature Spec](features/2026-11-28_10-44_module-4b-runtime-sensing.md) 均为 Plan Approved、REVIEW PASS（各自范围），真实视觉、踏板和统一报告已接入。当前共享 Godot 套件 830 项、4A 独立套件 114 项本地通过；完整 RESET 和真实 AgentGateway 仍待接入，踏板不要求部署基线。严格 Agent payload DTO 与猜测结果校验仍须在真实 AgentGateway 前完成。测试策略与数值不替代最终权限、关卡或平衡决策。
+
+## 10. 模块 5 后续工程合同（2026-11-28；Plan Approved / Review PASS）
+
+本节为模块 5 的迁移目标，替代上文涉及安装墙、静态系统地图、踏板限定调度和其它设备权限未开放的建议；不改变模块 2–4B 的历史测试证据。[模块 5 Feature Spec §0 与新 Plan](features/2026-11-28_14-55_module-5-simulated-agent-guess-cycle.md)为细化执行依据。
+
+`LevelTemplate` 定义基础地形、固定 `ObstacleTemplate` 及带稳定 ID 的 `ObstacleInstance`；`WorldState` 从 footprint 派生覆盖格，统一用于移动碰撞、视觉遮挡、路径与放置校验。组合障碍整体移动，不旋转、不逐格修改、不让房子贴图随全局邻接重拼。摄像头只保留单锚格与扫描状态，非实心且不要求支撑墙；同锚格限一台，可与踏板／演员共格，不可与实心内容或固定设施共格。`WorldCommandService` 的候选与 `SceneWorldSyncAdapter` 必须共同保证障碍整块原子生效和失败无部分世界提交。
+
+系统在猜测刻收到从明确字段构造的公开世界状态，包含当前基础地形、障碍实例、摄像头配置和相位、机器人连续状态及路线、固定设施 ID 与位置、revision、设备总量及公开 policy；不得把 WorldState 做黑名单删减。历史视觉记录的事件时 sidecar 增加 heading/scan_direction，R/P/tick 不重算。玩家真实状态、联络来源、目标内部状态、contact.used 和内部高水位不公开。
+
+系统合法调度含摄像头增删移动与受限扫描字段、机器人增删与 SetPatrolPath、踏板增删移动、现有组合障碍 MoveObstacle。摄像头 `view_radius/fov_angle/scan_speed`、任意 `SetMapCell`、固定设施和障碍增删均不授权。设备总量、合法区域与正方形玩家部署禁区由程序校验；额外半径只用于障碍移动，新增机器人只检查真实演员重叠。隐藏占位与禁区统一安全拒绝，不提供任意坐标预检。
+
+完整报告发布后才能发送严格 DTO 猜测请求；程序以冻结 `WorldFrame` 和受限整数格矩形计算 hit。合法但世界拒绝的调度保留暂停及所有权威状态，安全回执入历史、吊销旧请求、换新 request_id；原型最多两次正式提交，第二次拒绝 STOP。模型／协议异常和 SceneSync 程序故障直接 STOP。成功后只到 `CYCLE_START_PENDING`；模块 5 不保存或恢复完整 RESET 快照，也不调用 `resume_cycle(true)`。
+
+玩家助手后续每次联络最多操作一台已有摄像头或机器人：前者仅扫描中心／半角，后者仅合法路线。助手不接地图／系统报告；提议须由玩家确认同一不可变批次，修改方案产生新 request_id。模块 5 只保留角色 policy、命令校验和原子提交基础，不实现聊天或确认 UI。

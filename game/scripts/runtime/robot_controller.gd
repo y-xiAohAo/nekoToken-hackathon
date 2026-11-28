@@ -21,7 +21,7 @@ func advance(entity: Dictionary, world: WorldState, player: PlayerController, de
 	var hit := KinematicCollision2D.new()
 	if test_move(global_transform, motion, hit):
 		if hit.get_collider() != player:
-			return {}
+			return previous
 		if player == null or player.test_move(player.global_transform, motion):
 			return previous
 	# sync_to_physics publishes the transform at the next physics synchronization.

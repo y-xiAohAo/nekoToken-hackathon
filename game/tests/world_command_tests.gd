@@ -49,13 +49,12 @@ func _rules() -> Dictionary:
 			"camera": {"view_radius": [0.1, 20.0], "fov_angle": [0.1, TAU], "scan_center": [-PI, PI], "scan_half_angle": [0.0, PI], "scan_speed": [0.0, 4.0]},
 			"robot": {"view_radius": [0.1, 20.0], "move_speed": [0.1, 4.0]},
 		},
-		"camera_mount_limits": {"wall": {"half_angle": PI / 2.0}, "ceiling": {"center": 0.0, "half_angle": PI}},
 		"camera_per_anchor": 1,
 	}
 
 
 func _camera(cell: Array = [2, 2]) -> Dictionary:
-	return {"kind": "camera", "cell": cell, "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 5.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}}
+	return {"kind": "camera", "cell": cell, "parameters": {"enabled": true, "view_radius": 5.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}}
 
 
 func _plate(cell: Array) -> Dictionary:
@@ -72,6 +71,7 @@ func _fixture() -> Dictionary:
 	return {
 		"template_key": "test_only", "grid_size": [8, 8], "cell_size": 1.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [1.5, 1.5], "device_rules": _rules(),
+		"obstacle_templates": [], "initial_obstacles": [],
 		"initial_entities": [_camera(), {"kind": "robot", "cell": [1, 3], "parameters": {"view_radius": 4.0, "move_speed": 1.0}, "patrol_path": [[1, 3], [2, 3], [3, 3]]}, _plate([2, 2]), {"kind": "goal", "cell": [5, 5], "parameters": {}}, {"kind": "contact", "cell": [5, 1], "parameters": {}}, {"kind": "exit", "cell": [6, 5], "parameters": {}}],
 	}
 
@@ -187,7 +187,7 @@ func _template_and_copy() -> bool:
 
 func _space_and_devices() -> bool:
 	var world: WorldState = _world()
-	_check(not world.get_cell_profile(Vector2i(2, 2)).blocks_movement, "ceiling camera and pad share walkable cell")
+	_check(not world.get_cell_profile(Vector2i(2, 2)).blocks_movement, "independent camera and pad share walkable cell")
 	for cell: Vector2i in [Vector2i(0, 1), Vector2i(5, 5), Vector2i(5, 1), Vector2i(6, 5)]:
 		var profile: Dictionary = world.get_cell_profile(cell)
 		_check(profile.blocks_movement and profile.blocks_vision, "solid blocks both queries")
@@ -210,19 +210,18 @@ func _space_and_devices() -> bool:
 	_rejected([_parameter("view_radius", INF)], "INVALID_COMMAND")
 	_rejected([_parameter("permissions", [])], "PERMISSION_DENIED")
 	var camera: Dictionary = _camera([1, 2])
-	camera["mount_type"] = "wall"
-	camera["wall_side"] = "west"
 	var service := WorldCommandService.new(world, _policy(), WorldSyncAdapter.new())
 	var result: WorldCommandResult = service.commit_batch(_batch([{"type": "AddDevice", "device": camera}], _context()), _context())
-	_check(result.status == "APPLIED" and result.created_ids[0].id == 7, "wall camera added with world ID")
+	_check(result.status == "APPLIED" and result.created_ids[0].id == 7, "independent camera added with world ID")
 	var current: WorldState = service.get_world_snapshot()
-	_rejected([_map([0, 2], "FLOOR")], "INVALID_POSITION", current)
-	_rejected([{"type": "MoveDevice", "id": 7, "cell": [3, 2], "mount_type": "wall", "wall_side": "west"}], "INVALID_POSITION", world_with_revision_zero(current))
+	_rejected([{"type": "MoveDevice", "id": 7, "cell": [3, 2], "mount_type": "wall"}], "INVALID_COMMAND", world_with_revision_zero(current))
+	var independent_move := WorldCommandService.new(current, _policy(), WorldSyncAdapter.new())
+	var replacement: Dictionary = {"type": "MoveDevice", "id": 7, "cell": [3, 2]}
+	_check(independent_move.commit_batch(_batch([_map([0, 2], "FLOOR"), replacement], _context(), 1), _context()).status == "APPLIED", "camera move needs no support wall")
+	camera["cell"] = [4, 2]
 	camera["parameters"]["scan_center"] = PI
-	_rejected([{"type": "AddDevice", "device": camera}], "INVALID_PARAMETER")
-	var support_repair := WorldCommandService.new(current, _policy(), WorldSyncAdapter.new())
-	var replacement: Dictionary = {"type": "MoveDevice", "id": 7, "cell": [3, 2], "mount_type": "ceiling"}
-	_check(support_repair.commit_batch(_batch([_map([0, 2], "FLOOR"), replacement], _context(), 1), _context()).status == "APPLIED", "support removal can be repaired within atomic batch")
+	var unrestricted := WorldCommandService.new(_world(), _policy(), WorldSyncAdapter.new())
+	_check(unrestricted.commit_batch(_batch([{"type": "AddDevice", "device": camera}], _context()), _context()).status == "APPLIED", "scan center is not wall constrained")
 	var scan_snapshot: Dictionary = _world().to_snapshot()
 	scan_snapshot.entities[0].runtime_state.heading = 0.4
 	scan_snapshot.entities[0].runtime_state.scan_direction = -1

@@ -9,7 +9,10 @@ func _run() -> void:
 	var failures: int = 0
 	if OS.get_cmdline_user_args().has("--fail-probe"):
 		failures += 1
-	for suite: RefCounted in [SessionKernelTests.new(), WorldCommandTests.new(), RuntimeMotionTests.new(), RuntimeSceneTests.new(), SensingRuntimeTests.new()]:
+	var suites: Array[RefCounted] = [SessionKernelTests.new(), WorldCommandTests.new(), RuntimeMotionTests.new(), RuntimeSceneTests.new(), SensingRuntimeTests.new(), Module5WorldTests.new(), Module5CycleTests.new()]
+	if OS.get_cmdline_user_args().has("--module5-only"):
+		suites = [Module5WorldTests.new(), Module5CycleTests.new()]
+	for suite: RefCounted in suites:
 		var result: Dictionary = await suite.run()
 		print("%s: %d passed, %d failed" % [suite.get_script().get_global_name(), result["passed"], result["failed"]])
 		failures += result["failed"]

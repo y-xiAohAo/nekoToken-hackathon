@@ -20,14 +20,14 @@ var _prepared_context: Dictionary = {}
 var _prepared_world: Dictionary = {}
 var _staged: Dictionary = {}
 
-func initialize_round(world: WorldState, context: Dictionary, ticks_per_report_period: int) -> bool:
+func initialize_round(world: WorldState, context: Dictionary, ticks_per_report_period: int, dispatch_rules: Dictionary = {}) -> bool:
 	if _n != 0 or world == null or not DeviceRegistry.fields(context, CONTEXT_FIELDS) or context.sense_tick != 0 or ticks_per_report_period <= 0:
 		return false
 	var result: SensingStepResult = SensingKernel.initialize_round(world, context, ticks_per_report_period)
 	if not result.succeeded():
 		return false
 	var view := SystemAgentView.new()
-	if not view.initialize(world):
+	if not view.initialize(world, dispatch_rules):
 		return false
 	var buffer := ReportBuffer.new(ticks_per_report_period)
 	if not buffer.append_all(result.visual_records, result.plate_records):

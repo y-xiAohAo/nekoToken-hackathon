@@ -38,7 +38,11 @@ static func command_valid(command: Variant) -> bool:
 		"RemoveDevice":
 			return DeviceRegistry.fields(command, ["type", "id"]) and _id(command.id)
 		"MoveDevice":
-			return DeviceRegistry.fields(command, ["type", "id", "cell"], ["mount_type", "wall_side"]) and _id(command.id) and DeviceRegistry.cell(command.cell)
+			return DeviceRegistry.fields(command, ["type", "id", "cell"]) and _id(command.id) and DeviceRegistry.cell(command.cell)
+		"MoveObstacle":
+			return DeviceRegistry.fields(command, ["type", "obstacle_id", "anchor_cell"]) and _id(command.obstacle_id) and DeviceRegistry.cell(command.anchor_cell)
+		"SetCameraScanState":
+			return DeviceRegistry.fields(command, ["type", "id", "heading", "scan_direction"]) and _id(command.id) and DeviceRegistry.number(command.heading) and typeof(command.scan_direction) == TYPE_INT and command.scan_direction in [-1, 1]
 		"SetDeviceParameter":
 			return DeviceRegistry.fields(command, ["type", "id", "parameter", "value"]) and _id(command.id) and command.parameter is String
 		"SetPatrolPath":

@@ -7,3 +7,4 @@
 - [模块 3B：目标、联络点与出口交互](2026-11-27_22-51_module-3b-interactions.md)：Plan Approved，REVIEW PASS（本模块范围）；B0–B6 已完成，独立复核发现全部关闭，并键输入边界已补修。目标停留/多目标、联络消耗与重试/KEEP_CURRENT、真实出口通关已验收；当前正式检查 81/223/47/344 条通过。
 - [模块 4A：纯数据感知与设备报告内核](2026-11-27_23-31_module-4a-sensing-kernel.md)：Plan Approved，REVIEW PASS（4A 范围）；P0–P7 已完成，干净模块 0–2 副本的独立测试 26/88 条通过，原有 81/223 条回归通过。真实运行时和统一报告由 4B 另行验收。
 - [模块 4B：真实感知与统一报告运行时集成](2026-11-28_10-44_module-4b-runtime-sensing.md)：Plan Approved，REVIEW PASS（4B 范围）；真实单步感知、3B 目标事件同批、安全视图和终止性报告故障处理已接入；共享套件 830 项通过，后续 RESET 与 Agent 限制见该 Spec。
+- [模块 5：模拟系统 Agent 与一个完整猜测周期](2026-11-28_14-55_module-5-simulated-agent-guess-cycle.md)：Plan Approved，REVIEW PASS（模块 5 范围）；稳定组合障碍、公开白名单、严格猜测与有限调度重试已接入，独立提交分支共享套件 852 项及 4A 独立套件 114 项通过。完整 RESET 仍由后续模块承接。

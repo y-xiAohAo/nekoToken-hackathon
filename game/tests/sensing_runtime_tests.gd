@@ -59,14 +59,14 @@ func _dto_and_view() -> bool:
 	var view := SystemAgentView.new()
 	_check(view.initialize(world), "system view initializes")
 	var data: Dictionary = view.to_data()
-	_check(not data.has("player_position") and not data.static_map.has("player_position") and data.reports.is_empty(), "system view excludes hidden player position")
-	data.device_configuration.clear()
-	_check(not view.to_data().device_configuration.is_empty(), "system view read is detached")
+	_check(not data.has("player_position") and not data.world.has("player_position") and data.reports.is_empty(), "system view excludes hidden player position")
+	data.world.cameras.clear()
+	_check(not view.to_data().world.cameras.is_empty(), "system view read is detached")
 	var invalid: Dictionary = view.snapshot()
 	invalid["actor_id"] = 0
 	_check(not view.restore(invalid) and not view.to_data().has("actor_id"), "forbidden field restore is atomic")
 	invalid = view.snapshot()
-	invalid.device_configuration[0].parameters.view_radius = "bad"
+	invalid.world.cameras[0].parameters.view_radius = "bad"
 	_check(not view.restore(invalid), "invalid public configuration cannot restore")
 	var goal: GoalOperationRecord = GoalOperationRecord.from_data({"round_id": 1, "branch_id": 1, "guess_cycle_id": 1, "report_cycle_id": 1,
 		"goal_id": 4, "event_tick": 1, "type": "GOAL_OPERATION_STARTED"})
@@ -99,6 +99,8 @@ func _coordinator_window() -> bool:
 		if tick == 2:
 			var camera: Dictionary = candidate.registry.get_entity(1)
 			camera.parameters.enabled = false
+			camera.runtime_state.heading = 0.25
+			camera.runtime_state.scan_direction = -1
 			candidate.registry._put(camera)
 		var prepared: SensingStepResult = sensing.prepare_step(SensingKernel.actor_cells(world), candidate, _context(tick, 3))
 		_check(prepared.succeeded(), "tick %d prepares" % tick)
@@ -119,7 +121,8 @@ func _coordinator_window() -> bool:
 	_check(first.records.size() == 5 and ticks == [0, 0, 2, 2, 2], "N=3 first batch has tick zero, two and target event")
 	_check(first.records.any(func(entry: Dictionary) -> bool: return entry.record_type == "goal_operation" and entry.data.type == "GOAL_OPERATION_STARTED"), "goal start entered unified report")
 	_check(first.records[0].device_configuration.parameters.enabled == true and first.records.any(func(entry: Dictionary) -> bool: return entry.record_type == "visual" and entry.data.device_id == 1 and entry.data.sense_tick == 2 and entry.device_configuration.parameters.enabled == false), "event-time camera configuration survives change")
-	_check(sensing.get_system_view().device_configuration[0].parameters.enabled == false, "boundary view carries latest public configuration")
+	_check(first.records[0].device_configuration.heading == 0.0 and first.records[0].device_configuration.scan_direction == 1 and first.records.any(func(entry: Dictionary) -> bool: return entry.record_type == "visual" and entry.data.device_id == 1 and entry.data.sense_tick == 2 and entry.device_configuration.heading == 0.25 and entry.device_configuration.scan_direction == -1), "event-time heading and direction survive change")
+	_check(sensing.get_system_view().world.cameras[0].parameters.enabled == false, "boundary view carries latest public configuration")
 	_check(sensing.snapshot().goal_pending.size() == 1 and sensing.snapshot().goal_pending[0].event_tick == 3, "tick three target event remains next period")
 	_check(before.goal_pending.size() == 2, "pre-seal snapshot was detached")
 	_check(sensing.seal_report_batch(ReportBoundary.new(1, 1, 1, 2, 3, 6, false)), "second window seals")
@@ -164,7 +167,7 @@ func _new_robot_and_restart() -> bool:
 	var sensing := RuntimeSensingCoordinator.new()
 	_check(sensing.initialize_round(initial, _context(0, 3), 3), "pre-deployment tick zero initializes")
 	var level: Dictionary = PrototypeConfig.level_data()
-	level.initial_entities.append({"kind": "robot", "cell": [8, 3], "parameters": {"view_radius": 320.0, "move_speed": 60.0}, "patrol_path": [[8, 3], [9, 3]]})
+	level.initial_entities.append({"kind": "robot", "cell": [9, 3], "parameters": {"view_radius": 320.0, "move_speed": 60.0}, "patrol_path": [[9, 3], [10, 3]]})
 	var deployed: WorldState = LevelTemplate.from_data(level).instantiate_world()
 	_check(deployed != null and deployed.validate().is_empty(), "new robot deployment world valid")
 	var candidate: WorldState = deployed.snapshot_copy()

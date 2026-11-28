@@ -10,6 +10,7 @@ var _world: WorldState
 var _terrain: TileMapLayer
 var _player: PlayerController
 var _entities: Dictionary = {}
+var _obstacles: Dictionary = {}
 var last_interaction: Dictionary = {}
 
 
@@ -21,6 +22,7 @@ func build_from_world(world: WorldState) -> bool:
 		child.queue_free()
 	_world = world.snapshot_copy()
 	_entities.clear()
+	_obstacles.clear()
 	_terrain = make_terrain_layer(world.to_snapshot())
 	if _terrain == null:
 		return false
@@ -28,8 +30,14 @@ func build_from_world(world: WorldState) -> bool:
 	_player = PLAYER_SCENE.instantiate()
 	add_child(_player)
 	_player.global_position = world.player_position
+	for instance: Dictionary in world.obstacle_instances:
+		var obstacle: Node2D = make_obstacle_node(instance, world)
+		if obstacle == null:
+			return false
+		add_child(obstacle)
+		_obstacles[instance.obstacle_id] = obstacle
 	for entity: Dictionary in world.registry.to_snapshot():
-		var node: Node2D = make_entity_node(entity)
+		var node: Node2D = make_entity_node(entity, world)
 		if node == null:
 			return false
 		add_child(node)
@@ -61,8 +69,8 @@ func make_terrain_layer(world_data: Dictionary) -> TileMapLayer:
 	return layer
 
 
-func make_entity_node(entity: Dictionary) -> Node2D:
-	if _world == null:
+func make_entity_node(entity: Dictionary, candidate: WorldState) -> Node2D:
+	if candidate == null:
 		return null
 	if entity.kind == "robot":
 		var robot: RobotController = ROBOT_SCENE.instantiate()
@@ -70,8 +78,46 @@ func make_entity_node(entity: Dictionary) -> Node2D:
 		robot.position = DeviceRegistry.vector(entity.runtime_state.position)
 		return robot
 	var view: DeviceView = DEVICE_SCENE.instantiate()
-	view.configure(entity, _world)
+	view.configure(entity, candidate)
 	return view
+
+
+func make_obstacle_node(instance: Dictionary, candidate: WorldState) -> Node2D:
+	if candidate == null:
+		return null
+	var template: ObstacleTemplate = candidate.obstacle_template(instance.get("template_id", ""))
+	if template == null or template.scene_path.is_empty():
+		return null
+	var scene: PackedScene = load(template.scene_path)
+	if scene == null:
+		return null
+	var node: Node = scene.instantiate()
+	if not node is ObstacleView or not node.configure(instance, template.to_data(), candidate):
+		node.free()
+		return null
+	return node
+
+
+func replace_obstacle(obstacle_id: int, node: Node2D) -> void:
+	if _obstacles.has(obstacle_id):
+		var old: Node = _obstacles[obstacle_id]
+		remove_child(old)
+		old.queue_free()
+	_obstacles[obstacle_id] = node
+	add_child(node)
+
+
+func remove_obstacle(obstacle_id: int) -> void:
+	if not _obstacles.has(obstacle_id):
+		return
+	var old: Node = _obstacles[obstacle_id]
+	_obstacles.erase(obstacle_id)
+	remove_child(old)
+	old.queue_free()
+
+
+func accept_committed_world(world: WorldState) -> void:
+	_world = world.snapshot_copy() if world != null else null
 
 
 func replace_terrain(layer: TileMapLayer) -> void:

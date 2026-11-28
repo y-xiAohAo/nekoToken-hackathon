@@ -15,7 +15,7 @@ func _ready() -> void:
 		push_error("Unable to build graybox world")
 		return
 	var adapter := SceneWorldSyncAdapter.new(world_view)
-	_service = WorldCommandService.new(world, {}, adapter)
+	_service = WorldCommandService.new(world, PrototypeConfig.combined_policy(), adapter)
 	_session = GameSession.new(PrototypeConfig.make_session_rules())
 	_runtime = GameRuntime.new()
 	_runtime.auto_advance = false
@@ -30,9 +30,14 @@ func _ready() -> void:
 	_sensing = RuntimeSensingCoordinator.new()
 	var context: Dictionary = {"round_id": state.round_id, "branch_id": state.branch_id,
 		"guess_cycle_id": state.guess_cycle_id, "report_cycle_id": _session.period_for_event_tick(0) + 1, "sense_tick": 0}
-	if not _sensing.initialize_round(_service.get_world_snapshot(), context, _session.get_ticks_per_report_period()) or not _runtime.configure_sensing(_sensing):
+	if not _sensing.initialize_round(_service.get_world_snapshot(), context, _session.get_ticks_per_report_period(), PrototypeConfig.system_dispatch_policy()) or not _runtime.configure_sensing(_sensing):
 		status_label.text = "2042 GRAYBOX\nSensing initialization failed"
 		push_error("Unable to initialize sensing")
+		return
+	var agent_rules: Dictionary = PrototypeConfig.system_agent_rules()
+	agent_rules["dispatch_policy"] = PrototypeConfig.system_dispatch_policy()
+	if not _runtime.configure_agent(SimulatedAgentGateway.new(PrototypeConfig.simulated_system_script(), true), SystemAgentHistory.new(), agent_rules):
+		push_error("Unable to configure simulated system agent")
 		return
 	_runtime.auto_advance = true
 	status_label.text = "2042 GRAYBOX\nWASD move · E interact · Q cancel"
@@ -40,6 +45,7 @@ func _ready() -> void:
 	print("RUNTIME_GRAYBOX_READY")
 	print("RUNTIME_INTERACTIONS_READY")
 	print("RUNTIME_SENSING_READY")
+	print("RUNTIME_AGENT_READY")
 
 
 func _process(_delta: float) -> void:

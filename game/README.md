@@ -1,6 +1,6 @@
 # 游戏工程落点
 
-工程入口为 `project.godot` 和 `scenes/main.tscn`。当前包含规则内核、内存世界与命令服务、真实灰盒运动、模块 3B 交互及模块 4B 真实感知与统一报告：玩家可用 WASD 移动，接近核验装置按 E 开始停留操作，多个目标需全部完成；联络点成功进入即消耗，可按 E 明确 KEEP_CURRENT 离开；全部目标完成后真实触碰出口形成通关条件。AgentGateway、完整 RESET 和四轮玩法仍由后续模块接入。
+工程入口为 `project.godot` 和 `scenes/main.tscn`。当前包含规则内核、内存世界与命令服务、真实灰盒运动、模块 3B 交互、模块 4B 真实感知与统一报告，以及模块 5 本地模拟系统 Agent 单猜测周期：玩家可用 WASD 移动，接近核验装置按 E 开始停留操作，多个目标需全部完成；联络点成功进入即消耗，可按 E 明确 KEEP_CURRENT 离开；全部目标完成后真实触碰出口形成通关条件。真实模型／网络、完整 RESET 和四轮玩法仍由后续模块接入。
 
 [模块 2](../docs/features/2026-11-27_20-53_module-2-world-command.md)、[模块 3A](../docs/features/2026-11-27_22-25_module-3a-runtime-scene.md) 和 [模块 3B](../docs/features/2026-11-27_22-51_module-3b-interactions.md) 均已按 Plan Approved 实施并通过各自范围 Review。运动只推进 `simulation_tick`，部署命令才推进 `world_revision`；目标与联络状态进入同一完整候选和唯一运行时写回。
 
@@ -56,3 +56,11 @@ tools/godot/4.7.2/Godot_v4.7.2-stable_win64_console.exe --headless --path game -
 2026-11-28 本机复验：Godot 导入退出 0；4A 独立套件 26/88 通过；共享套件 SessionKernelTests 81、WorldCommandTests 229、RuntimeMotionTests 47、RuntimeSceneTests 344、SensingRuntimeTests 129 项通过，合计 **830 passed / 0 failed**；失败探针退出 1。120 帧主场景及 Windows release 导出程序均输出 `RUNTIME_SENSING_READY` 并退出 0。固定左右移动的 600 tick、20 批生成 42 条统一记录，种子 2042 换向的 300 tick、10 批生成 22 条，两者非注入故障均为 0。多次固定路线 headless `step_once` 平均值约 13.7–41.3 ms、单次最高约 53.8–153.5 ms，玩家和机器人每 tick 最大位移分别 3/1 px；耗时波动不能推断渲染帧率。最终测试日志位于 `tmp/module4b-final-review-tests.log`；本机 `tmp/` 和 `build/` 均不入库。限制见 [4B Spec](../docs/features/2026-11-28_10-44_module-4b-runtime-sensing.md) 的 Review 记录。
 
 首个实现依据 [Spec](../PRELIMINARY_DESIGN_SPEC.md)、[机制说明](../侦测定位_机制草案.md)和[开发约定](../docs/development.md)。创建工程的同一轮应补充实际版本、启动方式、测试入口和导出目标，本页不能用占位数字冒充验证结果。
+
+## 模块 5：模拟系统 Agent 单猜测周期
+
+按[模块 5 当前 Spec §0 与 §P](../docs/features/2026-11-28_14-55_module-5-simulated-agent-guess-cycle.md)实施。世界采用稳定 ID 的固定 2×2 组合障碍，摄像头为无墙安装、非实心单锚设备。系统 Agent 只收显式白名单公开视图；统一报告完整发布后，程序以冻结帧计算 hit，再由真实 `WorldCommandService` 和 `SceneWorldSyncAdapter` 提交未命中调度。合法世界拒绝最多允许一次携安全回执的修正；协议和程序故障直接 STOP。成功调度停在 `CYCLE_START_PENDING`，等待模块 6 的真实快照与 RESET。
+
+模块 5 独立发布分支于 2026-11-28 本机验证：Godot 4.7.2 headless import 退出 0；共享 runner **852 passed / 0 failed**（模块 5 世界 12、周期 12）；4A 独立 runner **114 passed / 0 failed**；失败探针按预期退出 1。主场景及 Windows release 导出程序的 120 帧 smoke 均退出 0，输出 `RUNTIME_AGENT_READY` 和 `MODULE5_CYCLE_START_PENDING`；Python unittest 13/13。真实灰盒合同测试覆盖整屋固定贴图、四格碰撞与遮挡、完整报告后的猜测、摄像头／机器人／踏板／障碍场景提交、安全拒绝和有限重试。独立分支日志位于原工作区 `tmp/module5-publish-*.log`（忽略目录，不入库）。原共享工作树另含并行模块 7 测试，曾跑得 920/920；该结果不代替本分支的 852/852。
+
+Review Matrix：Spec 完成度 PASS；Spec 与代码一致性 PASS；代码质量 PASS（原型范围）。Plan-Execution Diff：发布时将并行模块 7 联络 UI 和测试从模块 5 分支剔除；模块 5 的接口、运行时和场景合同在隔离树重新验证。剩余边界：本地脚本 Agent 不代表模型推理；没有真实计时服务、完整 RESET、分支恢复、四轮结算或正式地图／平衡。模块 6 恢复时须一起恢复 WorldState、SessionState／CycleState、4B 当前有效报告及事件 sidecar、场景派生状态，并将持久 Agent 历史与有效报告分离；旧回调必须失效。

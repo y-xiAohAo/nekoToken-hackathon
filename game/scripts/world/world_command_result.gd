@@ -25,3 +25,11 @@ func snapshot_copy() -> WorldCommandResult:
 
 func completes(expected: Dictionary) -> bool:
 	return status in ["APPLIED", "UNCHANGED"] and errors.is_empty() and AgentProtocol.contexts_match(context, expected)
+
+
+func safe_dispatch_receipt() -> Dictionary:
+	var safe_errors: Array[Dictionary] = []
+	for error: Dictionary in errors:
+		safe_errors.append({"code": str(error.get("code", "INVALID_COMMAND")),
+			"command_index": int(error.get("command_index", -1))})
+	return {"status": "REJECTED", "context": AgentProtocol.serialize_context(context), "errors": safe_errors}
