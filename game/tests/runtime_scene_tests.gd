@@ -250,8 +250,8 @@ func _view_world() -> WorldState:
 		"template_key": "scene_sync_test", "grid_size": [6, 6], "cell_size": 64.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [96.0, 288.0], "device_rules": _device_rules(),
 		"initial_entities": [
-			{"kind": "camera", "cell": [2, 2], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 400.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
-			{"kind": "robot", "cell": [1, 3], "parameters": {"view_radius": 400.0, "move_speed": 64.0}, "patrol_path": [[1, 3], [2, 3]]},
+			{"kind": "camera", "cell": [2, 2], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 384.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
+			{"kind": "robot", "cell": [1, 3], "parameters": {"view_radius": 384.0, "move_speed": 64.0}, "patrol_path": [[1, 3], [2, 3]]},
 			{"kind": "pressure_plate", "cell": [2, 2], "parameters": {}},
 			{"kind": "goal", "cell": [4, 4], "parameters": {}},
 			{"kind": "contact", "cell": [4, 1], "parameters": {}},
@@ -572,8 +572,8 @@ func _interaction_world() -> WorldState:
 		"template_key": "interaction_scene_test", "grid_size": [8, 6], "cell_size": 64.0, "origin": [0.0, 0.0],
 		"terrain": terrain, "player_spawn": [96.0, 96.0], "device_rules": _device_rules(),
 		"initial_entities": [
-			{"kind": "camera", "cell": [2, 1], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 400.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
-			{"kind": "robot", "cell": [1, 3], "parameters": {"view_radius": 400.0, "move_speed": 64.0}, "patrol_path": [[1, 3], [2, 3]]},
+			{"kind": "camera", "cell": [2, 1], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 384.0, "fov_angle": 1.0, "scan_center": 0.0, "scan_half_angle": 0.5, "scan_speed": 1.0}},
+			{"kind": "robot", "cell": [1, 3], "parameters": {"view_radius": 384.0, "move_speed": 64.0}, "patrol_path": [[1, 3], [2, 3]]},
 			{"kind": "goal", "cell": [4, 2], "parameters": {}},
 			{"kind": "goal", "cell": [5, 2], "parameters": {}},
 			{"kind": "contact", "cell": [1, 4], "parameters": {}},

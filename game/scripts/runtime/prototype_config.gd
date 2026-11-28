@@ -38,8 +38,8 @@ static func level_data() -> Dictionary:
 		],
 		"player_spawn": [96.0, 96.0], "device_rules": device_rules(),
 		"initial_entities": [
-			{"kind": "camera", "cell": [6, 1], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 300.0, "fov_angle": 1.2, "scan_center": 0.0, "scan_half_angle": 0.8, "scan_speed": 1.0}},
-			{"kind": "robot", "cell": [4, 3], "parameters": {"view_radius": 300.0, "move_speed": 60.0}, "patrol_path": [[4, 3], [5, 3], [6, 3]]},
+			{"kind": "camera", "cell": [6, 1], "mount_type": "ceiling", "parameters": {"enabled": true, "view_radius": 320.0, "fov_angle": 1.2, "scan_center": 0.0, "scan_half_angle": 0.8, "scan_speed": 1.0}},
+			{"kind": "robot", "cell": [4, 3], "parameters": {"view_radius": 320.0, "move_speed": 60.0}, "patrol_path": [[4, 3], [5, 3], [6, 3]]},
 			{"kind": "pressure_plate", "cell": [3, 3], "parameters": {}},
 			{"kind": "goal", "cell": [9, 5], "parameters": {}},
 			{"kind": "contact", "cell": [1, 5], "parameters": {}},

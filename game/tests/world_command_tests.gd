@@ -172,9 +172,16 @@ func _template_and_copy() -> bool:
 	offset["origin"] = [-10.0, 20.0]
 	offset["cell_size"] = 2.0
 	offset["player_spawn"] = [-7.0, 23.0]
+	offset["initial_entities"][0]["parameters"]["view_radius"] = 4.0
 	var scaled: WorldState = LevelTemplate.from_data(offset).instantiate_world()
 	_check(scaled.cell_to_world(Vector2i(1, 3)) == Vector2(-7.0, 27.0), "origin and scale affect all cell centers")
 	_check(scaled.registry.get_entity(2).runtime_state.position == [-7.0, 27.0], "robot initial position uses world conversion")
+	var fractional: Dictionary = offset.duplicate(true)
+	fractional.initial_entities[0].parameters.view_radius = 5.0
+	_check(LevelTemplate.from_data(fractional).instantiate_world() == null, "noninteger cell radius rejected in template")
+	var invalid_radius_snapshot: Dictionary = world.to_snapshot()
+	invalid_radius_snapshot.entities[0].parameters.view_radius = 5.5
+	_check(WorldState.from_snapshot(invalid_radius_snapshot) == null, "noninteger cell radius rejected in snapshot")
 	return true
 
 
@@ -195,6 +202,10 @@ func _space_and_devices() -> bool:
 	_rejected([{"type": "AddDevice", "device": {"kind": "goal", "cell": [4, 4], "parameters": {}}}], "PERMISSION_DENIED")
 	_rejected([_move(2, [4, 4])], "PERMISSION_DENIED")
 	_rejected([_parameter("view_radius", 999)], "INVALID_PARAMETER")
+	_rejected([_parameter("view_radius", 5.5)], "INVALID_PARAMETER")
+	var fractional_camera: Dictionary = _camera([4, 4])
+	fractional_camera.parameters.view_radius = 5.5
+	_rejected([{"type": "AddDevice", "device": fractional_camera}], "INVALID_PARAMETER")
 	_rejected([_parameter("view_radius", "5")], "INVALID_PARAMETER")
 	_rejected([_parameter("view_radius", INF)], "INVALID_COMMAND")
 	_rejected([_parameter("permissions", [])], "PERMISSION_DENIED")

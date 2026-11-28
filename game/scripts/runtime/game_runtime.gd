@@ -12,6 +12,9 @@ var _fault: String = ""
 var _configured: bool = false
 var _last_domain_events: Array[Dictionary] = []
 var _active_contact_id: int = 0
+var _sensing: RuntimeSensingCoordinator
+var _report_callback_error: String = ""
+var _report_committed_world: WorldState
 
 
 func configure(
@@ -25,6 +28,13 @@ func configure(
 	_view = view
 	_movement_rules = movement_rules.duplicate(true)
 	_configured = _world_service != null and _session != null and _view != null
+
+
+func configure_sensing(sensing: RuntimeSensingCoordinator) -> bool:
+	if not _configured or _sensing != null or _session.get_cycle_snapshot().simulation_tick != 0 or _session.get_state_snapshot().phase != SessionPhase.Phase.ACTION or sensing == null or sensing.get_ticks_per_report_period() != _session.get_ticks_per_report_period() or sensing.get_system_view().is_empty():
+		return false
+	_sensing = sensing
+	return true
 
 
 func _physics_process(delta: float) -> void:
@@ -59,6 +69,7 @@ func step_once(
 	var candidate: WorldState = _world_service.get_world_snapshot()
 	if candidate == null:
 		return _fail("INVALID_WORLD")
+	var previous_actor_cells: Dictionary = SensingKernel.actor_cells(candidate) if _sensing != null else {}
 	var motion_errors: Array[Dictionary] = _view.step_motion(candidate, input_vector, delta, _movement_rules, expected_tick, interact_pressed, cancel_pressed)
 	if not motion_errors.is_empty():
 		return _fail(str(motion_errors))
@@ -70,6 +81,15 @@ func step_once(
 			return _fail("INVALID_CONTACT")
 		contact.runtime_state.used = true
 		candidate.registry._put(contact)
+	var sensing_context: Dictionary = {}
+	var prepared: SensingStepResult = null
+	if _sensing != null:
+		sensing_context = {"round_id": session_snapshot.round_id, "branch_id": session_snapshot.branch_id,
+			"guess_cycle_id": session_snapshot.guess_cycle_id,
+			"report_cycle_id": _session.period_for_event_tick(expected_tick) + 1, "sense_tick": expected_tick}
+		prepared = _sensing.prepare_step(previous_actor_cells, candidate, sensing_context)
+		if not prepared.succeeded():
+			return _fail(str(prepared.errors))
 	var frame := WorldFrame.new(expected_tick, candidate.player_position, interaction.goal_complete, interaction.at_exit)
 	var step := WorldStepResult.new(candidate, frame)
 	step.domain_events.assign(interaction.events.duplicate(true))
@@ -81,10 +101,22 @@ func step_once(
 	var advanced: PhysicsStepResult = _session.advance_physics_step(frame)
 	if not advanced.accepted:
 		return _fail(advanced.error)
+	if _sensing != null:
+		var committed_world: WorldState = _world_service.get_world_snapshot()
+		if not _sensing.commit_step(prepared, step.domain_events, committed_world, sensing_context):
+			return _fail("SENSING_COMMIT_FAILED")
 	if advanced.report_boundary != null:
+		_report_callback_error = ""
+		_report_committed_world = _world_service.get_world_snapshot() if _sensing != null else null
 		var processed: bool = _session.process_report_boundary(_seal_report_batch, _update_system_view)
-		if not processed:
+		_report_committed_world = null
+		if not processed or not _report_callback_error.is_empty():
+			if _sensing != null:
+				_sensing.discard_report_boundary()
 			return _fail("REPORT_BOUNDARY_FAILED")
+		if _sensing != null and not _sensing.finish_report_boundary():
+			_sensing.discard_report_boundary()
+			return _fail("REPORT_PUBLISH_FAILED")
 	if accept_contact and _session.get_state_snapshot().phase == SessionPhase.Phase.ACTION:
 		if not _session.begin_contact():
 			return _fail("CONTACT_START_FAILED")
@@ -132,11 +164,13 @@ func _fail(message: String) -> Dictionary:
 	return {"ok": false, "errors": [{"code": "RUNTIME_FAULT", "message": message}]}
 
 
-func _seal_report_batch(_boundary: ReportBoundary) -> void:
-	# Module 4 replaces this explicit hook with real record sealing.
-	pass
+func _seal_report_batch(boundary: ReportBoundary) -> void:
+	if _sensing != null and not _sensing.seal_report_batch(boundary):
+		_report_callback_error = "REPORT_SEAL_FAILED"
 
 
-func _update_system_view(_boundary: ReportBoundary) -> void:
-	# Module 4 replaces this explicit hook with a role-safe report projection.
-	pass
+func _update_system_view(boundary: ReportBoundary) -> void:
+	if _sensing == null or not _report_callback_error.is_empty():
+		return
+	if not _sensing.update_system_view(boundary, _report_committed_world):
+		_report_callback_error = "REPORT_VIEW_UPDATE_FAILED"

@@ -103,6 +103,10 @@ func period_for_event_tick(event_tick: int) -> int:
 	return event_tick / _rules.ticks_per_report_period
 
 
+func get_ticks_per_report_period() -> int:
+	return _rules.ticks_per_report_period
+
+
 func is_guess_tick(expected_tick: int) -> bool:
 	if not _rules.is_valid() or expected_tick <= 0 or expected_tick % _rules.ticks_per_report_period != 0:
 		return false

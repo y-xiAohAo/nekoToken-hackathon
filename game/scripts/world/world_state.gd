@@ -118,6 +118,10 @@ func validate() -> Array[Dictionary]:
 	for entity: Dictionary in entities:
 		if not DeviceRegistry.entity_valid(entity, device_rules):
 			return [{"code": "INVALID_PARAMETER"}]
+		if entity.kind in ["camera", "robot"]:
+			var cell_count: float = float(entity.parameters.view_radius) / cell_size
+			if not is_finite(cell_count) or roundf(cell_count) < 1.0 or absf(cell_count - roundf(cell_count)) > 0.000001:
+				return [{"code": "INVALID_PARAMETER"}]
 		if entity.kind == "robot":
 			continue
 		var cell: Vector2i = DeviceRegistry.grid(entity.cell)
