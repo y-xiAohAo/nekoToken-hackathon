@@ -1,0 +1,4045 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://modules/piece.tscn" id="piece"]
+[ext_resource type="PackedScene" path="res://modules/security_camera.tscn" id="camera_unit"]
+[ext_resource type="PackedScene" path="res://modules/patrol_robot.tscn" id="robot_unit"]
+
+[node name="TomorrowTown" type="Node3D"]
+
+[node name="Ground" type="Node3D" parent="."]
+
+[node name="Boundary" type="Node3D" parent="."]
+
+[node name="MayorOffice" type="Node3D" parent="."]
+
+[node name="Calder" type="Node3D" parent="."]
+
+[node name="Voss" type="Node3D" parent="."]
+
+[node name="Bakery" type="Node3D" parent="."]
+
+[node name="Residences" type="Node3D" parent="."]
+
+[node name="Square" type="Node3D" parent="."]
+
+[node name="SecurityUnits" type="Node3D" parent="."]
+
+[node name="VossEntryCamera" parent="SecurityUnits" instance=ExtResource("camera_unit")]
+position = Vector3(16.8, 2.36, -6.03)
+rotation_degrees = Vector3(0, 180, 0)
+
+[node name="PlazaPatrol" parent="SecurityUnits" instance=ExtResource("robot_unit")]
+position = Vector3(13.5, 0, -0.75)
+rotation_degrees = Vector3(0, 90, 0)
+patrol_distance = 16.5
+
+[node name="Markers" type="Node3D" parent="."]
+
+[node name="地砖_001" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -17)
+district = 1
+
+[node name="地砖_002" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -15)
+district = 1
+
+[node name="地砖_003" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -13)
+district = 1
+
+[node name="地砖_004" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -11)
+district = 1
+
+[node name="地砖_005" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -9)
+district = 1
+
+[node name="地砖_006" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -7)
+district = 1
+
+[node name="地砖_007" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -5)
+district = 1
+
+[node name="地砖_008" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -3)
+district = 1
+
+[node name="地砖_009" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -1)
+district = 1
+
+[node name="地砖_010" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 1)
+district = 1
+
+[node name="地砖_011" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 3)
+district = 1
+
+[node name="地砖_012" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 5)
+district = 1
+
+[node name="地砖_013" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 7)
+district = 1
+
+[node name="地砖_014" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 9)
+district = 1
+
+[node name="地砖_015" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 11)
+district = 1
+
+[node name="地砖_016" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 13)
+district = 1
+
+[node name="地砖_017" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 15)
+district = 1
+
+[node name="地砖_018" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 17)
+district = 1
+
+[node name="地砖_019" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -17)
+district = 1
+
+[node name="地砖_020" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -15)
+district = 1
+
+[node name="地砖_021" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -13)
+district = 1
+
+[node name="地砖_022" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -11)
+district = 1
+
+[node name="地砖_023" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -9)
+district = 1
+
+[node name="地砖_024" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -7)
+district = 1
+
+[node name="地砖_025" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -5)
+district = 1
+
+[node name="地砖_026" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -3)
+district = 1
+
+[node name="地砖_027" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -1)
+district = 1
+
+[node name="地砖_028" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 1)
+district = 1
+
+[node name="地砖_029" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 3)
+district = 1
+
+[node name="地砖_030" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 5)
+district = 1
+
+[node name="地砖_031" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 7)
+district = 1
+
+[node name="地砖_032" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 9)
+district = 1
+
+[node name="地砖_033" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 11)
+district = 1
+
+[node name="地砖_034" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 13)
+district = 1
+
+[node name="地砖_035" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 15)
+district = 1
+
+[node name="地砖_036" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 17)
+district = 1
+
+[node name="地砖_037" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -17)
+district = 1
+
+[node name="地砖_038" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -15)
+district = 1
+
+[node name="地砖_039" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -13)
+district = 1
+
+[node name="地砖_040" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -11)
+district = 1
+
+[node name="地砖_041" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -9)
+district = 1
+
+[node name="地砖_042" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -7)
+district = 1
+
+[node name="地砖_043" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -5)
+district = 1
+
+[node name="地砖_044" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -3)
+district = 1
+
+[node name="地砖_045" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -1)
+district = 1
+
+[node name="地砖_046" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 1)
+district = 1
+
+[node name="地砖_047" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 3)
+district = 1
+
+[node name="地砖_048" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 5)
+district = 1
+
+[node name="地砖_049" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 7)
+district = 1
+
+[node name="地砖_050" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 9)
+district = 1
+
+[node name="地砖_051" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 11)
+district = 1
+
+[node name="地砖_052" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 13)
+district = 1
+
+[node name="地砖_053" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 15)
+district = 1
+
+[node name="地砖_054" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 17)
+district = 1
+
+[node name="地砖_055" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -17)
+district = 1
+
+[node name="地砖_056" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -15)
+district = 1
+
+[node name="地砖_057" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -13)
+district = 1
+
+[node name="地砖_058" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -11)
+district = 1
+
+[node name="地砖_059" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -9)
+district = 1
+
+[node name="地砖_060" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -7)
+district = 1
+
+[node name="地砖_061" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -5)
+district = 1
+
+[node name="地砖_062" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -3)
+district = 1
+
+[node name="地砖_063" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -1)
+district = 1
+
+[node name="地砖_064" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 1)
+district = 1
+
+[node name="地砖_065" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 3)
+district = 1
+
+[node name="地砖_066" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 5)
+district = 1
+
+[node name="地砖_067" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 7)
+district = 1
+
+[node name="地砖_068" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 9)
+district = 1
+
+[node name="地砖_069" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 11)
+district = 1
+
+[node name="地砖_070" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 13)
+district = 1
+
+[node name="地砖_071" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 15)
+district = 1
+
+[node name="地砖_072" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 17)
+district = 1
+
+[node name="地砖_073" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -17)
+district = 1
+
+[node name="地砖_074" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -15)
+district = 1
+
+[node name="地砖_075" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -13)
+district = 1
+
+[node name="地砖_076" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -11)
+district = 1
+
+[node name="地砖_077" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -9)
+district = 1
+
+[node name="地砖_078" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -7)
+district = 1
+
+[node name="地砖_079" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -5)
+district = 1
+
+[node name="地砖_080" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -3)
+district = 1
+
+[node name="地砖_081" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -1)
+district = 1
+
+[node name="地砖_082" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 1)
+district = 1
+
+[node name="地砖_083" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 3)
+district = 1
+
+[node name="地砖_084" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 5)
+district = 1
+
+[node name="地砖_085" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 7)
+district = 1
+
+[node name="地砖_086" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 9)
+district = 1
+
+[node name="地砖_087" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 11)
+district = 1
+
+[node name="地砖_088" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 13)
+district = 1
+
+[node name="地砖_089" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 15)
+district = 1
+
+[node name="地砖_090" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 17)
+district = 1
+
+[node name="地砖_091" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -17)
+district = 1
+
+[node name="地砖_092" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -15)
+district = 1
+
+[node name="地砖_093" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -13)
+district = 1
+
+[node name="地砖_094" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -11)
+district = 1
+
+[node name="地砖_095" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -9)
+district = 1
+
+[node name="地砖_096" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -7)
+district = 1
+
+[node name="地砖_097" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -5)
+district = 1
+
+[node name="地砖_098" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -3)
+district = 1
+
+[node name="地砖_099" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -1)
+district = 1
+
+[node name="地砖_100" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 1)
+district = 1
+
+[node name="地砖_101" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 3)
+district = 1
+
+[node name="地砖_102" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 5)
+district = 1
+
+[node name="地砖_103" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 7)
+district = 1
+
+[node name="地砖_104" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 9)
+district = 1
+
+[node name="地砖_105" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 11)
+district = 1
+
+[node name="地砖_106" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 13)
+district = 1
+
+[node name="地砖_107" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 15)
+district = 1
+
+[node name="地砖_108" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 17)
+district = 1
+
+[node name="地砖_109" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -17)
+district = 1
+
+[node name="地砖_110" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -15)
+district = 1
+
+[node name="地砖_111" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -13)
+district = 1
+
+[node name="地砖_112" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -11)
+district = 1
+
+[node name="地砖_113" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -9)
+district = 1
+
+[node name="地砖_114" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -7)
+district = 1
+
+[node name="地砖_115" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -5)
+district = 1
+
+[node name="地砖_116" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -3)
+district = 1
+
+[node name="地砖_117" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -1)
+district = 1
+
+[node name="地砖_118" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 1)
+district = 1
+
+[node name="地砖_119" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 3)
+district = 1
+
+[node name="地砖_120" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 5)
+district = 1
+
+[node name="地砖_121" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 7)
+district = 1
+
+[node name="地砖_122" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 9)
+district = 1
+
+[node name="地砖_123" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 11)
+district = 1
+
+[node name="地砖_124" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 13)
+district = 1
+
+[node name="地砖_125" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 15)
+district = 1
+
+[node name="地砖_126" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 17)
+district = 1
+
+[node name="地砖_127" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -17)
+district = 1
+
+[node name="地砖_128" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -15)
+district = 1
+
+[node name="地砖_129" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -13)
+district = 1
+
+[node name="地砖_130" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -11)
+district = 1
+
+[node name="地砖_131" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -9)
+district = 1
+
+[node name="地砖_132" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -7)
+district = 1
+
+[node name="地砖_133" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -5)
+district = 1
+
+[node name="地砖_134" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -3)
+district = 1
+
+[node name="地砖_135" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -1)
+district = 1
+
+[node name="地砖_136" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 1)
+district = 1
+
+[node name="地砖_137" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 3)
+district = 1
+
+[node name="地砖_138" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 5)
+district = 1
+
+[node name="地砖_139" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 7)
+district = 1
+
+[node name="地砖_140" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 9)
+district = 1
+
+[node name="地砖_141" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 11)
+district = 1
+
+[node name="地砖_142" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 13)
+district = 1
+
+[node name="地砖_143" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 15)
+district = 1
+
+[node name="地砖_144" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 17)
+district = 1
+
+[node name="地砖_145" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -17)
+district = 1
+
+[node name="地砖_146" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -15)
+district = 1
+
+[node name="地砖_147" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -13)
+district = 1
+
+[node name="地砖_148" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -11)
+district = 1
+
+[node name="地砖_149" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -9)
+district = 1
+
+[node name="地砖_150" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -7)
+district = 1
+
+[node name="地砖_151" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -5)
+district = 1
+
+[node name="地砖_152" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -3)
+district = 1
+
+[node name="地砖_153" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -1)
+district = 1
+
+[node name="地砖_154" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 1)
+district = 1
+
+[node name="地砖_155" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 3)
+district = 1
+
+[node name="地砖_156" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 5)
+district = 1
+
+[node name="地砖_157" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 7)
+district = 1
+
+[node name="地砖_158" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 9)
+district = 1
+
+[node name="地砖_159" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 11)
+district = 1
+
+[node name="地砖_160" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 13)
+district = 1
+
+[node name="地砖_161" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 15)
+district = 1
+
+[node name="地砖_162" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 17)
+district = 1
+
+[node name="地砖_163" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -17)
+district = 1
+
+[node name="地砖_164" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -15)
+district = 1
+
+[node name="地砖_165" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -13)
+district = 1
+
+[node name="地砖_166" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -11)
+district = 1
+
+[node name="地砖_167" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -9)
+district = 1
+
+[node name="地砖_168" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -7)
+district = 1
+
+[node name="地砖_169" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -5)
+district = 1
+
+[node name="地砖_170" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -3)
+district = 1
+
+[node name="地砖_171" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -1)
+district = 1
+
+[node name="地砖_172" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 1)
+district = 1
+
+[node name="地砖_173" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 3)
+district = 1
+
+[node name="地砖_174" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 5)
+district = 1
+
+[node name="地砖_175" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 7)
+district = 1
+
+[node name="地砖_176" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 9)
+district = 1
+
+[node name="地砖_177" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 11)
+district = 1
+
+[node name="地砖_178" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 13)
+district = 1
+
+[node name="地砖_179" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 15)
+district = 1
+
+[node name="地砖_180" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 17)
+district = 1
+
+[node name="地砖_181" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -17)
+district = 1
+
+[node name="地砖_182" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -15)
+district = 1
+
+[node name="地砖_183" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -13)
+district = 1
+
+[node name="地砖_184" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -11)
+district = 1
+
+[node name="地砖_185" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -9)
+district = 1
+
+[node name="地砖_186" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -7)
+district = 1
+
+[node name="地砖_187" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -5)
+district = 1
+
+[node name="地砖_188" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -3)
+district = 1
+
+[node name="地砖_189" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -1)
+district = 1
+
+[node name="地砖_190" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 1)
+district = 1
+
+[node name="地砖_191" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 3)
+district = 1
+
+[node name="地砖_192" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 5)
+district = 1
+
+[node name="地砖_193" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 7)
+district = 1
+
+[node name="地砖_194" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 9)
+district = 1
+
+[node name="地砖_195" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 11)
+district = 1
+
+[node name="地砖_196" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 13)
+district = 1
+
+[node name="地砖_197" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 15)
+district = 1
+
+[node name="地砖_198" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 17)
+district = 1
+
+[node name="地砖_199" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -17)
+district = 1
+
+[node name="地砖_200" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -15)
+district = 1
+
+[node name="地砖_201" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -13)
+district = 1
+
+[node name="地砖_202" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -11)
+district = 1
+
+[node name="地砖_203" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -9)
+district = 1
+
+[node name="地砖_204" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -7)
+district = 1
+
+[node name="地砖_205" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -5)
+district = 1
+
+[node name="地砖_206" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -3)
+district = 1
+
+[node name="地砖_207" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -1)
+district = 1
+
+[node name="地砖_208" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 1)
+district = 1
+
+[node name="地砖_209" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 3)
+district = 1
+
+[node name="地砖_210" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 5)
+district = 1
+
+[node name="地砖_211" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 7)
+district = 1
+
+[node name="地砖_212" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 9)
+district = 1
+
+[node name="地砖_213" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 11)
+district = 1
+
+[node name="地砖_214" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 13)
+district = 1
+
+[node name="地砖_215" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 15)
+district = 1
+
+[node name="地砖_216" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, 17)
+district = 1
+
+[node name="地砖_217" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -17)
+district = 1
+
+[node name="地砖_218" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -15)
+district = 1
+
+[node name="地砖_219" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -13)
+district = 1
+
+[node name="地砖_220" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -11)
+district = 1
+
+[node name="地砖_221" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -9)
+district = 1
+
+[node name="地砖_222" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -7)
+district = 1
+
+[node name="地砖_223" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -5)
+district = 1
+
+[node name="地砖_224" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -3)
+district = 1
+
+[node name="地砖_225" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -1)
+district = 1
+
+[node name="地砖_226" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 1)
+district = 1
+
+[node name="地砖_227" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 3)
+district = 1
+
+[node name="地砖_228" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 5)
+district = 1
+
+[node name="地砖_229" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 7)
+district = 1
+
+[node name="地砖_230" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 9)
+district = 1
+
+[node name="地砖_231" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 11)
+district = 1
+
+[node name="地砖_232" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 13)
+district = 1
+
+[node name="地砖_233" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 15)
+district = 1
+
+[node name="地砖_234" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 17)
+district = 1
+
+[node name="地砖_235" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -17)
+district = 1
+
+[node name="地砖_236" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -15)
+district = 1
+
+[node name="地砖_237" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -13)
+district = 1
+
+[node name="地砖_238" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -11)
+district = 1
+
+[node name="地砖_239" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -9)
+district = 1
+
+[node name="地砖_240" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -7)
+district = 1
+
+[node name="地砖_241" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -5)
+district = 1
+
+[node name="地砖_242" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -3)
+district = 1
+
+[node name="地砖_243" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -1)
+district = 1
+
+[node name="地砖_244" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 1)
+district = 1
+
+[node name="地砖_245" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 3)
+district = 1
+
+[node name="地砖_246" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 5)
+district = 1
+
+[node name="地砖_247" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 7)
+district = 1
+
+[node name="地砖_248" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 9)
+district = 1
+
+[node name="地砖_249" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 11)
+district = 1
+
+[node name="地砖_250" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 13)
+district = 1
+
+[node name="地砖_251" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 15)
+district = 1
+
+[node name="地砖_252" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 17)
+district = 1
+
+[node name="地砖_253" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -17)
+district = 1
+
+[node name="地砖_254" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -15)
+district = 1
+
+[node name="地砖_255" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -13)
+district = 1
+
+[node name="地砖_256" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -11)
+district = 1
+
+[node name="地砖_257" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -9)
+district = 1
+
+[node name="地砖_258" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -7)
+district = 1
+
+[node name="地砖_259" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -5)
+district = 1
+
+[node name="地砖_260" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -3)
+district = 1
+
+[node name="地砖_261" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -1)
+district = 1
+
+[node name="地砖_262" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 1)
+district = 1
+
+[node name="地砖_263" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 3)
+district = 1
+
+[node name="地砖_264" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 5)
+district = 1
+
+[node name="地砖_265" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 7)
+district = 1
+
+[node name="地砖_266" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 9)
+district = 1
+
+[node name="地砖_267" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 11)
+district = 1
+
+[node name="地砖_268" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 13)
+district = 1
+
+[node name="地砖_269" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 15)
+district = 1
+
+[node name="地砖_270" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 17)
+district = 1
+
+[node name="地砖_271" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -17)
+district = 1
+
+[node name="地砖_272" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -15)
+district = 1
+
+[node name="地砖_273" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -13)
+district = 1
+
+[node name="地砖_274" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -11)
+district = 1
+
+[node name="地砖_275" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -9)
+district = 1
+
+[node name="地砖_276" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -7)
+district = 1
+
+[node name="地砖_277" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -5)
+district = 1
+
+[node name="地砖_278" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -3)
+district = 1
+
+[node name="地砖_279" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -1)
+district = 1
+
+[node name="地砖_280" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 1)
+district = 1
+
+[node name="地砖_281" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 3)
+district = 1
+
+[node name="地砖_282" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 5)
+district = 1
+
+[node name="地砖_283" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 7)
+district = 1
+
+[node name="地砖_284" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 9)
+district = 1
+
+[node name="地砖_285" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 11)
+district = 1
+
+[node name="地砖_286" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 13)
+district = 1
+
+[node name="地砖_287" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 15)
+district = 1
+
+[node name="地砖_288" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 17)
+district = 1
+
+[node name="地砖_289" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -17)
+district = 1
+
+[node name="地砖_290" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -15)
+district = 1
+
+[node name="地砖_291" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -13)
+district = 1
+
+[node name="地砖_292" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -11)
+district = 1
+
+[node name="地砖_293" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -9)
+district = 1
+
+[node name="地砖_294" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -7)
+district = 1
+
+[node name="地砖_295" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -5)
+district = 1
+
+[node name="地砖_296" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -3)
+district = 1
+
+[node name="地砖_297" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -1)
+district = 1
+
+[node name="地砖_298" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 1)
+district = 1
+
+[node name="地砖_299" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 3)
+district = 1
+
+[node name="地砖_300" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 5)
+district = 1
+
+[node name="地砖_301" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 7)
+district = 1
+
+[node name="地砖_302" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 9)
+district = 1
+
+[node name="地砖_303" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 11)
+district = 1
+
+[node name="地砖_304" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 13)
+district = 1
+
+[node name="地砖_305" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 15)
+district = 1
+
+[node name="地砖_306" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 17)
+district = 1
+
+[node name="地砖_307" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -17)
+district = 1
+
+[node name="地砖_308" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -15)
+district = 1
+
+[node name="地砖_309" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -13)
+district = 1
+
+[node name="地砖_310" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -11)
+district = 1
+
+[node name="地砖_311" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -9)
+district = 1
+
+[node name="地砖_312" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -7)
+district = 1
+
+[node name="地砖_313" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -5)
+district = 1
+
+[node name="地砖_314" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -3)
+district = 1
+
+[node name="地砖_315" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -1)
+district = 1
+
+[node name="地砖_316" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 1)
+district = 1
+
+[node name="地砖_317" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 3)
+district = 1
+
+[node name="地砖_318" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 5)
+district = 1
+
+[node name="地砖_319" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 7)
+district = 1
+
+[node name="地砖_320" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 9)
+district = 1
+
+[node name="地砖_321" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 11)
+district = 1
+
+[node name="地砖_322" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 13)
+district = 1
+
+[node name="地砖_323" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 15)
+district = 1
+
+[node name="地砖_324" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 17)
+district = 1
+
+[node name="地砖_325" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -17)
+district = 1
+
+[node name="地砖_326" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -15)
+district = 1
+
+[node name="地砖_327" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -13)
+district = 1
+
+[node name="地砖_328" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -11)
+district = 1
+
+[node name="地砖_329" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -9)
+district = 1
+
+[node name="地砖_330" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -7)
+district = 1
+
+[node name="地砖_331" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -5)
+district = 1
+
+[node name="地砖_332" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -3)
+district = 1
+
+[node name="地砖_333" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -1)
+district = 1
+
+[node name="地砖_334" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 1)
+district = 1
+
+[node name="地砖_335" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 3)
+district = 1
+
+[node name="地砖_336" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 5)
+district = 1
+
+[node name="地砖_337" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 7)
+district = 1
+
+[node name="地砖_338" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 9)
+district = 1
+
+[node name="地砖_339" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 11)
+district = 1
+
+[node name="地砖_340" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 13)
+district = 1
+
+[node name="地砖_341" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 15)
+district = 1
+
+[node name="地砖_342" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 17)
+district = 1
+
+[node name="地砖_343" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -17)
+district = 1
+
+[node name="地砖_344" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -15)
+district = 1
+
+[node name="地砖_345" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -13)
+district = 1
+
+[node name="地砖_346" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -11)
+district = 1
+
+[node name="地砖_347" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -9)
+district = 1
+
+[node name="地砖_348" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -7)
+district = 1
+
+[node name="地砖_349" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -5)
+district = 1
+
+[node name="地砖_350" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -3)
+district = 1
+
+[node name="地砖_351" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -1)
+district = 1
+
+[node name="地砖_352" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 1)
+district = 1
+
+[node name="地砖_353" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 3)
+district = 1
+
+[node name="地砖_354" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 5)
+district = 1
+
+[node name="地砖_355" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 7)
+district = 1
+
+[node name="地砖_356" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 9)
+district = 1
+
+[node name="地砖_357" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 11)
+district = 1
+
+[node name="地砖_358" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 13)
+district = 1
+
+[node name="地砖_359" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 15)
+district = 1
+
+[node name="地砖_360" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 17)
+district = 1
+
+[node name="地砖_361" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -17)
+district = 1
+
+[node name="地砖_362" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -15)
+district = 1
+
+[node name="地砖_363" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -13)
+district = 1
+
+[node name="地砖_364" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -11)
+district = 1
+
+[node name="地砖_365" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -9)
+district = 1
+
+[node name="地砖_366" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -7)
+district = 1
+
+[node name="地砖_367" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -5)
+district = 1
+
+[node name="地砖_368" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -3)
+district = 1
+
+[node name="地砖_369" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -1)
+district = 1
+
+[node name="地砖_370" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 1)
+district = 1
+
+[node name="地砖_371" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 3)
+district = 1
+
+[node name="地砖_372" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 5)
+district = 1
+
+[node name="地砖_373" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 7)
+district = 1
+
+[node name="地砖_374" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 9)
+district = 1
+
+[node name="地砖_375" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 11)
+district = 1
+
+[node name="地砖_376" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 13)
+district = 1
+
+[node name="地砖_377" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 15)
+district = 1
+
+[node name="地砖_378" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 17)
+district = 1
+
+[node name="地砖_379" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -17)
+district = 1
+
+[node name="地砖_380" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -15)
+district = 1
+
+[node name="地砖_381" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -13)
+district = 1
+
+[node name="地砖_382" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -11)
+district = 1
+
+[node name="地砖_383" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -9)
+district = 1
+
+[node name="地砖_384" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -7)
+district = 1
+
+[node name="地砖_385" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -5)
+district = 1
+
+[node name="地砖_386" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -3)
+district = 1
+
+[node name="地砖_387" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -1)
+district = 1
+
+[node name="地砖_388" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 1)
+district = 1
+
+[node name="地砖_389" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 3)
+district = 1
+
+[node name="地砖_390" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 5)
+district = 1
+
+[node name="地砖_391" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 7)
+district = 1
+
+[node name="地砖_392" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 9)
+district = 1
+
+[node name="地砖_393" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 11)
+district = 1
+
+[node name="地砖_394" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 13)
+district = 1
+
+[node name="地砖_395" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 15)
+district = 1
+
+[node name="地砖_396" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 17)
+district = 1
+
+[node name="地砖_397" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -17)
+district = 1
+
+[node name="地砖_398" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -15)
+district = 1
+
+[node name="地砖_399" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -13)
+district = 1
+
+[node name="地砖_400" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -11)
+district = 1
+
+[node name="地砖_401" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -9)
+district = 1
+
+[node name="地砖_402" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -7)
+district = 1
+
+[node name="地砖_403" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -5)
+district = 1
+
+[node name="地砖_404" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -3)
+district = 1
+
+[node name="地砖_405" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -1)
+district = 1
+
+[node name="地砖_406" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 1)
+district = 1
+
+[node name="地砖_407" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 3)
+district = 1
+
+[node name="地砖_408" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 5)
+district = 1
+
+[node name="地砖_409" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 7)
+district = 1
+
+[node name="地砖_410" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 9)
+district = 1
+
+[node name="地砖_411" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 11)
+district = 1
+
+[node name="地砖_412" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 13)
+district = 1
+
+[node name="地砖_413" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 15)
+district = 1
+
+[node name="地砖_414" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 17)
+district = 1
+
+[node name="地砖_415" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -17)
+district = 1
+
+[node name="地砖_416" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -15)
+district = 1
+
+[node name="地砖_417" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -13)
+district = 1
+
+[node name="地砖_418" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -11)
+district = 1
+
+[node name="地砖_419" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -9)
+district = 1
+
+[node name="地砖_420" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -7)
+district = 1
+
+[node name="地砖_421" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -5)
+district = 1
+
+[node name="地砖_422" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -3)
+district = 1
+
+[node name="地砖_423" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -1)
+district = 1
+
+[node name="地砖_424" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 1)
+district = 1
+
+[node name="地砖_425" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 3)
+district = 1
+
+[node name="地砖_426" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 5)
+district = 1
+
+[node name="地砖_427" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 7)
+district = 1
+
+[node name="地砖_428" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 9)
+district = 1
+
+[node name="地砖_429" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 11)
+district = 1
+
+[node name="地砖_430" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 13)
+district = 1
+
+[node name="地砖_431" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 15)
+district = 1
+
+[node name="地砖_432" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 17)
+district = 1
+
+[node name="地砖_433" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -17)
+district = 1
+
+[node name="地砖_434" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -15)
+district = 1
+
+[node name="地砖_435" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -13)
+district = 1
+
+[node name="地砖_436" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -11)
+district = 1
+
+[node name="地砖_437" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -9)
+district = 1
+
+[node name="地砖_438" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -7)
+district = 1
+
+[node name="地砖_439" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -5)
+district = 1
+
+[node name="地砖_440" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -3)
+district = 1
+
+[node name="地砖_441" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -1)
+district = 1
+
+[node name="地砖_442" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 1)
+district = 1
+
+[node name="地砖_443" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 3)
+district = 1
+
+[node name="地砖_444" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 5)
+district = 1
+
+[node name="地砖_445" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 7)
+district = 1
+
+[node name="地砖_446" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 9)
+district = 1
+
+[node name="地砖_447" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 11)
+district = 1
+
+[node name="地砖_448" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 13)
+district = 1
+
+[node name="地砖_449" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 15)
+district = 1
+
+[node name="地砖_450" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 17)
+district = 1
+
+[node name="地砖_451" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -17)
+district = 1
+
+[node name="地砖_452" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -15)
+district = 1
+
+[node name="地砖_453" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -13)
+district = 1
+
+[node name="地砖_454" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -11)
+district = 1
+
+[node name="地砖_455" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -9)
+district = 1
+
+[node name="地砖_456" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -7)
+district = 1
+
+[node name="地砖_457" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -5)
+district = 1
+
+[node name="地砖_458" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -3)
+district = 1
+
+[node name="地砖_459" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -1)
+district = 1
+
+[node name="地砖_460" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 1)
+district = 1
+
+[node name="地砖_461" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 3)
+district = 1
+
+[node name="地砖_462" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 5)
+district = 1
+
+[node name="地砖_463" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 7)
+district = 1
+
+[node name="地砖_464" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 9)
+district = 1
+
+[node name="地砖_465" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 11)
+district = 1
+
+[node name="地砖_466" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 13)
+district = 1
+
+[node name="地砖_467" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 15)
+district = 1
+
+[node name="地砖_468" parent="Ground" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 17)
+district = 1
+
+[node name="横墙_001" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_002" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_003" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_004" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_005" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_006" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_007" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_008" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_009" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_010" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_011" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_012" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_013" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_014" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_015" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_016" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_017" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_018" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_019" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_020" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_021" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_022" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_023" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_024" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_025" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_026" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -18)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 1
+district = 1
+
+[node name="横墙_027" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_028" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_029" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_030" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_031" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_032" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_033" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_034" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_035" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_036" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-7, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_037" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-5, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_038" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_039" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_040" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_041" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(7, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_042" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_043" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_044" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(13, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_045" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_046" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_047" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_048" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_049" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 18)
+piece = 1
+district = 1
+
+[node name="横墙_050" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 18)
+piece = 1
+district = 1
+
+[node name="纵墙_001" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -17)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_002" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_003" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_004" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -11)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_005" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_006" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -7)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_007" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -5)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_008" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -3)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_009" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, -1)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_010" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 1)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_011" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 3)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_012" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 5)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_013" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 7)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_014" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_015" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 11)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_016" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_017" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_018" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-26, 0, 17)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_019" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -17)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_020" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_021" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_022" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -11)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_023" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_024" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -7)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_025" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -5)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_026" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -3)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_027" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -1)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_028" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 1)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_029" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 3)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_030" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 5)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_031" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 7)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_032" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_033" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 11)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_034" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_035" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纵墙_036" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 17)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="灯柱_001" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 0, 16.7)
+piece = 28
+district = 1
+
+[node name="灯柱_002" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(0, 0, 16.7)
+piece = 28
+district = 1
+
+[node name="灯柱_003" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 0)
+piece = 28
+district = 1
+
+[node name="灯柱_004" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 0)
+piece = 28
+district = 1
+
+[node name="灯柱_005" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, -15)
+piece = 28
+district = 1
+
+[node name="灯柱_006" parent="Boundary" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -15)
+piece = 28
+district = 1
+
+[node name="地砖_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 2.8, -15)
+district = 1
+
+[node name="地砖_002" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 2.8, -13)
+district = 1
+
+[node name="地砖_003" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 2.8, -11)
+district = 1
+
+[node name="地砖_004" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 2.8, -9)
+district = 1
+
+[node name="地砖_005" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 2.8, -7)
+district = 1
+
+[node name="地砖_006" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 2.8, -15)
+district = 1
+
+[node name="地砖_007" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 2.8, -13)
+district = 1
+
+[node name="地砖_008" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 2.8, -11)
+district = 1
+
+[node name="地砖_009" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 2.8, -9)
+district = 1
+
+[node name="地砖_010" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 2.8, -7)
+district = 1
+
+[node name="地砖_011" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 2.8, -15)
+district = 1
+
+[node name="地砖_012" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 2.8, -13)
+district = 1
+
+[node name="地砖_013" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 2.8, -11)
+district = 1
+
+[node name="地砖_014" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 2.8, -9)
+district = 1
+
+[node name="地砖_015" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 2.8, -7)
+district = 1
+
+[node name="地砖_016" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 2.8, -15)
+district = 1
+
+[node name="地砖_017" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 2.8, -13)
+district = 1
+
+[node name="地砖_018" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 2.8, -11)
+district = 1
+
+[node name="地砖_019" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 2.8, -9)
+district = 1
+
+[node name="地砖_020" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 2.8, -7)
+district = 1
+
+[node name="地砖_021" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 2.8, -15)
+district = 1
+
+[node name="地砖_022" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 2.8, -13)
+district = 1
+
+[node name="地砖_023" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 2.8, -11)
+district = 1
+
+[node name="地砖_024" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 2.8, -9)
+district = 1
+
+[node name="地砖_025" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 2.8, -7)
+district = 1
+
+[node name="地砖_026" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 2.8, -15)
+district = 1
+
+[node name="地砖_027" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 2.8, -13)
+district = 1
+
+[node name="地砖_028" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 2.8, -11)
+district = 1
+
+[node name="地砖_029" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 2.8, -9)
+district = 1
+
+[node name="地砖_030" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 2.8, -7)
+district = 1
+
+[node name="左侧独立楼梯_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-23, 0, -9)
+piece = 20
+district = 1
+
+[node name="楼梯衔接地砖_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 2.8, -13)
+district = 1
+
+[node name="联接台护栏_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 2.8, -14)
+piece = 15
+district = 1
+
+[node name="联接台护栏_002" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-21, 2.8, -12)
+piece = 15
+district = 1
+
+[node name="横墙_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_002" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_003" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_004" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_005" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_006" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_007" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_008" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_009" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_010" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_011" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_012" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="纵墙_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20, 2.8, -15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="通道门洞_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20, 2.8, -13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 4
+district = 1
+
+[node name="纵墙_002" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20, 2.8, -11)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_003" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20, 2.8, -9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_004" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20, 2.8, -7)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_005" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8, 2.8, -15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_006" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8, 2.8, -13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_007" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8, 2.8, -11)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_008" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8, 2.8, -9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_009" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8, 2.8, -7)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="架空柱_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19.7, 0, -6.25)
+piece = 14
+district = 1
+
+[node name="架空柱_002" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-14, 0, -6.25)
+piece = 14
+district = 1
+
+[node name="架空柱_003" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8.25, 0, -6.25)
+piece = 14
+district = 1
+
+[node name="架空柱_004" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8.25, 0, -15.65)
+piece = 14
+district = 1
+
+[node name="架空柱_005" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-14, 0, -15.65)
+piece = 14
+district = 1
+
+[node name="架空柱_006" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19.7, 0, -15.65)
+piece = 14
+district = 1
+
+[node name="纪念品店后矮墙" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17.45, 0, -6.75)
+piece = 1
+district = 1
+
+[node name="纪念品店侧矮墙" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-18.65, 0, -5.6)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 1
+district = 1
+
+[node name="纪念品柜台_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17.45, 0, -4.85)
+piece = 12
+district = 1
+
+[node name="纪念品货架_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-17.45, 0, -6.25)
+piece = 24
+district = 1
+
+[node name="旧办公桌_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-12.65, 2.8, -14.35)
+piece = 9
+district = 1
+
+[node name="办公座椅_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-12.65, 2.8, -15.05)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 10
+district = 1
+
+[node name="积木玻璃展柜_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-16.45, 2.8, -14)
+piece = 30
+district = 1
+display_model = true
+
+[node name="衣帽架_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9.4, 2.8, -10.85)
+piece = 34
+district = 1
+
+[node name="办公室矮柜_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9.4, 2.8, -14.55)
+piece = 11
+district = 1
+
+[node name="外侧灯柱_001" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20.75, 0, -8)
+piece = 28
+district = 1
+
+[node name="外侧灯柱_002" parent="MayorOffice" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8.7, 0, -5.2)
+piece = 28
+district = 1
+
+[node name="地砖_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 2.8, -15)
+district = 1
+
+[node name="地砖_002" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 2.8, -13)
+district = 1
+
+[node name="地砖_003" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 2.8, -11)
+district = 1
+
+[node name="地砖_004" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 2.8, -9)
+district = 1
+
+[node name="地砖_005" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 2.8, -15)
+district = 1
+
+[node name="地砖_006" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 2.8, -13)
+district = 1
+
+[node name="地砖_007" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 2.8, -11)
+district = 1
+
+[node name="地砖_008" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 2.8, -9)
+district = 1
+
+[node name="地砖_009" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 2.8, -15)
+district = 1
+
+[node name="地砖_010" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 2.8, -13)
+district = 1
+
+[node name="地砖_011" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 2.8, -11)
+district = 1
+
+[node name="地砖_012" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 2.8, -9)
+district = 1
+
+[node name="地砖_013" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 2.8, -15)
+district = 1
+
+[node name="地砖_014" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 2.8, -13)
+district = 1
+
+[node name="地砖_015" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 2.8, -11)
+district = 1
+
+[node name="地砖_016" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 2.8, -9)
+district = 1
+
+[node name="地砖_017" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 2.8, -15)
+district = 1
+
+[node name="地砖_018" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 2.8, -13)
+district = 1
+
+[node name="地砖_019" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 2.8, -11)
+district = 1
+
+[node name="地砖_020" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 2.8, -9)
+district = 1
+
+[node name="地砖_021" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 5.6, -15)
+district = 1
+
+[node name="地砖_022" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 5.6, -13)
+district = 1
+
+[node name="地砖_023" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 5.6, -11)
+district = 1
+
+[node name="地砖_024" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 5.6, -9)
+district = 1
+
+[node name="地砖_025" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 5.6, -15)
+district = 1
+
+[node name="地砖_026" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 5.6, -13)
+district = 1
+
+[node name="地砖_027" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 5.6, -11)
+district = 1
+
+[node name="地砖_028" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 5.6, -9)
+district = 1
+
+[node name="地砖_029" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 5.6, -15)
+district = 1
+
+[node name="地砖_030" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 5.6, -13)
+district = 1
+
+[node name="地砖_031" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 5.6, -11)
+district = 1
+
+[node name="地砖_032" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 5.6, -9)
+district = 1
+
+[node name="地砖_033" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 5.6, -15)
+district = 1
+
+[node name="地砖_034" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 5.6, -13)
+district = 1
+
+[node name="地砖_035" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 5.6, -11)
+district = 1
+
+[node name="地砖_036" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 5.6, -9)
+district = 1
+
+[node name="地砖_037" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 5.6, -15)
+district = 1
+
+[node name="地砖_038" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 5.6, -13)
+district = 1
+
+[node name="地砖_039" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 5.6, -11)
+district = 1
+
+[node name="地砖_040" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 5.6, -9)
+district = 1
+
+[node name="横墙_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_002" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_003" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_004" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_005" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 0, -15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_002" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 0, -13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_003" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 0, -11)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_004" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 0, -9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_005" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 0, -15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_006" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 0, -13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_007" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 0, -11)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_008" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 0, -9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="横墙_006" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_007" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_008" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_009" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_010" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_011" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3, 2.8, -8)
+piece = 2
+district = 1
+
+[node name="横墙_012" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 2.8, -8)
+piece = 2
+district = 1
+
+[node name="横墙_013" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1, 2.8, -8)
+piece = 2
+district = 1
+
+[node name="横墙_014" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(3, 2.8, -8)
+piece = 2
+district = 1
+
+[node name="横墙_015" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5, 2.8, -8)
+piece = 2
+district = 1
+
+[node name="纵墙_009" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 2.8, -15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_010" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 2.8, -13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_011" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 2.8, -11)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_012" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-4, 2.8, -9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_013" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 2.8, -15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_014" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 2.8, -13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_015" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 2.8, -11)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_016" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6, 2.8, -9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="门廊立柱_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-3.8, 0, -8.2)
+piece = 14
+district = 1
+
+[node name="门廊立柱_002" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(5.8, 0, -8.2)
+piece = 14
+district = 1
+
+[node name="接待台_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-0.9, 0, -7.4)
+piece = 12
+district = 1
+
+[node name="接待台_002" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1.04, 0, -7.4)
+piece = 12
+district = 1
+
+[node name="右回折接待台_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(2.42, 0, -8.22)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 12
+district = 1
+
+[node name="接待终端_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(2.76, 0, -6.14)
+piece = 31
+district = 1
+
+[node name="休息长椅_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-2.25, 0, -10.2)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 13
+district = 1
+
+[node name="屋顶机电盒_001" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(0.2, 5.6, -12)
+piece = 26
+district = 1
+
+[node name="屋顶机电盒_002" parent="Calder" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1.25, 5.6, -12)
+piece = 26
+district = 1
+
+[node name="地砖_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 2.8, -15)
+district = 1
+
+[node name="地砖_002" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 2.8, -13)
+district = 1
+
+[node name="地砖_003" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 2.8, -11)
+district = 1
+
+[node name="地砖_004" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 2.8, -9)
+district = 1
+
+[node name="地砖_005" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 2.8, -7)
+district = 1
+
+[node name="地砖_006" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 2.8, -15)
+district = 1
+
+[node name="地砖_007" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 2.8, -13)
+district = 1
+
+[node name="地砖_008" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 2.8, -11)
+district = 1
+
+[node name="地砖_009" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 2.8, -9)
+district = 1
+
+[node name="地砖_010" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 2.8, -7)
+district = 1
+
+[node name="地砖_011" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 2.8, -15)
+district = 1
+
+[node name="地砖_012" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 2.8, -13)
+district = 1
+
+[node name="地砖_013" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 2.8, -11)
+district = 1
+
+[node name="地砖_014" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 2.8, -9)
+district = 1
+
+[node name="地砖_015" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 2.8, -7)
+district = 1
+
+[node name="地砖_016" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 2.8, -15)
+district = 1
+
+[node name="地砖_017" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 2.8, -13)
+district = 1
+
+[node name="地砖_018" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 2.8, -11)
+district = 1
+
+[node name="地砖_019" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 2.8, -9)
+district = 1
+
+[node name="地砖_020" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 2.8, -7)
+district = 1
+
+[node name="右侧独立楼梯_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20, 0, -9)
+piece = 20
+district = 1
+
+[node name="楼梯衔接地砖_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(18, 2.8, -13)
+district = 1
+
+[node name="联接台护栏_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(18, 2.8, -14)
+piece = 15
+district = 1
+
+[node name="联接台护栏_002" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(18, 2.8, -12)
+piece = 15
+district = 1
+
+[node name="横墙_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_002" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_003" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_004" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_002" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_003" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -11)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_004" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_005" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 0, -7)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_006" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_007" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_008" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -11)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_009" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_010" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 0, -7)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 16
+district = 1
+
+[node name="展厅门前立柱_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9.2, 0, -6.2)
+piece = 14
+district = 1
+
+[node name="展厅门前立柱_002" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16.8, 0, -6.2)
+piece = 14
+district = 1
+
+[node name="横墙_005" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_006" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_007" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_008" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 2.8, -16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_009" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_010" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_011" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="横墙_012" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(16, 2.8, -6)
+piece = 15
+district = 1
+
+[node name="纵墙_011" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 2.8, -15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_012" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 2.8, -13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_013" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 2.8, -11)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_014" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 2.8, -9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_015" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9, 2.8, -7)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_016" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 2.8, -15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="通道门洞_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 2.8, -13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 4
+district = 1
+
+[node name="纵墙_017" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 2.8, -11)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_018" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 2.8, -9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_019" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(17, 2.8, -7)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="第一代际展柜_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(11, 0, -7.35)
+piece = 30
+district = 1
+
+[node name="交互展柜_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14.6, 0, -7.35)
+piece = 30
+district = 1
+
+[node name="档案柜_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10.65, 2.8, -15.25)
+piece = 11
+district = 1
+
+[node name="档案柜_002" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12.55, 2.8, -15.25)
+piece = 11
+district = 1
+
+[node name="档案柜_003" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14.45, 2.8, -15.25)
+piece = 11
+district = 1
+
+[node name="档案阅读桌_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12.5, 2.8, -10.05)
+piece = 9
+district = 1
+
+[node name="展厅终端_001" parent="Voss" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(15.85, 0, -10)
+piece = 31
+district = 1
+
+[node name="横墙_001" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20, 0, -2.5)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_002" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(22, 0, -2.5)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="横墙_003" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(24, 0, -2.5)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="纵墙_001" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, -1.5)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_002" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 0.5)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_003" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 2.5)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_004" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -1.5)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_005" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 0.5)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_006" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 2.5)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="产品陈列架_001" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20.55, 0, -1.65)
+piece = 35
+district = 1
+
+[node name="产品陈列架_002" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23.35, 0, -1.65)
+piece = 35
+district = 1
+
+[node name="面包柜台_001" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20.7, 0, 1.3)
+piece = 12
+district = 1
+
+[node name="面包柜台_002" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(22.62, 0, 1.3)
+piece = 12
+district = 1
+
+[node name="烤箱_001" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23.85, 0, -0.35)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 23
+district = 1
+
+[node name="店外灯柱_001" parent="Bakery" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(18.1, 0, 3.35)
+piece = 28
+district = 1
+
+[node name="横墙_001" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -17)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_002" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -17)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_001" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(22, 0, -16)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_002" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(22, 0, -14)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_003" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -16)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_004" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -14)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="沿街门窗_001" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -13)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="沿街门窗_002" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -13)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 17
+district = 1
+
+[node name="住宅平顶_001" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(24, 0, -15)
+piece = 18
+district = 1
+roof_tiles = Vector2i(2, 2)
+
+[node name="横墙_003" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -11)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_004" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -11)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_005" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(22, 0, -10)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_006" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(22, 0, -8)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_007" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -10)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_008" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, -8)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="沿街门窗_003" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, -7)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="沿街门窗_004" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, -7)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 17
+district = 1
+
+[node name="住宅平顶_002" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(24, 0, -9)
+piece = 18
+district = 1
+roof_tiles = Vector2i(2, 2)
+
+[node name="横墙_005" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 6)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_006" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 6)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_007" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 6)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_009" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20, 0, 7)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_010" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20, 0, 9)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_011" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 7)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_012" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 9)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="沿街门窗_005" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 10)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="沿街门窗_006" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 10)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 17
+district = 1
+
+[node name="沿街门窗_007" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 10)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="住宅平顶_003" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 8)
+piece = 18
+district = 1
+roof_tiles = Vector2i(3, 2)
+
+[node name="横墙_008" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 13)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_009" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 13)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_010" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 13)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_013" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20, 0, 14)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_014" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(20, 0, 16)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_015" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 14)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_016" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(26, 0, 16)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="沿街门窗_008" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(21, 0, 17)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="沿街门窗_009" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 17)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 17
+district = 1
+
+[node name="沿街门窗_010" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(25, 0, 17)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="住宅平顶_004" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(23, 0, 15)
+piece = 18
+district = 1
+roof_tiles = Vector2i(3, 2)
+
+[node name="横墙_011" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-24, 0, 12)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_012" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-22, 0, 12)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="横墙_013" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20, 0, 12)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_017" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 13)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_018" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-25, 0, 15)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_019" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 13)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="纵墙_020" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-19, 0, 15)
+rotation_degrees = Vector3(0, -90, 0)
+piece = 2
+district = 1
+
+[node name="沿街门窗_011" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-24, 0, 16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="沿街门窗_012" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-22, 0, 16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 17
+district = 1
+
+[node name="沿街门窗_013" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-20, 0, 16)
+rotation_degrees = Vector3(0, 180, 0)
+piece = 16
+district = 1
+
+[node name="住宅平顶_005" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-22, 0, 14)
+piece = 18
+district = 1
+roof_tiles = Vector2i(3, 2)
+
+[node name="门前灯柱_001" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(24.9, 0, 5.2)
+piece = 28
+district = 1
+
+[node name="门前灯柱_002" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(18.9, 0, 11.5)
+piece = 28
+district = 1
+
+[node name="门前灯柱_003" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(19, 0, 16.85)
+piece = 28
+district = 1
+
+[node name="门前灯柱_004" parent="Residences" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-18.5, 0, 14.8)
+piece = 28
+district = 1
+
+[node name="矩形设备花池_001" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-11, 0, 5)
+piece = 5
+district = 1
+
+[node name="矩形设备花池_002" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-9, 0, 5)
+piece = 5
+district = 1
+
+[node name="矩形设备花池_003" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-1, 0, 8.2)
+piece = 5
+district = 1
+
+[node name="矩形设备花池_004" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(1.3, 0, 9.9)
+piece = 5
+district = 1
+
+[node name="矩形设备花池_005" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12.4, 0, 11.7)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 5
+district = 1
+
+[node name="广场长椅_001" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-12, 0, 3.6)
+piece = 13
+district = 1
+
+[node name="广场长椅_002" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-8, 0, 3.6)
+piece = 13
+district = 1
+
+[node name="广场长椅_003" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(10.5, 0, 8.55)
+piece = 13
+district = 1
+
+[node name="广场长椅_004" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(14.5, 0, 9.2)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 13
+district = 1
+
+[node name="广场长椅_005" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-15, 0, 12.3)
+rotation_degrees = Vector3(0, 90, 0)
+piece = 13
+district = 1
+
+[node name="城市信息终端_001" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(12.2, 0, 8.65)
+piece = 31
+district = 1
+
+[node name="广场灯_001" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13, 0, 7)
+piece = 28
+district = 1
+
+[node name="广场灯_002" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(9.5, 0, 12.6)
+piece = 28
+district = 1
+
+[node name="广场灯_003" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(6.5, 0, 3)
+piece = 28
+district = 1
+
+[node name="广场灯_004" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(-13.8, 0, 0)
+piece = 28
+district = 1
+
+[node name="通往归岸镇的路标_001" parent="Square" groups=["world2_units"] instance=ExtResource("piece")]
+position = Vector3(0.8, 0, 16.6)
+piece = 33
+district = 1
+
+[node name="Spawn" type="Marker3D" parent="Markers"]
+position = Vector3(-2.1, 0.08, 15.6)
+
+[node name="Portal" type="Marker3D" parent="Markers"]
+position = Vector3(-2.1, 0, 17.15)
+metadata/display_offset = Vector3(0, 1.1, 0)
+
+[node name="tomorrow_badge" type="Marker3D" parent="Markers"]
+position = Vector3(-17.45, 0, -3.7)
+metadata/display_offset = Vector3(0, 1.14, -1.15)
+
+[node name="town_blocks" type="Marker3D" parent="Markers"]
+position = Vector3(-16.45, 2.8, -12.72)
+metadata/display_offset = Vector3(0, 1.63, -1.28)
+
+[node name="hype_hat" type="Marker3D" parent="Markers"]
+position = Vector3(-9.92, 2.8, -10.4)
+metadata/display_offset = Vector3(0.52, 1.57, -0.45)
+
+[node name="usb_launch_video" type="Marker3D" parent="Markers"]
+position = Vector3(0.18, 0, -6.34)
+metadata/display_offset = Vector3(0, 1.12, -1.06)
+
+[node name="wozhi4_sample" type="Marker3D" parent="Markers"]
+position = Vector3(11, 0, -6.15)
+metadata/display_offset = Vector3(0, 1.57, -1.2)
+
+[node name="wozhi6_fragment" type="Marker3D" parent="Markers"]
+position = Vector3(12.55, 2.8, -14.08)
+metadata/display_offset = Vector3(0, 1.44, -1.17)
+
+[node name="delivery_slip" type="Marker3D" parent="Markers"]
+position = Vector3(20.65, 0, 2.37)
+metadata/display_offset = Vector3(0.02, 1.12, -1.07)
+
+[node name="aegir_calendar" type="Marker3D" parent="Markers"]
+position = Vector3(23, 0, 10.83)
+metadata/display_offset = Vector3(0.72, 1.37, -0.64)
+
+[node name="npc_carl" type="Marker3D" parent="Markers"]
+position = Vector3(3.85, 0, -6.3)
+
+[node name="npc_morning_star" type="Marker3D" parent="Markers"]
+position = Vector3(12.2, 0, 7.88)
+
+[node name="npc_eileen" type="Marker3D" parent="Markers"]
+position = Vector3(23.35, 0, 0.32)

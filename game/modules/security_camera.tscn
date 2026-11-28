@@ -1,0 +1,115 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://modules/security_camera.gd" id="behavior"]
+
+[sub_resource type="StandardMaterial3D" id="white"]
+albedo_color = Color(0.78, 0.86, 0.95, 1)
+roughness = 0.64
+
+[sub_resource type="StandardMaterial3D" id="navy"]
+albedo_color = Color(0.11, 0.21, 0.33, 1)
+metallic = 0.2
+roughness = 0.53
+
+[sub_resource type="StandardMaterial3D" id="glass"]
+albedo_color = Color(0.12, 0.52, 0.77, 1)
+emission_enabled = true
+emission = Color(0.1, 0.49, 0.72, 1)
+emission_energy_multiplier = 0.4
+roughness = 0.24
+
+[sub_resource type="StandardMaterial3D" id="led"]
+resource_local_to_scene = true
+albedo_color = Color(0.365, 0.89, 1, 1)
+emission_enabled = true
+emission = Color(0.365, 0.89, 1, 1)
+emission_energy_multiplier = 0.73
+
+[sub_resource type="BoxMesh" id="plate"]
+size = Vector3(0.36, 0.4, 0.08)
+
+[sub_resource type="BoxMesh" id="arm"]
+size = Vector3(0.16, 0.14, 0.43)
+
+[sub_resource type="CylinderMesh" id="joint"]
+top_radius = 0.115
+bottom_radius = 0.115
+height = 0.13
+radial_segments = 10
+rings = 1
+
+[sub_resource type="BoxMesh" id="shell"]
+size = Vector3(0.42, 0.31, 0.66)
+
+[sub_resource type="BoxMesh" id="visor"]
+size = Vector3(0.48, 0.075, 0.74)
+
+[sub_resource type="CylinderMesh" id="lens_ring"]
+top_radius = 0.12
+bottom_radius = 0.12
+height = 0.075
+radial_segments = 10
+rings = 1
+
+[sub_resource type="CylinderMesh" id="lens_glass"]
+top_radius = 0.076
+bottom_radius = 0.076
+height = 0.022
+radial_segments = 10
+rings = 1
+
+[sub_resource type="BoxMesh" id="indicator_mesh"]
+size = Vector3(0.18, 0.026, 0.10)
+
+[node name="SecurityCamera" type="Node3D"]
+script = ExtResource("behavior")
+
+[node name="WallPlate" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0, -0.04)
+mesh = SubResource("plate")
+material_override = SubResource("navy")
+
+[node name="WallArm" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0, -0.27)
+mesh = SubResource("arm")
+material_override = SubResource("white")
+
+[node name="Swivel" type="Node3D" parent="."]
+position = Vector3(0, -0.09, -0.45)
+
+[node name="Joint" type="MeshInstance3D" parent="Swivel"]
+mesh = SubResource("joint")
+material_override = SubResource("navy")
+
+[node name="Head" type="Node3D" parent="Swivel"]
+position = Vector3(0, -0.19, -0.075)
+rotation_degrees = Vector3(-15, 0, 0)
+
+[node name="Housing" type="MeshInstance3D" parent="Swivel/Head"]
+mesh = SubResource("shell")
+material_override = SubResource("white")
+
+[node name="Visor" type="MeshInstance3D" parent="Swivel/Head"]
+position = Vector3(0, 0.155, -0.045)
+mesh = SubResource("visor")
+material_override = SubResource("navy")
+
+[node name="LensRing" type="MeshInstance3D" parent="Swivel/Head"]
+position = Vector3(0, -0.02, -0.345)
+rotation_degrees = Vector3(90, 0, 0)
+mesh = SubResource("lens_ring")
+material_override = SubResource("navy")
+
+[node name="LensGlass" type="MeshInstance3D" parent="Swivel/Head"]
+position = Vector3(0, -0.02, -0.391)
+rotation_degrees = Vector3(90, 0, 0)
+mesh = SubResource("lens_glass")
+material_override = SubResource("glass")
+
+[node name="Indicator" type="MeshInstance3D" parent="Swivel/Head"]
+position = Vector3(0, 0.201, -0.29)
+mesh = SubResource("indicator_mesh")
+material_override = SubResource("led")
+
+[node name="Lens" type="Marker3D" parent="Swivel/Head"]
+position = Vector3(0, -0.02, -0.42)

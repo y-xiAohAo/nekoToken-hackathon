@@ -1,0 +1,17 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://actors/characters_2046_v2/npc_idle_3dir.png" id="atlas"]
+
+[sub_resource type="AtlasTexture" id="standing"]
+atlas = ExtResource("atlas")
+region = Rect2(0, 48, 48, 48)
+filter_clip = true
+
+[node name="Jasper" type="Sprite3D"]
+cast_shadow = 0
+offset = Vector2(0, 20)
+pixel_size = 0.048
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = SubResource("standing")

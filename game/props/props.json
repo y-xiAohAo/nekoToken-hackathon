@@ -1,0 +1,122 @@
+[
+	{
+		"id": "photo_2026",
+		"name": "一张合照",
+		"description": "从旧手机里冲印出来的相片。两个年轻人隔着木桌比耶，背面只写了一个日期：2026年，冬。",
+		"image": "brothers_photo_2026.png",
+		"map": "蚁穴-归岸镇",
+		"location": "归岸镇旧居·客厅木桌"
+	},
+	{
+		"id": "tomorrow_badge",
+		"name": "明日徽章",
+		"description": "明日镇早年满街都是的纪念徽章，虽然大多数人心里都嘀咕，感觉看上去并不是很高科技，但来都来了，留个纪念吧。",
+		"image": "tomorrow_badge.png",
+		"map": "明日镇",
+		"location": "旧纪念品店·柜台"
+	},
+	{
+		"id": "town_blocks",
+		"name": "明日镇积木",
+		"description": "听居民们说，是早年镇长办公室里的两座积木小屋，做工精细，看上去需要拼很久。镇长似乎很重视这件手工，用玻璃柜小心翼翼地保护着",
+		"image": "town_blocks_case.png",
+		"map": "明日镇",
+		"location": "镇长办公室·玻璃柜"
+	},
+	{
+		"id": "mia_notebook",
+		"name": "米娅的体重小本",
+		"description": "一本红脊小册，记着两个孩子出生时的体重，中间空了好几页。本子里夹着一张照片，背面有一行字：\"索菲亚回家的第一天。你哥哥把亮着灯的那间留给了你。\"写字的人没有署名。",
+		"image": "mia_growth_notebook.png",
+		"map": "蚁穴-归岸镇",
+		"location": "归岸镇旧居·米娅旧房间床头"
+	},
+	{
+		"id": "usb_airship_audio",
+		"name": "一个U盘",
+		"description": "某个报废的无人驾驶飞艇上拆下来的U盘，拷贝后发现里面只有一段音频，不太清晰。\"海普我警告你！！！……嘶啦嘶啦……'沃智六号'……嘶啦嘶啦……大脑……嘶啦嘶啦……对不起\"",
+		"image": "airship_recording_usb.png",
+		"map": "蚁穴-归岸镇",
+		"location": "报废飞艇·维护终端"
+	},
+	{
+		"id": "wozhi6_fragment",
+		"name": "沃智六号残片",
+		"description": "据说是沃智七号的前身，不知什么原因被全部销毁，只剩这一枚烧毁的芯片残片。",
+		"image": "wozhi6_fragment.png",
+		"map": "明日镇",
+		"location": "沃斯旧档案室·档案柜"
+	},
+	{
+		"id": "carl_interview",
+		"name": "采访截屏",
+		"description": "存在一部旧手机里的采访截屏。画面里的年轻人对着话筒说，考尔德要成为第一家实现AGI的公司。联网搜索后，发现应该是卡尔——前考尔德CEO，十年后他确实在台上宣布了晨星。",
+		"image": "carl_interview_2026.png",
+		"map": "蚁穴-归岸镇",
+		"location": "归岸镇旧居·贾斯珀抽屉里的旧手机"
+	},
+	{
+		"id": "trip_leaflet",
+		"name": "毕业旅行折页",
+		"description": "一张二十年前的旅游折页，M镇被红笔圈住，旁边还有一串地名。折页上印着\"AI小镇试点\"。",
+		"image": "graduation_trip_leaflet.png",
+		"map": "蚁穴-归岸镇",
+		"location": "归岸镇旧居·贾斯珀抽屉"
+	},
+	{
+		"id": "wozhi4_sample",
+		"name": "沃智四型展柜样片",
+		"description": "边长两厘米的方片，展牌写到：实现了基本泛化的脑机芯片，植入在不同脑区的硬脑膜下，能识别二十类基本动作（动作皮层）或基本情绪（前额叶）",
+		"image": "wozhi4_sample.png",
+		"map": "明日镇",
+		"location": "沃斯旧展厅·展柜"
+	},
+	{
+		"id": "usb_launch_video",
+		"name": "一个U盘",
+		"description": "从某处找到的旧U盘，拷贝后发现里面有着一段视频，是十分出名的2036年卡尔发布\"晨星\"的发布会，会上，他以艾琳的面包店为例，向大家介绍了\"晨星\"那令人恐怖的能力，从此标志着，人们进入了AGI时代。",
+		"image": "morningstar_replay_usb.png",
+		"map": "明日镇",
+		"location": "考尔德大厅·旧接待台"
+	},
+	{
+		"id": "delivery_slip",
+		"name": "一张送货签",
+		"description": "是面粉送到的凭证，下面写着：艾琳面包店。",
+		"image": "bakery_delivery_slip.png",
+		"map": "明日镇",
+		"location": "艾琳面包房·柜台"
+	},
+	{
+		"id": "aegir_calendar",
+		"name": "艾吉尔纪年卡",
+		"description": "一张手绘年卡，把\"2036\"写作\"神启元年\"。下面写着：一种超越人类的智慧的降临，新时代的起点！！！",
+		"image": "aegir_calendar_card.png",
+		"map": "明日镇",
+		"location": "明日镇街区·艾吉尔家门口"
+	},
+	{
+		"id": "hospital_receipt",
+		"name": "一份预约回执",
+		"description": "目的地中心区医院，预计用时三小时。右下角写着：2038年",
+		"image": "hospital_appointment.png",
+		"map": "蚁穴-归岸镇",
+		"location": "报废飞艇·调度终端行程页"
+	},
+	{
+		"id": "hype_hat",
+		"name": "一顶毛绒帽",
+		"description": "一顶打了补丁的针织帽，针脚歪歪扭扭，补丁颜色也不对。明日镇上的人们说，之前总是看着镇长带着这顶帽子",
+		"image": "hype_knit_hat.png",
+		"map": "明日镇",
+		"location": "镇长办公室·衣帽架"
+	},
+	{
+		"id": "guian_sign",
+		"name": "写着「归岸镇」的新门牌",
+		"description": "镇口的新门牌，背面还能摸出磨掉的旧字：N镇。",
+		"image": "guian_town_sign.png",
+		"map": "蚁穴-归岸镇",
+		"location": "归岸镇·镇口"
+	}
+]

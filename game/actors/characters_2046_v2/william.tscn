@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://player.gd" id="player"]
+[ext_resource type="SpriteFrames" path="res://actors/characters_2046_v2/william_sprite_frames.tres" id="frames"]
+
+[sub_resource type="CapsuleShape3D" id="body"]
+height = 1.65
+radius = 0.42
+
+[node name="William" type="CharacterBody3D" groups=["surveillance_targets"]]
+floor_snap_length = 0.28
+floor_max_angle = 1.18
+script = ExtResource("player")
+
+[node name="Capsule" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.825, 0)
+shape = SubResource("body")
+
+[node name="Visual" type="AnimatedSprite3D" parent="."]
+position = Vector3(0, 0.02, 0)
+cast_shadow = 0
+offset = Vector2(0, 20)
+pixel_size = 0.048
+alpha_cut = 1
+texture_filter = 0
+sprite_frames = ExtResource("frames")
+animation = &"idle_s"

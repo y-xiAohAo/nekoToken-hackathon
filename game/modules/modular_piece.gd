@@ -32,6 +32,12 @@ enum Piece {
 	SIDE_TABLE,
 	LAMP_POST,
 	RUG,
+	DISPLAY_CASE,
+	TERMINAL,
+	AIRSHIP_WRECK,
+	TOWN_SIGN,
+	COAT_RACK,
+	BAKERY_SHELF,
 }
 
 enum District { ANT_HILL, M_TOWN }
@@ -52,6 +58,10 @@ enum District { ANT_HILL, M_TOWN }
 		_rebuild_if_ready()
 
 @export var interaction_name: String = ""
+@export var display_model := false:
+	set(value):
+		display_model = value
+		_rebuild_if_ready()
 
 const UNIT := 2.0
 const FLOOR_DEPTH := 0.16
@@ -59,6 +69,7 @@ const LOW_HEIGHT := 0.88
 const HIGH_HEIGHT := 2.8
 
 static var _material_cache: Dictionary = {}
+static var _city_textures: Dictionary = {}
 var _built := false
 
 
@@ -91,9 +102,13 @@ func _rebuild() -> void:
 	match piece:
 		Piece.FLOOR:
 			_box("地面基座", Vector3(0, -0.08, 0), Vector3(UNIT, FLOOR_DEPTH, UNIT), base, true)
-			for edge in [-0.5, 0.5]:
-				_box("铺装接缝", Vector3(edge, 0.006, 0), Vector3(0.012, 0.012, UNIT), inset)
-				_box("铺装接缝", Vector3(0, 0.006, edge), Vector3(UNIT, 0.012, 0.012), inset)
+			if district == District.M_TOWN:
+				_box("铺装接缝", Vector3(-0.986, 0.004, 0), Vector3(0.028, 0.008, UNIT), inset)
+				_box("铺装接缝", Vector3(0, 0.004, -0.986), Vector3(UNIT, 0.008, 0.028), inset)
+			else:
+				for edge in [-0.5, 0.5]:
+					_box("铺装接缝", Vector3(edge, 0.006, 0), Vector3(0.012, 0.012, UNIT), inset)
+					_box("铺装接缝", Vector3(0, 0.006, edge), Vector3(UNIT, 0.012, 0.012), inset)
 		Piece.LOW_WALL:
 			_wall("矮墙", 0, LOW_HEIGHT, base, trim, inset)
 		Piece.HIGH_WALL:
@@ -111,7 +126,9 @@ func _rebuild() -> void:
 			_box("门槛", Vector3(0, 0.025, 0), Vector3(1.14, 0.05, 0.34), inset)
 			_box("左侧标记", Vector3(-0.52, 1.5, -0.172), Vector3(0.04, 1.65, 0.012), accent)
 		Piece.PLANTER:
-			_box("花坛底座", Vector3(0, 0.18, 0), Vector3(UNIT, 0.36, 1.0), base, true)
+			_box("花坛底座", Vector3(0, 0.18, 0), Vector3(UNIT, 0.36, 1.0), base)
+			# Match the full planter footprint up to the top of its rim.
+			_box_collision("花坛", Vector3(0, 0.255, 0), Vector3(UNIT, 0.51, 1.0))
 			_box("内层土壤", Vector3(0, 0.375, 0), Vector3(1.65, 0.05, 0.64), soil)
 			for side in [-1.0, 1.0]:
 				_box("长边压顶", Vector3(0, 0.45, side * 0.43),
@@ -177,7 +194,8 @@ func _rebuild() -> void:
 			for x in [-0.51, 0.51]:
 				_box("前面板", Vector3(x, 0.55, 0.378), Vector3(0.8, 0.72, 0.025), base)
 		Piece.BENCH:
-			_box("长椅座面", Vector3(0, 0.43, 0), Vector3(1.9, 0.13, 0.67), fabric, true)
+			_box("长椅座面", Vector3(0, 0.43, 0), Vector3(1.9, 0.13, 0.67), fabric)
+			_box_collision("长椅底座", Vector3(0, 0.2475, -0.01), Vector3(1.9, 0.495, 0.69))
 			_box("长椅背", Vector3(0, 0.81, -0.3), Vector3(1.9, 0.74, 0.11), fabric, true)
 			for x in [-0.78, 0.78]:
 				_box("长椅脚", Vector3(x, 0.2, 0), Vector3(0.09, 0.4, 0.58), metal)
@@ -267,7 +285,7 @@ func _rebuild() -> void:
 			_box("水龙头", Vector3(0.48, 1.08, -0.26), Vector3(0.055, 0.28, 0.055), metal)
 			for x in [-0.42, 0.42]:
 				_box("橱门", Vector3(x, 0.48, 0.373), Vector3(0.75, 0.63, 0.024), trim)
-		Piece.STORE_SHELF:
+		Piece.STORE_SHELF, Piece.BAKERY_SHELF:
 			_box("货架背板", Vector3(0, 0.96, -0.3), Vector3(1.78, 1.92, 0.1), wood, true)
 			for x in [-0.82, 0.82]:
 				_box("货架支柱", Vector3(x, 0.96, 0), Vector3(0.09, 1.92, 0.68), metal, true)
@@ -275,7 +293,11 @@ func _rebuild() -> void:
 				_box("货架层板", Vector3(0, y, 0), Vector3(1.7, 0.09, 0.66), wood, true)
 			for x in [-0.52, 0.0, 0.52]:
 				for y in [0.47, 0.97, 1.47]:
-					_box("陈列盒", Vector3(x, y, 0.05), Vector3(0.26, 0.28, 0.27), accent)
+					if piece == Piece.BAKERY_SHELF:
+						_box("面包", Vector3(x, y - 0.06, 0.05), Vector3(0.32, 0.16, 0.28), _material("bread"))
+						_box("烤色", Vector3(x, y + 0.025, 0.05), Vector3(0.26, 0.025, 0.22), _material("crust"))
+					else:
+						_box("陈列盒", Vector3(x, y, 0.05), Vector3(0.26, 0.28, 0.27), accent)
 		Piece.FREEZER:
 			_box("冷柜主体", Vector3(0, 0.55, 0), Vector3(1.82, 1.1, 0.78), base, true)
 			_box("冷柜玻璃盖", Vector3(0, 1.11, 0), Vector3(1.72, 0.045, 0.69), glass)
@@ -301,6 +323,44 @@ func _rebuild() -> void:
 		Piece.RUG:
 			_box("地毯底色", Vector3(0, 0.016, 0), Vector3(1.9, 0.025, 1.62), fabric)
 			_box("地毯边", Vector3(0, 0.032, 0), Vector3(1.76, 0.008, 1.48), trim)
+		Piece.DISPLAY_CASE:
+			_box("展台", Vector3(0, 0.45, 0), Vector3(1.88, 0.9, 0.92), base, true)
+			_box("台沿", Vector3(0, 0.9, 0), Vector3(1.92, 0.08, 0.96), trim)
+			_box("玻璃罩", Vector3(0, 1.25, 0), Vector3(1.83, 0.62, 0.87), _material("clear_glass"))
+			_box("展台灯带", Vector3(0, 0.68, 0.467), Vector3(1.63, 0.035, 0.02), accent)
+			if display_model:
+				_box("积木底板", Vector3(0, 0.97, 0), Vector3(1.4, 0.06, 0.63), _material("wood"))
+				for x in [-0.34, 0.34]:
+					_box("小屋墙身", Vector3(x, 1.12, 0), Vector3(0.49, 0.25, 0.48), _material("crust"))
+					_box("屋顶底层", Vector3(x, 1.28, 0), Vector3(0.58, 0.09, 0.55), _material("bread"))
+					_box("屋顶上层", Vector3(x, 1.35, 0), Vector3(0.36, 0.08, 0.51), _material("bread"))
+				_box("橘黄窗", Vector3(0.34, 1.15, 0.25), Vector3(0.11, 0.13, 0.024), _material("amber"))
+		Piece.TERMINAL:
+			_box("底座", Vector3(0, 0.075, 0), Vector3(0.62, 0.15, 0.55), trim, true)
+			_box("终端立座", Vector3(0, 0.63, 0), Vector3(0.34, 1.12, 0.32), base, true)
+			_box("终端边框", Vector3(0, 1.22, 0), Vector3(0.61, 0.36, 0.27), metal)
+			_box("屏幕", Vector3(0, 1.23, 0.144), Vector3(0.5, 0.25, 0.02), accent)
+		Piece.AIRSHIP_WRECK:
+			_box("残舱底板", Vector3(0, -0.04, 0), Vector3(3.95, 0.12, 4.8), metal, true)
+			_box("机头", Vector3(0, 0.78, -2.2), Vector3(2.7, 1.52, 0.64), metal, true)
+			_box("破损风挡", Vector3(-0.47, 1.39, -1.92), Vector3(1.49, 0.53, 0.05), glass)
+			_box("左舱壁", Vector3(-1.73, 0.56, -0.37), Vector3(0.29, 1.12, 3.5), base, true)
+			_box("右舱壁残段", Vector3(1.73, 0.45, -1.27), Vector3(0.29, 0.9, 1.6), base, true)
+			for side in [-1.0, 1.0]:
+				_box("发动机短舱", Vector3(side * 2.05, 0.45, -0.94), Vector3(0.72, 0.65, 1.64), inset, true)
+				_box("短舱金属接缝", Vector3(side * 2.05, 0.78, -0.98), Vector3(0.58, 0.045, 0.5), trim)
+			var beam := Vector3(0.16, 1.45, 1.32)
+			_box("断开的舱架", Vector3(-1.47, 0.72, 1.11), beam, metal)
+		Piece.TOWN_SIGN:
+			for side in [-0.57, 0.57]:
+				_box("牌柱", Vector3(side, 0.69, 0), Vector3(0.09, 1.38, 0.1), metal, true)
+			_box("外框", Vector3(0, 1.43, 0), Vector3(1.58, 0.52, 0.12), trim, true)
+			_box("牌面", Vector3(0, 1.43, 0.07), Vector3(1.43, 0.39, 0.025), accent)
+		Piece.COAT_RACK:
+			_box("衣帽架底座", Vector3(0, 0.04, 0), Vector3(0.48, 0.08, 0.48), metal)
+			_box("衣帽架立杆", Vector3(0, 0.85, 0), Vector3(0.105, 1.7, 0.105), metal, true)
+			for y in [1.28, 1.52]:
+				_box("衣帽挂钩", Vector3(0, y, 0.03), Vector3(0.53, 0.075, 0.085), trim)
 
 
 func _wall(name: String, offset_z: float, height: float,
@@ -338,14 +398,18 @@ func _box(name: String, at: Vector3, size: Vector3,
 	mesh_node.position = at
 	add_child(mesh_node)
 	if solid:
-		var shape_node := CollisionShape3D.new()
-		shape_node.name = name + "碰撞"
-		shape_node.set_meta("generated_piece", true)
-		var shape := BoxShape3D.new()
-		shape.size = size
-		shape_node.shape = shape
-		shape_node.position = at
-		add_child(shape_node)
+		_box_collision(name, at, size)
+
+
+func _box_collision(name: String, at: Vector3, size: Vector3) -> void:
+	var shape_node := CollisionShape3D.new()
+	shape_node.name = name + "碰撞"
+	shape_node.set_meta("generated_piece", true)
+	var shape := BoxShape3D.new()
+	shape.size = size
+	shape_node.shape = shape
+	shape_node.position = at
+	add_child(shape_node)
 
 
 func _add_lamp_light() -> void:
@@ -354,7 +418,7 @@ func _add_lamp_light() -> void:
 	light.set_meta("generated_piece", true)
 	light.position = Vector3(0, 2.67, 0)
 	light.light_color = Color("#ffbd70") if district == District.ANT_HILL else Color("#b5e7ff")
-	light.light_energy = 1.05
+	light.light_energy = 1.05 if district == District.ANT_HILL else 0.68
 	light.omni_range = 4.8
 	light.shadow_enabled = false
 	add_child(light)
@@ -470,15 +534,19 @@ func _material(role: String) -> StandardMaterial3D:
 	if _material_cache.has(cache_key):
 		return _material_cache[cache_key] as StandardMaterial3D
 	var palette := {
-		"base": Color("#9c7861") if ant else Color("#d9e3ed"),
-		"trim": Color("#bd9b79") if ant else Color("#a8bbcf"),
-		"inset": Color("#6b5448") if ant else Color("#6d94ba"),
-		"accent": Color("#72905a") if ant else Color("#53c3e8"),
+		"base": Color("#9c7861") if ant else Color("#d9e4f1"),
+		"trim": Color("#bd9b79") if ant else Color("#839dbb"),
+		"inset": Color("#6b5448") if ant else Color("#506e91"),
+		"accent": Color("#72905a") if ant else Color("#43c8f5"),
 		"soil": Color("#665246") if ant else Color("#93a6b9"),
 		"wood": Color("#786050") if ant else Color("#aabcca"),
 		"fabric": Color("#6b7885") if ant else Color("#80a6c5"),
-		"metal": Color("#45545b") if ant else Color("#6b91aa"),
-		"glass": Color("#435b61") if ant else Color("#85c6d8"),
+		"metal": Color("#45545b") if ant else Color("#466681"),
+		"glass": Color("#435b61") if ant else Color("#5da8cb"),
+		"clear_glass": Color("#b3eaff45"),
+		"bread": Color("#ac693e"),
+		"crust": Color("#e7b172"),
+		"amber": Color("#ffa94a"),
 		"band": Color("#4f706c") if ant else Color("#8fadc0"),
 		"light": Color("#ffd88d") if ant else Color("#b5e7ff"),
 	}
@@ -493,19 +561,60 @@ func _material(role: String) -> StandardMaterial3D:
 		if texture != null:
 			material.albedo_texture = texture
 			material.albedo_color = Color.WHITE
-		if piece == Piece.ROOF_FLAT and role == "base":
-			material.uv1_scale = Vector3(float(roof_tiles.x), 1.0, float(roof_tiles.y))
-		if role == "metal":
-			material.metallic = 0.32
-			material.roughness = 0.68
-		elif role == "glass":
-			material.roughness = 0.25
-		elif role == "light":
-			material.emission_enabled = true
-			material.emission = Color("#ffd58c")
-			material.emission_energy_multiplier = 0.65
+	elif role == "base" and piece == Piece.FLOOR:
+		material.albedo_color = [Color("#93a7bc"), Color("#9aacbf"),
+			Color("#90a5b9"), Color("#9db0c4")][variant]
+		material.albedo_texture = _city_texture("paving")
+	elif role == "base" and piece in [Piece.HIGH_WALL, Piece.WINDOW_WALL, Piece.SEALED_DOOR]:
+		material.albedo_texture = _city_texture("panel")
+	elif role == "glass":
+		material.albedo_texture = _city_texture("window")
+	elif role == "accent":
+		material.emission_enabled = true
+		material.emission = Color("#1594d2")
+		material.emission_energy_multiplier = 0.58
+	if piece == Piece.ROOF_FLAT and role == "base":
+		material.uv1_scale = Vector3(float(roof_tiles.x), 1.0, float(roof_tiles.y))
+	if role == "metal":
+		material.metallic = 0.32
+		material.roughness = 0.68
+	elif role == "glass":
+		material.roughness = 0.25
+	elif role == "clear_glass":
+		material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+		material.roughness = 0.28
+	elif role == "light":
+		material.emission_enabled = true
+		material.emission = Color("#ffd58c") if ant else Color("#8bdfff")
+		material.emission_energy_multiplier = 0.65
 	_material_cache[cache_key] = material
 	return material
+
+
+func _city_texture(surface: String) -> Texture2D:
+	if _city_textures.has(surface):
+		return _city_textures[surface] as Texture2D
+	var image := Image.create_empty(32, 32, false, Image.FORMAT_RGB8)
+	image.fill(Color("#f8f8f8"))
+	match surface:
+		"paving":
+			image.fill_rect(Rect2i(0, 0, 32, 1), Color("#e0e0e0"))
+			image.fill_rect(Rect2i(0, 0, 1, 32), Color("#e0e0e0"))
+			for corner in [Vector2i(4, 4), Vector2i(24, 24)]:
+				image.fill_rect(Rect2i(corner, Vector2i(3, 1)), Color("#c9c9c9"))
+				image.fill_rect(Rect2i(corner + Vector2i(0, 1), Vector2i(3, 1)), Color.WHITE)
+		"panel":
+			image.fill_rect(Rect2i(0, 15, 32, 1), Color("#d0d0d0"))
+			image.fill_rect(Rect2i(0, 16, 32, 1), Color.WHITE)
+			image.fill_rect(Rect2i(4, 10, 3, 2), Color("#dfdfdf"))
+		"window":
+			image.fill(Color("#d0dbe5"))
+			for x in range(32):
+				var y := 31 - x
+				image.fill_rect(Rect2i(x, y, 1, mini(4, 32 - y)), Color("#e9f1f8"))
+	var texture := ImageTexture.create_from_image(image)
+	_city_textures[surface] = texture
+	return texture
 
 
 func _floor_variant() -> int:

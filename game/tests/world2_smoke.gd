@@ -19,61 +19,117 @@ func _check(condition: bool, label: String) -> void:
 func _run() -> void:
 	var packed := load("res://world2.tscn") as PackedScene
 	if packed == null:
-		push_error("Cannot load world2.tscn")
+		push_error("Cannot load the prototype scene")
 		quit(1)
 		return
-	var world: Node3D = packed.instantiate()
+
+	var world = packed.instantiate()
+	var args := OS.get_cmdline_user_args()
+	var base := args[0] if not args.is_empty() else "user://"
+	world._save_path = base.path_join("world2_smoke_%d.cfg" % OS.get_process_id())
 	root.add_child(world)
-	world.set_process(false)
-	await physics_frame
-	await physics_frame
+	await _frames(4)
 
+	var guian := world.get_node("MapMount/Guian") as Node3D
 	var units := get_nodes_in_group("world2_units")
-	_check(world.get_node("Ground").get_child_count() == 468, "26 x 18 ground tiles")
-	_check(units.size() == 804, "804 reusable units")
+	_check(guian.get_node("Ground").get_child_count() == 468, "Guian 26 x 18 ground tiles")
+	_check(units.size() >= 804, "Guian modular pieces")
+	_check(_uses_guian_textures(units), "Guian generated geometry and all 20 surface textures")
+	_check(world.props.size() == 15, "15 canonical props")
+	_check(_target_names(world._targets, "npc_") == ["npc_jasper"], "Guian active NPC")
+	for id in world.props:
+		_check(world._prop_texture(id) is Texture2D, "imported image for " + id)
 
+	var space := guian.get_world_3d().direct_space_state
+	var query := PhysicsRayQueryParameters3D.create(
+		Vector3(23, 0.8, 16.5), Vector3(23, 0.8, -16.5))
+	_check(space.intersect_ray(query).is_empty(), "Guian east corridor through route")
+
+	await _climb(world.player, Vector3(-11, 0.03, -4.6), -13.34, "Guian home stairs")
+	await _open_prop(world, "photo_2026")
+
+	world._switch_map(1)
+	await _frames(4)
+	var town := world.get_node("MapMount/TomorrowTown") as Node3D
+	_check(town.get_node("Ground").get_child_count() == 468, "Tomorrow Town 26 x 18 ground tiles")
+	_check(_target_names(world._targets, "npc_") == ["npc_carl", "npc_eileen", "npc_morning_star"],
+		"Tomorrow Town active NPCs")
+	await _climb(world.player, Vector3(-23, 0.03, -3.8), -13.0, "mayor office stairs")
+	await _climb(world.player, Vector3(20, 0.03, -3.8), -13.0, "Voss stairs")
+	await _open_prop(world, "tomorrow_badge")
+	var guard := town.get_node("SecurityUnits/VossEntryCamera/Swivel") as Node3D
+	var robot := town.get_node("SecurityUnits/PlazaPatrol") as Node3D
+	var yaw := guard.rotation.y
+	var position := robot.global_position
+	await _frames(24)
+	_check(not is_equal_approx(guard.rotation.y, yaw), "security camera scans")
+	_check(robot.global_position.distance_to(position) > 0.2, "robot moves on patrol")
+	_check(is_equal_approx(robot.global_position.z, position.z), "robot stays on its line")
+	_check(robot.get_node("Chassis/SensorBand").mesh is CylinderMesh, "robot has round sensor band")
+	world._switch_map(0)
+	_check(world.collected.size() == 2, "collection survives map changes")
+	var save := ConfigFile.new()
+	_check(save.load(world._save_path) == OK, "collection saved to disk")
+	_check(save.get_value("collection", "items", []).size() == 2, "collection includes both maps")
+	if FileAccess.file_exists(world._save_path):
+		DirAccess.remove_absolute(world._save_path)
+
+	print("world2 smoke: %d passed, %d failed" % [passed, failed])
+	quit(1 if failed > 0 else 0)
+
+
+func _uses_guian_textures(units: Array[Node]) -> bool:
 	var mesh_count := 0
-	var missing_textures := 0
-	var used_textures := {}
+	var textures := {}
 	for unit in units:
 		for child in unit.get_children():
 			if child is MeshInstance3D and child.has_meta("generated_piece"):
 				mesh_count += 1
 				var material := child.material_override as StandardMaterial3D
 				if material == null or material.albedo_texture == null:
-					missing_textures += 1
-				else:
-					used_textures[material.albedo_texture.resource_path] = true
-	_check(mesh_count > 4000, "generated meshes")
-	_check(missing_textures == 0, "all ant-hill meshes textured")
-	_check(used_textures.size() == 20, "all 20 surface textures used")
+					return false
+				textures[material.albedo_texture.resource_path] = true
+	return mesh_count > 4000 and textures.size() == 20
 
-	var space := world.get_world_3d().direct_space_state
-	var query := PhysicsRayQueryParameters3D.create(
-		Vector3(23, 0.8, 16.5), Vector3(23, 0.8, -16.5))
-	_check(space.intersect_ray(query).is_empty(), "east corridor through route")
 
-	var player: CharacterBody3D = world.get_node("Player")
-	var camera: Camera3D = world.get_node("Camera")
-	camera.global_position = Vector3(0, 18, 28)
-	camera.look_at(Vector3(0, 0, -3))
-	player.global_position = Vector3(-11, 0.05, -5)
-	player.velocity = Vector3.ZERO
-	await physics_frame
-	Input.action_press("move_forward")
-	var stair_peak := -100.0
-	for i in range(175):
+func _open_prop(world, id: String) -> void:
+	var marker := world.map_mount.get_child(0).get_node("Markers/" + id) as Marker3D
+	world.player.move_to(marker.global_position + Vector3.UP * 0.03)
+	await _frames(6)
+	_check(world._nearby == marker, "nearby prompt for " + id)
+	var press := InputEventKey.new()
+	press.physical_keycode = KEY_E
+	press.pressed = true
+	Input.parse_input_event(press)
+	await _frames(3)
+	_check(world._ui.is_open() and world.collected.has(id), "E opens and collects " + id)
+	world._ui.close()
+	press.pressed = false
+	Input.parse_input_event(press)
+
+
+func _climb(player, start: Vector3, end_z: float, label: String) -> void:
+	player.move_to(start)
+	await _frames(6)
+	Input.action_press(&"move_forward")
+	for tick in range(180):
 		await physics_frame
-		stair_peak = maxf(stair_peak, player.global_position.y)
-	Input.action_release("move_forward")
-	_check(stair_peak > 2.6 and player.is_on_floor(), "walkable home second floor")
+		if player.position.z <= end_z:
+			break
+	Input.action_release(&"move_forward")
+	await _frames(4)
+	_check(player.position.y > 2.68 and player.position.z <= end_z, label)
 
-	player.global_position = Vector3(-21, 0.05, -7)
-	player.velocity = Vector3.ZERO
-	await physics_frame
-	world._update_interaction()
-	var prompt: Label = world.get_node("HUD/Prompt")
-	_check(prompt.text.contains("沙发"), "home furniture interaction prompt")
 
-	print("world2 smoke: %d passed, %d failed" % [passed, failed])
-	quit(1 if failed > 0 else 0)
+func _frames(steps: int) -> void:
+	for tick in range(steps):
+		await physics_frame
+
+
+func _target_names(targets: Array[Marker3D], prefix: String) -> Array[String]:
+	var names: Array[String] = []
+	for target in targets:
+		if String(target.name).begins_with(prefix):
+			names.append(String(target.name))
+	names.sort()
+	return names

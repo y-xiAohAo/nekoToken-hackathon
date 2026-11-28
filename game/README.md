@@ -1,33 +1,22 @@
-# 蚁穴模块场景原型
+# 神启双地图探索原型
 
-本目录是可运行的 Godot 工程，入口为 `world2.tscn`。当前成果是蚁穴地图的模块组合与第一轮贴图：26 × 18 块、每块 2 × 2 米，共 52 × 36 米。场景包含 804 个基础单元实例、开放式住家和超市、可走的室内楼梯与二层、错落的封闭房屋及东侧两格宽的贯通走廊。
+在 Godot 4.7.2 中打开 `game/project.godot`，按 F5 进入归岸镇。两张地图都使用 2 × 2 米单元拼装，地面各为 26 × 18 格。归岸镇用暖色像素贴图，明日镇用蓝白铺装、玻璃和灯带。
 
-这是一张空间与美术原型地图。角色可移动，家具可用 E 查看名称；[设计 Spec v0.39](../PRELIMINARY_DESIGN_SPEC.md) 中的设备报告、Agent 对抗、四轮和 RESET 尚未实现。原型包含的二层也不代表现行 Spec 的关卡规则已更改。
+- WASD 移动，Shift 奔跑，Tab 切换全景，R 返回当前地图入口。
+- 靠近道具、NPC 或出入口时按 E 交互。可用鼠标或方向键选择话题，Enter 确认，Esc 关闭。
+- 按 1 前往归岸镇，按 2 前往明日镇。也可与两张地图南侧的出口交互。
+- 共 15 件道具。道具卡使用现有像素图和文案，进度保存在 Godot 的用户目录。归岸镇有贾斯珀，明日镇有艾琳、卡尔和晨星。米娅、海普、索菲亚的角色素材可在编辑器中查看。
 
-## 打开与操作
+明日镇的沃斯门柱上有左右扫描的摄像头，广场北侧有带环形蓝灯的直线巡逻机器人。尺寸、分层、摆放和设备参数见[单元建模说明](modules/单元建模说明.md)。地图效果见[归岸镇](../docs/previews/world2-guian-current.png)和[明日镇](../docs/previews/world2-mtown-overview.png)。
 
-使用 Godot 4.x 打开 `game/project.godot`，按 F5 运行主场景。此次在 Windows 上用 Godot 4.7.2 测试；团队尚未锁定统一的引擎小版本。
+这一原型用于验证空间、美术和叙事交互。[设计 Spec v0.39](../PRELIMINARY_DESIGN_SPEC.md) 仍记录四轮维护预演的规则和设计边界。
 
-- WASD 移动，E 查看附近家具名称。
-- Tab 切换全景，V 切换蚁穴贴图与 M 镇配色预览，R 返回入口。
-
-模块的尺寸、碰撞及搭建方法见[单元建模说明](modules/单元建模说明.md)。`modules/piece.tscn` 是可复用的单元场景，三个 `modules/*kit_preview.tscn` 场景用于查看单元组合。蚁穴外观使用 `modules/textures/anthill/` 中的 20 张像素贴图；M 镇仍是配色预览。
-
-## 重新生成与验证
-
-从仓库根目录运行：
+## 从干净检出验证
 
 ```powershell
-python game/modules/build_world2.py
-python -m pip install -r game/requirements-asset-tools.txt
-python game/modules/generate_ant_textures.py
 & 'C:\path\to\Godot.exe' --headless --path game --import
-& 'C:\path\to\Godot.exe' --headless --path game --script res://tests/world2_smoke.gd
 & 'C:\path\to\Godot.exe' --headless --path game --quit-after 120
+& 'C:\path\to\Godot.exe' --headless --path game --script res://tests/world2_smoke.gd
 ```
 
-`build_world2.py` 会覆盖 `world2.tscn`；在编辑器里改动场景后请先保存副本。Pillow 只用于重建贴图，运行游戏不需要安装它。
-
-2026-11-27 在 Godot 4.7.2 Windows 版执行了资源导入、主场景无界面启动和 `world2_smoke.gd`，均完成；检查结果为 8 项通过、0 项失败。Windows 导出也已实际尝试，但工程还没有 `export_presets.cfg`，因此 Godot 未生成程序包；本机同时未安装相应导出模板。导出前需确定团队使用的引擎版本并配置对应预设和模板。
-
-整体效果见[蚁穴地图预览](../docs/previews/world2-anthill-overview.png)，另有[住家](../docs/previews/world2-home.png)和[超市](../docs/previews/world2-supermarket.png)局部图。
+烟雾测试覆盖两张地图的资源载入、三处楼梯、道具弹窗和存档、摄像头摆动及机器人巡逻。两张地图的运行入口为 `world2.tscn`。建筑和灯具可直接从 `modules/` 拖入场景。角色像素图和图片均来自本项目的神启工程，分别保存在 `actors/characters_2046_v2/` 与 `props/`。仓库保留早期的蚁穴场景生成脚本供参考。重跑它会覆盖现有主场景。Pillow 只用于重建蚁穴的贴图。

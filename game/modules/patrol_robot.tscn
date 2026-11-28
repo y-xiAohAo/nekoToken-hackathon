@@ -1,0 +1,179 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://modules/patrol_robot.gd" id="behavior"]
+
+[sub_resource type="StandardMaterial3D" id="white"]
+albedo_color = Color(0.78, 0.88, 0.96, 1)
+roughness = 0.65
+
+[sub_resource type="StandardMaterial3D" id="blue"]
+albedo_color = Color(0.25, 0.51, 0.7, 1)
+metallic = 0.18
+roughness = 0.52
+
+[sub_resource type="StandardMaterial3D" id="dark"]
+albedo_color = Color(0.12, 0.16, 0.23, 1)
+roughness = 0.78
+
+[sub_resource type="StandardMaterial3D" id="light"]
+albedo_color = Color(0.21, 0.86, 0.98, 1)
+emission_enabled = true
+emission = Color(0.16, 0.65, 0.84, 1)
+emission_energy_multiplier = 0.67
+
+[sub_resource type="BoxShape3D" id="body"]
+size = Vector3(1.02, 1.13, 1.11)
+
+[sub_resource type="BoxMesh" id="base"]
+size = Vector3(0.91, 0.23, 1.04)
+
+[sub_resource type="BoxMesh" id="deck"]
+size = Vector3(0.96, 0.30, 0.93)
+
+[sub_resource type="BoxMesh" id="armor"]
+size = Vector3(0.8, 0.15, 0.72)
+
+[sub_resource type="CylinderMesh" id="sensor_base"]
+top_radius = 0.105
+bottom_radius = 0.105
+height = 0.16
+radial_segments = 12
+rings = 0
+
+[sub_resource type="CylinderMesh" id="sensor_head"]
+top_radius = 0.267
+bottom_radius = 0.282
+height = 0.22
+radial_segments = 16
+rings = 0
+
+[sub_resource type="CylinderMesh" id="sensor_band"]
+top_radius = 0.286
+bottom_radius = 0.286
+height = 0.058
+radial_segments = 16
+rings = 0
+
+[sub_resource type="BoxMesh" id="bumper"]
+size = Vector3(0.83, 0.13, 0.11)
+
+[sub_resource type="BoxMesh" id="status_line"]
+size = Vector3(0.58, 0.044, 0.033)
+
+[sub_resource type="CylinderMesh" id="wheel"]
+top_radius = 0.222
+bottom_radius = 0.222
+height = 0.115
+radial_segments = 10
+rings = 1
+
+[sub_resource type="CylinderMesh" id="hub"]
+top_radius = 0.114
+bottom_radius = 0.114
+height = 0.017
+radial_segments = 8
+rings = 1
+
+[node name="PatrolRobot" type="CharacterBody3D"]
+motion_mode = 1
+script = ExtResource("behavior")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.59, 0)
+shape = SubResource("body")
+
+[node name="Chassis" type="Node3D" parent="."]
+
+[node name="Undercarriage" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.36, 0)
+mesh = SubResource("base")
+material_override = SubResource("dark")
+
+[node name="Shell" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.55, 0)
+mesh = SubResource("deck")
+material_override = SubResource("white")
+
+[node name="TopArmor" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.735, 0)
+mesh = SubResource("armor")
+material_override = SubResource("blue")
+
+[node name="SensorStem" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.89, 0)
+mesh = SubResource("sensor_base")
+material_override = SubResource("white")
+
+[node name="SensorHead" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 1.04, 0)
+mesh = SubResource("sensor_head")
+material_override = SubResource("dark")
+
+[node name="SensorBand" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 1.04, 0)
+mesh = SubResource("sensor_band")
+material_override = SubResource("light")
+
+[node name="EndBumperA" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.39, -0.514)
+mesh = SubResource("bumper")
+material_override = SubResource("blue")
+
+[node name="EndBumperB" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.39, 0.514)
+mesh = SubResource("bumper")
+material_override = SubResource("blue")
+
+[node name="EndStatusA" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.55, -0.482)
+mesh = SubResource("status_line")
+material_override = SubResource("light")
+
+[node name="EndStatusB" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0, 0.55, 0.482)
+mesh = SubResource("status_line")
+material_override = SubResource("light")
+
+[node name="FrontLeftWheel" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(-0.472, 0.223, -0.295)
+rotation_degrees = Vector3(0, 0, 90)
+mesh = SubResource("wheel")
+material_override = SubResource("dark")
+
+[node name="Hub" type="MeshInstance3D" parent="Chassis/FrontLeftWheel"]
+position = Vector3(0, 0.063, 0)
+mesh = SubResource("hub")
+material_override = SubResource("blue")
+
+[node name="RearLeftWheel" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(-0.472, 0.223, 0.295)
+rotation_degrees = Vector3(0, 0, 90)
+mesh = SubResource("wheel")
+material_override = SubResource("dark")
+
+[node name="Hub" type="MeshInstance3D" parent="Chassis/RearLeftWheel"]
+position = Vector3(0, 0.063, 0)
+mesh = SubResource("hub")
+material_override = SubResource("blue")
+
+[node name="FrontRightWheel" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0.472, 0.223, -0.295)
+rotation_degrees = Vector3(0, 0, -90)
+mesh = SubResource("wheel")
+material_override = SubResource("dark")
+
+[node name="Hub" type="MeshInstance3D" parent="Chassis/FrontRightWheel"]
+position = Vector3(0, 0.063, 0)
+mesh = SubResource("hub")
+material_override = SubResource("blue")
+
+[node name="RearRightWheel" type="MeshInstance3D" parent="Chassis"]
+position = Vector3(0.472, 0.223, 0.295)
+rotation_degrees = Vector3(0, 0, -90)
+mesh = SubResource("wheel")
+material_override = SubResource("dark")
+
+[node name="Hub" type="MeshInstance3D" parent="Chassis/RearRightWheel"]
+position = Vector3(0, 0.063, 0)
+mesh = SubResource("hub")
+material_override = SubResource("blue")
